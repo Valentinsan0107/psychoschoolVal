@@ -6,7 +6,12 @@
 	if (isset($_GET['envoyer'])) {
 	  	echo "Email de confirmation envoyer";
 	}elseif (!isset($_GET['confirmed'])) {
-		header("Location: index.php");
+		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		$pos = strpos($actual_link, "?");
+		$longeur = strlen($actual_link);
+		$finlink = substr($actual_link, $pos, $longeur-$pos);
+
+		header("Location: index.php".$finlink);
 	}else{
 		include_once("includes/backrownd/dph.php");
 		$sql = "SELECT * FROM users";
