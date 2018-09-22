@@ -77,7 +77,7 @@ session_start();
 		</div>		
 			
 			
-			<!--La div d en dessous te permet de lui metre un classe pr modifeier le text afficher en en fessant .(nom class) p en css(tu connait), esite pas a modifier les texte a l interieur) -->
+			<!--La div d en dessous te permet de lui metre un classe pr modifeier le text afficher en en fessant .(nom class) p en css(tu connait), esite pas a modifier les texte a l interieur ) -->
 			<div>
 				<?php
 				if (isset($_GET['signup'])) {
@@ -119,7 +119,7 @@ session_start();
 						echo "<p>Le mot de passe ou l'adresse mail est incorrect</p>";
 					}
 					if ($_GET['login'] == "notconfirmed") {
-						echo "<p>Le mot de passe n a pas ete confirmer</p>";
+						echo "<p>Votre adresse mail n a pas ete confirmer</p>";
 					}
 				}
 				
