@@ -787,49 +787,80 @@ div.liste-présentation-affiliation-livre-conteneur{
 }
 
 div.présentation-livre-affiliation{
-	background-color: #DFE1E6;
+
     width: 80%;
-    height: 300px;
+    height: 370px;
     margin-bottom: 40px;
     margin-left: 10%;
-    box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
     display: flex;
 }
 
 div.photo-livre-et-auteur{
 	width: 25%;
-	height: 300px;
+	height: 370px;
 	background-color: black;
+	background-image: url(../img/fond-test.jpg);
+	background-size: contain;
+	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
 }
 
 div.lien-affiliation-amazon{
 	width: 20%;
-	height: 300px;
-	background-color: red;
+	margin-left: 2%;
+	height: 370px;
+	background-color: #DFE1E6;
+	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
 }
 
 div.titre-livre-auteur-description-conteneur{
 	display: flex;
 	flex-direction: column;
-	width: 55%;
+	width: 53%;
+    box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+    margin-left: 1%;
 }
 
-div.titre-livre{
+div.titre-livre-conteneur{
 	width: 100%;
 	height: 50px;
-	background-color: green;
+	background-color: #DFE1E6;
+	padding-left: 10px;
 }
 
-div.nom-auteur{
+div.nom-auteur-conteneur{
 	width: 100%;
 	height: 50px;
-	background-color: yellow;
+	background-color: #DFE1E6;
+	padding-left: 10px;
+	border-top: 3px solid #3390a5;
+	border-bottom: 3px solid #3390a5;
 }
 
-div.description-livre-aperçu{
+div.description-livre-aperçu-conteneur{
 	width: 100%;
-	height: 200px;
-	background-color: blue;
+	height: 270px;
+	background-color: #DFE1E6;
+	padding-left: 10px;
+}
+
+h2.titre-livre{
+	line-height: 10px;
+	font-family: Arial;
+	text-align: center;
+}
+
+h3.nom-auteur, a.lien-nom-auteur{
+	line-height: 10px;
+	font-family: Arial;
+}
+
+h3.titre-paragraphe-description-livre, p.paragraphe-description-livre{
+	font-family: Arial;
+}
+
+p.paragraphe-description-livre{
+	color: #404040;
+	padding-right: 10px;
 }
 
 
