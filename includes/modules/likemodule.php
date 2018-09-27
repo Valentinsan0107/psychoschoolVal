@@ -18,7 +18,7 @@ echo $resultChek;
 
 $userlikechek = 0;
 
-if($resultChek > 0){
+if($resultChek > 0 && isset($_SESSION['u_pseudo'])){
 	while ($row = mysqli_fetch_assoc($result)) {
 		if ($row['like_user'] == $_SESSION['u_pseudo']) {
 			$userlikechek = 1;
