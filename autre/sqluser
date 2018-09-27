@@ -18,5 +18,5 @@ CREATE TABLE comentaires(
 CREATE TABLE likes(
     like_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
     like_page varchar(256) not null,
-    like_number int(11)
+    like_user varchar(256) not null
 );

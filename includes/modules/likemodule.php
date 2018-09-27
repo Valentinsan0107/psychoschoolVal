@@ -14,12 +14,30 @@ $sql = "SELECT * FROM likes WHERE like_page='$nomfile'";
 $result = mysqli_query($conn, $sql);
 $resultChek = mysqli_num_rows($result);
 
-if($resultChek = 1){
+echo $resultChek;
+
+$userlikechek = 0;
+
+if($resultChek > 0){
 	while ($row = mysqli_fetch_assoc($result)) {
-		$nblike = $row['like_number'];
+		if ($row['like_user'] == $_SESSION['u_pseudo']) {
+			$userlikechek = 1;
+		}
 	}
-	print($nblike);
-}else{
-	print "like error";
 }
+if (isset($_SESSION['u_id'])) {
+	if ($userlikechek == 0) {
+		echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+				<input type="hidden" name="nomfile" value="'.$nomfile.'">
+				<button type="submit" name="like">like</button>
+			</form>';
+	}elseif ($userlikechek == 1) {
+		echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+				<input type="hidden" name="nomfile" value="'.$nomfile.'">
+				<button type="submit" name="dislike">dislike</button>
+			</form>';
+	}
+}
+
+
 ?>
