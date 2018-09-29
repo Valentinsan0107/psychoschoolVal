@@ -14,3 +14,9 @@ CREATE TABLE comentaires(
     coment_createur varchar(2000) not null,
     coment_date datetime not null
 );
+
+CREATE TABLE likes(
+    like_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    like_page varchar(256) not null,
+    like_user varchar(256) not null
+);
