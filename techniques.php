@@ -1,120 +1,53 @@
 <?php
-    include_once("includes/modules/header.php");
+	include_once("includes/modules/header.php");
+    include_once("includes/backrownd/dph.php");
 ?>
 
 <div class="article-conteneur">
-	<div class="zone-article">
-		<h1 class="titre-article">Je suis le titre de l'aperçu de l'article</h1>
-		<p class="texte-article">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur […]</p>
-		<a class="lien-article" href="articles/article-1.php">Lire plus...</a>
-	<div class="conteneur-module-comment">
-		<a class="lien-icon-conversation" href="articles/article-1.php">
-			<img class="icon-conversation" src="img/conversation.png">
-		</a>
 <?php
-	$nomfileshow =  "psychoschoolVal/articles/article-1.php";
-    include("includes/modules/shownbcoment.php");
+    $sql = "SELECT * FROM techniqueArticle";
+	$result = mysqli_query($conn, $sql);
+	$resultChek = mysqli_num_rows($result);
+
+	if ($resultChek > 0) {
+		while ($row = mysqli_fetch_assoc($result)) {
+			$nompageserv = $row['Techarticle_page'];
+			$sql = "SELECT * FROM article WHERE article_page='$nompageserv'";
+			$result2 = mysqli_query($conn, $sql);
+			$resultChek = mysqli_num_rows($result2);
+			if ($resultChek === 1) {
+				while ($row2 = mysqli_fetch_assoc($result2)) {
+					echo '<div class="zone-article">
+						<h1 class="titre-article">'.$row2['article_title'].'</h1>
+						<p class="texte-article">'.$row2['article_contenue'].'</p>
+						<a class="lien-article" href="/'.$nompageserv.'">Lire plus...</a>
+					<div class="conteneur-module-comment">
+						<a class="lien-icon-conversation" href="/'.$nompageserv.'">
+							<img class="icon-conversation" src="img/conversation.png">
+						</a>';
+
+					$sql = "SELECT * FROM comentaires WHERE coment_page='$nompageserv'";
+					$result3 = mysqli_query($conn, $sql);
+					$resultChek = mysqli_num_rows($result3);
+
+					echo $resultChek;
+
+					$sql = "SELECT * FROM likes WHERE like_page='$nompageserv'";
+					$result3 = mysqli_query($conn, $sql);
+					$resultChek = mysqli_num_rows($result3);
+
+					echo $resultChek;
+
+					echo '</div>
+					</div>';
+
+				}
+			}
+		}
+	}
 ?>
-	</div>
 </div>
-
-
-
-	<div class="zone-article">
-		<h1 class="titre-article">Je suis le titre de l'aperçu de l'article</h1>
-		<p class="texte-article">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur […]</p>
-		<a class="lien-article" href="articles/article-2.php">Lire plus...</a>
-	<div class="conteneur-module-comment">
-		<a class="lien-icon-conversation" href="articles/article-2.php">
-			<img class="icon-conversation" src="img/conversation.png">
-		</a>
-<?php
-	$nomfileshow =  "psychoschoolVal/articles/article-2.php";
-    include("includes/modules/shownbcoment.php");
-?>
-	</div>
-	</div>
-
-	<div class="zone-article">
-		<h1 class="titre-article">Je suis le titre de l'aperçu de l'article</h1>
-		<p class="texte-article">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur […]</p>
-		<a class="lien-article" href="articles/article-3.php">Lire plus...</a>
-	<div class="conteneur-module-comment">
-		<a class="lien-icon-conversation" href="articles/article-3.php">
-			<img class="icon-conversation" src="img/conversation.png">
-		</a>
-<?php
-	$nomfileshow =  "psychoschoolVal/articles/article-3.php";
-    include("includes/modules/shownbcoment.php");
-?>
-	</div>
-	</div>
-
-	<div class="zone-article">
-		<h1 class="titre-article">Je suis le titre de l'aperçu de l'article</h1>
-		<p class="texte-article">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur […]</p>
-		<a class="lien-article" href="articles/article-4.php">Lire plus...</a>
-	<div class="conteneur-module-comment">
-		<a class="lien-icon-conversation" href="articles/article-4.php">
-			<img class="icon-conversation" src="img/conversation.png">
-		</a>
-<?php
-	$nomfileshow =  "psychoschoolVal/articles/article-4.php";
-    include("includes/modules/shownbcoment.php");
-?>
-	</div>
-	</div>
-
-
-	<div class="zone-article">
-		<h1 class="titre-article">Je suis le titre de l'aperçu de l'article</h1>
-		<p class="texte-article">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur […]</p>
-		<a class="lien-article" href="articles/article-5.php">Lire plus...</a>
-	<div class="conteneur-module-comment">
-		<a class="lien-icon-conversation" href="articles/article-5.php">
-			<img class="icon-conversation" src="img/conversation.png">
-		</a>
-<?php
-	$nomfileshow =  "psychoschoolVal/articles/article-5.php";
-    include("includes/modules/shownbcoment.php");
-?>
-	</div>
-	</div>
-
-</div>
-
-
 
 <?php
 	include_once("includes/modules/footer.php");
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
