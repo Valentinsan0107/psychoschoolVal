@@ -25,10 +25,7 @@ CREATE TABLE article(
     article_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
     article_page varchar(500) not null,
     article_title varchar(256) not null,
-    article_contenue varchar(1000) not null
-);
-
-CREATE TABLE techniqueArticle(
-    Techarticle_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
-    Techarticle_page varchar(500) not null
+    article_contenue varchar(1000) not null,
+    article_thechnique tinyint(1)  not null,
+    article_priorite tinyint(1)  not null
 );
