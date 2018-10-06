@@ -30,13 +30,13 @@
 					$result3 = mysqli_query($conn, $sql);
 					$resultChek = mysqli_num_rows($result3);
 
-					echo $resultChek;
+					echo '<p class="nombre-commentaire-article">'.$resultChek.'</p>';
 
 					$sql = "SELECT * FROM likes WHERE like_page='$nompageserv'";
 					$result3 = mysqli_query($conn, $sql);
 					$resultChek = mysqli_num_rows($result3);
 
-					echo $resultChek;
+					echo '<p>'.$resultChek.'</p>';
 
 					echo '</div>
 					</div>';
