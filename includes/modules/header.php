@@ -19,6 +19,33 @@ session_start();
                        $('nav').removeClass('black') 
                   }
             })
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('nav .logo').addClass('black-logo');
+                  }
+                  else {
+                       $('nav .logo').removeClass('black-logo') 
+                  }
+            })
+
+             $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('nav ul li a').addClass('black-button');
+                  }
+                  else {
+                       $('nav ul li a').removeClass('black-button') 
+                  }
+            })
+
+             $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('input.log').addClass('log-black');
+                  }
+                  else {
+                       $('input.log').removeClass('log-black') 
+                  }
+            })
             
       </script>
 

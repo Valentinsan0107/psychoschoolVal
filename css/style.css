@@ -19,7 +19,7 @@ nav{
 }
 nav.black{
       background: rgba(51,141,165,0.8);
-      height: 150px;
+      height: 120px;
       padding: 10px 100px;
       box-shadow: 0px 6px 10px -5px #666;
       z-index: 1;
@@ -30,6 +30,16 @@ nav .logo{
       width: 350px;
       height: 112px;
       padding-top: 4px;
+      transition: 0.3s;
+      
+}
+
+nav .black-logo{
+      float: left;
+      width: 250px;
+      height: 84px;
+      margin-top: 0px;
+      transition: 0.3s;
       
 }
 
@@ -53,6 +63,10 @@ nav ul li a {
       transition: 0.3s;
       font-size: 1.3em;
       font-family: 'Arial', sans-serif;
+}
+
+nav ul li a.black-button{
+	line-height: 100px;
 }
 
 nav.black ul li a:hover{
@@ -93,6 +107,11 @@ input.log{
 	position: absolute;
 	left: 95%;
 	top: 50px;
+	transition: 0.3s;
+}
+
+input.log-black{
+	top: 36px;
 	transition: 0.3s;
 }
 
@@ -863,6 +882,85 @@ p.paragraphe-description-livre{
 	padding-right: 10px;
 }
 
+
+
+/* PAGE ENTIERE */
+
+div.page-entière-livre-conteneur{
+	margin-top: 165px;
+}
+
+div.page-entière-auteur-description-conseils-conteneur{
+	display: flex;
+}
+
+div.Titre-page-entière-livre{
+	width: 100%;
+	height: 100px;
+}
+
+div.biographie-auteur-conteneur{
+	width: 25%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-right: #3390a5 3px solid;
+}
+
+div.description-conseils-page-entière-conteneur{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin: 20px;
+
+}
+
+div.description-page-entière{
+	width: 100%;
+	background-color: #DFE1E6;
+	margin-bottom: 20px;
+	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+}
+
+
+div.conseils-page-entière{
+	width: 100%;
+	background-color: #DFE1E6;
+	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+}
+
+h1.titre-page-entière-livre{
+	text-align: center;
+	font-family: Arial;
+	font-size: 3em;
+}
+
+h4.titre-page-entière-h3{
+	font-family: Arial;
+	font-size: 1.6em;
+	margin-left: 5%;
+
+}
+
+h4.titre-page-entière-auteur-h3{
+	font-family: Arial;
+	font-size: 1.6em;
+
+}
+
+p.paragraphe-description-conseils-page-entière{
+	padding: 20px;
+	font-family: Arial;
+	color: #404040;
+	line-height: 1.5em;
+}
+
+img.photo-auteur-page-entière{
+	height: 250px;
+	width: 250px;
+	margin: 60px;
+	border-radius: 300px; 
+}
 
 
 
