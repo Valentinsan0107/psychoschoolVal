@@ -3,7 +3,22 @@
     include_once("includes/backrownd/dph.php");
 ?>
 
+
+<div id="volet" onclick="openVolet()">
+	Bonjour
+</div>
+
+<script type="text/javascript">
+
+function openVolet() {
+	document.getElementById("volet").style.left = '0px';
+	document.getElementById("volet").style.transition = '0.8s ease';
+}
+
+</script>
 <div class="article-conteneur">
+
+
 <?php
     $sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1'";
 	$result = mysqli_query($conn, $sql);
@@ -31,7 +46,10 @@
 			$result3 = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result3);
 
-			echo '<p>'.$resultChek.'</p>';
+			echo '<a class="lien-icon-conversation" href="/'.$nompageserv.'">
+					<img class="icon-like" src="img/like-black-heart-button.png">
+				</a>
+				<p class="nombre-like-article">'.$resultChek.'</p>';
 
 			echo '</div>
 			</div>';
@@ -64,7 +82,10 @@
 			$result3 = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result3);
 
-			echo '<p>'.$resultChek.'</p>';
+			echo '<a class="lien-icon-conversation" href="/'.$nompageserv.'">
+					<img class="icon-like" src="img/like-black-heart-button.png">
+				</a>
+				<p class="nombre-like-article">'.$resultChek.'</p>';
 
 			echo '</div>
 			</div>';
@@ -72,6 +93,9 @@
 	}
 ?>
 </div>
+
+</div>
+
 
 <?php
 	include_once("includes/modules/footer.php");

@@ -1,7 +1,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	background-color: #fffff1;
+	background-color: #f3f3f3;
 }
 
 /* Bar navigation */
@@ -139,8 +139,9 @@ div.photo{
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin-right: 30px;
-	border: 3px #3390a5 solid;
+	border-right: 3px #3390a5 solid;
 	transition: 0.3s;
+	padding-right: 50px;
 }
 
 a.lien-photo{
@@ -176,7 +177,7 @@ div.conteneur-un{
 div.apport-liste{
 	width: 70.4%;
 	height: 448px;
-	background-color: #fffff1;
+	background-color: #f4f4f4;
 	display: flex;
 }
 
@@ -184,9 +185,9 @@ div.contenu{
 	border-radius: 120px;
 	height: 120px;
 	width: 120px;
-	background-color: #fffff1;
+	background-color: #f4f4f4;
 	margin: 0 auto;
-	border: 3px #3390a5 solid; 
+	border: 3px #41485A solid; 
 }
 
 div.contenu-conteneur{
@@ -344,7 +345,7 @@ div.conteneur-présentation-page-livre{
 div.phrase-présentation-livre-conteneur{
 	width: 30%;
 	height: 440px;
-	background-color: #fffff1;
+	background-color: #f4f4f4;
 	border-left: 3px #3390a5 solid;
 }
 
@@ -740,11 +741,9 @@ button.btnClose:hover{
 /* TECHNIQUEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
 
 div.zone-article{
-    background-color: #DFE1E6;
-    width: 70%;
+    background-color: #ffffff;
+    width: 100%;
     margin-bottom: 40px;
-    margin-right: 15%;
-    margin-left: 15%;
     box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
    
 }
@@ -753,7 +752,8 @@ div.article-conteneur{
 	margin-top: 195px;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 65%;
+	margin-left: 30%;
 
 }
 
@@ -789,6 +789,15 @@ h1.titre-article{
 	font-family: Arial;
 	padding-left: 30px;
 }
+
+div#volet{
+	position: fixed;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	left: -90px;
+}
+
 
 
 
@@ -827,7 +836,7 @@ div.lien-affiliation-amazon{
 	width: 20%;
 	margin-left: 2%;
 	height: 370px;
-	background-color: #DFE1E6;
+	background-color: #ffffff;
 	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
 }
 
@@ -842,14 +851,14 @@ div.titre-livre-auteur-description-conteneur{
 div.titre-livre-conteneur{
 	width: 100%;
 	height: 50px;
-	background-color: #DFE1E6;
+	background-color: #ffffff;
 	padding-left: 10px;
 }
 
 div.nom-auteur-conteneur{
 	width: 100%;
 	height: 50px;
-	background-color: #DFE1E6;
+	background-color: #ffffff;
 	padding-left: 10px;
 	border-top: 3px solid #3390a5;
 	border-bottom: 3px solid #3390a5;
@@ -858,7 +867,7 @@ div.nom-auteur-conteneur{
 div.description-livre-aperçu-conteneur{
 	width: 100%;
 	height: 270px;
-	background-color: #DFE1E6;
+	background-color: #ffffff;
 	padding-left: 10px;
 }
 
@@ -1067,9 +1076,22 @@ div.div-commentaire{
 
 
 
-img.icon-conversation{
-	height: 40px;
-	width: 40px;
+img.icon-conversation, img.icon-like{
+	height: 30px;
+	width: 30px;
+	transition: 0.2s ease;
+}
+
+img.icon-conversation:hover{
+	transform: scale(1.3);
+	transition: 0.2s ease;
+	filter: hue-rotate(90deg);
+}
+
+img.icon-like:hover{
+	transform: scale(1.3);
+	transition: 0.2s ease;
+	filter: hue-rotate(150deg);
 }
 
 div.conteneur-module-comment{
@@ -1080,12 +1102,13 @@ a.lien-icon-conversation{
 	margin-left: 35px;
 }
 
-p.nombre-commentaire-article{
+p.nombre-commentaire-article, p.nombre-like-article{
 	font-family: Arial;
 	color: #3390a5;
 	margin-left: 10px;
-	margin-top: 6px;
+	margin-top: 0px;
 	font-size: 30px;
+	padding-right: 30px;
 }
 
 
