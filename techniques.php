@@ -28,13 +28,14 @@ function openVolet() {
 
 	if ($resultChek > 0) {
 		while ($row = mysqli_fetch_assoc($result)) {
-			$nompageserv = $row['article_page'];
+			$nompageserv = $row['article_nom'];
+			$lien = "article.php?narticle=".$nompageserv;
 			echo '<div class="zone-article">
-				<h1 class="titre-article">'.$row['article_title'].'</h1>
-				<p class="texte-article">'.$row['article_contenue'].'</p>
-				<a class="lien-article" href="/'.$nompageserv.'">Lire plus...</a>
+				<h1 class="titre-article">'.$row['article_titre'].'</h1>
+				<p class="texte-article">'.$row['article_resumer'].'</p>
+				<a class="lien-article" href="'.$lien.'">Lire plus...</a>
 			<div class="conteneur-module-comment">
-				<a class="lien-icon-conversation" href="/'.$nompageserv.'">
+				<a class="lien-icon-conversation" href="'.$lien.'">
 					<img class="icon-conversation" src="img/conversation.png">
 				</a>';
 
@@ -48,7 +49,7 @@ function openVolet() {
 			$result3 = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result3);
 
-			echo '<a class="lien-icon-conversation" href="/'.$nompageserv.'">
+			echo '<a class="lien-icon-conversation" href="'.$lien.'">
 					<img class="icon-like" src="img/like-black-heart-button.png">
 				</a>
 				<p class="nombre-like-article">'.$resultChek.'</p>';
@@ -63,14 +64,15 @@ function openVolet() {
 	$resultChek = mysqli_num_rows($result);
 
 	if ($resultChek > 0) {
-		while ($row2 = mysqli_fetch_assoc($result)) {
-			$nompageserv = $row2['article_page'];
+		while ($row = mysqli_fetch_assoc($result)) {
+			$nompageserv = $row['article_nom'];
+			$lien = "article.php?narticle=".$nompageserv;
 			echo '<div class="zone-article">
-				<h1 class="titre-article">'.$row2['article_title'].'</h1>
-				<p class="texte-article">'.$row2['article_contenue'].'</p>
-				<a class="lien-article" href="/'.$nompageserv.'">Lire plus...</a>
+				<h1 class="titre-article">'.$row['article_titre'].'</h1>
+				<p class="texte-article">'.$row['article_resumer'].'</p>
+				<a class="lien-article" href="'.$lien.'">Lire plus...</a>
 			<div class="conteneur-module-comment">
-				<a class="lien-icon-conversation" href="/'.$nompageserv.'">
+				<a class="lien-icon-conversation" href="'.$lien.'">
 					<img class="icon-conversation" src="img/conversation.png">
 				</a>';
 
@@ -84,7 +86,7 @@ function openVolet() {
 			$result3 = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result3);
 
-			echo '<a class="lien-icon-conversation" href="/'.$nompageserv.'">
+			echo '<a class="lien-icon-conversation" href="'.$lien.'">
 					<img class="icon-like" src="img/like-black-heart-button.png">
 				</a>
 				<p class="nombre-like-article">'.$resultChek.'</p>';

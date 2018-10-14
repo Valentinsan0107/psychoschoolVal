@@ -13,7 +13,7 @@ require '../PHPMailer/src/SMTP.php';
 include_once('../oldpage.php');
 
 if(!isset($_POST['submit'])){
-	header("Location: ".$nompage."?signup=error");
+	header("Location: ".$nompagesuite."signup=error");
 	exit();
 }else{
 	
@@ -24,32 +24,32 @@ if(!isset($_POST['submit'])){
 	$pwd2 = mysqli_real_escape_string($conn, $_POST['pwd2']);
 
 	if(empty($email) || empty($pseudo) || empty($pwd) || empty($pwd2)){
-		header("Location: ".$nompage."?signup=empty");
+		header("Location: ".$nompagesuite."signup=empty");
 		exit();
 
 	}else{
 		if ($pwd != $pwd2) {
-			header("Location: ".$nompage."?signup=nomatch");
+			header("Location: ".$nompagesuite."signup=nomatch");
 			exit();
 
 		} else {
 			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-				header("Location: ".$nompage."?signup=email");        
+				header("Location: ".$nompagesuite."signup=email");        
 				exit(); 
 
 			} else {
 				$uidmin = strtolower($pseudo);
 				if (strpos($uidmin, "admin") !== FALSE) {
-					header("Location: ".$nompage."?signup=admin");        
+					header("Location: ".$nompagesuite."signup=admin");        
 					exit(); 
 
 				}else{
 					if(strlen($pseudo)<6 || strlen($pwd)<6){
 						if(strlen($pseudo)<6){
-							header("Location: ".$nompage."?signup=shortpseudo");        
+							header("Location: ".$nompagesuite."signup=shortpseudo");        
 							exit(); 
 						}else{
-							header("Location: ".$nompage."?signup=shortpwd");        
+							header("Location: ".$nompagesuite."signup=shortpwd");        
 							exit();
 						}
 					}else{
@@ -57,7 +57,7 @@ if(!isset($_POST['submit'])){
 						$result = mysqli_query($conn, $sql);
 						$resultChek = mysqli_num_rows($result);
 						if ($resultChek >0) {
-							header("Location: ".$nompage."?signup=usertaken");
+							header("Location: ".$nompagesuite."signup=usertaken");
 							exit();
 
 						} else {
@@ -65,7 +65,7 @@ if(!isset($_POST['submit'])){
 							$result = mysqli_query($conn, $sql);
 							$resultChek = mysqli_num_rows($result);
 							if ($resultChek >0) {
-								header("Location: ".$nompage."?signup=emailtaken");
+								header("Location: ".$nompagesuite."signup=emailtaken");
 								exit();
 
 							}else{

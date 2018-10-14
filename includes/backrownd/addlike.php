@@ -17,8 +17,8 @@ if (isset($_SESSION['u_id'])) {
 		$result = mysqli_query($conn, $sql);
 		header("Location: ".$nompage);
 	}else{
-		header("Location: ".$nompage."?like=error");
+		header("Location: ".$nompagesuite."like=error");
 	}
 }else{
-	header("Location: ".$nompage."?addlike=notconected");
+	header("Location: ".$nompagesuite."addlike=notconected");
 }

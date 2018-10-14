@@ -1,13 +1,17 @@
 <?php
 
-$nompage = "";
 $url = $_SERVER['HTTP_REFERER'];
+
+$nompage = $url;
 $pos = strpos($url, "?");
+
 if ($pos === false) {
-	$nompage = $url;
+	$nompageSansget = $url;
+	$nompagesuite = $url."?";
 } else {
 	$nbc = strlen($url);
 	$enlev = $pos - $nbc;
-	$nompage = substr($url, 0, $enlev);
+	$nompageSansget = substr($url, 0, $enlev);
+	$nompagesuite = $url."&";
 }
 

@@ -9,7 +9,7 @@ if (isset($_SESSION['u_id'])) {
 		$nomfile = $_POST['nomfile'];
 
 		if (empty($coment)) {
-			header("Location: ".$nompage."?addcoment=empty");
+			header("Location: ".$nompagesuite."addcoment=empty");
 		} else {
 			$createur = $_SESSION['u_pseudo'];
 			$date = date("Y-m-d H/i/s");
@@ -26,8 +26,8 @@ if (isset($_SESSION['u_id'])) {
 		$result = mysqli_query($conn, $sql);
 		header("Location: ".$nompage);
 	}else {
-		header("Location: ".$nompage."?addcoment=error");
+		header("Location: ".$nompagesuite."addcoment=error");
 	}
 }else {
-	header("Location: ".$nompage."?addcoment=error");
+	header("Location: ".$nompagesuite."addcoment=error");
 }

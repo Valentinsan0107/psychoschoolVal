@@ -21,11 +21,15 @@ CREATE TABLE likes(
     like_user varchar(256) not null
 );$
 
+
 CREATE TABLE article(
     article_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
-    article_page varchar(500) not null,
-    article_title varchar(256) not null,
-    article_contenue varchar(1000) not null,
+    article_nom varchar(500) not null,
+    article_titre varchar(256) not null,
+    article_resumer varchar(1000) not null,
+    article_titrehaut varchar(1000) not null,
+    article_contenue varchar(1000000) not null,
+    article_image varchar(1000) not null,
     article_thechnique tinyint(1)  not null,
     article_priorite tinyint(1)  not null
 );
