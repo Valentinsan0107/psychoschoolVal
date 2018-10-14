@@ -4,6 +4,8 @@
 ?>
 
 
+
+
 <div id="volet" onclick="openVolet()">
 	Bonjour
 </div>

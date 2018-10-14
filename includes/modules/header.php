@@ -52,6 +52,29 @@ session_start();
 </head>
 <body>
 
+	<script type="text/javascript">
+	$(function(){
+		$('.fleche-retour-haut-image') .click(function() {
+			$('html,body').animate({scrollTop: 0}, 'slow');
+
+
+		});
+
+		$(window) .scroll(function(){
+			if($(window) .scrollTop()==0){
+				$('.fleche-retour-haut-image') .fadeOut();
+			}else{
+				$('.fleche-retour-haut-image') .fadeIn();
+		}
+
+		});
+	});
+</script>
+
+<div class="fleche-retour-haut-conteneur">
+	<img class="fleche-retour-haut-image" src="img/arrow-up-.png">
+</div>
+
       <div class="wrapper">
             <nav>
                   <div class="logo"><img class="logo" src="/psychoschoolVal/img/logo.png"></div>

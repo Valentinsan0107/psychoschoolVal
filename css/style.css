@@ -926,7 +926,7 @@ div.description-conseils-page-entière-conteneur{
 
 div.description-page-entière{
 	width: 100%;
-	background-color: #DFE1E6;
+	background-color: #ffffff;
 	margin-bottom: 20px;
 	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
 }
@@ -934,7 +934,7 @@ div.description-page-entière{
 
 div.conseils-page-entière{
 	width: 100%;
-	background-color: #DFE1E6;
+	background-color: #ffffff;
 	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
 }
 
@@ -1115,7 +1115,7 @@ p.nombre-commentaire-article, p.nombre-like-article{
 
 
 
-/* Articlessssssssssssssssssssssssssss */
+/* Articlessssssssssssssssssssssssssss  */
 
 div.article-complet-conteneur{
 	background-color: #DFE1E6;
@@ -1139,31 +1139,35 @@ p.paragraphe-article-complet{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-div.jbz{
-	height: 500px;
+img.fleche-retour-haut-image{
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	left: 94%;
+	top: 87%;
+	display: none;
+	cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

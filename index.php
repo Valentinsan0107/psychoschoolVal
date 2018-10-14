@@ -3,6 +3,10 @@
 ?>
 
 
+
+
+
+
 <div class="conteneur-un">
 	<div class="photo">
 		<a class="lien-photo" href="#">En savoir plus...</a>
