@@ -72,7 +72,7 @@ session_start();
 </script>
 
 <div class="fleche-retour-haut-conteneur">
-	<img class="fleche-retour-haut-image" src="img/arrow-up-.png">
+	<img class="fleche-retour-haut-image" src="/psychoschoolVal/img/arrow-up-.png">
 </div>
 
       <div class="wrapper">
