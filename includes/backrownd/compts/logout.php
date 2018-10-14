@@ -5,5 +5,5 @@ include_once('../oldpage.php');
 		session_unset();
 		session_destroy();
 	} 
-	header("Location: ".$nompage."");
+	header("Location: ".$nompage);
 ?>

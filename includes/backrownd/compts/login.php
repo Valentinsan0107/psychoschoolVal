@@ -34,7 +34,7 @@ if(!isset($_POST['submit'])){
 						$_SESSION['u_email'] = $row['user_email'];
 						$_SESSION['u_pseudo'] = $row['user_pseudo'];
 						$_SESSION['u_password'] = $row['user_password'];
-						header("Location: ".$nompage."?login=sucess");
+						header("Location: ".$nompage);
 						exit();
 					}
 				}
