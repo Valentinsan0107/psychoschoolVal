@@ -787,7 +787,7 @@ p.texte-article{
 
 h1.titre-article{
 	font-family: Arial;
-	padding-left: 30px;
+	padding: 30px;
 }
 
 div#volet{
@@ -1035,12 +1035,13 @@ button.input-commentaire:hover{
 p.pseudo-date{
 	font-family: Arial;
 	color: #3390a5;
-	margin-left: 1%;
+	margin-left: 2%;
 	font-size: 1.4em;
+	font-weight: bold;
 }
 
 p.p-commentaire{
-	margin-left: 3%;
+	margin-left: 4%;
 	line-height: 1.5em;
 	color: #404040;
 	font-family: Arial;
@@ -1052,9 +1053,7 @@ div.div-commentaire{
 	margin:0 auto;
 	background-color: white;
 	border: 1px #3390a5 solid;
-	border-radius: 0px 10px 10px 10px;
 	margin-top: 20px;
-	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
 }
 
 
@@ -1118,7 +1117,7 @@ p.nombre-commentaire-article, p.nombre-like-article{
 /* Articlessssssssssssssssssssssssssss  */
 
 div.article-complet-conteneur{
-	background-color: #DFE1E6;
+	background-color: #ffffff;
     width: 70%;
     margin: 0 auto;
     box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);

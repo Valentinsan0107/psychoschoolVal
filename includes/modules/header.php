@@ -77,7 +77,7 @@ session_start();
 
       <div class="wrapper">
             <nav>
-                  <div class="logo"><img class="logo" src="/psychoschoolVal/img/logo.png"></div>
+                  <div class="logo"><a href="index.php"><img class="logo" src="/psychoschoolVal/img/logo.png"></a></div>
                   <ul>
                         <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
                         <li><a href="/psychoschoolVal/techniques.php">Les Techniques</a></li>
