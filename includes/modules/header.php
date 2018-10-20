@@ -4,7 +4,13 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PsychoSchool - Accueil</title>
+	<?php
+		if (isset($TITLEpage)) {
+			echo "<title>".$TITLEpage."</title>";
+		}else{
+			echo "<title>PsychoSchool</title>";
+		}
+	?>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/icon-brain.png">
 	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/css/style.css">
