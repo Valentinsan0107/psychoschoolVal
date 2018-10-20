@@ -294,6 +294,7 @@ textarea.textarea-formulaire-contact{
 	border: 1px #3390a5 solid;
 	font-family: Arial;
 	padding: 8px;
+	resize : none;
 }
 
 button.button-formulaire-contact{
