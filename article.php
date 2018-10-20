@@ -3,6 +3,8 @@ include_once("includes/modules/header.php");
 
 include_once("includes/backrownd/dph.php");
 if (isset($_GET['narticle'])) {
+	echo '<div class="article-complet-conteneur">';
+
 	$nomarticle = $_GET['narticle'];
 
 
