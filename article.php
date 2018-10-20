@@ -60,7 +60,7 @@ if (isset($_GET['narticle'])) {
 		$result = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result);
 
-		echo $resultChek;
+		echo '<p>'.$resultChek.'<p>';
 
 		$userlikechek = 0;
 
