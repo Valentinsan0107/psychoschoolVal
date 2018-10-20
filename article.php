@@ -25,6 +25,7 @@ if (isset($_GET['narticle'])) {
 		$result = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result);
 
+		echo '<div>';
 		echo '<p class="nombre-like-article">'.$resultChek.'<p>';
 
 		$userlikechek = 0;
@@ -49,7 +50,7 @@ if (isset($_GET['narticle'])) {
 					</form>';
 			}
 		}
-
+		echo '</div>';
 		echo "</div>";
 
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nomarticle'";
