@@ -42,7 +42,7 @@ if ($resultChek > 0) {
 
 /*formulaire pr le comentaire*/
 if (!isset($_SESSION['u_id'])) {
-	echo "<p>Conecter vous pour poster un comentaire</p>";
+	echo '<p>Conecter vous pour poster un comentaire</p>';
 } else {
 	echo '<form class="form-formulaire-comment" action="/psychoschoolVal/includes/backrownd/addcoment.php" method="POST">
 		<textarea class="textarea-formulaire-comment" name="coment" placeholder="Ecris ton commentaire..."></textarea>

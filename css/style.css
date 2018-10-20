@@ -787,7 +787,8 @@ p.texte-article{
 
 h1.titre-article{
 	font-family: Arial;
-	padding: 30px;
+	padding-left: 30px; 
+	font-size: 2.5em;
 }
 
 div#volet{
@@ -1056,6 +1057,12 @@ div.div-commentaire{
 	margin-top: 20px;
 }
 
+p.message-commentaire-connexion{
+	font-family: Arial;
+	text-align: center;
+	color: red;
+}
+
 
 
 
@@ -1120,6 +1127,7 @@ div.article-complet-conteneur{
 	background-color: #ffffff;
     width: 70%;
     margin: 0 auto;
+    padding: 10px;
     box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
     margin-top: 195px;
 }
