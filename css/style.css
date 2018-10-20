@@ -1051,10 +1051,11 @@ p.p-commentaire{
 
 div.div-commentaire{
 	width: 70%;
-	margin:0 auto;
+	margin: 0 auto;
 	background-color: white;
 	border: 1px #3390a5 solid;
 	margin-top: 20px;
+	padding: 10px;
 }
 
 p.message-commentaire-connexion{
