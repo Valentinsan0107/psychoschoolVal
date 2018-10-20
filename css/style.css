@@ -1064,7 +1064,18 @@ p.message-commentaire-connexion{
 	color: red;
 }
 
+button.bouton-like{
+	background-color: #ffffff;
+	border: none;
+	transition: 0.2s ease;
+	cursor: pointer;
+}
 
+button.bouton-like:hover{
+	transform: scale(1.3);
+	transition: 0.2s ease;
+	filter: hue-rotate(150deg);
+}
 
 
 
