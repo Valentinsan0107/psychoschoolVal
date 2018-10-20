@@ -231,7 +231,7 @@ p.paragraphe-promesse{
 
 div.blanc-un{
 	width: 60%;
-	height: 400px;
+	height: 450px;
 	margin-right: 15px;
 	background-image: url(../img/avis-clients.jpg);
 	background-repeat: no-repeat;
@@ -268,7 +268,7 @@ div.blanc-un{
 
 div.blanc-deux{
 	width: 40%;
-	height: 400px;
+	height: 450px;
 	background-color: #fff;
 	margin-right: 15px;
 }
@@ -279,12 +279,40 @@ form.form-formulaire-contact{
 
 input.input-formulaire-contact{
 	margin: 10px;
-	margin-right: 20px; 
-	margin-left :20px;
-	margin-top :20px;
+	margin-right: 140px; 
+	margin-left : 20px;
+	margin-top : 20px;
 	border-radius: 5px;
 	border: 1px #3390a5 solid;
 	padding: 10px;
+}
+
+textarea.textarea-formulaire-contact{
+	margin: 20px;
+	height: 130px;
+	border-radius: 5px;
+	border: 1px #3390a5 solid;
+	font-family: Arial;
+	padding: 8px;
+}
+
+button.button-formulaire-contact{
+	border: none;
+	background-color: #3390a5;
+	color: #fff;
+	width: 120px;
+	padding: 10px;
+	font-size: 1.5em;
+	margin: auto;
+	border-radius: 10px;
+	transition: 0.3s ease;
+}
+
+
+
+button.button-formulaire-contact:hover{
+	background-color: #0de03a;
+	transition: 0.3s ease;
 }
 
 
@@ -694,12 +722,12 @@ div.blanc-trois{
 	flex-direction: column;
 	padding: 4px;
 	border: 3px solid #3390a5;
-	height: 392px;
+	height: 442px;
 	border-radius: 20px;
 }
 
 img.image-reseaux{
-	padding: 7px;
+	padding: 13px;
 	width: 60px;
 	height: 60px;
 	transition: 0.3s;

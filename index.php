@@ -1,4 +1,8 @@
+
+
 <?php
+
+$TITLEpage="Psychoschool - Homepage";
 	include_once("includes/modules/header.php");
 ?>
 
@@ -141,11 +145,11 @@
 	</div>
 	<div class="blanc-deux">
 		<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="GET">
-			<input class="input-formulaire-contact" type="email" name="email" maxlength="80" placeholder="email">
-			<input class="input-formulaire-contact" type="text" name="nom" maxlength="80" placeholder="nom">
-			<input class="input-formulaire-contact" type="text" name="sujet" maxlength="200" placeholder="sujet">
-			<textarea class="textarea-formulaire-contact" name="message" maxlength="80000"></textarea>
-			<button class="button-formulaire-contact" type="submit" name="submit">GO</button>
+			<input class="input-formulaire-contact" type="email" name="email" maxlength="80" placeholder="Email">
+			<input class="input-formulaire-contact" type="text" name="nom" maxlength="80" placeholder="Nom">
+			<input class="input-formulaire-contact" type="text" name="sujet" maxlength="200" placeholder="Sujet">
+			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" maxlength="80000"></textarea>
+			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
 		</form>
 	</div>	
 	<div class="blanc-trois">
