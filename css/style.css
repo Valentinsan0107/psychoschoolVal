@@ -230,7 +230,7 @@ p.paragraphe-promesse{
 
 
 div.blanc-un{
-	width: 60.4%;
+	width: 60%;
 	height: 400px;
 	margin-right: 15px;
 	background-image: url(../img/avis-clients.jpg);
@@ -238,6 +238,82 @@ div.blanc-un{
 	background-color: #fff;
 	background-size: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.blanc-deux{
+	width: 40%;
+	height: 400px;
+	background-color: #fff;
+	margin-right: 15px;
+}
+form.form-formulaire-contact{
+	display: flex;
+	flex-direction: column;
+}
+
+input.input-formulaire-contact{
+	margin: 10px;
+	margin-right: 20px; 
+	margin-left :20px;
+	margin-top :20px;
+	border-radius: 5px;
+	border: 1px #3390a5 solid;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -620,8 +696,6 @@ div.blanc-trois{
 	border: 3px solid #3390a5;
 	height: 392px;
 	border-radius: 20px;
-	
-
 }
 
 img.image-reseaux{
@@ -1064,11 +1138,13 @@ p.message-commentaire-connexion{
 	color: red;
 }
 
-button.bouton-like{
+button.bouton-like, button.bouton-dislike{
 	background-color: #ffffff;
 	border: none;
 	transition: 0.2s ease;
 	cursor: pointer;
+	margin-left: 60px;
+	margin-top: 20px;
 }
 
 button.bouton-like:hover{
@@ -1094,10 +1170,15 @@ button.bouton-like:hover{
 
 
 
-img.icon-conversation, img.icon-like{
+img.icon-conversation, img.icon-like, img.icon-dislike{
 	height: 30px;
 	width: 30px;
 	transition: 0.2s ease;
+}
+
+img.icon-dislike{
+	height: 40px;
+	width: 40px;
 }
 
 img.icon-conversation:hover{
@@ -1123,10 +1204,22 @@ a.lien-icon-conversation{
 p.nombre-commentaire-article, p.nombre-like-article{
 	font-family: Arial;
 	color: #3390a5;
-	margin-left: 10px;
+	margin-left: 12px;
 	margin-top: 0px;
 	font-size: 30px;
 	padding-right: 30px;
+	font-weight: bold;
+}
+
+p.nombre-like-article-entier{
+	font-family: Arial;
+	color: #3390a5;
+	margin-left: 12px;
+	margin-top: 20px;
+	font-size: 30px;
+	padding-right: 30px;
+	font-weight: bold;
+
 }
 
 

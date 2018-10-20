@@ -25,8 +25,7 @@ if (isset($_GET['narticle'])) {
 		$result = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result);
 
-		echo '<div>';
-		echo '<p class="nombre-like-article">'.$resultChek.'<p>';
+		echo '<div class="conteneur-module-comment">';
 
 		$userlikechek = 0;
 
@@ -46,10 +45,13 @@ if (isset($_GET['narticle'])) {
 			}elseif ($userlikechek == 1) {
 				echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
 						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
-						<button type="submit" name="dislike">dislike</button>
+						<button class="bouton-dislike" type="submit" name="dislike"><img class="icon-dislike" src="img/like-pink-button.png"></button>
 					</form>';
 			}
 		}
+
+		echo '<p class="nombre-like-article-entier">'.$resultChek.'<p>';
+
 		echo '</div>';
 		echo "</div>";
 
