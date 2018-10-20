@@ -139,7 +139,15 @@
 	<div class="blanc-un">
 
 	</div>
-
+	<div class="blanc-deux">
+		<form action="includes/bacrownd/formulairecontacte.php">
+			<input type="email" name="email">
+			<input type="text" name="nom">
+			<input type="text" name="sujet">
+			<textarea name="message"></textarea>
+			<button type="submit" name="submit"></button>
+		</form>
+	</div>	
 	<div class="blanc-trois">
 
 		<a class="lien-social" href="#">
