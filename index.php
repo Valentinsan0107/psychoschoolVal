@@ -140,12 +140,12 @@
 
 	</div>
 	<div class="blanc-deux">
-		<form action="includes/bacrownd/formulairecontacte.php">
-			<input type="email" name="email">
-			<input type="text" name="nom">
-			<input type="text" name="sujet">
-			<textarea name="message"></textarea>
-			<button type="submit" name="submit"></button>
+		<form action="includes/backrownd/formulairecontacte.php" method="GET">
+			<input type="email" name="email" maxlength="80" placeholder="email">
+			<input type="text" name="nom" maxlength="80" placeholder="nom">
+			<input type="text" name="sujet" maxlength="200" placeholder="sujet">
+			<textarea name="message" maxlength="80000"></textarea>
+			<button type="submit" name="submit">GO</button>
 		</form>
 	</div>	
 	<div class="blanc-trois">
