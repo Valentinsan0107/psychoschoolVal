@@ -19,6 +19,38 @@ if (isset($_GET['narticle'])) {
 		$row = mysqli_fetch_assoc($result);
 		$contenueArticle = $row['article_contenue'];
 		echo $contenueArticle;
+	}
+
+		$sql = "SELECT * FROM likes WHERE like_page='$nomarticle'";
+		$result = mysqli_query($conn, $sql);
+		$resultChek = mysqli_num_rows($result);
+
+		echo '<p class="nombre-like-article">'.$resultChek.'<p>';
+
+		$userlikechek = 0;
+
+		if($resultChek > 0 && isset($_SESSION['u_pseudo'])){
+			while ($row = mysqli_fetch_assoc($result)) {
+				if ($row['like_user'] == $_SESSION['u_pseudo']) {
+					$userlikechek = 1;
+				}
+			}
+		}
+		if (isset($_SESSION['u_id'])) {
+			if ($userlikechek == 0) {
+				echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
+						<button type="submit" name="like">like</button>
+					</form>';
+			}elseif ($userlikechek == 1) {
+				echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
+						<button type="submit" name="dislike">dislike</button>
+					</form>';
+			}
+		}
+
+		echo "</div>";
 
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nomarticle'";
 		$result = mysqli_query($conn, $sql);
@@ -58,36 +90,7 @@ if (isset($_GET['narticle'])) {
 		}
 
 
-		$sql = "SELECT * FROM likes WHERE like_page='$nomarticle'";
-		$result = mysqli_query($conn, $sql);
-		$resultChek = mysqli_num_rows($result);
-
-		echo '<p class="nombre-like-article">'.$resultChek.'<p>';
-
-		$userlikechek = 0;
-
-		if($resultChek > 0 && isset($_SESSION['u_pseudo'])){
-			while ($row = mysqli_fetch_assoc($result)) {
-				if ($row['like_user'] == $_SESSION['u_pseudo']) {
-					$userlikechek = 1;
-				}
-			}
-		}
-		if (isset($_SESSION['u_id'])) {
-			if ($userlikechek == 0) {
-				echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
-						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
-						<button type="submit" name="like">like</button>
-					</form>';
-			}elseif ($userlikechek == 1) {
-				echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
-						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
-						<button type="submit" name="dislike">dislike</button>
-					</form>';
-			}
-		}
-
-	}
+		
 }else{
 echo "<p>error</p>";
 }	
