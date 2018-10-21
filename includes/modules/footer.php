@@ -1,11 +1,11 @@
 <div class="footer">
 
 <div class="conteneur-contenu-footer-haut">
-  <div class="conteneur-technique">
+  <div class="conteneur-info-footer">
 
-    <h1 class="titre-section-footer"></h1>
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="/psychoschoolVal/techniques.php">TECHNIQUES</a></h1>
 
-    <ul>
+    <ul class="liste-puce-footer">
       <?php
         $pref = __FILE__;
         $pos = strpos($pref, "psychoschoolVal");
@@ -19,47 +19,61 @@
         $resultChek = mysqli_num_rows($result);
         if ($resultChek >0) {
           while ($row = mysqli_fetch_assoc($result)) {
-            echo "<li>".$row['article_titre']."</li>";
+            echo '<li class="bouton-footer">'.$row['article_titre'].'</li>';
           }
         }
       ?>
     </ul>
     
   </div>
-  <div class="conteneur-livre">
+  <div class="conteneur-info-footer">
 
-    <h1 class="titre-section-footer"></h1>
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="/psychoschoolVal/livre.php">LIVRES</a></h1>
 
-    <ul>
-      <li></li>
+    <ul class="liste-puce-footer">
+      <li class="bouton-footer">Livre 1 star wars</li>
+      <li class="bouton-footer">Livre 2 harry potter</li>
+      <li class="bouton-footer">Livre 3 avengers</li>
+      <li class="bouton-footer">Livre 4 fortnite</li>
+    </ul>
+    
+  </div>
+  <div class="conteneur-info-footer">
+
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="#">A PROPOS</a></h1>
+
+    <ul class="liste-puce-footer">
+      <li class="bouton-footer">Contact</li>
+      <li class="bouton-footer">Avis clients</li>
+      <li class="bouton-footer">Qui sommes-nous ?</li>
+      <li class="bouton-footer">Adresse</li>
+    </ul>
+    
+  </div>
+
+  <div class="conteneur-info-footer">
+
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="#">NOUS SUIVRE</a></h1>
+
+    <ul class="liste-puce-footer">
+      <li>
+        <a class="lien-social" href="#"><img class="image-réseaux-footer" src="img/facebook-logo-white.png"></a>
+        <a class="lien-social" href="#"><img class="image-réseaux-footer" src="img/twitter-logo-white.png"></a>
+        <a class="lien-social" href="#"><img class="image-réseaux-footer" src="img/vine-logo-white.png"></a>
+        <a class="lien-social" href="#"><img class="image-réseaux-footer" src="img/youtube-logo-white.png"></a>
+        <a class="lien-social" href="#"><img class="image-réseaux-footer" src="img/instagram-logo-white.png"></a>
+      </li>
       <li></li>
       <li></li>
       <li></li>
     </ul>
     
   </div>
-  <div class="conteneur-à-propos">
 
-    <h1 class="titre-section-footer"></h1>
-
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    
-  </div>
 </div>
 
 <div class="conteneur-contenu-footer-bas">
-  <div class="conteneur-copyright">
-    
-  </div>
-
-  <div class="conteneur-réseaux-footer">
-    
-  </div>
+  <p class="texte-copyright">© Psychoschool - All right reserved.</p>
 </div>
 
 
@@ -128,9 +142,6 @@ var firstname=["Robin","Victorien","Clara","Jean","Stanislas","Louis","Camille",
     }
 });
 </script>
-
-
-		footer
 		
 	</div>
 
