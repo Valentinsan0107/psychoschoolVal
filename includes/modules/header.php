@@ -123,10 +123,10 @@ session_start();
 			<div class="création-compte">
 				<h1 class="phrase-formulaire">Tu n'as pas encore de compte PsychoSchool ? </h1>
 				<form class="form-création" action="/psychoschoolVal/includes/backrownd/compts/signup.php" method="POST">
-					<input class="input-création" maxlength="50" type="text" name="email" placeholder="Email">
-					<input class="input-création" maxlength="20" type="text" name="pseudo" placeholder="Ton pseudo">
-					<input class="input-création" maxlength="20" type="password" name="pwd" placeholder="Mot de passe">
-					<input class="input-création" maxlength="20" type="password" name="pwd2" placeholder="Confirmer le mot de passe">
+					<input class="input-création" maxlength="50" type="email" name="email" placeholder="Email">
+					<input class="input-création" maxlength="20" minlength="6" type="text" name="pseudo" placeholder="Ton pseudo">
+					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd" placeholder="Mot de passe">
+					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd2" placeholder="Confirmer le mot de passe">
 					<button class="button-création" type="submit" name="submit">Valider</button>
 				</form>
 			</div>

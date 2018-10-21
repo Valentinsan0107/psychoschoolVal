@@ -23,98 +23,77 @@ if(!isset($_POST['submit'])){
 	$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
 	$pwd2 = mysqli_real_escape_string($conn, $_POST['pwd2']);
 
-	if(empty($email) || empty($pseudo) || empty($pwd) || empty($pwd2)){
-		header("Location: ".$nompagesuite."signup=empty");
+
+	if ($pwd != $pwd2) {
+		header("Location: ".$nompagesuite."signup=nomatch");
 		exit();
 
-	}else{
-		if ($pwd != $pwd2) {
-			header("Location: ".$nompagesuite."signup=nomatch");
-			exit();
+	} else {
+		$uidmin = strtolower($pseudo);
+		if (strpos($uidmin, "admin") !== FALSE) {
+			header("Location: ".$nompagesuite."signup=admin");        
+			exit(); 
 
-		} else {
-			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-				header("Location: ".$nompagesuite."signup=email");        
-				exit(); 
+		}else{
+			$sql = "SELECT * FROM users WHERE user_pseudo='$pseudo'";
+			$result = mysqli_query($conn, $sql);
+			$resultChek = mysqli_num_rows($result);
+			if ($resultChek >0) {
+				header("Location: ".$nompagesuite."signup=usertaken");
+				exit();
 
 			} else {
-				$uidmin = strtolower($pseudo);
-				if (strpos($uidmin, "admin") !== FALSE) {
-					header("Location: ".$nompagesuite."signup=admin");        
-					exit(); 
+				$sql = "SELECT * FROM users WHERE user_email='$email'";
+				$result = mysqli_query($conn, $sql);
+				$resultChek = mysqli_num_rows($result);
+				if ($resultChek >0) {
+					header("Location: ".$nompagesuite."signup=emailtaken");
+					exit();
 
 				}else{
-					if(strlen($pseudo)<6 || strlen($pwd)<6){
-						if(strlen($pseudo)<6){
-							header("Location: ".$nompagesuite."signup=shortpseudo");        
-							exit(); 
-						}else{
-							header("Location: ".$nompagesuite."signup=shortpwd");        
-							exit();
-						}
-					}else{
-						$sql = "SELECT * FROM users WHERE user_pseudo='$pseudo'";
-						$result = mysqli_query($conn, $sql);
-						$resultChek = mysqli_num_rows($result);
-						if ($resultChek >0) {
-							header("Location: ".$nompagesuite."signup=usertaken");
-							exit();
-
-						} else {
-							$sql = "SELECT * FROM users WHERE user_email='$email'";
-							$result = mysqli_query($conn, $sql);
-							$resultChek = mysqli_num_rows($result);
-							if ($resultChek >0) {
-								header("Location: ".$nompagesuite."signup=emailtaken");
-								exit();
-
-							}else{
-								$hasedmail = password_hash($email, PASSWORD_DEFAULT);
-
-								$pos = strpos($nompage, "psychoschoolVal");
-								$longeur = strlen($nompage);
-								$pref = substr($nompage, 0, $pos+15-$longeur);
+					$hasedmail = password_hash($email, PASSWORD_DEFAULT);
+						
+					$pos = strpos($nompage, "psychoschoolVal");
+					$longeur = strlen($nompage);
+					$pref = substr($nompage, 0, $pos+15-$longeur);
 
 
-								$lien = $pref."/emailsent.php"."?confirmed&mail=".$hasedmail;
+					$lien = $pref."/emailsent.php"."?confirmed&mail=".$hasedmail;
 
-								$content = str_replace(
-								    array('%pseudo%', '%lienconf%'),
-								    array($pseudo, $lien),
-								    file_get_contents('mailconfirm.html')
-								);
+					$content = str_replace(
+					    array('%pseudo%', '%lienconf%'),
+					    array($pseudo, $lien),
+					    file_get_contents('mailconfirm.html')
+					);
 
-								$mail = new PHPMailer;
-								$mail->isSMTP();
-								$mail->SMTPDebug = 0;
-								$mail->Host = 'smtp.gmail.com';
-								$mail->Port = 587;
-								$mail->SMTPSecure = 'tls';
-								$mail->SMTPAuth = true;
-								$mail->Username = "testphpvalvic@gmail.com";
-								$mail->Password = "lolmdrptdr";
-								$mail->setFrom('testphpvalvic@gmail.com', 'First Last');
-								$mail->addReplyTo('testphpvalvic@gmail.com', 'First Last');
-								$mail->addAddress($email, $pseudo);
-								$mail->Subject = 'confirmation inscription';
-								$mail->msgHTML($content, __DIR__);
-								if (!$mail->send()) {
-								    header("Location: ".$nompage."?signup=mailprobleme");
-								    exit();
-								} 
-
-
-								$hasedpwd = password_hash($pwd, PASSWORD_DEFAULT);
-								$sql = "INSERT INTO users (user_email, user_pseudo, user_password) VALUES('$email', '$pseudo', '$hasedpwd');";
-								$result = mysqli_query($conn, $sql);
+					$mail = new PHPMailer;
+					$mail->isSMTP();
+					$mail->SMTPDebug = 0;
+					$mail->Host = 'smtp.gmail.com';
+					$mail->Port = 587;
+					$mail->SMTPSecure = 'tls';
+					$mail->SMTPAuth = true;
+					$mail->Username = "testphpvalvic@gmail.com";
+					$mail->Password = "lolmdrptdr";
+					$mail->setFrom('testphpvalvic@gmail.com', 'First Last');
+					$mail->addReplyTo('testphpvalvic@gmail.com', 'First Last');
+					$mail->addAddress($email, $pseudo);
+					$mail->Subject = 'confirmation inscription';
+					$mail->msgHTML($content, __DIR__);
+					if (!$mail->send()) {
+					    header("Location: ".$nompage."?signup=mailprobleme");
+					    exit();
+					} 
 
 
-								header_remove();	
-								header("Location: /psychoschoolVal/emailsent.php?envoyer");
-								exit();
-							}
-						}
-					}
+					$hasedpwd = password_hash($pwd, PASSWORD_DEFAULT);
+					$sql = "INSERT INTO users (user_email, user_pseudo, user_password) VALUES('$email, '$pseudo', '$hasedpwd');";
+					$result = mysqli_query($conn, $sql);
+
+
+					header_remove();	
+					header("Location: /psychoschoolVal/emailsent.php?envoyer");
+					exit();
 				}
 			}
 		}
