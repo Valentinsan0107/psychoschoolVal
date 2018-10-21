@@ -1,5 +1,54 @@
 <div class="footer">
 
+<div class="conteneur-contenu-footer-haut">
+  <div class="conteneur-technique">
+
+    <h1 class="titre-section-footer"></h1>
+
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    
+  </div>
+  <div class="conteneur-livre">
+
+    <h1 class="titre-section-footer"></h1>
+
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    
+  </div>
+  <div class="conteneur-à-propos">
+
+    <h1 class="titre-section-footer"></h1>
+
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    
+  </div>
+</div>
+
+<div class="conteneur-contenu-footer-bas">
+  <div class="conteneur-copyright">
+    
+  </div>
+
+  <div class="conteneur-réseaux-footer">
+    
+  </div>
+</div>
+
 
 
 
