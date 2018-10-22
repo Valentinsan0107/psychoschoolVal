@@ -40,7 +40,7 @@
   </div>
   <div class="conteneur-info-footer">
 
-    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="#">A PROPOS</a></h1>
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="#">À PROPOS</a></h1>
 
     <ul class="liste-puce-footer">
       <li class="bouton-footer">Contact</li>

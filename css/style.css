@@ -233,8 +233,6 @@ div.blanc-un{
 	width: 60%;
 	height: 450px;
 	margin-right: 15px;
-	background-image: url(../img/avis-clients.jpg);
-	background-repeat: no-repeat;
 	background-color: #fff;
 	background-size: 100%;
 }
@@ -395,7 +393,7 @@ ul.liste-puce-footer{
 li.bouton-footer{
 	font-family: Arial;
 	font-size: 0.9em;
-	color: white;
+	color: #393a3a;
 	padding-bottom: 6px;
 }
 
@@ -794,10 +792,11 @@ h4.name-auteur{
 }
 
 div.blanc-trois{
+	background-color: white;
 	display: flex;
 	flex-direction: column;
 	padding: 4px;
-	border: 3px solid #3390a5;
+	border: 2px solid #ebebeb;
 	height: 442px;
 	border-radius: 20px;
 }
@@ -1162,7 +1161,7 @@ textarea.textarea-formulaire-comment{
 	width: 70%;
     margin: 0 auto;
     height: 150px;
-    border: 1px #3390a5 solid;
+    border: 1px solid #ebebeb;
     font-family: Arial;
     margin-top: 20px;
     resize : none;
@@ -1233,7 +1232,7 @@ div.div-commentaire{
 	width: 70%;
 	margin: 0 auto;
 	background-color: white;
-	border: 1px #3390a5 solid;
+	border: 1px solid #e2dede;
 	margin-top: 20px;
 	padding: 10px;
 }
