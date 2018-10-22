@@ -27,9 +27,16 @@ if (isset($_GET['narticle'])) {
 		echo "<p>error</p>";
 	}else{
 		$row = mysqli_fetch_assoc($result);
-		$contenueArticle = $row['article_contenue'];
-		echo $contenueArticle;
-	}
+		$ficherHTLMArticle = "uploads/html/".$row['article_id'].".html";
+		$ficherPHPArticle = "uploads/html/".$row['article_id'].".php";
+
+		if (file_exists($ficherHTLMArticle) == true) {
+			include_once($ficherHTLMArticle);
+		}elseif (file_exists($ficherPHPArticle) == true) {
+			include_once($ficherPHPArticle);
+		}else
+			echo "error";
+		}
 
 		$sql = "SELECT * FROM likes WHERE like_page='$nomarticle'";
 		$result = mysqli_query($conn, $sql);
@@ -110,5 +117,3 @@ echo "<p>error</p>";
 
 	include_once("includes/modules/footer.php");
 ?>
-
-<img src="">
