@@ -18,8 +18,11 @@ function openVolet() {
 }
 
 </script>
-<div class="article-conteneur">
 
+
+	
+
+<div class="article-conteneur">
 
 <?php
     $sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1'";
@@ -30,7 +33,9 @@ function openVolet() {
 		while ($row = mysqli_fetch_assoc($result)) {
 			$nompageserv = $row['article_nom'];
 			$lien = "article.php?narticle=".$nompageserv;
-			echo '<div class="zone-article">
+			echo '<div class="photo-article-zone-conteneur">
+				<div class="photo-article"></div>
+				<div class="zone-article">
 				<h1 class="titre-article">'.$row['article_titre'].'</h1>
 				<p class="texte-article">'.$row['article_resumer'].'</p>
 				<a class="lien-article" href="'.$lien.'">Lire plus...</a>
@@ -55,6 +60,7 @@ function openVolet() {
 				<p class="nombre-like-article">'.$resultChek.'</p>';
 
 			echo '</div>
+			</div>
 			</div>';
 		}
 	}
@@ -98,7 +104,10 @@ function openVolet() {
 ?>
 </div>
 
-</div>
+
+
+
+
 
 
 <?php
