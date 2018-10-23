@@ -32,10 +32,17 @@ function openVolet() {
 	if ($resultChek > 0) {
 		while ($row = mysqli_fetch_assoc($result)) {
 			$nompageserv = $row['article_nom'];
+			$idart = $row['article_id'];
 			$lien = "article.php?narticle=".$nompageserv;
-			echo '<div class="photo-article-zone-conteneur">
-				<div class="photo-article"></div>
-				<div class="zone-article">
+			echo '<div class="photo-article-zone-conteneur">';
+			if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
+				echo "bite";
+			}elseif (file_exists("uploads/imagecouverture/".$idart.".png")) {
+				echo "bite";
+			}else{
+				echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/base.png);'></div>";
+			}	
+			echo'<div class="zone-article">
 				<h1 class="titre-article">'.$row['article_titre'].'</h1>
 				<p class="texte-article">'.$row['article_resumer'].'</p>
 				<a class="lien-article" href="'.$lien.'">Lire plus...</a>
