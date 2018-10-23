@@ -143,10 +143,10 @@ $TITLEpage="Psychoschool - Homepage";
 
 	<div class="blanc-deux">
 		<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="GET">
-			<input class="input-formulaire-contact" type="email" name="email" maxlength="80" placeholder="Email">
-			<input class="input-formulaire-contact" type="text" name="nom" maxlength="80" placeholder="Nom">
-			<input class="input-formulaire-contact" type="text" name="sujet" maxlength="200" placeholder="Sujet">
-			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" maxlength="80000"></textarea>
+			<input class="input-formulaire-contact" type="email" name="email" minlength="5" maxlength="80" placeholder="Email">
+			<input class="input-formulaire-contact" type="text" name="nom" minlength="5" maxlength="80" placeholder="Nom">
+			<input class="input-formulaire-contact" type="text" name="sujet" minlength="5" maxlength="200" placeholder="Sujet">
+			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" minlength="5" maxlength="80000"></textarea>
 			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
 		</form>
 	</div>
