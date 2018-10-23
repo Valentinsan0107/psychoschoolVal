@@ -83,12 +83,15 @@ session_start();
 
       <div class="wrapper">
             <nav>
-                  <div class="logo"><a href="index.php"><img class="logo" src="/psychoschoolVal/img/logo.png"></a></div>
+                  <div class="logo">
+                  	<a href="index.php"><img class="logo" src="/psychoschoolVal/img/logo.png"></a>
+                  </div>
                   <ul>
                         <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
                         <li><a href="/psychoschoolVal/techniques.php">Les Techniques</a></li>
                         <li><a href="/psychoschoolVal/livre.php">Livre</a></li>
                         <li><a href="#">A propos</a></li>
+
                         <?php
                         	if (!isset($_SESSION['u_id'])) {
                         		echo '<li><a id="active" onclick="openModal()" href="#">Se connecter</a></li>';
@@ -102,6 +105,7 @@ session_start();
                         	}
                         	
                         ?>
+
                   </ul>
             </nav>
 		
