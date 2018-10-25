@@ -25,8 +25,7 @@
 
   	$recherches = explode(" ", $recherche);
 
-
-  	foreach ($recherches as $r) {
+    foreach ($recherches as $r) {
   		if (strlen($r) > 2) {
   			$sql = $sql = "SELECT * FROM article WHERE article_titre LIKE '%$r%' OR article_resumer LIKE '%$r%' OR article_tag LIKE '%$r%'";
   			$result = mysqli_query($conn, $sql);
@@ -45,6 +44,10 @@
   		}
   	}  	
   }
+  if (empty($artselec)) {
+    echo "<h1>Il n y a pas d article corespondent a votre recherche</h1>";
+  }
+
   echo "</div>";
   include_once("includes/modules/footer.php");
 ?>
