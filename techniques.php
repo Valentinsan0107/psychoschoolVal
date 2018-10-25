@@ -36,9 +36,9 @@ function openVolet() {
 			$lien = "article.php?narticle=".$nompageserv;
 			echo '<div class="photo-article-zone-conteneur">';
 			if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
-				echo "bite";
+				echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
 			}elseif (file_exists("uploads/imagecouverture/".$idart.".png")) {
-				echo "bite";
+				echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".png); background-repeat: no-repeat; background-size: cover;'></div>";
 			}else{
 				echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/base.png); background-repeat: no-repeat; background-size: cover;'></div>";
 			}	

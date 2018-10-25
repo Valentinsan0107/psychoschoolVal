@@ -29,7 +29,6 @@ CREATE TABLE article(
     article_resumer varchar(1000) not null,
     article_titrehaut varchar(1000) not null,
     article_image varchar(1000) not null,
-    article_couverture varchar(1000) not null,
     article_thechnique tinyint(1)  not null,
     article_priorite tinyint(1)  not null
 );
