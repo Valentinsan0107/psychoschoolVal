@@ -42,8 +42,12 @@
   				}
   			}
   		}
-  	}  	
+  	}
   }
+  if (empty($resultChek)) {
+    echo "Il n y a rien qui correspond a votre recherche";
+  }
+
   echo "</div>";
   include_once("includes/modules/footer.php");
 ?>
