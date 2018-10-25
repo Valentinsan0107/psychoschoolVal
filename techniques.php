@@ -31,7 +31,7 @@ function openVolet() {
 
 	if ($resultChek > 0) {
 		while ($row = mysqli_fetch_assoc($result)) {
-			include_once("includes/modules/pres/presart.php");
+			include("includes/modules/pres/presart.php");
 		}
 	}
 
@@ -41,7 +41,7 @@ function openVolet() {
 
 	if ($resultChek > 0) {
 		while ($row = mysqli_fetch_assoc($result)) {
-			include_once("includes/modules/pres/presart.php");
+			include("includes/modules/pres/presart.php");
 		}
 	}
 ?>
