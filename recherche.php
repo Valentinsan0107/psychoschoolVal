@@ -16,7 +16,7 @@
 
   			if ($resultChek > 0) {
   				while ($row = mysqli_fetch_assoc($result)) {
-  					if ($row['article_thechnique']) {
+  					if ($row['article_thechnique'] == 1) {
   						include_once("includes/modules/pres/presart.php");
   					}
   				}
