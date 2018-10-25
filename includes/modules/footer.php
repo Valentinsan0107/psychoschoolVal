@@ -74,8 +74,8 @@
 
 <div class="conteneur-contenu-footer-bas">
   <p class="texte-copyright">© Psychoschool - All right reserved.</p>
-  <form class="barre-recherche-conteneur" method="post" action="#">
-    <input id="champ-recherche" type="text" name="" minlength="1" placeholder="Tu cherches quelque chose ?">
+  <form class="barre-recherche-conteneur" method="GET" action="recherche.php">
+    <input id="champ-recherche" type="text" name="recherche" minlength="1" placeholder="Tu cherches quelque chose ?">
     <button id="search-button" type="submit"><img class="image-barre-recherche" src="img/loupe-barre-recherche.png"></button>
   </form>
     
