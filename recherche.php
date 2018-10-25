@@ -3,6 +3,10 @@
 
   if (isset($_GET['submit'])) {
     echo "<div class='article-conteneur'>";
+<<<<<<< HEAD
+  	include('includes/backrownd/dph.php');
+  	$recherche = mysqli_real_escape_string($conn, $_GET['recherche']);
+=======
     include_once('includes/backrownd/dph.php');
     $recherche = mysqli_real_escape_string($conn, $_GET['recherche']);
     $artselec = array();
@@ -23,6 +27,7 @@
     }
 
 
+>>>>>>> 70958a3532963a01b608dfe8ddc2eecd6eede28e
   	$recherches = explode(" ", $recherche);
 
     foreach ($recherches as $r) {
@@ -33,12 +38,18 @@
 
   			if ($resultChek > 0) {
   				while ($row = mysqli_fetch_assoc($result)) {
+<<<<<<< HEAD
+  					if ($row['article_thechnique'] == 1) {
+  						include("includes/modules/pres/presart.php");
+  					}
+=======
             if (!in_array($row['article_id'], $artselec)) {
               array_push($artselec, $row['article_id']);
               if ($row['article_thechnique'] == 1) {
                 include("includes/modules/pres/presart.php");
               }
             }
+>>>>>>> 70958a3532963a01b608dfe8ddc2eecd6eede28e
   				}
   			}
   		}
@@ -49,5 +60,5 @@
   }
 
   echo "</div>";
-  include_once("includes/modules/footer.php");
+  include("includes/modules/footer.php");
 ?>
