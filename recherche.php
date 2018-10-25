@@ -3,7 +3,7 @@
 
   if (isset($_GET['submit'])) {
     echo "<div class='article-conteneur'>";
-  	include_once('includes/backrownd/dph.php');
+  	include('includes/backrownd/dph.php');
   	$recherche = mysqli_real_escape_string($conn, $_GET['recherche']);
   	$recherches = explode(" ", $recherche);
 
@@ -17,7 +17,7 @@
   			if ($resultChek > 0) {
   				while ($row = mysqli_fetch_assoc($result)) {
   					if ($row['article_thechnique'] == 1) {
-  						include_once("includes/modules/pres/presart.php");
+  						include("includes/modules/pres/presart.php");
   					}
   				}
   			}
@@ -25,5 +25,5 @@
   	}  	
   }
   echo "</div>";
-  include_once("includes/modules/footer.php");
+  include("includes/modules/footer.php");
 ?>
