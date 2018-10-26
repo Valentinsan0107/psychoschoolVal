@@ -44,7 +44,7 @@
   		}
   	}
   }
-  if (empty($resultChek)) {
+  if (empty($artselec)) {
     echo "<h1>Il n y a rien qui correspond a votre recherche</h1>";
   }
 
