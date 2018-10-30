@@ -14,7 +14,9 @@ session_start();
 	<meta charset="utf-8">
 	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/icon-brain.png">
 	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script type="text/javascript">
             $(window).on('scroll', function() {
@@ -84,7 +86,7 @@ session_start();
       <div class="wrapper">
             <nav>
                   <div class="logo">
-                  	<a href="index.php"><img class="logo" src="/psychoschoolVal/img/logo.png"></a>
+                  	
                   </div>
                   <ul>
                         <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
