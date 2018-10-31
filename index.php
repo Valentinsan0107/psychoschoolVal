@@ -56,6 +56,13 @@ $TITLEpage="Psychoschool - Homepage";
 	</div>
 </div>
 
+<div class="conteneur-derniers-articles-zone-dessus-zone-coté">
+<div class="conteneur-derniers-articles-zone-dessus">
+
+	<div class="zone-dessus">
+		
+	</div>
+
 <div class="conteneur-derniers-articles">
 	<div class="zone-derniers-articles-haut">
 			<img class="photo-derniers-articles" src="img/action.jpg">
@@ -89,11 +96,43 @@ $TITLEpage="Psychoschool - Homepage";
 		</div>
 	</div>
 
-	
-
+</div>
 
 </div>
 
+<div class="conteneur-zone-coté">
+	<div class="zone-coté">
+		
+	</div>
+
+	<div class="zone-coté">
+		
+	</div>
+	
+</div>
+
+</div>
+
+<div id="background-test-3">
+	<div class="conteneur-phrase-présentation-matériel-2">
+		<h1 class="phrase-présentation-matériel">BESOIN D'AIDE ? DE CONSEILS ?</h1>
+		
+	
+	<div class="sous-titre"></div>
+
+		<p class="paragraphe-présentation-matériel">
+			Tu as besoin de conseils ? De précisions sur un produit ? Utilise notre formulaire contact situé ci-dessous. Chacune des demandes que nous recevons est traitée en moins de 24 heures.
+		</p>
+
+		<p class="paragraphe-présentation-matériel-deux">
+			Que ce soit pour avoir un son plus nette ou une image de meilleure qualité, retrouve pour chaque produit nos propres conseils et astuces pour te guider.
+		</p>
+
+		<a class="en-savoir-plus-matériel-lien" href="#">En savoir plus</a>
+
+	</div>
+
+	</div>
 	
 <?php
 	include_once("includes/modules/footer.php");
