@@ -5,7 +5,7 @@ $TITLEpage="Psychoschool - Homepage";
 ?>
 
 <div id="background-test-1">
-	<div class="conteneur-phrase-présentation-matériel-2">
+	<div class="conteneur-phrase-présentation-matériel-3">
 		<h1 class="phrase-présentation-matériel">PROGRESSE RAPIDEMENT</h1>
 		
 	
@@ -73,11 +73,6 @@ $TITLEpage="Psychoschool - Homepage";
 </div>
 
 <div class="conteneur-derniers-articles-zone-dessus-zone-coté">
-<div class="conteneur-derniers-articles-zone-dessus">
-
-	<div class="zone-dessus">
-		pub wallah pour gagner de l'argent
-	</div>
 
 <div class="conteneur-derniers-articles">
 	<div class="zone-derniers-articles-haut">
@@ -114,9 +109,6 @@ $TITLEpage="Psychoschool - Homepage";
 
 </div>
 
-</div>
-
-<div class="conteneur-zone-coté">
 	<div class="zone-coté">
 		<figure class="figure-slide">
 	<div class="slide">
@@ -145,12 +137,6 @@ $TITLEpage="Psychoschool - Homepage";
 	</div>
 </figure>
 	</div>
-
-	<div class="zone-coté">
-		
-	</div>
-	
-</div>
 
 </div>
 
