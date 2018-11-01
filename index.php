@@ -75,38 +75,34 @@ $TITLEpage="Psychoschool - Homepage";
 <div class="conteneur-derniers-articles-zone-dessus-zone-coté">
 
 <div class="conteneur-derniers-articles">
-	<div class="zone-derniers-articles-haut">
-			<img class="photo-derniers-articles" src="img/action.jpg">
-		<div class="conteneur-titre-date-derniers-articles">
-			<a class="lien-titre-derniers-articles" href="#"><h6 class="titre-derniers-articles">JE SUIS LE TITRE D'UN ARTICLE RECENT ET TRES INSTRUCTIF</h6></a>
-			<h6 class="date-derniers-articles"> 15 octobre 2015 </h6>
-		</div>
-	</div>
+	<?php
+	include_once("includes/backrownd/dph.php");
+    $sql = "SELECT * FROM article WHERE article_thechnique='1'";
+	$result = mysqli_query($conn, $sql);
+	$resultChek = mysqli_num_rows($result);
 
-	<div class="zone-derniers-articles">
-		<img class="photo-derniers-articles" src="img/confiance-en-soi.jpg">
-		<div class="conteneur-titre-date-derniers-articles">
-			<a class="lien-titre-derniers-articles" href="#"><h6 class="titre-derniers-articles">JE SUIS LE TITRE D'UN ARTICLE RECENT ET TRES INSTRUCTIF</h6></a>
-			<h6 class="date-derniers-articles"> 15 octobre 2015 </h6>
-		</div>
-	</div>
-
-	<div class="zone-derniers-articles">
-		<img class="photo-derniers-articles" src="img/image-1.jpg">
-		<div class="conteneur-titre-date-derniers-articles">
-			<a class="lien-titre-derniers-articles" href="#"><h6 class="titre-derniers-articles">JE SUIS LE TITRE D'UN ARTICLE RECENT ET TRES INSTRUCTIF</h6></a>
-			<h6 class="date-derniers-articles"> 15 octobre 2015 </h6>
-		</div>
-	</div>
-
-	<div class="zone-derniers-articles">
-		<img class="photo-derniers-articles" src="img/image-4.jpg">
-		<div class="conteneur-titre-date-derniers-articles">
-			<a class="lien-titre-derniers-articles" href="#"><h6 class="titre-derniers-articles">JE SUIS LE TITRE D'UN ARTICLE RECENT ET TRES INSTRUCTIF</h6></a>
-			<h6 class="date-derniers-articles"> 15 octobre 2015 </h6>
-		</div>
-	</div>
-
+	if ($resultChek > 0) {
+		$compt = 0;
+		while ($row = mysqli_fetch_assoc($result)) {
+			if ($compt<5) {
+				$compt += 1;
+				echo '<div class="zone-derniers-articles-haut">';
+				if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
+					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/'.$row['article_id'].'.jpg">';
+				}elseif (file_exists("uploads/imagecouverture/".$row['article_id'].".png")) {
+					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/'.$row['article_id'].'.png">';
+				}else{
+					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/base.png">';
+				}
+				echo '<div class="conteneur-titre-date-derniers-articles">
+						<a class="lien-titre-derniers-articles" href="#"><h6 class="titre-derniers-articles">'.$row['article_titre'].'</h6></a>
+						<h6 class="date-derniers-articles">2018</h6>
+					</div>
+				</div>';
+			}
+		}
+	}
+	?>
 </div>
 
 	<div class="zone-coté">
