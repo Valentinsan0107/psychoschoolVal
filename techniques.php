@@ -25,7 +25,7 @@ function openVolet() {
 <div class="article-conteneur">
 
 <?php
-    $sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1'";
+    $sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' ORDER BY article_id DESC";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
 
@@ -35,7 +35,7 @@ function openVolet() {
 		}
 	}
 
-	$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0'";
+	$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' ORDER BY article_id DESC";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
 

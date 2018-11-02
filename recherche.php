@@ -7,7 +7,7 @@
     $recherche = mysqli_real_escape_string($conn, $_GET['recherche']);
     $artselec = array();
 
-    $sql = $sql = "SELECT * FROM article WHERE article_titre LIKE '%$recherche%' OR article_resumer LIKE '%$recherche%' OR article_tag LIKE '%$recherche%'";
+    $sql = $sql = "SELECT * FROM article WHERE article_titre LIKE '%$recherche%' OR article_resumer LIKE '%$recherche%' OR article_tag LIKE '%$recherche%' ORDER BY article_id DESC";
     $result = mysqli_query($conn, $sql);
     $resultChek = mysqli_num_rows($result);
 
@@ -27,7 +27,7 @@
 
     foreach ($recherches as $r) {
   		if (strlen($r) > 2) {
-  			$sql = $sql = "SELECT * FROM article WHERE article_titre LIKE '%$r%' OR article_resumer LIKE '%$r%' OR article_tag LIKE '%$r%'";
+  			$sql = $sql = "SELECT * FROM article WHERE article_titre LIKE '%$r%' OR article_resumer LIKE '%$r%' OR article_tag LIKE '%$r%' ORDER BY article_id DESC";
   			$result = mysqli_query($conn, $sql);
   			$resultChek = mysqli_num_rows($result);
 

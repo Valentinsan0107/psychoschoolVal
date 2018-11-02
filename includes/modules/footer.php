@@ -14,7 +14,7 @@
         $pref = substr($pref, 0, $aefface);
         include_once($pref."/includes/backrownd/dph.php");
 
-        $sql = "SELECT * FROM article";
+        $sql = "SELECT * FROM article ORDER BY article_id DESC";
         $result = mysqli_query($conn, $sql);
         $resultChek = mysqli_num_rows($result);
         if ($resultChek >0) {

@@ -19,7 +19,7 @@ CREATE TABLE likes(
     like_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
     like_page varchar(256) not null,
     like_user varchar(256) not null
-);$
+);
 
 
 CREATE TABLE article(
@@ -31,4 +31,9 @@ CREATE TABLE article(
     article_tag varchar(1000) not null,
     article_thechnique tinyint(1)  not null,
     article_priorite tinyint(1)  not null
+);
+
+CREATE TABLE Tags_Liste(
+    Nom varchar(15) not null,
+    Tags varchar(1300) not null
 );
