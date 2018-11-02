@@ -89,6 +89,9 @@ $TITLEpage="Psychoschool - Homepage";
 				$lien = "article.php?narticle=".$row['article_nom'];
 				$date = $row['article_date'];
 				$date = substr($date, 0, -9);
+				include_once("includes/modules/fonctionContain.php");
+
+  				$date = datetotext($date);
 				echo '<div class="zone-derniers-articles">';
 				if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
 					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/'.$row['article_id'].'.jpg">';
