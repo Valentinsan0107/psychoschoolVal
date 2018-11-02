@@ -30,10 +30,15 @@ if (isset($_GET['narticle'])) {
 		$ficherHTLMArticle = "uploads/html/".$row['article_id'].".html";
 		$ficherPHPArticle = "uploads/html/".$row['article_id'].".php";
 
+		$deblien = "uploads/images/";
+		$finlien = "-".$row['article_id'];
+
 		if (file_exists($ficherHTLMArticle) == true) {
-			include_once($ficherHTLMArticle);
+			$content = str_replace(array('%deblien%', '%finlien%'), array($deblien, $finlien),file_get_contents($ficherHTLMArticle));
+			echo $content;
 		}elseif (file_exists($ficherPHPArticle) == true) {
-			include_once($ficherPHPArticle);
+			$content = str_replace(array('%deblien%', '%finlien%'), array($deblien, $finlien),file_get_contents($ficherPHPArticle));
+			echo $content;
 		}else
 			echo "error";
 		}

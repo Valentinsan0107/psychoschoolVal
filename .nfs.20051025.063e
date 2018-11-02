@@ -5,7 +5,7 @@ $TITLEpage="Psychoschool - Homepage";
 ?>
 
 <div id="background-test-1">
-	<div class="conteneur-phrase-présentation-matériel-3">
+	<div class="conteneur-phrase-présentation-matériel-2">
 		<h1 class="phrase-présentation-matériel">PROGRESSE RAPIDEMENT</h1>
 		
 	
@@ -73,11 +73,16 @@ $TITLEpage="Psychoschool - Homepage";
 </div>
 
 <div class="conteneur-derniers-articles-zone-dessus-zone-coté">
+<div class="conteneur-derniers-articles-zone-dessus">
+
+	<div class="zone-dessus">
+		pub wallah pour gagner de l'argent
+	</div>
 
 <div class="conteneur-derniers-articles">
 	<?php
 	include_once("includes/backrownd/dph.php");
-    $sql = "SELECT * FROM article WHERE article_thechnique='1' ORDER BY article_id DESC";
+    $sql = "SELECT * FROM article WHERE article_thechnique='1'";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
 
@@ -86,10 +91,7 @@ $TITLEpage="Psychoschool - Homepage";
 		while ($row = mysqli_fetch_assoc($result)) {
 			if ($compt<4) {
 				$compt += 1;
-				$lien = "article.php?narticle=".$row['article_nom'];
-				$date = $row['article_date'];
-				$date = substr($date, 0, -9);
-				echo '<div class="zone-derniers-articles">';
+				echo '<div class="zone-derniers-articles-haut">';
 				if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
 					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/'.$row['article_id'].'.jpg">';
 				}elseif (file_exists("uploads/imagecouverture/".$row['article_id'].".png")) {
@@ -98,8 +100,8 @@ $TITLEpage="Psychoschool - Homepage";
 					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/base.png">';
 				}
 				echo '<div class="conteneur-titre-date-derniers-articles">
-						<a class="lien-titre-derniers-articles" href="'.$lien.'"><h6 class="titre-derniers-articles">'.$row['article_titre'].'</h6></a>
-						<h6 class="date-derniers-articles">'.$date.'</h6>
+						<a class="lien-titre-derniers-articles" href="#"><h6 class="titre-derniers-articles">'.$row['article_titre'].'</h6></a>
+						<h6 class="date-derniers-articles">2018</h6>
 					</div>
 				</div>';
 			}
@@ -108,6 +110,9 @@ $TITLEpage="Psychoschool - Homepage";
 	?>
 </div>
 
+</div>
+
+<div class="conteneur-zone-coté">
 	<div class="zone-coté">
 		<figure class="figure-slide">
 	<div class="slide">
@@ -136,6 +141,12 @@ $TITLEpage="Psychoschool - Homepage";
 	</div>
 </figure>
 	</div>
+
+	<div class="zone-coté">
+		
+	</div>
+	
+</div>
 
 </div>
 
