@@ -9,10 +9,16 @@ if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
 	echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".png); background-repeat: no-repeat; background-size: cover;'></div>";
 }else{
 	echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/base.png); background-repeat: no-repeat; background-size: cover;'></div>";
-}	
+}
+$date = $row['article_date'];
+$date = substr($date, 0, -9);
+include_once("includes/modules/fonctionContain.php");
+
+$date = datetotext($date);	
 echo'<div class="zone-article">
 	<h1 class="titre-article">'.$row['article_titre'].'</h1>
 	<p class="texte-article">'.$row['article_resumer'].'</p>
+	<h6>'.$date.'</h6>
 	<a class="lien-article" href="'.$lien.'">Lire plus...</a>
 <div class="conteneur-module-comment">
 	<a class="lien-icon-conversation" href="'.$lien.'">
