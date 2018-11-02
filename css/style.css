@@ -12,41 +12,38 @@ nav{
       left: 0;
       width: 100%;
       height: 90px;
-      padding: 10px 100px;
+      padding: 0px 100px 0px 0px;
       box-sizing: border-box;
       transition: 0.3s;
       z-index: 1;
       background: rgba(51,141,165,0.8);
 }
 nav.black{
-      background: rgba(51,141,165,0.8);
-      height: 90px;
-      padding: 10px 100px;
+
+      height: 60px;
+      padding: 0px 100px 0px 0px;
       box-shadow: 0px 6px 10px -5px #666;
 }
 
 nav .logo{
       float: left;
-      width: 350px;
-      height: 112px;
-      padding-top: 4px;
+      width: 90px;
+      height: 90px;
       transition: 0.3s;
-      left: 0px;
       
 }
 
 nav .black-logo{
       float: left;
-      width: 250px;
-      height: 84px;
-      margin-top: 0px;
+      width: 60px;
+      height: 60px;
       transition: 0.3s;
       
 }
 
 nav ul{
       list-style: none;
-      float: right;
+      float: left;
       margin: 0;
       padding: 0;
       display: flex;
@@ -56,7 +53,7 @@ nav ul li {
 }
 
 nav ul li a {
-      line-height: 70px;
+      line-height: 90px;
       color: #fff;
       padding: 15px 30px;
       text-decoration: none;
@@ -67,8 +64,8 @@ nav ul li a {
 }
 
 nav ul li a.black-button{
-	line-height: 70px;
-	font-size: 0.95em;
+	line-height: 60px;
+	font-size: 0.85em;
 }
 
 nav.black ul li a:hover{
@@ -87,14 +84,19 @@ nav.black ul li a {
 nav ul li a:focus{
       outline: none;
 }
-nav ul li a#active{
+nav ul li a.active{
       background: #fff;
       color: #3390a5;
       border-radius: 6px;
       margin-left: 45px;
+      padding: 15px 40px 15px 40px;
 }
 
-nav ul li a#active:hover{
+nav ul li a.active-black{
+	padding: 10px 30px 10px 30px;
+}
+
+nav ul li a.active:hover{
 	color: #fff;
 	background: red;
 	transition: 0.3s;
@@ -465,14 +467,18 @@ input.log{
 	width: 48px;
 	height: 48px;
 	position: absolute;
-	left: 95%;
-	top: 56px;
+	left: 96%;
+	margin: 0;
+	top: 22px;
 	transition: 0.3s;
 }
 
 input.log-black{
-	top: 37px;
+	top: 12px;
 	transition: 0.3s;
+	width: 36px;
+	height: 36px;
+	left: 97%;
 }
 
 input.log:hover{
@@ -570,6 +576,18 @@ div.conteneur-contenu-footer-bas{
 form.barre-recherche-conteneur{
 	display: flex;
 	margin-left: 200px;
+	transition: 0.3s;
+}
+
+form.barre-recherche-conteneur-2{
+	display: flex;
+	margin-left: 100px;
+	transition: 0.3s;
+}
+
+form.barre-recherche-conteneur-2-black{
+	display: flex;
+	margin-left: 270px;
 }
 
 img.image-barre-recherche{
@@ -610,6 +628,53 @@ input#champ-recherche{
 	border-radius: 20px 0px 0px 20px;
 	border: none;
 	padding-left: 20px;
+
+}
+
+input.champ-recherche-2{
+	margin-top: 24px;
+	height: 40px;
+	width: 300px;
+	border-radius: 20px 0px 0px 20px;
+	border: none;
+	padding-left: 20px;
+	transition: 0.3s;
+
+}
+
+input.champ-recherche-2-black{
+	margin-top: 14px;
+	height: 30px;
+	width: 250px;
+	border-radius: 20px 0px 0px 20px;
+	border: none;
+	padding-left: 20px;
+	transition: 0.3s;
+
+}
+
+button.search-button-2{
+	margin-top: 24px;
+	width: 42px;
+	height: 42px;
+	border: none;
+	background-color: #ffffff; 
+	border-radius: 0px 21px 21px 0px;
+	cursor: pointer;
+	padding-right: 48px;
+	transition: 0.3s;
+}
+
+button.search-button-2-black{
+	margin-top: 14px;
+	width: 32px;
+	height: 32px;
+	border: none;
+	background-color: #ffffff; 
+	border-radius: 0px 21px 21px 0px;
+	cursor: pointer;
+	padding-right: 48px;
+	transition: 0.3s;
 
 }
 

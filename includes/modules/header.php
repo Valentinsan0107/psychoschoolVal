@@ -30,6 +30,51 @@ session_start();
 
             $(window).on('scroll', function() {
                   if($(window).scrollTop()) {
+                        $('.barre-recherche-conteneur-2').addClass('barre-recherche-conteneur-2-black');
+                  }
+                  else {
+                       $('.barre-recherche-conteneur-2').removeClass('barre-recherche-conteneur-2-black') 
+                  }
+            })
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('.image-barre-recherche').addClass('image-barre-recherche-black');
+                  }
+                  else {
+                       $('.image-barre-recherche').removeClass('image-barre-recherche-black') 
+                  }
+            })
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('.champ-recherche-2').addClass('champ-recherche-2-black');
+                  }
+                  else {
+                       $('.champ-recherche-2').removeClass('champ-recherche-2-black') 
+                  }
+            })
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('.search-button-2').addClass('search-button-2-black');
+                  }
+                  else {
+                       $('.search-button-2').removeClass('search-button-2-black') 
+                  }
+            })
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('nav ul li a.active').addClass('active-black');
+                  }
+                  else {
+                       $('nav ul li a.active').removeClass('active-black') 
+                  }
+            })
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
                         $('nav .logo').addClass('black-logo');
                   }
                   else {
@@ -85,20 +130,25 @@ session_start();
 
       <div class="wrapper">
             <nav>
-                  <div class="logo">
-                  	
+                  <div>
+                  	<img class="logo" src="img/logo-youtube-test.jpg">
+
                   </div>
                   <ul>
                         <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
                         <li><a href="/psychoschoolVal/techniques.php">Les Techniques</a></li>
                         <li><a href="/psychoschoolVal/livre.php">Livre</a></li>
                         <li><a href="#">A propos</a></li>
+                        <form class="barre-recherche-conteneur-2" method="GET" action="recherche.php">
+    						<input class="champ-recherche-2" type="text" name="recherche" minlength="1" placeholder="Tu cherches quelque chose ?">
+    						<button class="search-button-2" type="submit" name="submit"><img class="image-barre-recherche" src="img/loupe-barre-recherche.png"></button>
+  						</form>
 
                         <?php
                         	if (!isset($_SESSION['u_id'])) {
-                        		echo '<li><a id="active" onclick="openModal()" href="#">Se connecter</a></li>';
+                        		echo '<li><a class="active" onclick="openModal()" href="#">Se connecter</a></li>';
                         	} else {
-                        		echo '<li><a id="active">'.$_SESSION['u_pseudo'].'</a></li>
+                        		echo '<li><a class="active">'.$_SESSION['u_pseudo'].'</a></li>
                         	
                         		<form action="/psychoschoolVal/includes/backrownd/compts/logout.php" method="POST">
                         			<input type="hidden" name="submit" value=" ">
