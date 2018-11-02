@@ -86,6 +86,9 @@ $TITLEpage="Psychoschool - Homepage";
 		while ($row = mysqli_fetch_assoc($result)) {
 			if ($compt<4) {
 				$compt += 1;
+				$lien = "article.php?narticle=".$row['article_nom'];
+				$date = $row['article_date'];
+				$date = substr($date, 0, -9);
 				echo '<div class="zone-derniers-articles">';
 				if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
 					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/'.$row['article_id'].'.jpg">';
@@ -95,8 +98,8 @@ $TITLEpage="Psychoschool - Homepage";
 					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/base.png">';
 				}
 				echo '<div class="conteneur-titre-date-derniers-articles">
-						<a class="lien-titre-derniers-articles" href="#"><h6 class="titre-derniers-articles">'.$row['article_titre'].'</h6></a>
-						<h6 class="date-derniers-articles">2018</h6>
+						<a class="lien-titre-derniers-articles" href="'.$lien.'"><h6 class="titre-derniers-articles">'.$row['article_titre'].'</h6></a>
+						<h6 class="date-derniers-articles">'.$date.'</h6>
 					</div>
 				</div>';
 			}
