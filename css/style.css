@@ -267,11 +267,10 @@ p.paragraphe-promesse{
 .conteneur-derniers-articles{
 	width: 350px;
 	height: 480px;
-	margin: 40px;
+	margin: 40px 60px 40px 40px;
 	display: flex;
 	flex-direction: column;
-	padding-left: 20px;
-	padding-right: 20px;
+	border-top: 1px solid #dedddd;
 }
 
 .zone-derniers-articles{
@@ -285,14 +284,6 @@ p.paragraphe-promesse{
 	display: flex;
 	flex-direction: column;
 	margin-left: 20px;
-}
-
-.zone-derniers-articles-haut{
-	height: 120px;
-	width: 100%;
-	display: flex;
-	border-top: 1px solid #dedddd;
-	border-bottom: 1px solid #dedddd;
 }
 
 .photo-derniers-articles{
@@ -535,6 +526,7 @@ li.bouton-footer{
 	font-size: 0.9em;
 	color: #393a3a;
 	padding-bottom: 6px;
+	text-transform: lowercase;
 }
 
 a.lien-titre-footer{
@@ -785,8 +777,8 @@ p.texte-article{
 
 h1.titre-article{
 	font-family: Arial;
-	padding-left: 30px; 
-	font-size: 2.5em;
+	padding: 10px 0px 10px 30px; 
+	font-size: 2em;
 }
 
 div#volet{

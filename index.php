@@ -86,7 +86,7 @@ $TITLEpage="Psychoschool - Homepage";
 		while ($row = mysqli_fetch_assoc($result)) {
 			if ($compt<5) {
 				$compt += 1;
-				echo '<div class="zone-derniers-articles-haut">';
+				echo '<div class="zone-derniers-articles">';
 				if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
 					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/'.$row['article_id'].'.jpg">';
 				}elseif (file_exists("uploads/imagecouverture/".$row['article_id'].".png")) {
