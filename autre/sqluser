@@ -30,10 +30,12 @@ CREATE TABLE article(
     article_titrehaut varchar(1000) not null,
     article_tag varchar(1000) not null,
     article_thechnique tinyint(1)  not null,
-    article_priorite tinyint(1)  not null
+    article_priorite tinyint(1)  not null,
+    article_date datetime not null
 );
 
 CREATE TABLE Tags_Liste(
     Nom varchar(15) not null,
     Tags varchar(1300) not null
 );
+**Dans la table Tags_list faire une ligne avec comme nom Tech
