@@ -41,6 +41,14 @@ nav .black-logo{
       
 }
 
+nav .black-logo:hover{
+      filter: hue-rotate(150deg);
+}
+
+nav .logo:hover{
+      filter: hue-rotate(150deg);
+}
+
 nav ul{
       list-style: none;
       float: left;
@@ -87,13 +95,13 @@ nav ul li a:focus{
 nav ul li a.active{
       background: #fff;
       color: #3390a5;
-      border-radius: 6px;
+      border-radius: 5px;
       margin-left: 45px;
-      padding: 15px 40px 15px 40px;
+      padding: 13px 40px 13px 40px;
 }
 
 nav ul li a.active-black{
-	padding: 10px 30px 10px 30px;
+	padding: 9px 30px 9px 30px;
 }
 
 nav ul li a.active:hover{
@@ -302,6 +310,7 @@ p.paragraphe-promesse{
 	letter-spacing: 0.25em;
 	line-height: 1.65;
 	margin: 30px 0 6px 0;
+	text-transform: uppercase;
 }
 
 .lien-titre-derniers-articles{
@@ -593,10 +602,17 @@ form.barre-recherche-conteneur-2-black{
 img.image-barre-recherche{
 	width: 20px;
 	height: 20px;
+	transition: 0.3s;
+}
+
+img.image-barre-recherche-black{
+	width: 15px;
+	height: 15px;
+	transition: 0.3s;
 }
 
 button#search-button{
-	margin-top: 20px;
+	margin-top: 22px;
 	width: 42px;
 	height: 42px;
 	border: none;
@@ -608,7 +624,7 @@ button#search-button{
 }
 
 button#search-button-animation{
-	margin-top: 20px;
+	margin-top: 22px;
 	width: 42px;
 	height: 42px;
 	border: none;
@@ -622,7 +638,7 @@ button#search-button-animation{
 }
 
 input#champ-recherche{
-	margin-top: 20px;
+	margin-top: 22px;
 	height: 40px;
 	width: 300px;
 	border-radius: 20px 0px 0px 20px;
@@ -635,18 +651,20 @@ input.champ-recherche-2{
 	margin-top: 24px;
 	height: 40px;
 	width: 300px;
-	border-radius: 20px 0px 0px 20px;
+	border-radius: 5px 0px 0px 5px;
 	border: none;
 	padding-left: 20px;
 	transition: 0.3s;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
 
 }
 
 input.champ-recherche-2-black{
-	margin-top: 14px;
+	margin-top: 13px;
 	height: 30px;
 	width: 250px;
-	border-radius: 20px 0px 0px 20px;
+	border-radius: 5px 0px 0px 5px;
 	border: none;
 	padding-left: 20px;
 	transition: 0.3s;
@@ -659,21 +677,21 @@ button.search-button-2{
 	height: 42px;
 	border: none;
 	background-color: #ffffff; 
-	border-radius: 0px 21px 21px 0px;
+	border-radius: 0px 5px 5px 0px;
 	cursor: pointer;
-	padding-right: 48px;
+	padding-right: 20px;
 	transition: 0.3s;
 }
 
 button.search-button-2-black{
-	margin-top: 14px;
+	margin-top: 13px;
 	width: 32px;
 	height: 32px;
 	border: none;
 	background-color: #ffffff; 
-	border-radius: 0px 21px 21px 0px;
+	border-radius: 0px 5px 5px 0px;
 	cursor: pointer;
-	padding-right: 48px;
+	padding-right: 26px;
 	transition: 0.3s;
 
 }
@@ -783,6 +801,14 @@ button.btnClose:hover{
 
 /* techniques début */
 
+.date-aperçu-article{
+	margin: 0;
+	padding-left: 30px;
+	font-family: 'Montserrat', sans-serif;
+	color: #3390a5;
+	font-size: 1em;
+}
+
 div.photo-article-zone-conteneur{
 	display: flex;
 }
@@ -797,8 +823,8 @@ div.zone-article{
 }
 
 div.photo-article{
-	height: 327px;
-	width: 25%;
+	height: 340px;
+	width: 28%;
 	background-color: #ffffff;
 	border: 1px solid #ebebeb;
 	margin-left: 15%;
@@ -844,6 +870,7 @@ h1.titre-article{
 	font-family: Arial;
 	padding: 10px 0px 10px 30px; 
 	font-size: 2em;
+	margin-bottom: 0;
 }
 
 div#volet{

@@ -30,6 +30,15 @@ session_start();
 
             $(window).on('scroll', function() {
                   if($(window).scrollTop()) {
+                        $('.image-barre-recherche').addClass('image-barre-recherche-black');
+                  }
+                  else {
+                       $('.image-barre-recherche').removeClass('image-barre-recherche-black') 
+                  }
+            })
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
                         $('.barre-recherche-conteneur-2').addClass('barre-recherche-conteneur-2-black');
                   }
                   else {
@@ -131,7 +140,7 @@ session_start();
       <div class="wrapper">
             <nav>
                   <div>
-                  	<img class="logo" src="img/logo-youtube-test.jpg">
+                  	<a href="index.php"><img class="logo" src="img/logo-youtube-test.jpg"></a>
 
                   </div>
                   <ul>

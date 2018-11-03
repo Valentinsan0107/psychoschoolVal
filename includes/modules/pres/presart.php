@@ -17,8 +17,8 @@ include_once("includes/modules/fonctionContain.php");
 $date = datetotext($date);	
 echo'<div class="zone-article">
 	<h1 class="titre-article">'.$row['article_titre'].'</h1>
+	<h6 class="date-aperçu-article">'.$date.'</h6>
 	<p class="texte-article">'.$row['article_resumer'].'</p>
-	<h6>'.$date.'</h6>
 	<a class="lien-article" href="'.$lien.'">Lire plus...</a>
 <div class="conteneur-module-comment">
 	<a class="lien-icon-conversation" href="'.$lien.'">
