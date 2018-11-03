@@ -23,25 +23,74 @@ function openVolet() {
 	
 
 <div class="article-conteneur">
-
 <?php
-    $sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' ORDER BY article_id DESC";
+	$tagSel = "";
+	$Trie = "";
+	if (isset($_GET['triethec'])) {
+		$Trie = $_GET['triethec'];
+	}
+	if (isset($_GET['tagthec'])) {
+		$tagSel = $_GET['tagthec'];
+	}
+	echo '<div>
+	<a href="techniques.php">Nouveaute</a>
+	<a href="techniques.php?triethec=aimer">J aime</a>';
+	$sql = "SELECT * FROM Tags_Liste WHERE Nom='Tech'";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
-
-	if ($resultChek > 0) {
-		while ($row = mysqli_fetch_assoc($result)) {
-			include("includes/modules/pres/presart.php");
+	if ($resultChek == 1) {
+		$row = mysqli_fetch_assoc($result);
+		$ttlesTag = $row['Tags'];
+		$aryTag = explode(",", $ttlesTag);
+		foreach ($aryTag as $tagUniique) {
+			echo '<a href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'">'.$tagUniique.'</a>';
 		}
 	}
+	echo '</div>';
 
-	$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' ORDER BY article_id DESC";
-	$result = mysqli_query($conn, $sql);
-	$resultChek = mysqli_num_rows($result);
+	if ($tagSel == "") {
+		if ($Trie == "") {
+		    $sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' ORDER BY article_id DESC";
+			$result = mysqli_query($conn, $sql);
+			$resultChek = mysqli_num_rows($result);
 
-	if ($resultChek > 0) {
-		while ($row = mysqli_fetch_assoc($result)) {
-			include("includes/modules/pres/presart.php");
+			if ($resultChek > 0) {
+				while ($row = mysqli_fetch_assoc($result)) {
+					include("includes/modules/pres/presart.php");
+				}
+			}
+
+			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' ORDER BY article_id DESC";
+			$result = mysqli_query($conn, $sql);
+			$resultChek = mysqli_num_rows($result);
+
+			if ($resultChek > 0) {
+				while ($row = mysqli_fetch_assoc($result)) {
+					include("includes/modules/pres/presart.php");
+				}
+			}
+		}
+	}else{
+		if ($Trie == "") {
+					    $sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' AND article_tag LIKE '$tagSel' ORDER BY article_id DESC";
+			$result = mysqli_query($conn, $sql);
+			$resultChek = mysqli_num_rows($result);
+
+			if ($resultChek > 0) {
+				while ($row = mysqli_fetch_assoc($result)) {
+					include("includes/modules/pres/presart.php");
+				}
+			}
+
+			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' AND article_tag LIKE '$tagSel' ORDER BY article_id DESC";
+			$result = mysqli_query($conn, $sql);
+			$resultChek = mysqli_num_rows($result);
+
+			if ($resultChek > 0) {
+				while ($row = mysqli_fetch_assoc($result)) {
+					include("includes/modules/pres/presart.php");
+				}
+			}
 		}
 	}
 ?>
