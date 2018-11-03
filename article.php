@@ -1,6 +1,10 @@
 <?php
 include_once("includes/backrownd/dph.php");
-$nomarticle = $_GET['narticle'];
+$nomarticle = "";
+if (isset($_GET['narticle'])) {
+	$nomarticle = $_GET['narticle'];
+}
+
 
 $sql = "SELECT * FROM article WHERE article_nom='$nomarticle'";
 $result = mysqli_query($conn, $sql);
