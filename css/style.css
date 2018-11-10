@@ -801,6 +801,18 @@ button.btnClose:hover{
 
 /* techniques début */
 
+.design-tag{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	color: #3390a5;
+	padding-right: 20px;
+}
+
+.conteneur-design-tag{
+	margin-left: 230px; 
+	margin-bottom: 40px;
+}
+
 .date-aperçu-article{
 	margin: 0;
 	padding-left: 30px;
@@ -831,7 +843,7 @@ div.photo-article{
 }
 
 div.article-conteneur{
-	margin-top: 195px;
+	margin-top: 120px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
