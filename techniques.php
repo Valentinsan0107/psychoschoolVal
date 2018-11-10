@@ -32,9 +32,9 @@ function openVolet() {
 	if (isset($_GET['tagthec'])) {
 		$tagSel = $_GET['tagthec'];
 	}
-	echo '<div>
-	<a href="techniques.php?tagthec='.$tagSel.'">Nouveaute</a>
-	<a href="techniques.php?triethec=aimer&tagthec='.$tagSel.'">J aime</a>';
+	echo '<div class="conteneur-design-tag">
+	<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'">Nouveaute</a>
+	<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'">J aime</a>';
 	$sql = "SELECT * FROM Tags_Liste WHERE Nom='Tech'";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
@@ -43,10 +43,10 @@ function openVolet() {
 		$ttlesTag = $row['Tags'];
 		$aryTag = explode(",", $ttlesTag);
 		foreach ($aryTag as $tagUniique) {
-			echo '<a href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'">'.$tagUniique.'</a>';
+			echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'">'.$tagUniique.'</a>';
 		}
 	}
-	echo '<a href="techniques.php?triethec='.$Trie.'">Pas de Tag</a>';
+	echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'">Pas de Tag</a>';
 	echo '</div>';
 
 	if ($tagSel == "") {
