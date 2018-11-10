@@ -1,7 +1,23 @@
 <?php
 	include_once("includes/modules/header.php");
     include_once("includes/backrownd/dph.php");
-?>s
+?>
+
+
+
+
+<div id="volet" onclick="openVolet()">
+	Bonjour
+</div>
+
+<script type="text/javascript">
+
+function openVolet() {
+	document.getElementById("volet").style.left = '0px';
+	document.getElementById("volet").style.transition = '0.8s ease';
+}
+
+</script>
 
 
 	
@@ -16,9 +32,9 @@
 	if (isset($_GET['tagthec'])) {
 		$tagSel = $_GET['tagthec'];
 	}
-	echo '<div class="conteneur-design-tag">
-	<a class="design-tag" href="techniques.php?triethec='.$tagSel.'">Nouveaute</a>
-	<a class="design-tag" href="techniques.php?triethec=aimer&triethec='.$tagSel.'">J aime</a>';
+	echo '<div>
+	<a href="techniques.php?tagthec='.$tagSel.'">Nouveaute</a>
+	<a href="techniques.php?triethec=aimer&tagthec='.$tagSel.'">J aime</a>';
 	$sql = "SELECT * FROM Tags_Liste WHERE Nom='Tech'";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
@@ -27,9 +43,10 @@
 		$ttlesTag = $row['Tags'];
 		$aryTag = explode(",", $ttlesTag);
 		foreach ($aryTag as $tagUniique) {
-			echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'">'.$tagUniique.'</a>';
+			echo '<a href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'">'.$tagUniique.'</a>';
 		}
 	}
+	echo '<a href="techniques.php?triethec='.$Trie.'">Pas de Tag</a>';
 	echo '</div>';
 
 	if ($tagSel == "") {
