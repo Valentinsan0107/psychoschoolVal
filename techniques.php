@@ -24,17 +24,29 @@ function openVolet() {
 
 <div class="article-conteneur">
 <?php
+	$NbAParPageMax = 5;
 	$tagSel = "";
 	$Trie = "";
+	$nbADefiler = 0;
 	if (isset($_GET['triethec'])) {
 		$Trie = $_GET['triethec'];
 	}
 	if (isset($_GET['tagthec'])) {
 		$tagSel = $_GET['tagthec'];
 	}
-	echo '<div class="conteneur-design-tag">
-	<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'">Nouveaute</a>
-	<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'">J aime</a>';
+	if (isset($_GET['nbpageart'])) {
+		$nbpageart = $_GET['nbpageart'];
+	}else{
+		$nbpageart = 1;
+	}
+	echo '<div class="conteneur-design-tag">';
+	if ($Trie == "") {
+		echo'<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">Nouveaute</a>';
+		echo '<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">J aime</a>';	
+	}else{
+		echo'<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">Nouveaute</a>';
+		echo '<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">J aime</a>';
+	}
 	$sql = "SELECT * FROM Tags_Liste WHERE Nom='Tech'";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
@@ -43,10 +55,14 @@ function openVolet() {
 		$ttlesTag = $row['Tags'];
 		$aryTag = explode(",", $ttlesTag);
 		foreach ($aryTag as $tagUniique) {
-			echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'">'.$tagUniique.'</a>';
+			if ($tagUniique == $tagSel) {
+				echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
+			}else{
+				echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
+			}
 		}
 	}
-	echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'">Pas de Tag</a>';
+	echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
 	echo '</div>';
 
 	if ($tagSel == "") {
@@ -55,41 +71,20 @@ function openVolet() {
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
+			include("includes/modules/pres/presart.php");
 
 			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' ORDER BY article_id DESC";
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
+			include("includes/modules/pres/presart.php");
 		}elseif ($Trie == "aimer") {
-			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' ORDER BY article_like DESC";
+			$sql = "SELECT * FROM article WHERE article_thechnique='1' ORDER BY article_like DESC";
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
-
-			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' ORDER BY article_like DESC";
-			$result = mysqli_query($conn, $sql);
-			$resultChek = mysqli_num_rows($result);
-
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
+			include("includes/modules/pres/presart.php");
+			
 		}
 	}else{
 		if ($Trie == "") {
@@ -97,42 +92,27 @@ function openVolet() {
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
+			include("includes/modules/pres/presart.php");
 
 			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' AND article_tag LIKE '$tagSel' ORDER BY article_id DESC";
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
+			include("includes/modules/pres/presart.php");
 		}elseif ($Trie == "aimer") {
-			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' AND article_tag LIKE '$tagSel' ORDER BY article_like DESC";
+			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_tag LIKE '$tagSel' ORDER BY article_like DESC";
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
+			include("includes/modules/pres/presart.php");
 
-			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0'  AND article_tag LIKE '$tagSel' ORDER BY article_like DESC";
-			$result = mysqli_query($conn, $sql);
-			$resultChek = mysqli_num_rows($result);
-
-			if ($resultChek > 0) {
-				while ($row = mysqli_fetch_assoc($result)) {
-					include("includes/modules/pres/presart.php");
-				}
-			}
 		}
+	}
+	if ($nbpageart != 1) {
+	echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart-1).'">Page Precedante</a>';
+	}
+	if ($nbADefiler > $NbAParPageMax*$nbpageart) {
+		echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart+1).'">Page Suivante</a>';
 	}
 ?>
 </div>
