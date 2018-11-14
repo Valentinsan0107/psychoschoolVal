@@ -16,7 +16,7 @@
         if (!in_array($row['article_id'], $artselec)) {
           array_push($artselec, $row['article_id']);
           if ($row['article_thechnique'] == 1) {
-            include("includes/modules/pres/presart.php");
+            include("includes/modules/pres/presartRecherche.php");
           }
         }
       }
@@ -36,7 +36,7 @@
             if (!in_array($row['article_id'], $artselec)) {
               array_push($artselec, $row['article_id']);
               if ($row['article_thechnique'] == 1) {
-                include("includes/modules/pres/presart.php");
+                include("includes/modules/pres/presartRecherche.php");
               }
             }
   				}
