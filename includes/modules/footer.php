@@ -17,8 +17,14 @@
         $sql = "SELECT * FROM article ORDER BY article_id DESC";
         $result = mysqli_query($conn, $sql);
         $resultChek = mysqli_num_rows($result);
+        $maxart = 5;
+        $nbaffich = 0;
         if ($resultChek >0) {
           while ($row = mysqli_fetch_assoc($result)) {
+          	$nbaffich += 1;
+          	if ($nbaffich > $maxart) {
+          		break(1);
+          	}
             echo '<li class="bouton-footer">'.$row['article_titre'].'</li>';
           }
         }
