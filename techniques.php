@@ -63,7 +63,11 @@ function openVolet() {
 			}
 		}
 	}
-	echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
+	if ($tagSel = "") {
+		echo '<a class="" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
+	}else{
+		echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
+	}
 	echo '</div>';
 
 	if ($tagSel == "") {
