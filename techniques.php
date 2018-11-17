@@ -41,11 +41,12 @@ function openVolet() {
 	}
 	echo '<div class="conteneur-design-tag">';
 	if ($Trie == "") {
-		echo'<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">Nouveaute</a>';
+
+		echo'<a class="" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">Nouveaute</a>';
 		echo '<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">J aime</a>';	
 	}else{
 		echo'<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">Nouveaute</a>';
-		echo '<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">J aime</a>';
+		echo '<a class="" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">J aime</a>';
 	}
 	$sql = "SELECT * FROM Tags_Liste WHERE Nom='Tech'";
 	$result = mysqli_query($conn, $sql);
@@ -56,7 +57,7 @@ function openVolet() {
 		$aryTag = explode(",", $ttlesTag);
 		foreach ($aryTag as $tagUniique) {
 			if ($tagUniique == $tagSel) {
-				echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
+				echo '<a class="" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
 			}else{
 				echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
 			}

@@ -179,8 +179,8 @@ session_start();
 			<div class="connexion-compte">
 				<h1 class="phrase-formulaire">Tu as déjà un compte ? Connecte-toi !</h1>
 			<form class="form-connexion" action="/psychoschoolVal/includes/backrownd/compts/login.php" method="POST">
-				<input class="input-connexion" maxlength="50"  type="text" name="uid" placeholder="Pseudo ou email">
-				<input class="input-connexion" maxlength="20" type="password" name="password" placeholder="Mot de passe">
+				<input class="input-connexion" minlength="6" maxlength="50"  type="text" name="uid" placeholder="Pseudo ou email">
+				<input class="input-connexion" minlength="6" maxlength="20" type="password" name="password" placeholder="Mot de passe">
 				<button class="button-connexion" type="submit" name="submit">Valider</button>
 			</form>
 			</div>
