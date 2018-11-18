@@ -23,6 +23,7 @@
 	}else{
 		$nbpageart = 1;
 	}
+
 	echo '<div class="conteneur-design-tag">';
 	if ($Trie == "") {
 
@@ -47,7 +48,7 @@
 			}
 		}
 	}
-	if ($tagSel = "") {
+	if ($tagSel == "") {
 		echo '<a class="design-tag-2" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
 	}else{
 		echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
@@ -77,26 +78,28 @@
 		}
 	}else{
 		if ($Trie == "") {
-			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' AND article_tag LIKE '$tagSel' ORDER BY article_id DESC";
+			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='1' AND article_tag LIKE '%$tagSel%' ORDER BY article_id DESC";
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
 			include("includes/modules/pres/presart.php");
 
-			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' AND article_tag LIKE '$tagSel' ORDER BY article_id DESC";
+			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_priorite='0' AND article_tag LIKE '%$tagSel%' ORDER BY article_id DESC";
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
 			include("includes/modules/pres/presart.php");
 		}elseif ($Trie == "aimer") {
-			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_tag LIKE '$tagSel' ORDER BY article_like DESC";
+			$sql = "SELECT * FROM article WHERE article_thechnique='1' AND article_tag LIKE '%$tagSel%' ORDER BY article_like DESC";
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 
 			include("includes/modules/pres/presart.php");
 
+
 		}
 	}
+
 	if ($nbpageart != 1) {
 
 	echo '<a class="design-nombre-page-2" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart-1).'">Page Précédente</a>';
