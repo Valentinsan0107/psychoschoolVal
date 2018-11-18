@@ -106,7 +106,7 @@ nav ul li a.active-black{
 
 nav ul li a.active:hover{
 	color: #fff;
-	background: red;
+	background: #d26581;
 	transition: 0.3s;
 }
 
@@ -808,6 +808,48 @@ button.btnClose:hover{
 	padding-right: 20px;
 }
 
+.design-tag:hover{
+	color: #256a79;
+}
+
+.design-tag-2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	color: #d26581;
+	padding-right: 20px;
+}
+
+.design-nombre-page, .design-nombre-page-2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	color: #3390a5;
+	text-decoration: none;
+	transition: 0.2s ease;
+}
+
+.design-nombre-page{
+	margin: 0px 644.583px 55px 644.583px;
+}
+
+.design-nombre-page-2{
+	margin: 0px 590px 55px 644.583px;
+}
+
+.design-nombre-page:hover{
+	text-decoration: underline;
+	transition: 0.2s ease;
+	color: #d26581;
+	transform: scale(1.1);
+}
+
+.design-nombre-page-2:hover{
+	text-decoration: underline;
+	transition: 0.2s ease;
+	color: #d26581;
+	transform: scale(1.1);
+}
+
+
 .conteneur-design-tag{
 	margin-left: 230px; 
 	margin-bottom: 40px;
@@ -819,6 +861,13 @@ button.btnClose:hover{
 	font-family: 'Montserrat', sans-serif;
 	color: #3390a5;
 	font-size: 1em;
+}
+
+.image-article-entier{
+	padding: 2% 5% 2% 5%;
+	height: 90%;
+	width: 90%;
+
 }
 
 div.photo-article-zone-conteneur{
@@ -996,11 +1045,12 @@ div.article-complet-conteneur{
 
 
 p.paragraphe-article-complet{
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 5%;
+	padding-right: 5%;
 	font-family: Arial;
 	line-height: 1.5em;
 	color: #404040;
+	text-align: justify;
 }
 
 /* PAGE ENTIERE techniques fin  */

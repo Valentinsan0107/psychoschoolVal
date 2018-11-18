@@ -42,11 +42,11 @@ function openVolet() {
 	echo '<div class="conteneur-design-tag">';
 	if ($Trie == "") {
 
-		echo'<a class="" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">Nouveaute</a>';
-		echo '<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">J aime</a>';	
+		echo'<a class="design-tag-2" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">#Nouveautés</a>';
+		echo '<a class="design-tag" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">#Populaire</a>';	
 	}else{
-		echo'<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">Nouveaute</a>';
-		echo '<a class="" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">J aime</a>';
+		echo'<a class="design-tag" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">#Nouveautés</a>';
+		echo '<a class="design-tag-2" href="techniques.php?triethec=aimer&tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">#Populaire</a>';
 	}
 	$sql = "SELECT * FROM Tags_Liste WHERE Nom='Tech'";
 	$result = mysqli_query($conn, $sql);
@@ -57,14 +57,14 @@ function openVolet() {
 		$aryTag = explode(",", $ttlesTag);
 		foreach ($aryTag as $tagUniique) {
 			if ($tagUniique == $tagSel) {
-				echo '<a class="" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
+				echo '<a class="design-tag-2" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
 			}else{
 				echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagUniique.'&nbpageart='.$nbpageart.'">'.$tagUniique.'</a>';
 			}
 		}
 	}
 	if ($tagSel = "") {
-		echo '<a class="" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
+		echo '<a class="design-tag-2" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
 	}else{
 		echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
 	}
@@ -114,10 +114,11 @@ function openVolet() {
 		}
 	}
 	if ($nbpageart != 1) {
-	echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart-1).'">Page Precedante</a>';
+
+	echo '<a class="design-nombre-page-2" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart-1).'">Page Précédente</a>';
 	}
 	if ($nbADefiler > $NbAParPageMax*$nbpageart) {
-		echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart+1).'">Page Suivante</a>';
+		echo '<a class="design-nombre-page" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart+1).'">Page Suivante</a>';
 	}
 ?>
 </div>
