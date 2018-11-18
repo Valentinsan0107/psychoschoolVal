@@ -201,49 +201,38 @@ session_start();
 			<!--La div d en dessous te permet de lui metre un classe pr modifeier le text afficher en en fessant .(nom class) p en css(tu connait), esite pas a modifier les texte a l interieur ) -->
 			<div>
 				<?php
-				if (isset($_GET['signup'])) {
-					if ($_GET['signup'] == "empty") {
+				if (isset($_GET['loginsignup'])) {
+					if ($_GET['loginsignup'] == "empty") {
 						echo "<p>Tout les chans ne sont pas remplit</p>";
 					}
-					if ($_GET['signup'] == "nomatch") {
+					if ($_GET['loginsignup'] == "nomatch") {
 						echo "<p>Les mots de pass ne sont pas les mème</p>";
 					}
-					if ($_GET['signup'] == "email") {
+					if ($_GET['loginsignup'] == "email") {
 						echo "<p>L email est pas valide</p>";
 					}
-					if ($_GET['signup'] == "admin") {
+					if ($_GET['loginsignup'] == "admin") {
 						echo "<p>Vous ne pouver pas vous appeller admin</p>";
 					}
-					if ($_GET['signup'] == "usertaken") {
+					if ($_GET['loginsignup'] == "usertaken") {
 						echo "<p>Pseudo deja existant</p>";
 					}
-					if ($_GET['signup'] == "emailtaken") {
+					if ($_GET['loginsignup'] == "emailtaken") {
 						echo "<p>Email deja existant</p>";
 					}
-					if ($_GET['signup'] == "error") {
+					if ($_GET['loginsignup'] == "error") {
 						echo "<p>Il y a eu une erreur</p>";
 					}
-					if ($_GET['signup'] == "mailprobleme") {
+					if ($_GET['loginsignup'] == "mailprobleme") {
 						echo "<p>Il y a eu un probleme avec l envoie de mail</p>";
 					}
-					if ($_GET['signup'] == "shortpseudo") {
+					if ($_GET['loginsignup'] == "shortpseudo") {
 						echo "<p>Le pseudo est trops court</p>";
 					}
-					if ($_GET['signup'] == "shortpwd") {
+					if ($_GET['loginsignup'] == "shortpwd") {
 						echo "<p>Le mot de pass est trops court</p>";
 					}
-				} elseif(isset($_GET['login'])) {
-					if ($_GET['login'] == "empty") {
-						echo "<p>Il y a des champ libres</p>";
-					}
-					if ($_GET['login'] == "error") {
-						echo "<p>Le mot de passe ou l'adresse mail est incorrect</p>";
-					}
-					if ($_GET['login'] == "notconfirmed") {
-						echo "<p>Votre adresse mail n a pas ete confirmer</p>";
-					}
 				}
-				
 				?>
 			</div>
 

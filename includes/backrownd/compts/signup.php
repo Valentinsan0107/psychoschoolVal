@@ -13,7 +13,7 @@ require '../PHPMailer/src/SMTP.php';
 include_once('../oldpage.php');
 
 if(!isset($_POST['submit'])){
-	header("Location: ".$nompagesuite."signup=error");
+	header("Location: ".$nompagesuite."loginsignup=errorsignup");
 	exit();
 }else{
 	
@@ -25,13 +25,13 @@ if(!isset($_POST['submit'])){
 
 
 	if ($pwd != $pwd2) {
-		header("Location: ".$nompagesuite."signup=nomatch");
+		header("Location: ".$nompagesuite."loginsignup=nomatch");
 		exit();
 
 	} else {
 		$uidmin = strtolower($pseudo);
 		if (strpos($uidmin, "admin") !== FALSE) {
-			header("Location: ".$nompagesuite."signup=admin");        
+			header("Location: ".$nompagesuite."loginsignup=admin");        
 			exit(); 
 
 		}else{
@@ -39,7 +39,7 @@ if(!isset($_POST['submit'])){
 			$result = mysqli_query($conn, $sql);
 			$resultChek = mysqli_num_rows($result);
 			if ($resultChek >0) {
-				header("Location: ".$nompagesuite."signup=usertaken");
+				header("Location: ".$nompagesuite."loginsignup=usertaken");
 				exit();
 
 			} else {
@@ -47,7 +47,7 @@ if(!isset($_POST['submit'])){
 				$result = mysqli_query($conn, $sql);
 				$resultChek = mysqli_num_rows($result);
 				if ($resultChek >0) {
-					header("Location: ".$nompagesuite."signup=emailtaken");
+					header("Location: ".$nompagesuite."loginsignup=emailtaken");
 					exit();
 
 				}else{
@@ -81,7 +81,7 @@ if(!isset($_POST['submit'])){
 					$mail->Subject = 'confirmation inscription';
 					$mail->msgHTML($content, __DIR__);
 					if (!$mail->send()) {
-					    header("Location: ".$nompage."?signup=mailprobleme");
+					    header("Location: ".$nompage."?loginsignup=mailprobleme");
 					    exit();
 					} 
 
