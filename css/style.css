@@ -463,6 +463,51 @@ p.paragraphe-promesse{
 
 
 }
+
+form.form-formulaire-contact{
+	display: flex;
+	flex-direction: column;
+}
+
+input.input-formulaire-contact{
+	margin: 10px;
+	margin-right: 140px; 
+	margin-left : 20px;
+	margin-top : 20px;
+	border-radius: 5px;
+	border: 1px #3390a5 solid;
+	padding: 10px;
+}
+
+textarea.textarea-formulaire-contact{
+	margin: 20px;
+	height: 130px;
+	border-radius: 5px;
+	border: 1px #3390a5 solid;
+	font-family: Arial;
+	padding: 8px;
+	resize : none;
+}
+
+button.button-formulaire-contact{
+	border: none;
+	background-color: #3390a5;
+	color: #fff;
+	width: 120px;
+	padding: 10px;
+	font-size: 1.5em;
+	margin: auto;
+	border-radius: 10px;
+	transition: 0.3s ease;
+}
+
+
+
+button.button-formulaire-contact:hover{
+	background-color: #0de03a;
+	transition: 0.3s ease;
+}
+
 /* homepage début */
 
 
@@ -851,7 +896,7 @@ button.btnClose:hover{
 
 
 .conteneur-design-tag{
-	margin-left: 230px; 
+	margin-left: 6%; 
 	margin-bottom: 40px;
 }
 
@@ -888,7 +933,7 @@ div.photo-article{
 	width: 28%;
 	background-color: #ffffff;
 	border: 1px solid #ebebeb;
-	margin-left: 15%;
+	margin-left: 6%;
 }
 
 div.article-conteneur{

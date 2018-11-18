@@ -4,22 +4,6 @@
 ?>
 
 
-
-
-<div id="volet" onclick="openVolet()">
-	Bonjour
-</div>
-
-<script type="text/javascript">
-
-function openVolet() {
-	document.getElementById("volet").style.left = '0px';
-	document.getElementById("volet").style.transition = '0.8s ease';
-}
-
-</script>
-
-
 	
 
 <div class="article-conteneur">

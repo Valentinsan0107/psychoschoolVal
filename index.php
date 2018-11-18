@@ -163,33 +163,13 @@ $TITLEpage="Psychoschool - Homepage";
 
 	</div>
 
-	<div class="apport-liste">
-	<div class="contenu-conteneur">
-		<div class="contenu">
-			<img class="icon-promesse" src="img/icon-increase.png">
-		</div>
-			<h3 class="titre-promesse">AUGMENTE TA MOYENNE</h1>
-			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
-	</div>
-	<div class="contenu-conteneur">
-		<div class="contenu">
-			<img class="icon-promesse" src="img/icon-test.png">
-		</div>
-			<h3 class="titre-promesse">APPRENDS RAPIDEMENT</h1>
-			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
-	</div>
-	<div class="contenu-conteneur">
-		<div class="contenu">
-			<img class="icon-promesse" src="img/icon-brain.png">
-		</div>
-			<h3 class="titre-promesse">MEMORISE DURABLEMENT</h1>
-			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
-	</div>
-	
-	</div>
-		<div class="en-savoir-plus-apports-conteneur">
-			<a class="en-savoir-plus-apports-lien" href="#">En savoir plus</a>
-		</div>
+	<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="GET">
+			<input class="input-formulaire-contact" type="email" name="email" minlength="5" maxlength="80" placeholder="Email">
+			<input class="input-formulaire-contact" type="text" name="nom" minlength="5" maxlength="80" placeholder="Nom">
+			<input class="input-formulaire-contact" type="text" name="sujet" minlength="5" maxlength="200" placeholder="Sujet">
+			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" minlength="5" maxlength="80000"></textarea>
+			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
+		</form>
 	
 <?php
 	include_once("includes/modules/footer.php");
