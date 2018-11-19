@@ -17,7 +17,7 @@ session_start();
 	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script type="text/javascript">
             $(window).on('scroll', function() {
