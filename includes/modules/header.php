@@ -16,7 +16,8 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script type="text/javascript">
             $(window).on('scroll', function() {
@@ -184,7 +185,6 @@ session_start();
 				<button class="button-connexion" type="submit" name="submit">Valider</button>
 			</form>
 			</div>
-
 			<div class="création-compte">
 				<h1 class="phrase-formulaire">Tu n'as pas encore de compte PsychoSchool ? </h1>
 				<form class="form-création" action="/psychoschoolVal/includes/backrownd/compts/signup.php" method="POST">
@@ -192,6 +192,7 @@ session_start();
 					<input class="input-création" maxlength="20" minlength="6" type="text" name="pseudo" placeholder="Ton pseudo">
 					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd" placeholder="Mot de passe">
 					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd2" placeholder="Confirmer le mot de passe">
+          <div class="g-recaptcha" data-sitekey="6LfF13sUAAAAAOyzfAUI4ry12EmDFt4ocdKCq5iv"></div>
 					<button class="button-création" type="submit" name="submit">Valider</button>
 				</form>
 			</div>
@@ -226,6 +227,9 @@ session_start();
 					if ($_GET['loginsignup'] == "notconfirmed") {
 						echo "<p>Votre email n a pas ete confirmer</p>";
 					}
+          if ($_GET['loginsignup'] == "capcha") {
+            echo "<p>Veuiller confirmer le capcha</p>";
+          }
 				}
 				?>
 			</div>
