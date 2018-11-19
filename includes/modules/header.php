@@ -158,7 +158,7 @@ session_start();
                         	if (!isset($_SESSION['u_id'])) {
                         		echo '<li><a class="active" href="log-in.php">Se connecter</a></li>';
                         	} else {
-                        		echo '<li><a class="active">'.$_SESSION['u_pseudo'].'</a></li>
+                        		echo '<li><a class="active">'.htmlspecialchars($_SESSION['u_pseudo']).'</a></li>
                         	
                         		<form action="/psychoschoolVal/includes/backrownd/compts/logout.php" method="POST">
                         			<input type="hidden" name="submit" value=" ">
