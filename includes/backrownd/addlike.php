@@ -5,9 +5,9 @@ include_once('oldpage.php');
 
 if (isset($_SESSION['u_id'])) {
 	$user = $_SESSION['u_pseudo'];
-	$pagelike = $_GET['nomfile'];
+	$pagelike = $_POST['nomfile'];
 
-	if (isset($_GET['like'])) {
+	if (isset($_POST['like'])) {
 		$sql = "INSERT INTO likes (like_page, like_user) VALUES ('$pagelike', '$user');";
 		$result = mysqli_query($conn, $sql);
 
@@ -27,7 +27,7 @@ if (isset($_SESSION['u_id'])) {
 		$result = mysqli_query($conn, $sql);
 		header("Location: ".$nompage."&y=".$nblike);
 
-	}elseif (isset($_GET['dislike'])) {
+	}elseif (isset($_POST['dislike'])) {
 		$sql = "DELETE FROM likes WHERE like_user='$user' and like_page='$pagelike'";
 		$result = mysqli_query($conn, $sql);
 

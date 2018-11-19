@@ -64,12 +64,12 @@ if (isset($_GET['narticle'])) {
 		}
 		if (isset($_SESSION['u_id'])) {
 			if ($userlikechek == 0) {
-				echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+				echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
 						<button class="bouton-like" type="submit" name="like"><img class="icon-like" src="img/like-black-heart-button.png"></button>
 					</form>';
 			}elseif ($userlikechek == 1) {
-				echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+				echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
 						<button class="bouton-dislike" type="submit" name="dislike"><img class="icon-dislike" src="img/like-pink-button.png"></button>
 					</form>';

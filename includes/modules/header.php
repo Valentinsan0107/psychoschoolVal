@@ -247,7 +247,7 @@ function closeModal() {
 
 <?php  
 if (isset($_GET['loginsignup'])) {
-  if ($_GET['login'] !== "signupsucsess") {
+  if ($_GET['loginsignup'] !== "signupsucsess") {
   	echo '<script type="text/javascript">
   		  window.onload = function OpenModal2()
   		{

@@ -27,12 +27,12 @@ if($resultChek > 0 && isset($_SESSION['u_pseudo'])){
 }
 if (isset($_SESSION['u_id'])) {
 	if ($userlikechek == 0) {
-		echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+		echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 				<input type="hidden" name="nomfile" value="'.$nomfile.'">
 				<button type="submit" name="like">like</button>
 			</form>';
 	}elseif ($userlikechek == 1) {
-		echo '<form method="GET" action="/psychoschoolVal/includes/backrownd/addlike.php">
+		echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 				<input type="hidden" name="nomfile" value="'.$nomfile.'">
 				<button type="submit" name="dislike">dislike</button>
 			</form>';
