@@ -804,6 +804,7 @@ a.lien-product{
 
 div.conteneur-création-connexion{
 	display: flex;
+	margin: 190px 40px 190px 40px;
 }
 
 form.form-création,form.form-connexion{
