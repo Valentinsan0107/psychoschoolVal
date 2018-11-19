@@ -77,6 +77,9 @@
   </div>
 
 </div>
+<div class="conteneur-contenu-footer-bas">
+  <p class="texte-copyright">© Psychoschool - All right reserved.</p>
+</div>
 
   
     <script>
