@@ -13,7 +13,7 @@ require '../PHPMailer/src/SMTP.php';
 include_once('../oldpage.php');
 
 if(!isset($_POST['submit'])){
-	header("Location: ".$nompagesuite."loginsignup=errorsignup");
+	header("Location: ../../../log-in.php?loginsignup=errorsignup");
 	exit();
 }else{
 	
@@ -35,16 +35,16 @@ if(!isset($_POST['submit'])){
 	$decode = json_decode(file_get_contents($api_url), true);
 	
 	if ($decode['success'] != true) {
-		header("Location: ".$nompagesuite."loginsignup=capcha");
+		header("Location: ../../../log-in.php?loginsignup=capcha");
 	}else{
 		if ($pwd != $pwd2) {
-			header("Location: ".$nompagesuite."loginsignup=nomatch");
+			header("Location: ../../../log-in.php?loginsignup=nomatch");
 			exit();
 
 		} else {
 			$uidmin = strtolower($pseudo);
 			if (strpos($uidmin, "admin") !== FALSE) {
-				header("Location: ".$nompagesuite."loginsignup=admin");        
+				header("Location: ../../../log-in.php?loginsignup=admin");        
 				exit(); 
 
 			}else{
@@ -52,7 +52,7 @@ if(!isset($_POST['submit'])){
 				$result = mysqli_query($conn, $sql);
 				$resultChek = mysqli_num_rows($result);
 				if ($resultChek >0) {
-					header("Location: ".$nompagesuite."loginsignup=usertaken");
+					header("Location: ../../../log-in.php?loginsignup=usertaken");
 					exit();
 
 				} else {
@@ -60,7 +60,7 @@ if(!isset($_POST['submit'])){
 					$result = mysqli_query($conn, $sql);
 					$resultChek = mysqli_num_rows($result);
 					if ($resultChek >0) {
-						header("Location: ".$nompagesuite."loginsignup=emailtaken");
+						header("Location: ../../../log-in.php?loginsignup=emailtaken");
 						exit();
 
 					}else{
@@ -94,7 +94,7 @@ if(!isset($_POST['submit'])){
 						$mail->Subject = 'confirmation inscription';
 						$mail->msgHTML($content, __DIR__);
 						if (!$mail->send()) {
-						    header("Location: ".$nompage."?loginsignup=mailprobleme");
+						    header("Location: ../../../log-in.php?loginsignup=mailprobleme");
 						    exit();
 						} 
 
