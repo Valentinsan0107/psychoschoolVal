@@ -789,24 +789,14 @@ a.lien-product{
 
 /* Pop-up Connexion début */
 
-
-#modal{
-	width: 60%;
-	margin-left: 20%;
-	background-color: #fff;
-	box-shadow: 0 0 30px rgba(0, 0, 0, .2);
-	position: fixed;
-	top: -600px;
-	transition: 0.8s ease;
-	height: 520px;
-	z-index: 1;
-}
-
 div.conteneur-création-connexion{
 	display: flex;
-	margin: 190px 40px 190px 40px;
+	margin: 100px 40px 190px 40px;
 }
 
+.g-recaptcha{
+	margin: auto;
+}
 form.form-création,form.form-connexion{
 	display: flex;
 	flex-direction: column;
@@ -847,7 +837,7 @@ button.button-création, button.button-connexion{
 	width: 120px;
 	padding: 10px;
 	font-size: 1.5em;
-	margin: auto;
+	margin: 20px 259.2px 0 259.2px;
 	border-radius: 10px;
 	transition: 0.3s ease;
 }
