@@ -164,6 +164,7 @@ $TITLEpage="Psychoschool - Homepage";
 	</div>
 <div class="formulaire-contact-conteneur">
 	<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="GET">
+		<h1 class="titre-formulaire-contact">NOUS CONTACTER :</h1>
 		<div class="conteneur-email-nom">
 			<input class="input-formulaire-contact-3" type="text" name="nom" minlength="5" maxlength="80" placeholder="Nom">
 			<input class="input-formulaire-contact-2" type="email" name="email" minlength="5" maxlength="80" placeholder="Email">

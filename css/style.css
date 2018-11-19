@@ -468,7 +468,7 @@ form.form-formulaire-contact{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	margin: 40px;
+	margin: 40px 379.8px 40px 379.8px;
 }
 
 input.input-formulaire-contact-2{
@@ -519,6 +519,14 @@ button.button-formulaire-contact{
 	transition: 0.2s ease;
 	margin: 0px 250px 0px 250px;
 	cursor: pointer;
+}
+
+.titre-formulaire-contact{
+	text-align: center;
+	margin: 0 0 40px 0;
+	font-family: 'Raleway', sans-serif;
+	color: #3390a5;
+
 }
 
 
