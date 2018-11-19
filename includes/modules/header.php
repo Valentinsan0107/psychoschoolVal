@@ -202,14 +202,8 @@ session_start();
 			<div>
 				<?php
 				if (isset($_GET['loginsignup'])) {
-					if ($_GET['loginsignup'] == "empty") {
-						echo "<p>Tout les chans ne sont pas remplit</p>";
-					}
 					if ($_GET['loginsignup'] == "nomatch") {
 						echo "<p>Les mots de pass ne sont pas les mème</p>";
-					}
-					if ($_GET['loginsignup'] == "email") {
-						echo "<p>L email est pas valide</p>";
 					}
 					if ($_GET['loginsignup'] == "admin") {
 						echo "<p>Vous ne pouver pas vous appeller admin</p>";
@@ -220,17 +214,17 @@ session_start();
 					if ($_GET['loginsignup'] == "emailtaken") {
 						echo "<p>Email deja existant</p>";
 					}
-					if ($_GET['loginsignup'] == "error") {
+					if ($_GET['loginsignup'] == "errorsignup") {
 						echo "<p>Il y a eu une erreur</p>";
 					}
 					if ($_GET['loginsignup'] == "mailprobleme") {
 						echo "<p>Il y a eu un probleme avec l envoie de mail</p>";
 					}
-					if ($_GET['loginsignup'] == "shortpseudo") {
-						echo "<p>Le pseudo est trops court</p>";
+					if ($_GET['loginsignup'] == "signuperror") {
+						echo "<p>Mot de pass ou identifian incorect</p>";
 					}
-					if ($_GET['loginsignup'] == "shortpwd") {
-						echo "<p>Le mot de pass est trops court</p>";
+					if ($_GET['loginsignup'] == "notconfirmed") {
+						echo "<p>Votre email n a pas ete confirmer</p>";
 					}
 				}
 				?>
@@ -252,27 +246,17 @@ function closeModal() {
 </script>
 
 <?php  
-if (isset($_GET['signup'])) {
-	echo '<script type="text/javascript">
-		  window.onload = function OpenModal2()
-		{
-		  setTimeout(function OpenModal2()
-  		  {
-  		  document.getElementById("modal").style.top = "120px";
-  		  }, 100);document.getElementById("modal").style.transition = "none";
-  		}
-		</script>';
-}elseif(isset($_GET['login'])){
-	if ($_GET['login'] !== "sucess") {
-		echo '<script type="text/javascript">
-		  window.onload = function OpenModal2()
-		{
-		  setTimeout(function OpenModal2()
-  		  {
-  		  document.getElementById("modal").style.top = "120px";
-  		  }, 100);document.getElementById("modal").style.transition = "none";
-  		}
-		</script>';
-	}
+if (isset($_GET['loginsignup'])) {
+  if ($_GET['login'] !== "signupsucsess") {
+  	echo '<script type="text/javascript">
+  		  window.onload = function OpenModal2()
+  		{
+  		  setTimeout(function OpenModal2()
+    		  {
+    		  document.getElementById("modal").style.top = "120px";
+    		  }, 100);document.getElementById("modal").style.transition = "none";
+    		}
+  		</script>';
+  }
 }
 ?>
