@@ -467,45 +467,66 @@ p.paragraphe-promesse{
 form.form-formulaire-contact{
 	display: flex;
 	flex-direction: column;
+	width: 50%;
+	margin: 40px;
+}
+
+input.input-formulaire-contact-2{
+	margin-bottom: 3%;
+	border: 1px #ebebeb solid;
+	padding: 10px;
+	width: 48.5%;
+}
+
+input.input-formulaire-contact-3{
+	margin: 0 3% 3% 0;
+	border: 1px #ebebeb solid;
+	padding: 10px;
+	width: 48.5%;
+
 }
 
 input.input-formulaire-contact{
-	margin: 10px;
-	margin-right: 140px; 
-	margin-left : 20px;
-	margin-top : 20px;
-	border-radius: 5px;
-	border: 1px #3390a5 solid;
+	margin-bottom: 3%;
+	border: 1px #ebebeb solid;
 	padding: 10px;
 }
 
+div.conteneur-email-nom{
+	display: flex;
+}
+
 textarea.textarea-formulaire-contact{
-	margin: 20px;
+	margin-bottom: 3%;
 	height: 130px;
-	border-radius: 5px;
-	border: 1px #3390a5 solid;
+	border: 1px #ebebeb solid;
 	font-family: Arial;
 	padding: 8px;
 	resize : none;
 }
 
 button.button-formulaire-contact{
-	border: none;
-	background-color: #3390a5;
-	color: #fff;
-	width: 120px;
-	padding: 10px;
-	font-size: 1.5em;
-	margin: auto;
-	border-radius: 10px;
-	transition: 0.3s ease;
+	font-size: 1.1em;
+	font-family: 'Raleway', sans-serif;
+	padding: 15px 50px 15px 50px;
+	border-radius: 5px;
+	border: 2px solid #3390a5;
+	background-color: white;
+	transition: 0.2s ease;
+	text-decoration: none;
+	color: #3390a5;
+	font-weight: bold;
+	transition: 0.2s ease;
+	margin: 0px 250px 0px 250px;
+	cursor: pointer;
 }
 
 
 
 button.button-formulaire-contact:hover{
-	background-color: #0de03a;
+	color: red;
 	transition: 0.3s ease;
+	border: 2px solid red;
 }
 
 /* homepage début */

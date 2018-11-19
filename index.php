@@ -162,15 +162,17 @@ $TITLEpage="Psychoschool - Homepage";
 	</div>
 
 	</div>
-
+<div class="formulaire-contact-conteneur">
 	<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="GET">
-			<input class="input-formulaire-contact" type="email" name="email" minlength="5" maxlength="80" placeholder="Email">
-			<input class="input-formulaire-contact" type="text" name="nom" minlength="5" maxlength="80" placeholder="Nom">
+		<div class="conteneur-email-nom">
+			<input class="input-formulaire-contact-3" type="text" name="nom" minlength="5" maxlength="80" placeholder="Nom">
+			<input class="input-formulaire-contact-2" type="email" name="email" minlength="5" maxlength="80" placeholder="Email">
+		</div>
 			<input class="input-formulaire-contact" type="text" name="sujet" minlength="5" maxlength="200" placeholder="Sujet">
 			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" minlength="5" maxlength="80000"></textarea>
 			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
 		</form>
-	
+</div>	
 <?php
 	include_once("includes/modules/footer.php");
 ?>
