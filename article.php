@@ -94,8 +94,8 @@ if (isset($_GET['narticle'])) {
 				$content = $row['coment_contenue'];
 
 				echo '<div class="div-commentaire">
-						<p class="pseudo-date">'.$pseudo.' - '.$date.'</p>
-						<p class="p-commentaire">'.$content.'</p>
+						<p class="pseudo-date">'.htmlspecialchars($pseudo).' - '.$date.'</p>
+						<p class="p-commentaire">'.htmlspecialchars($content).'</p>
 					</div>';
 
 				if (isset($_SESSION['u_pseudo']) && $pseudo == $_SESSION['u_pseudo']) {
@@ -118,11 +118,10 @@ if (isset($_GET['narticle'])) {
 			</form>';
 		}
 
-
 		
 }else{
 echo "<p>error</p>";
-}	
+}
 
 	include_once("includes/modules/footer.php");
 ?>

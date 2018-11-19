@@ -17,7 +17,7 @@ session_start();
 	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script type="text/javascript">
             $(window).on('scroll', function() {
@@ -168,7 +168,7 @@ session_start();
                         	if (!isset($_SESSION['u_id'])) {
                         		echo '<li><a class="active" href="log-in.php">Se connecter</a></li>';
                         	} else {
-                        		echo '<li><a class="active">'.$_SESSION['u_pseudo'].'</a></li>
+                        		echo '<li><a class="active">'.htmlspecialchars($_SESSION['u_pseudo']).'</a></li>
                         	
                         		<form action="/psychoschoolVal/includes/backrownd/compts/logout.php" method="POST">
                         			<input type="hidden" name="submit" value=" ">
