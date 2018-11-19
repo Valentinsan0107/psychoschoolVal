@@ -113,17 +113,13 @@ session_start();
       </script>
 
       <script type="text/javascript">
-      window.onload = function chargementpage()
-    {
-      setTimeout(function chargementpage()
-        {
-        document.getElementById("bodyy").fadeIn();
-        }, 400);
-      }
+     document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('body').classList.add('bodyy');
+}, false);
     </script>
 
 </head>
-<body id="bodyy">
+<body>
 
 	<script type="text/javascript">
 	$(function(){
