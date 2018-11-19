@@ -476,6 +476,8 @@ input.input-formulaire-contact-2{
 	border: 1px #ebebeb solid;
 	padding: 10px;
 	width: 48.5%;
+	font-family: 'Montserrat', sans-serif;
+	color: #767676;
 }
 
 input.input-formulaire-contact-3{
@@ -483,6 +485,8 @@ input.input-formulaire-contact-3{
 	border: 1px #ebebeb solid;
 	padding: 10px;
 	width: 48.5%;
+	font-family: 'Montserrat', sans-serif;
+	color: #767676;
 
 }
 
@@ -490,6 +494,8 @@ input.input-formulaire-contact{
 	margin-bottom: 3%;
 	border: 1px #ebebeb solid;
 	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	color: #767676;
 }
 
 div.conteneur-email-nom{
@@ -500,9 +506,10 @@ textarea.textarea-formulaire-contact{
 	margin-bottom: 3%;
 	height: 130px;
 	border: 1px #ebebeb solid;
-	font-family: Arial;
+	font-family: 'Montserrat', sans-serif;
 	padding: 8px;
 	resize : none;
+	color: #767676;
 }
 
 button.button-formulaire-contact{
@@ -526,7 +533,7 @@ button.button-formulaire-contact{
 	margin: 0 0 40px 0;
 	font-family: 'Raleway', sans-serif;
 	color: #3390a5;
-
+	padding: 10px;
 }
 
 
