@@ -1,7 +1,8 @@
-body{
+#bodyy{
 	padding: 0;
 	margin: 0;
 	background-color: #f3f3f3;
+	transition: 4s ease;
 }
 
 /* Bar navigation début */
@@ -826,8 +827,7 @@ h1.phrase-formulaire{
 input.input-création, input.input-connexion{
 	margin-bottom: 20px;
 	padding: 10px;
-	border-radius: 5px;
-	border: 1px #3390a5 solid;
+	border: 1px #ebebeb solid;
 }
 
 button.button-création, button.button-connexion{
