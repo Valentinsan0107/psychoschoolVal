@@ -163,14 +163,14 @@ $TITLEpage="Psychoschool - Homepage";
 
 	</div>
 <div class="formulaire-contact-conteneur">
-	<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="GET">
+	<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="POST">
 		<h1 class="titre-formulaire-contact">NOUS CONTACTER :</h1>
 		<div class="conteneur-email-nom">
-			<input class="input-formulaire-contact-3" type="text" name="nom" minlength="5" maxlength="80" placeholder="Prénom et Nom">
-			<input class="input-formulaire-contact-2" type="email" name="email" minlength="5" maxlength="80" placeholder="Email">
+			<input class="input-formulaire-contact-3" type="text" name="nom" minlength="5" maxlength="80" placeholder="Prénom et Nom" required>
+			<input class="input-formulaire-contact-2" type="email" name="email" minlength="5" maxlength="80" placeholder="Email" required>
 		</div>
-			<input class="input-formulaire-contact" type="text" name="sujet" minlength="5" maxlength="200" placeholder="Sujet">
-			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" minlength="5" maxlength="80000"></textarea>
+			<input class="input-formulaire-contact" type="text" name="sujet" minlength="5" maxlength="200" placeholder="Sujet" required>
+			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" minlength="5" maxlength="80000" required></textarea>
 			<div class="g-recaptcha" data-sitekey="6LfF13sUAAAAAOyzfAUI4ry12EmDFt4ocdKCq5iv"></div>
 			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
 		</form>

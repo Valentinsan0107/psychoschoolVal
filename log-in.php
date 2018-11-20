@@ -11,18 +11,18 @@
 		echo '<div class="connexion-compte">
 				<h1 class="phrase-formulaire">Tu as déjà un compte ? Connecte-toi !</h1>
 			<form class="form-connexion" action="/psychoschoolVal/includes/backrownd/compts/login.php" method="POST">
-				<input class="input-connexion" minlength="6" maxlength="50"  type="text" name="uid" placeholder="Pseudo ou email">
-				<input class="input-connexion" minlength="6" maxlength="20" type="password" name="password" placeholder="Mot de passe">
-				<button class="button-connexion" type="submit" name="submit">Valider</button>
+				<input class="input-connexion" minlength="6" maxlength="50"  type="text" name="uid" placeholder="Pseudo ou email" required>
+				<input class="input-connexion" minlength="6" maxlength="20" type="password" name="password" placeholder="Mot de passe" required>
+				<button class="button-connexion" type="submit" name="submit" required>Valider</button>
 			</form>
 			</div>
 			<div class="création-compte">
 				<h1 class="phrase-formulaire">Tu nas pas encore de compte PsychoSchool ? </h1>
 				<form class="form-création" action="/psychoschoolVal/includes/backrownd/compts/signup.php" method="POST">
-					<input class="input-création" maxlength="50" type="email" name="email" placeholder="Email">
-					<input class="input-création" maxlength="20" minlength="6" type="text" name="pseudo" placeholder="Ton pseudo">
-					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd" placeholder="Mot de passe">
-					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd2" placeholder="Confirmer le mot de passe">
+					<input class="input-création" maxlength="50" type="email" name="email" placeholder="Email" required>
+					<input class="input-création" maxlength="20" minlength="6" type="text" name="pseudo" placeholder="Ton pseudo" required>
+					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd" placeholder="Mot de passe" required>
+					<input class="input-création" maxlength="20" minlength="6" type="password" name="pwd2" placeholder="Confirmer le mot de passe" required>
           <div class="g-recaptcha" data-sitekey="6LfF13sUAAAAAOyzfAUI4ry12EmDFt4ocdKCq5iv"></div>
 					<button class="button-création" type="submit" name="submit">Valider</button>
 				</form>
