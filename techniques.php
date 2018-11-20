@@ -4,7 +4,7 @@
 ?>
 
 
-	
+<div class="conteneur-général-1">	
 
 <div class="article-conteneur">
 <?php
@@ -114,3 +114,6 @@
 <?php
 	include_once("includes/modules/footer.php");
 ?>
+
+
+</div>

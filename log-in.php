@@ -2,6 +2,8 @@
 	include_once("includes/modules/header.php");
 ?>
 
+<div class="conteneur-général-3">
+
 <div class="conteneur-création-connexion">
 			
 <?php
@@ -64,6 +66,10 @@
 
 ?>
 </div>	
+
+</div>
+
 	<?php
 	include_once("includes/modules/footer.php");
 ?>
+

@@ -118,6 +118,12 @@ session_start();
 }, false);
     </script>
 
+    <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.conteneur-général-3').classList.replace("conteneur-général-3", "conteneur-général-2");
+}, false);
+    </script>
+
 </head>
 <body>
 
@@ -175,8 +181,4 @@ session_start();
                         ?>
 
                   </ul>
-            </nav>
-		
-	
-
-<div class="conteneur-général-1">	
+            </nav>	

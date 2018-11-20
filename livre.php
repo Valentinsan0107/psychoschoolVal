@@ -2,7 +2,7 @@
   include_once("includes/modules/header.php");
 ?>
 
-
+<div class="conteneur-général-1">
 
 <div class="liste-présentation-affiliation-livre-conteneur">
 	<div class="présentation-livre-affiliation">
@@ -32,8 +32,9 @@
 
 </div>
 
-
+</div>
 
 <?php
   include_once("includes/modules/footer.php");
 ?>
+
