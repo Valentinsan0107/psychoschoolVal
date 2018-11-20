@@ -2,16 +2,16 @@ body{
 	padding: 0;
 	margin: 0;
 	background-color: #f3f3f3;
-	opacity: 0;
 }
 
-.bodyy{
-	display: block;
-	padding: 0;
-	margin: 0;
-	background-color: #f3f3f3;
+.conteneur-général-1{
+	opacity: 0;
+	transform: translateX(20em);
+}
+
+.conteneur-général-2{
 	opacity: 1;
-	transition-duration: 0.6s;
+	transition: 0.6s ease;
 }
 /* Bar navigation début */
 

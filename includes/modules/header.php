@@ -114,7 +114,7 @@ session_start();
 
       <script type="text/javascript">
      document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('body').classList.add('bodyy');
+    document.querySelector('.conteneur-général-1').classList.replace("conteneur-général-1", "conteneur-général-2");
 }, false);
     </script>
 
@@ -179,4 +179,4 @@ session_start();
 		
 	
 
-		
+<div class="conteneur-général-1">	
