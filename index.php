@@ -171,6 +171,7 @@ $TITLEpage="Psychoschool - Homepage";
 		</div>
 			<input class="input-formulaire-contact" type="text" name="sujet" minlength="5" maxlength="200" placeholder="Sujet">
 			<textarea class="textarea-formulaire-contact" placeholder="Ecris ton message..." name="message" minlength="5" maxlength="80000"></textarea>
+			<div class="g-recaptcha" data-sitekey="6LfF13sUAAAAAOyzfAUI4ry12EmDFt4ocdKCq5iv"></div>
 			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
 		</form>
 </div>	
