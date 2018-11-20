@@ -16,7 +16,7 @@ body{
 
 .conteneur-général-3{
 	opacity: 0;
-	transform: translateX(20em);
+	transform: scale(1.06);
 }
 /* Bar navigation début */
 

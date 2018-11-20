@@ -4,8 +4,6 @@ $TITLEpage="Psychoschool - Homepage";
 	include_once("includes/modules/header.php");
 ?>
 
-<div class="conteneur-général-3">
-
 <div id="background-test-1">
 	<div class="conteneur-phrase-présentation-matériel-3">
 		<h1 class="phrase-présentation-matériel">PROGRESSE RAPIDEMENT</h1>
@@ -176,8 +174,6 @@ $TITLEpage="Psychoschool - Homepage";
 			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
 		</form>
 </div>	
-
-</div>
 
 <?php
 	include_once("includes/modules/footer.php");
