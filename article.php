@@ -112,7 +112,7 @@ if (isset($_GET['narticle'])) {
 			echo '<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire</p>';
 		} else {
 			echo '<form class="form-formulaire-comment" action="/psychoschoolVal/includes/backrownd/addcoment.php" method="POST">
-				<textarea class="textarea-formulaire-comment" name="coment" placeholder="Ecris ton commentaire..."></textarea>
+				<textarea class="textarea-formulaire-comment" name="coment" placeholder="Ecris ton commentaire..." required></textarea>
 				<input type="hidden" name="nomfile" value="'.$nomarticle.'">
 				<button class="button-formulaire-comment" type="submit" name="submitsolo">Publier</button>
 			</form>';
