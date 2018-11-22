@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
 	$decode = json_decode(file_get_contents($api_url), true);
 	
 	if ($decode['success'] != true) {
-		header("Location: ".$nompage."?formulaire=captcha");
+		header("Location: ".$nompagesuite."formulaire=captcha");
 		exit();
 	}else{
 
@@ -45,10 +45,10 @@ if(isset($_POST['submit'])){
 		$mail->msgHTML($message, __DIR__);
 		
 		if (!$mail->send()) {
-		    header("Location: ".$nompage."?formulaire=mailprobleme");
+		    header("Location: ".$nompagesuite."formulaire=mailprobleme");
 		    exit();
 		}else{
-			header("Location: ".$nompage."?formulaire=sucess");
+			header("Location: ".$nompagesuite."formulaire=sucess");
 		    exit();
 		}
 	}
