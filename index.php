@@ -174,6 +174,22 @@ $TITLEpage="Psychoschool - Homepage";
 			<div class="g-recaptcha" data-sitekey="6LfF13sUAAAAAOyzfAUI4ry12EmDFt4ocdKCq5iv"></div>
 			<button class="button-formulaire-contact" type="submit" name="submit">Envoyer</button>
 		</form>
+		<?php
+		if (isset($_GET['formulaire'])) {
+			if ($_GET['formulaire'] == 'captcha') {
+				echo "<p>Le captcha n a pas ete valider</p>";
+			}
+			if ($_GET['formulaire'] == 'mailprobleme') {
+				echo "<p>L envoie du mail a eu un probleme</p>";
+			}
+			if ($_GET['formulaire'] == 'sucess') {
+				echo "<p>Le mail c est bien envoyer</p>";
+			}
+			if ($_GET['formulaire'] == 'error') {
+				echo "<p>Il y a eu une erreur</p>";
+			}
+		}
+		?>
 </div>	
 
 <?php
