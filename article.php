@@ -74,6 +74,8 @@ if (isset($_GET['narticle'])) {
 						<button class="bouton-dislike" type="submit" name="dislike"><img class="icon-dislike" src="img/like-pink-button.png"></button>
 					</form>';
 			}
+		}else{
+			echo '<img class="icon-dislike" src="img/like-pink-button.png">';
 		}
 
 		echo '<p class="nombre-like-article-entier">'.$resultChek.'<p>';
@@ -109,7 +111,7 @@ if (isset($_GET['narticle'])) {
 
 			/*formulaire pr le comentaire*/
 		if (!isset($_SESSION['u_id'])) {
-			echo '<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire</p>';
+			echo '<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire ou aimer la coment_page</p>';
 		} else {
 			echo '<form class="form-formulaire-comment" action="/psychoschoolVal/includes/backrownd/addcoment.php" method="POST">
 				<textarea class="textarea-formulaire-comment" name="coment" placeholder="Ecris ton commentaire..." required></textarea>
