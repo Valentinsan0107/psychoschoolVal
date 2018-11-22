@@ -111,7 +111,7 @@ if (isset($_GET['narticle'])) {
 
 			/*formulaire pr le comentaire*/
 		if (!isset($_SESSION['u_id'])) {
-			echo '<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire ou aimer la coment_page</p>';
+			echo '<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire ou aimer la page</p>';
 		} else {
 			echo '<form class="form-formulaire-comment" action="/psychoschoolVal/includes/backrownd/addcoment.php" method="POST">
 				<textarea class="textarea-formulaire-comment" name="coment" placeholder="Ecris ton commentaire..." required></textarea>
