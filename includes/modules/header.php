@@ -119,8 +119,14 @@ session_start();
     </script>
 
     <script type="text/javascript">
-     document.addEventListener('DOMContentLoaded', function() {
+     document.addEventListener('DOMContentLoaded', function mafonction() {
     document.querySelector('.conteneur-général-3').classList.replace("conteneur-général-3", "conteneur-général-2");
+}, false);
+    </script>
+
+    <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function mafonction() {
+    document.querySelector('.menu-matériel').classList.replace("menu-matériel", "menu-matériel-2");
 }, false);
     </script>
 
@@ -159,7 +165,7 @@ session_start();
                   <ul>
                         <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
                         <li><a href="/psychoschoolVal/techniques.php">Les Techniques</a></li>
-                        <li><a href="/psychoschoolVal/livre.php">Livre</a></li>
+                        <li><a href="/psychoschoolVal/livre.php">Matériel</a></li>
                         <li><a href="#">A propos</a></li>
                         <form class="barre-recherche-conteneur-2" method="GET" action="recherche.php">
     						<input class="champ-recherche-2" type="text" name="recherche" minlength="1" placeholder="Tu cherches quelque chose ?">

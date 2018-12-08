@@ -110,10 +110,10 @@
 ?>
 </div>
 
+</div>
 
 <?php
 	include_once("includes/modules/footer.php");
 ?>
 
 
-</div>

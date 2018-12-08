@@ -70,7 +70,7 @@ nav ul{
       padding: 0;
       display: flex;
 }
-nav ul li {
+nav ul li, li.liste-onglet-matériel{
       list-style:none;
 }
 
@@ -940,6 +940,11 @@ button.btnClose:hover{
 	margin-bottom: 40px;
 }
 
+.conteneur-design-tag-2{
+	margin-left: 22%; 
+	margin-bottom: 30px;
+}
+
 .date-aperçu-article{
 	margin: 0;
 	padding-left: 30px;
@@ -976,7 +981,7 @@ div.photo-article{
 	margin-left: 6%;
 }
 
-div.article-conteneur{
+div.article-conteneur, .matériel-conteneur{
 	margin-top: 120px;
 	display: flex;
 	flex-direction: column;
@@ -986,12 +991,11 @@ div.article-conteneur{
 
 a.lien-article{
 	background-color: #3390a5;
-    border-radius: 10px;
-    font-size: 1.5em;
-    padding: 10px;
+    font-size: 1.4em;
+    padding:  10px 15px 10px 15px;
     text-decoration: none;
     color: #fff;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     float: right;
     margin-right: 35px;
     transition: 0.3s ease;
@@ -1000,8 +1004,13 @@ a.lien-article{
 }
 
 a.lien-article:hover{
-	background-color: #0de03a;
-	transition: 0.3s ease;
+	background-color: #d26581;
+	transition: 0.3s;
+}
+
+a.lien-article-2:hover{
+	background-color: #d26581;
+	transition: 0.3s;
 }
 
 p.texte-article{
@@ -1030,91 +1039,126 @@ div#volet{
 /* techniques fin */
 
 /* livres début */
+.conteneur-menu-article-matériel{
+	margin-left: 17%;
+}
+.menu-matériel{
+	width: 200px;
+	background-color: white;
+	margin-left: 6%;
+	height: 220px;
+	margin-bottom: 40px;
+	position: fixed;
+	border: 1px solid #ebebeb;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
+    opacity: 0;
+	transform: translateX(-10em);
+}
 
-div.liste-présentation-affiliation-livre-conteneur{
-	margin-top: 195px;
+.menu-matériel-2{
+	opacity: 1;
+	transition: 0.8s ease-in-out;
+	width: 200px;
+	background-color: white;
+	margin-left: 6%;
+	height: 220px;
+	margin-bottom: 40px;
+	position: fixed;
+	border: 1px solid #ebebeb;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.liste-onglet-matériel{
+	display: flex;
+    align-items: center;
+}
+
+a.onglet-matériel{
+	line-height: 40px;
+	padding: 10px;
+	font-family: 'Arial', sans-serif;
+	color: #3390a5;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+
+
+.image-onglet-matériel{	
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.photo-article-2{
+	height: 305px;
+	width: 28%;
+	background-color: #ffffff;
+	border: 1px solid #ebebeb;
+	margin-left: 6%;
+}
+
+.conteneur-photo-share{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 }
 
-div.présentation-livre-affiliation{
-
-    width: 80%;
-    height: 370px;
-    margin-bottom: 40px;
-    margin-left: 10%;
-    display: flex;
+.amazon-lien{
+	height: 90px;
+	background-color: #d26581;
+	display: flex;
+	align-items: center;
 }
 
-div.photo-livre-et-auteur{
-	width: 25%;
-	height: 370px;
-	background-color: black;
-	background-image: url(../img/fond-test.jpg);
-	background-size: contain;
-	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
-}
-
-div.lien-affiliation-amazon{
-	width: 20%;
+.texte-amazon-lien{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
 	margin-left: 2%;
-	height: 370px;
-	background-color: #ffffff;
-	box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+	font-size: 1.4em;
+
 }
 
-div.titre-livre-auteur-description-conteneur{
+.image-amazon-lien{
+	width: 42px;
+	height: 35px;
+	margin-left: 14px;
+}
+
+.lien-amazon-lien{
 	display: flex;
-	flex-direction: column;
-	width: 53%;
-    box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
-    margin-left: 1%;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4em;
+	border: none;
+	color: #d26581;
+	background-color: white;
+	text-decoration: none;
+	padding: 12px;
+	margin-left: 210px;
 }
 
-div.titre-livre-conteneur{
-	width: 100%;
-	height: 50px;
-	background-color: #ffffff;
-	padding-left: 10px;
+.lien-amazon-lien:hover{
+	text-decoration: underline;
 }
 
-div.nom-auteur-conteneur{
-	width: 100%;
-	height: 50px;
-	background-color: #ffffff;
-	padding-left: 10px;
-	border-top: 3px solid #3390a5;
-	border-bottom: 3px solid #3390a5;
+a.lien-article-2{
+	background-color: #3390a5;
+    font-size: 1.4em;
+    padding:  10px 15px 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    transition: 0.3s ease;
+    margin: 0 0 20px 345px;
+    
 }
-
-div.description-livre-aperçu-conteneur{
-	width: 100%;
-	height: 270px;
-	background-color: #ffffff;
-	padding-left: 10px;
-}
-
-h2.titre-livre{
-	line-height: 10px;
-	font-family: Arial;
-	text-align: center;
-}
-
-h3.nom-auteur, a.lien-nom-auteur{
-	line-height: 10px;
-	font-family: Arial;
-}
-
-h3.titre-paragraphe-description-livre, p.paragraphe-description-livre{
-	font-family: Arial;
-}
-
-p.paragraphe-description-livre{
-	color: #404040;
-	padding-right: 10px;
-}
-
 /* livres fin */
 
 /* PAGE ENTIERE techniques début  */
@@ -1350,6 +1394,7 @@ img.icon-like:hover{
 
 div.conteneur-module-comment{
 	display: flex;
+	margin-top: 30px;
 }
 
 a.lien-icon-conversation{

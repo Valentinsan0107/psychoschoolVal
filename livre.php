@@ -2,36 +2,142 @@
   include_once("includes/modules/header.php");
 ?>
 
-<div class="conteneur-général-1">
 
-<div class="liste-présentation-affiliation-livre-conteneur">
-	<div class="présentation-livre-affiliation">
-		<div class="photo-livre-et-auteur">
-			
-		</div>
-
-		<div class="titre-livre-auteur-description-conteneur">
-			<div class="titre-livre-conteneur">
-				<h2 class="titre-livre">Titre livre 1</h2>
-			</div>
-			<div class="nom-auteur-conteneur">
-				<h3 class="nom-auteur">Auteur de ce livre : <a class="lien-nom-auteur" href="livres/livre-1.php">Nom de l'auteur</a></h3>
-			</div>
-			<div class="description-livre-aperçu-conteneur">
-				<h3 class="titre-paragraphe-description-livre">Titre description livre 1</h3>
-				<p class="paragraphe-description-livre">Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt. aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.</p>
-
-				<a class="lien-article" href="livres/livre-1.php">En savoir plus...</a>
-			</div>
-		</div>
-
-			<div class="lien-affiliation-amazon">
-				
-			</div>
+	<div class="menu-matériel">
+		<ul>
+			<li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/laptop.png"><a class="onglet-matériel" href="#">Ordinateur</a></li>
+            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/microphone.png"><a class="onglet-matériel" href="#">Micro</a></li>
+            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/camera.png"><a class="onglet-matériel" href="#">Caméra</a></li>
+            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/computer-screen.png"><a class="onglet-matériel" href="#">Ecran</a></li>
+            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/outil.png"><a class="onglet-matériel" href="#">Gadget</a></li>
+		</ul>
 	</div>
+<div class="conteneur-général-3">
+	<div class="matériel-conteneur">
+	<div class="conteneur-design-tag-2">
+		<a class="design-tag-2">#Nouveautés</a>
+		<a class="design-tag">#Populaire</a>
+		<a class="design-tag">#Le moins chère</a>
+		<a class="design-tag">#Le plus chère</a>
+</div>
+<div class="conteneur-menu-article-matériel">
+	
+	<div class="photo-article-zone-conteneur">
+
+		<div class='photo-article-2'
+		 style='background-image: url(img/iphone-xr.jpg); background-repeat: no-repeat; background-size: cover;'>
+		 	
 
 </div>
 
+	<div class="zone-article">
+			<h1 class="titre-article">Iphone XS</h1>
+			<h6 class="date-aperçu-article">17 Novembre 2018</h6>
+			<p class="texte-article">Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo.</p>
+		<div class="conteneur-module-comment">
+			<a class="lien-icon-conversation" href="article.php?narticle=draxler">
+				<img class="icon-conversation" src="img/conversation.png">
+			</a><p class="nombre-commentaire-article">0</p><a class="lien-icon-conversation" href="article.php?narticle=draxler">
+				<img class="icon-like" src="img/like-black-heart-button.png">
+			</a>
+			<p class="nombre-like-article">0</p>
+			<a class="lien-article-2" href="#">En savoir plus</a>
+		</div>
+
+		<div class="amazon-lien">
+		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
+		<a class="lien-amazon-lien" target="_blank" href="https://www.amazon.fr/iPhone-Xs/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3AiPhone%20Xs">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
+		</div>
+
+	</div>
+
+
+		
+	</div>
+
+	<div class="photo-article-zone-conteneur">
+
+		<div class='photo-article-2'
+		 style='background-image: url(img/Alienware.jpg); background-repeat: no-repeat; background-size: cover;'>
+		 	
+
+</div>
+
+	<div class="zone-article">
+			<h1 class="titre-article">Alienware Laptop</h1>
+			<h6 class="date-aperçu-article">17 Novembre 2018</h6>
+			<p class="texte-article">Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo.</p>
+		<div class="conteneur-module-comment">
+			<a class="lien-icon-conversation" href="article.php?narticle=draxler">
+				<img class="icon-conversation" src="img/conversation.png">
+			</a><p class="nombre-commentaire-article">0</p><a class="lien-icon-conversation" href="article.php?narticle=draxler">
+				<img class="icon-like" src="img/like-black-heart-button.png">
+			</a>
+			<p class="nombre-like-article">0</p>
+			<a class="lien-article-2" href="#">En savoir plus</a>
+		</div>
+
+		<div class="amazon-lien">
+		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
+		<a class="lien-amazon-lien" href="#">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
+		</div>
+
+	</div>
+
+
+		
+	</div>
+
+	<div class="photo-article-zone-conteneur">
+
+		<div class='photo-article-2'
+		 style='background-image: url(img/rode.jpg); background-repeat: no-repeat; background-size: cover;'>
+		 	
+
+</div>
+
+	<div class="zone-article">
+			<h1 class="titre-article">Rode-NT2-A</h1>
+			<h6 class="date-aperçu-article">17 Novembre 2018</h6>
+			<p class="texte-article">Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo.</p>
+		<div class="conteneur-module-comment">
+			<a class="lien-icon-conversation" href="article.php?narticle=draxler">
+				<img class="icon-conversation" src="img/conversation.png">
+			</a><p class="nombre-commentaire-article">0</p><a class="lien-icon-conversation" href="article.php?narticle=draxler">
+				<img class="icon-like" src="img/like-black-heart-button.png">
+			</a>
+			<p class="nombre-like-article">0</p>
+			<a class="lien-article-2" href="#">En savoir plus</a>
+		</div>
+
+		<div class="amazon-lien">
+		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
+		<a class="lien-amazon-lien" href="#">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
+		</div>
+
+	</div>
+
+
+		
+	</div>
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	</div>
+</div>
 </div>
 
 <?php
