@@ -5,6 +5,7 @@
 
 	<div class="menu-matériel">
 		<ul>
+			<li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/store-new-badges.png"><a class="onglet-matériel" href="#">Nouveautés</a></li>
 			<li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/laptop.png"><a class="onglet-matériel" href="#">Ordinateur</a></li>
             <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/microphone.png"><a class="onglet-matériel" href="#">Micro</a></li>
             <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/camera.png"><a class="onglet-matériel" href="#">Caméra</a></li>

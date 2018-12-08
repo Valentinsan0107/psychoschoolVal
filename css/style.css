@@ -974,7 +974,7 @@ div.zone-article{
 }
 
 div.photo-article{
-	height: 340px;
+	height: 352px;
 	width: 28%;
 	background-color: #ffffff;
 	border: 1px solid #ebebeb;
@@ -1046,7 +1046,7 @@ div#volet{
 	width: 200px;
 	background-color: white;
 	margin-left: 6%;
-	height: 220px;
+	height: 282px;
 	margin-bottom: 40px;
 	position: fixed;
 	border: 1px solid #ebebeb;
@@ -1064,7 +1064,7 @@ div#volet{
 	width: 200px;
 	background-color: white;
 	margin-left: 6%;
-	height: 220px;
+	height: 282px;
 	margin-bottom: 40px;
 	position: fixed;
 	border: 1px solid #ebebeb;
