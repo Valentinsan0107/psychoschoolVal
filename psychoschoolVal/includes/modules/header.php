@@ -13,7 +13,7 @@ session_start();
 	?>
 	<meta charset="utf-8">
 	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/icon-brain.png">
-	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/psychoschoolVal/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
