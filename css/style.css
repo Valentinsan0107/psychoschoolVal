@@ -1047,7 +1047,6 @@ div#volet{
 	background-color: white;
 	margin-left: 6%;
 	height: 282px;
-	margin-bottom: 40px;
 	position: fixed;
 	border: 1px solid #ebebeb;
 	display: flex;
@@ -1065,7 +1064,6 @@ div#volet{
 	background-color: white;
 	margin-left: 6%;
 	height: 282px;
-	margin-bottom: 40px;
 	position: fixed;
 	border: 1px solid #ebebeb;
 	display: flex;
@@ -1097,11 +1095,10 @@ a.onglet-matériel{
 }
 
 .photo-article-2{
-	height: 305px;
-	width: 28%;
+	height: 330px;
+	width: 340px;
 	background-color: #ffffff;
 	border: 1px solid #ebebeb;
-	margin-left: 6%;
 }
 
 .conteneur-photo-share{
@@ -1140,7 +1137,7 @@ a.onglet-matériel{
 	background-color: white;
 	text-decoration: none;
 	padding: 12px;
-	margin-left: 210px;
+	margin-left: 185px;
 }
 
 .lien-amazon-lien:hover{
@@ -1156,9 +1153,43 @@ a.lien-article-2{
     font-family: 'Montserrat', sans-serif;
     float: right;
     transition: 0.3s ease;
-    margin: 0 0 20px 345px;
+    margin: 0 0 20px 320px;
     
 }
+
+.conteneur-widget-youtuber-photo-article{
+	display: flex;
+	flex-direction: column;
+	margin-left: 6%;
+}
+
+.widget-youtuber{
+	width: 340px;
+	height: 90px;
+	background-color: #ffffff;
+	border-left: 1px solid #ebebeb;
+	border-right: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+	display: flex;
+	align-items: center;
+}
+
+.phrase-widget-youtuber{
+	font-family: 'Raleway', sans-serif;
+	color: #3390a5;
+	font-size: 1.1em;
+	margin: 0 0 0 4%;
+	line-height: 90px;
+}
+
+.badge-youtuber{
+	height: 55px;
+	width: 55px;
+	border-radius: 55px;
+	margin-left: 4%;
+	border: 2px solid #3390a5;
+}
+
 /* livres fin */
 
 /* PAGE ENTIERE techniques début  */

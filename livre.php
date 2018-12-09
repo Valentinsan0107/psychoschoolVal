@@ -25,11 +25,33 @@
 	
 	<div class="photo-article-zone-conteneur">
 
-		<div class='photo-article-2'
-		 style='background-image: url(img/iphone-xr.jpg); background-repeat: no-repeat; background-size: cover;'>
+		<div class="conteneur-widget-youtuber-photo-article">
+				<div class='photo-article-2'
+		 		style='background-image: url(img/iphone-xr.jpg); background-repeat: no-repeat; background-size: cover;'>
 		 	
+		 		
+				</div>
 
-</div>
+				<div class="widget-youtuber">
+					<h1 class="phrase-widget-youtuber">
+						Utilisé par :
+					</h1>
+
+					<div class="badge-youtuber" style='background-image: url(img/squeezie.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					<div class="badge-youtuber" style='background-image: url(img/kinstaar.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					<div class="badge-youtuber" style='background-image: url(img/cyprien.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					
+				</div>
+		</div>
 
 	<div class="zone-article">
 			<h1 class="titre-article">Iphone XS</h1>
@@ -58,14 +80,36 @@
 
 	<div class="photo-article-zone-conteneur">
 
-		<div class='photo-article-2'
-		 style='background-image: url(img/Alienware.jpg); background-repeat: no-repeat; background-size: cover;'>
+		<div class="conteneur-widget-youtuber-photo-article">
+				<div class='photo-article-2'
+		 		style='background-image: url(img/alienware.jpg); background-repeat: no-repeat; background-size: cover;'>
 		 	
+		 		
+				</div>
 
-</div>
+				<div class="widget-youtuber">
+					<h1 class="phrase-widget-youtuber">
+						Utilisé par :
+					</h1>
+
+					<div class="badge-youtuber" style='background-image: url(img/lebouseuh.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					<div class="badge-youtuber" style='background-image: url(img/gotaga.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					<div class="badge-youtuber" style='background-image: url(img/jbzz.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					
+				</div>
+		</div>
 
 	<div class="zone-article">
-			<h1 class="titre-article">Alienware Laptop</h1>
+			<h1 class="titre-article">Iphone XS</h1>
 			<h6 class="date-aperçu-article">17 Novembre 2018</h6>
 			<p class="texte-article">Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo.</p>
 		<div class="conteneur-module-comment">
@@ -80,7 +124,7 @@
 
 		<div class="amazon-lien">
 		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
-		<a class="lien-amazon-lien" href="#">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
+		<a class="lien-amazon-lien" target="_blank" href="https://www.amazon.fr/iPhone-Xs/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3AiPhone%20Xs">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
 		</div>
 
 	</div>
@@ -91,14 +135,36 @@
 
 	<div class="photo-article-zone-conteneur">
 
-		<div class='photo-article-2'
-		 style='background-image: url(img/rode.jpg); background-repeat: no-repeat; background-size: cover;'>
+		<div class="conteneur-widget-youtuber-photo-article">
+				<div class='photo-article-2'
+		 		style='background-image: url(img/rode.jpg); background-repeat: no-repeat; background-size: cover;'>
 		 	
+		 		
+				</div>
 
-</div>
+				<div class="widget-youtuber">
+					<h1 class="phrase-widget-youtuber">
+						Utilisé par :
+					</h1>
+
+					<div class="badge-youtuber" style='background-image: url(img/nabil.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					<div class="badge-youtuber" style='background-image: url(img/mamy.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					<div class="badge-youtuber" style='background-image: url(img/cyril.jpg); background-repeat: no-repeat; background-size: cover;'>
+						
+					</div>
+
+					
+				</div>
+		</div>
 
 	<div class="zone-article">
-			<h1 class="titre-article">Rode-NT2-A</h1>
+			<h1 class="titre-article">Iphone XS</h1>
 			<h6 class="date-aperçu-article">17 Novembre 2018</h6>
 			<p class="texte-article">Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo.</p>
 		<div class="conteneur-module-comment">
@@ -113,7 +179,7 @@
 
 		<div class="amazon-lien">
 		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
-		<a class="lien-amazon-lien" href="#">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
+		<a class="lien-amazon-lien" target="_blank" href="https://www.amazon.fr/iPhone-Xs/s?ie=UTF8&page=1&rh=i%3Aaps%2Ck%3AiPhone%20Xs">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
 		</div>
 
 	</div>
