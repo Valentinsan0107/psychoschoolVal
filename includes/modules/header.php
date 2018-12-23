@@ -166,7 +166,7 @@ session_start();
                         <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
                         <li><a href="/psychoschoolVal/techniques.php">Les Techniques</a></li>
                         <li><a href="/psychoschoolVal/livre.php">Matériel</a></li>
-                        <li><a href="#">A propos</a></li>
+                        <li><a href="/psychoschoolVal/about.php">A propos</a></li>
                         <form class="barre-recherche-conteneur-2" method="GET" action="recherche.php">
     						<input class="champ-recherche-2" type="text" name="recherche" minlength="1" placeholder="Tu cherches quelque chose ?">
     						<button class="search-button-2" type="submit" name="submit"><img class="image-barre-recherche" src="img/loupe-barre-recherche.png"></button>
