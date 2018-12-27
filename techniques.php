@@ -53,7 +53,7 @@
 	}else{
 		echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
 	}
-	echo '</div>';
+	echo '<div class="pub-2"></div></div>';
 
 	if ($tagSel == "") {
 		if ($Trie == "") {

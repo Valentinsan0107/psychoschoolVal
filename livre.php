@@ -116,6 +116,7 @@
 	</div>
 <div class="conteneur-général-3">
 	<div class="matériel-conteneur">
+	
 	<div class="conteneur-design-tag-2">';
 	if ($Trie == "") {
 		echo '<a class="design-tag-2" href="livre.php?tagthec='.$tagSel.'">#Nouveautés</a>';
