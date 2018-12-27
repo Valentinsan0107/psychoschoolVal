@@ -10,7 +10,7 @@
 		<div class="donation">
 			<h1 class="titre-donation">Faire un don</h1>
 			<p class="texte-donation">
-				Vous voulez soutenir le site ? Vous pouvez nous faire un don via Paypal afin de continuer à faire vivre le site.
+				Vous voulez soutenir le site ? Vous pouvez nous faire un don via <b>Paypal</b> afin de continuer à faire vivre le site.
 			</p>
 			<div class="image-donation-conteneur" style="cursor: pointer;" onclick="window.location='http://google.com';">
 				<a class="lien-image-donation" href="#"><img src="img/paypal.png"></a>
@@ -19,7 +19,14 @@
 		</div>
 
 		<div class="about-you">
-			<h1 class="texte-about-you">A propos</h1>
+			<h1 class="texte-about-you">À propos</h1>
+			<p class="texte-donation">Tu retrouveras sur notre site des <b>conseils</b> et des <b>ressources</b> pour :</p>
+			<ol class="liste-bonus-about">
+				<li class="bonus-about"><a class="texte-bonus-about">Gagner en visibilité</a></li>
+				<li class="bonus-about"><a class="texte-bonus-about">Gagner des abonnés</a></li>
+				<li class="bonus-about"><a class="texte-bonus-about">Gagner en qualité</a></li>
+				<li class="bonus-about"><a class="texte-bonus-about">Gagner de l'argent</a></li>
+			</ol>
 		</div>
 
 		
