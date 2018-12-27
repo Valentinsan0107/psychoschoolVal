@@ -116,12 +116,29 @@
 	</div>
 <div class="conteneur-général-3">
 	<div class="matériel-conteneur">
-	<div class="conteneur-design-tag-2">
-		<a class="design-tag-2" href="livre.php?tagthec='.$tagSel.'">#Nouveautés</a>
-		<a class="design-tag" href="livre.php?triethec=Pop&tagthec='.$tagSel.'">#Populaire</a>
-		<a class="design-tag" href="livre.php?triethec=moincher&tagthec='.$tagSel.'">#Le moins chère</a>
-		<a class="design-tag" href="livre.php?triethec=pluschere&tagthec='.$tagSel.'">#Le plus chère</a>
-</div>
+	<div class="conteneur-design-tag-2">';
+	if ($Trie == "") {
+		echo '<a class="design-tag-2" href="livre.php?tagthec='.$tagSel.'">#Nouveautés</a>';
+	}else{
+		echo '<a class="design-tag" href="livre.php?tagthec='.$tagSel.'">#Nouveautés</a>';
+	}
+	if ($Trie == "Pop") {
+		echo '<a class="design-tag-2" href="livre.php?triethec=Pop&tagthec='.$tagSel.'">#Populaire</a>';
+	}else{
+		echo '<a class="design-tag" href="livre.php?triethec=Pop&tagthec='.$tagSel.'">#Populaire</a>';
+	}
+	if ($Trie == "moincher") {
+		echo '<a class="design-tag-2" href="livre.php?triethec=moincher&tagthec='.$tagSel.'">#Le moins chère</a>';
+	}else{
+		echo '<a class="design-tag" href="livre.php?triethec=moincher&tagthec='.$tagSel.'">#Le moins chère</a>';
+	}
+	if ($Trie == "pluschere") {
+		echo '<a class="design-tag-2" href="livre.php?triethec=pluschere&tagthec='.$tagSel.'">#Le plus chère</a>';
+	}else{
+		echo '<a class="design-tag" href="livre.php?triethec=pluschere&tagthec='.$tagSel.'">#Le plus chère</a>';
+	}
+
+echo '</div>
 <div class="conteneur-menu-article-matériel">';
 	$sql = "";
 	if ($tagSel == "") {

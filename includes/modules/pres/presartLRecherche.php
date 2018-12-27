@@ -1,8 +1,4 @@
 <?php
-if ($resultChek > 0) {
-	while ($row = mysqli_fetch_assoc($result)) {
-		$nbADefiler += 1;
-		if ($nbADefiler <= $NbAParPageMax*$nbpageart && $nbADefiler >= ($NbAParPageMax*$nbpageart-$NbAParPageMax+1)) {
 		$nompageserv = $row['article_nom'];
 		$idart = $row['article_id'];
 		$lien = "article.php?narticle=".$nompageserv;
@@ -72,10 +68,4 @@ if ($resultChek > 0) {
 
 		echo '</div>
 		</div>';
-		}elseif ($nbADefiler > $NbAParPageMax*$nbpageart) {
-			break(1);
-		}
-	}
-
-}
 ?>

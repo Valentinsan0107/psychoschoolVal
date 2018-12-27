@@ -2,6 +2,8 @@
   include_once("includes/modules/header.php");
 
   if (isset($_GET['submit'])) {
+    $NbAParPageMax = 7;
+    $nbADefiler = 0;
     echo "<div class='article-conteneur'>";
     include_once('includes/backrownd/dph.php');
     $recherche = mysqli_real_escape_string($conn, $_GET['recherche']);
@@ -17,6 +19,8 @@
           array_push($artselec, $row['article_id']);
           if ($row['article_thechnique'] == 1) {
             include("includes/modules/pres/presartRecherche.php");
+          }else{
+            include("includes/modules/pres/presartLRecherche.php");
           }
         }
       }
@@ -37,6 +41,8 @@
               array_push($artselec, $row['article_id']);
               if ($row['article_thechnique'] == 1) {
                 include("includes/modules/pres/presartRecherche.php");
+              }else{
+                include("includes/modules/pres/presartLRecherche.php");
               }
             }
   				}
@@ -47,6 +53,14 @@
   if (empty($artselec)) {
     echo "<h1>Il n y a rien qui correspond a votre recherche</h1>";
   }
+
+  /*if ($nbpageart != 1) {
+
+  echo '<a class="design-nombre-page-2" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart-1).'">Page Précédente</a>';
+  }
+  if ($nbADefiler > $NbAParPageMax*$nbpageart) {
+    echo '<a class="design-nombre-page" href="techniques.php?triethec='.$Trie.'&tagthec='.$tagSel.'&nbpageart='.(string)($nbpageart+1).'">Page Suivante</a>';
+  }*/
 
   echo "</div>";
   include_once("includes/modules/footer.php");
