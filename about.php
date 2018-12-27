@@ -2,13 +2,27 @@
   include_once("includes/modules/header.php");
 ?>
 
-
-<div class="conteneur-général-about">
-
 <div class="formulaire-contact-conteneur-2">
 
 	<div class="whoareyou">
-		je te bz
+
+
+		<div class="donation">
+			<h1 class="titre-donation">Faire un don</h1>
+			<p class="texte-donation">
+				Vous voulez soutenir le site ? Vous pouvez nous faire un don via Paypal afin de continuer à faire vivre le site.
+			</p>
+			<div class="image-donation-conteneur" style="cursor: pointer;" onclick="window.location='http://google.com';">
+				<a class="lien-image-donation" href="#"><img src="img/paypal.png"></a>
+				<p class="phrase-donation">Faire un don via paypal</p>
+			</div>
+		</div>
+
+		<div class="about-you">
+			<h1 class="texte-about-you">A propos</h1>
+		</div>
+
+		
 	</div>
 
 	<form class="form-formulaire-contact-2" action="includes/backrownd/formulairecontacte.php" method="POST">
@@ -42,9 +56,10 @@
 		<div class="pub">
 			
 		</div>
-</div>
 
 </div>
+
+
 
 
 <?php

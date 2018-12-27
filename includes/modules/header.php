@@ -38,6 +38,24 @@ session_start();
                   }
             })
 
+
+
+
+
+            $(window).on('scroll', function() {
+                  if($(window).scrollTop()) {
+                        $('.menu-matériel-2').addClass('menu-matériel-3');
+                  }
+                  else {
+                       $('.menu-matériel-2').removeClass('menu-matériel-3') 
+                  }
+            })
+
+
+
+
+
+
             $(window).on('scroll', function() {
                   if($(window).scrollTop()) {
                         $('.barre-recherche-conteneur-2').addClass('barre-recherche-conteneur-2-black');
@@ -117,6 +135,19 @@ session_start();
     document.querySelector('.conteneur-général-1').classList.replace("conteneur-général-1", "conteneur-général-2");
 }, false);
     </script>
+
+    <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.whoareyou').classList.replace("whoareyou", "whoareyou-2");
+}, false);
+    </script>
+
+    <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.form-formulaire-contact-2').classList.replace("form-formulaire-contact-2", "form-formulaire-contact-3");
+}, false);
+    </script>
+
 
     <script type="text/javascript">
      document.addEventListener('DOMContentLoaded', function mafonction() {

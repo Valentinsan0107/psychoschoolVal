@@ -19,12 +19,99 @@
 	}
 	echo '<div class="menu-matériel">
 		<ul>
-			<li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/store-new-badges.png"><a class="onglet-matériel" href="livre.php?triethec='.$Trie.'">Nouveautés</a></li>
-			<li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/laptop.png"><a class="onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=Ordi">Ordinateur</a></li>
-            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/microphone.png"><a class="onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=PC">Micro</a></li>
-            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/camera.png"><a class="onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=Cam">Caméra</a></li>
-            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/computer-screen.png"><a class="onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=Ecran">Ecran</a></li>
-            <li class="liste-onglet-matériel"><img class="image-onglet-matériel" src="img/outil.png"><a class="onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=Gadget">Gadget</a></li>
+
+
+
+
+
+			<li class="liste-onglet-matériel-1">
+
+			<a class="onglet-matériel-1" href="livre.php?triethec='.$Trie.'">
+
+			<img class="image-onglet-matériel" src="img/new.png">
+
+			</a>
+
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.'"><p class="titre-onglet-matériel">Nouveautés</p></a>
+
+			</li>
+
+
+
+
+			<li class="liste-onglet-matériel-2">
+
+			<a class="onglet-matériel-2" href="livre.php?triethec='.$Trie.' &tagthec=Ordi">
+
+			<img class="image-onglet-matériel" src="img/microphone.png">
+
+			</a>
+
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.' &tagthec=Ordi"><p class="titre-onglet-matériel">Micro</p></a>
+
+			</li>
+
+
+
+
+			<li class="liste-onglet-matériel-3">
+
+			<a class="onglet-matériel-3" href="livre.php?triethec='.$Trie.' &tagthec=PC">
+
+			<img class="image-onglet-matériel" src="img/laptop.png">
+
+			</a>
+
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.' &tagthec=PC"><p class="titre-onglet-matériel">Ordinateur</p></a>
+
+			</li>
+
+
+
+
+			<li class="liste-onglet-matériel-4">
+
+			<a class="onglet-matériel-4" href="livre.php?triethec='.$Trie.' &tagthec=Cam">
+
+			<img class="image-onglet-matériel" src="img/camera.png">
+
+			</a>
+
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.' &tagthec=Cam"><p class="titre-onglet-matériel">Caméra</p></a>
+
+			</li>
+
+
+
+
+			<li class="liste-onglet-matériel-5">
+
+			<a class="onglet-matériel-5" href="livre.php?triethec='.$Trie.' &tagthec=Ecran">
+
+			<img class="image-onglet-matériel" src="img/computer-screen.png">
+
+			</a>
+
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.' &tagthec=Ecran"><p class="titre-onglet-matériel">Ecran</p></a>
+
+			</li>
+
+
+
+
+			<li class="liste-onglet-matériel-6">
+
+			<a class="onglet-matériel-6" href="livre.php?triethec='.$Trie.' &tagthec=Gadget">
+
+			<img class="image-onglet-matériel" src="img/outil.png">
+
+			</a>
+
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.' &tagthec=Gadget"><p class="titre-onglet-matériel">Gadget</p></a>
+
+			</li>
+
+
 		</ul>
 	</div>
 <div class="conteneur-général-3">
