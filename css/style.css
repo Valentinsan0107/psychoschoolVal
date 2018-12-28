@@ -1202,7 +1202,7 @@ a.lien-article-2:hover{
 p.texte-article{
 	padding-left: 30px;
 	padding-right: 30px;
-	font-family: Arial;
+	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5em;
 	color: #404040;
 }
@@ -1210,6 +1210,13 @@ p.texte-article{
 h1.titre-article{
 	font-family: Arial;
 	padding: 10px 0px 10px 30px; 
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+h1.titre-article-complet{
+	font-family: Arial;
+	padding: 10px 0px 10px 10%; 
 	font-size: 2em;
 	margin-bottom: 0;
 }
@@ -1529,18 +1536,18 @@ a.lien-article-2{
 
 div.article-complet-conteneur{
 	background-color: #ffffff;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     padding: 10px;
     box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
-    margin-top: 195px;
+    margin-top: 120px;
 }
 
 
 p.paragraphe-article-complet{
-	padding-left: 5%;
-	padding-right: 5%;
-	font-family: Arial;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5em;
 	color: #404040;
 	text-align: justify;
@@ -1634,11 +1641,11 @@ img.photo-auteur-page-entière{
 
 
 textarea.textarea-formulaire-comment{
-	width: 70%;
+	width: 60%;
     margin: 0 auto;
     height: 150px;
     border: 1px solid #ebebeb;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     resize : none;
     padding: 10px;
@@ -1673,7 +1680,7 @@ button.button-formulaire-comment:hover{
 
 button.input-commentaire{
 	background-color: red;
-	margin-left: 82%;
+	margin-left: 76%;
 	border: none;
 	width: 30px;
 	height: 20px;
@@ -1688,24 +1695,34 @@ button.input-commentaire:hover{
 	transition: 0.3s ease;
 }
 
+.identité-commentaire{
+	display: flex;
+	align-items: center;
+	margin-left: 24px;
+}
+
+.photo-identité-commentaire{
+	width: 45px;
+	height: 45px;
+}
+
 p.pseudo-date{
-	font-family: Arial;
+	font-family: 'Montserrat', sans-serif;
 	color: #3390a5;
 	margin-left: 2%;
 	font-size: 1.4em;
-	font-weight: bold;
 }
 
 p.p-commentaire{
-	margin-left: 4%;
+	margin: 0 3% 20px 10%;
 	line-height: 1.5em;
 	color: #404040;
-	font-family: Arial;
-	margin-right: 3%;
+	font-family: 'Montserrat', sans-serif;
+	
 }
 
 div.div-commentaire{
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
 	background-color: white;
 	border: 1px solid #e2dede;
@@ -1714,9 +1731,11 @@ div.div-commentaire{
 }
 
 p.message-commentaire-connexion{
-	font-family: Arial;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	color: red;
+	margin: 40px 0 40px 0;
+	font-size: 1.3em;
 }
 
 button.bouton-like, button.bouton-dislike{
@@ -1724,8 +1743,7 @@ button.bouton-like, button.bouton-dislike{
 	border: none;
 	transition: 0.2s ease;
 	cursor: pointer;
-	margin-left: 60px;
-	margin-top: 20px;
+
 }
 
 button.bouton-like:hover{
@@ -1743,6 +1761,7 @@ img.icon-conversation, img.icon-like, img.icon-dislike{
 img.icon-dislike{
 	height: 40px;
 	width: 40px;
+	margin-left: 100px;
 }
 
 img.icon-conversation:hover{
@@ -1779,8 +1798,7 @@ p.nombre-commentaire-article, p.nombre-like-article{
 p.nombre-like-article-entier{
 	font-family: Arial;
 	color: #3390a5;
-	margin-left: 12px;
-	margin-top: 20px;
+	margin: 0 0 0px 12px;
 	font-size: 30px;
 	padding-right: 30px;
 	font-weight: bold;

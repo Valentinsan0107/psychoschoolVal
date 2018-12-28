@@ -96,7 +96,11 @@ if (isset($_GET['narticle'])) {
 				$content = $row['coment_contenue'];
 
 				echo '<div class="div-commentaire">
+
+				<div class="identité-commentaire">
+						<img class="photo-identité-commentaire" src="img/user.png">
 						<p class="pseudo-date">'.htmlspecialchars($pseudo).' - '.$date.'</p>
+				</div>
 						<p class="p-commentaire">'.htmlspecialchars($content).'</p>
 					</div>';
 
