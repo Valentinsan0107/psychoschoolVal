@@ -51,7 +51,7 @@ if (isset($_GET['narticle'])) {
 		$result = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result);
 
-		echo '<div class="conteneur-module-comment">';
+		echo '<div class="conteneur-module-comment-2">';
 
 		$userlikechek = 0;
 
@@ -80,7 +80,9 @@ if (isset($_GET['narticle'])) {
 
 		echo '<p class="nombre-like-article-entier">'.$resultChek.'<p>';
 
-		echo '</div>';
+		echo '<a class="lien-share-1" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/facebook-share.png">Partager</a>
+		<a class="lien-share-2" href="https://twitter.com/home?status=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/twitter-share.png">Tweeter</a>
+		<a class="lien-share-3" href="https://plus.google.com/share?url=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share-2" src="img/google-share.png">Partager</a></div>';
 		echo "</div>";
 
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nomarticle'";
@@ -115,7 +117,11 @@ if (isset($_GET['narticle'])) {
 
 			/*formulaire pr le comentaire*/
 		if (!isset($_SESSION['u_id'])) {
-			echo '<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire ou aimer la page</p>';
+			echo '
+			<div class="conteneur-attention-connexion">
+				<img class="image-attention" src="/psychoschoolVal/img/attention.png">
+				<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire ou aimer la page</p>
+			</div>';
 		} else {
 			echo '<form class="form-formulaire-comment" action="/psychoschoolVal/includes/backrownd/addcoment.php" method="POST">
 				<textarea class="textarea-formulaire-comment" name="coment" placeholder="Ecris ton commentaire..." required></textarea>

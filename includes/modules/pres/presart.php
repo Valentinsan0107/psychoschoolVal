@@ -21,7 +21,11 @@ if ($resultChek > 0) {
 		$date = datetotext($date);	
 		echo'<div class="zone-article">
 			<h1 class="titre-article">'.$row['article_titre'].'</h1>
+
+			
 			<h6 class="date-aperçu-article">'.$date.'</h6>
+		
+
 			<p class="texte-article">'.$row['article_resumer'].'</p>
 			<a class="lien-article" href="'.$lien.'">Lire plus...</a>
 		<div class="conteneur-module-comment">

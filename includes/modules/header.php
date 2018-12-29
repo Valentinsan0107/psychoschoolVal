@@ -182,6 +182,38 @@ session_start();
 		});
 	});
 </script>
+  
+<script type="text/javascript">
+  $(function(){
+
+    $(".contenu-conteneur").hide();
+
+    $(function () {
+$(window).scroll(function () {
+if ($(this).scrollTop() > 100 ) {
+$('.contenu-conteneur').fadeIn(600);
+} else {
+$('.contenu-conteneur').fadeOut(600);
+}
+
+if ($(this).scrollTop() > 700 ) {
+$('.conteneur-phrase-présentation-matériel').fadeIn(600);
+} else {
+$('.conteneur-phrase-présentation-matériel').fadeOut(600);
+}
+
+if ($(this).scrollTop() > 1700 ) {
+$('.conteneur-phrase-présentation-matériel-2').fadeIn(600);
+} else {
+$('.conteneur-phrase-présentation-matériel-2').fadeOut(600);
+}
+
+});
+
+});
+
+});
+</script>
 
 <div class="fleche-retour-haut-conteneur">
 	<img class="fleche-retour-haut-image" src="/psychoschoolVal/img/arrow-up-.png">

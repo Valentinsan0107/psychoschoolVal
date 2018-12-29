@@ -5,6 +5,8 @@ $TITLEpage="Psychoschool - Homepage";
 ?>
 
 <div id="background-test-1">
+
+	<div class="conteneur-général-1">
 	<div class="conteneur-phrase-présentation-matériel-3">
 		<h1 class="phrase-présentation-matériel">PROGRESSE RAPIDEMENT</h1>
 		
@@ -22,6 +24,7 @@ $TITLEpage="Psychoschool - Homepage";
 		<a class="en-savoir-plus-matériel-lien" href="#">En savoir plus</a>
 
 	</div>
+</div>
 </div>
 
 <div class="apport-liste">
@@ -102,7 +105,10 @@ $TITLEpage="Psychoschool - Homepage";
 				}
 				echo '<div class="conteneur-titre-date-derniers-articles">
 						<a class="lien-titre-derniers-articles" href="'.$lien.'"><h6 class="titre-derniers-articles">'.$row['article_titre'].'</h6></a>
-						<h6 class="date-derniers-articles">'.$date.'</h6>
+
+						<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+						<h6 class="date-derniers-articles">'.$date.'</h6></div>
+
 					</div>
 				</div>';
 			}

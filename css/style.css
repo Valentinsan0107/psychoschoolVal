@@ -6,7 +6,7 @@ body{
 
 .conteneur-général-1{
 	opacity: 0;
-	transform: skewX(10deg);
+	transform: translateX(-6em);
 }
 
 .conteneur-général-2{
@@ -77,7 +77,7 @@ nav ul li, li.liste-onglet-matériel{
 nav ul li a {
       line-height: 90px;
       color: #fff;
-      padding: 15px 30px;
+      padding: 15px 26px;
       text-decoration: none;
       text-transform: uppercase;
       transition: 0.3s;
@@ -218,7 +218,7 @@ p.paragraphe-promesse{
 	font-size: 1.1em;
 	font-family: 'Raleway', sans-serif;
 	padding: 15px 80px 15px 80px;
-	border: 1px #ebebeb solid;
+	border: 2px #ebebeb solid;
 	background-color: white;
 	transition: 0.2s ease;
 	text-decoration: none;
@@ -339,12 +339,22 @@ p.paragraphe-promesse{
 	color: #3390a5;
 }
 
+.conteneur-date-calendrier{
+	display: flex;
+	align-items: center;
+}
+
+.image-calendrier{
+	height: 14px;
+	width: 14px;
+	margin-right: 8px;
+}
+
 .en-savoir-plus-matériel-lien{
 	
 	font-size: 1.1em;
 	font-family: 'Raleway', sans-serif;
 	padding: 15px 50px 15px 50px;
-	border-radius: 5px;
 	border: 2px solid #3390a5;
 	transition: 0.2s ease;
 	text-decoration: none;
@@ -529,7 +539,7 @@ button.button-formulaire-contact{
 	font-size: 1.1em;
 	font-family: 'Raleway', sans-serif;
 	padding: 15px 50px 15px 50px;
-	border: 1px #ebebeb solid;
+	border: 2px #ebebeb solid;
 	background-color: white;
 	transition: 0.2s ease;
 	text-decoration: none;
@@ -569,7 +579,7 @@ input.log{
 	width: 48px;
 	height: 48px;
 	position: absolute;
-	left: 96%;
+	left: 95%;
 	margin: 0;
 	top: 22px;
 	transition: 0.3s;
@@ -580,7 +590,7 @@ input.log-black{
 	transition: 0.3s;
 	width: 36px;
 	height: 36px;
-	left: 97%;
+	left: 94%;
 }
 
 input.log:hover{
@@ -755,7 +765,7 @@ input.champ-recherche-2{
 
 input.champ-recherche-2-black{
 	margin-top: 13px;
-	height: 30px;
+	height: 32px;
 	width: 250px;
 	border-radius: 5px 0px 0px 5px;
 	border: none;
@@ -779,7 +789,7 @@ button.search-button-2{
 button.search-button-2-black{
 	margin-top: 13px;
 	width: 32px;
-	height: 32px;
+	height: 34px;
 	border: none;
 	background-color: #ffffff; 
 	border-radius: 0px 5px 5px 0px;
@@ -852,7 +862,7 @@ button.button-création, button.button-connexion{
 	padding: 10px;
 	font-size: 1.2em;
 	margin: 20px 259.2px 0 259.2px;
-	border: 1px #ebebeb solid;
+	border: 2px #ebebeb solid;
 	transition: 0.3s ease;
 	font-family: 'Raleway', sans-serif;
 	cursor: pointer;
@@ -861,14 +871,14 @@ button.button-création, button.button-connexion{
 
 
 button.button-connexion:hover{
-	border: 2px solid #0de03a;
-	color: #0de03a;
+	border: 2px solid red;
+	color: red;
 	transition: 0.3s ease;
 }
 
 button.button-création:hover{
-	border: 2px solid #0de03a;
-	color: #0de03a;
+	border: 2px solid red;
+	color: red;
 	transition: 0.3s ease;
 }
 
@@ -893,6 +903,10 @@ button.btnClose:hover{
 
 .formulaire-contact-conteneur-2{
 	display: flex;
+}
+
+.formulaire-contact-conteneur{
+	height: 600px;
 }
 
 .whoareyou{
@@ -1165,6 +1179,8 @@ div.photo-article{
 	background-color: #ffffff;
 	border: 1px solid #ebebeb;
 	margin-left: 6%;
+	transition: 0.6s ease;
+	cursor: pointer;
 }
 
 div.article-conteneur, .matériel-conteneur{
@@ -1439,6 +1455,18 @@ a.onglet-matériel-6{
 	width: 340px;
 	background-color: #ffffff;
 	border: 1px solid #ebebeb;
+	transition: 0.6s ease;
+	cursor: pointer;
+}
+
+.photo-article-2:hover{
+	filter: brightness(0.8);
+	transition: 0.6s ease;
+}
+
+.photo-article:hover{
+	filter: brightness(0.8);
+	transition: 0.6s ease;
 }
 
 .conteneur-photo-share{
@@ -1539,7 +1567,6 @@ div.article-complet-conteneur{
     width: 60%;
     margin: 0 auto;
     padding: 10px;
-    box-shadow:0 3px 3px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
     margin-top: 120px;
 }
 
@@ -1659,23 +1686,22 @@ form.form-formulaire-comment{
 }
 
 button.button-formulaire-comment{
-	margin-bottom: 150px;
-	margin-top: 10px;
 	width: 10%;
-    margin-left: 45%;
+	margin: 40px 683.633px 150px 683.633px;
     height: 50px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    background-color: #3390a5;
-    font-size: 1.4em;
-    font-family: Arial;
+    border: 2px #ebebeb solid;
+    color: #3390a5;
+    background-color: white;
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 button.button-formulaire-comment:hover{
-	background-color: #0de03a;
+	border: 2px red solid;
 	transition: 0.3s ease;
+	color: red;
 }
 
 button.input-commentaire{
@@ -1732,10 +1758,21 @@ div.div-commentaire{
 
 p.message-commentaire-connexion{
 	font-family: 'Montserrat', sans-serif;
-	text-align: center;
 	color: red;
-	margin: 40px 0 40px 0;
+	margin: 3px 0 40px 0;
 	font-size: 1.3em;
+}
+
+.conteneur-attention-connexion{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.image-attention{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
 }
 
 button.bouton-like, button.bouton-dislike{
@@ -1759,9 +1796,8 @@ img.icon-conversation, img.icon-like, img.icon-dislike{
 }
 
 img.icon-dislike{
-	height: 40px;
-	width: 40px;
-	margin-left: 100px;
+	height: 30px;
+	width: 30px;
 }
 
 img.icon-conversation:hover{
@@ -1779,6 +1815,14 @@ img.icon-like:hover{
 div.conteneur-module-comment{
 	display: flex;
 	margin-top: 30px;
+}
+
+div.conteneur-module-comment-2{
+	display: flex;
+	margin: 30px 8% 30px 8%;
+	padding-top: 30px;
+	border-top: 2px #ebebeb solid;
+	align-items: center;
 }
 
 a.lien-icon-conversation{
@@ -1800,9 +1844,58 @@ p.nombre-like-article-entier{
 	color: #3390a5;
 	margin: 0 0 0px 12px;
 	font-size: 30px;
-	padding-right: 30px;
+	margin-right: 312px;
 	font-weight: bold;
 
+}
+
+.lien-share-1, .lien-share-2, .lien-share-3{
+	padding: 16px 12px 12px 12px;
+	color: white;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 10px;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+.lien-share-1{
+	background-color: #3b5998;
+}
+
+.lien-share-2{
+	background-color: #00aced;
+}
+
+.lien-share-3{
+	background-color: #db4a39;
+}
+
+.lien-share-1:hover{
+	filter: brightness(0.9);
+	transition: 0.3s ease;
+}
+
+.lien-share-2:hover{
+	filter: brightness(0.9);
+	transition: 0.3s ease;
+}
+
+.lien-share-3:hover{
+	filter: brightness(0.9);
+	transition: 0.3s ease;
+}
+
+.icon-share{
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+.icon-share-2{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
 }
 
 /* module de commentaire fin */
@@ -1814,8 +1907,8 @@ img.fleche-retour-haut-image{
 	width: 60px;
 	height: 60px;
 	position: fixed;
-	left: 94%;
-	top: 87%;
+	left: 95.5%;
+	top: 91%;
 	display: none;
 	cursor: pointer;
 	z-index: 1;

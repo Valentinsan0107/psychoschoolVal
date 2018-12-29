@@ -17,7 +17,7 @@
 			</form>
 			</div>
 			<div class="création-compte">
-				<h1 class="phrase-formulaire">Tu nas pas encore de compte PsychoSchool ? </h1>
+				<h1 class="phrase-formulaire">Tu n\'as pas encore de compte PsychoSchool ? </h1>
 				<form class="form-création" action="/psychoschoolVal/includes/backrownd/compts/signup.php" method="POST">
 					<input class="input-création" maxlength="50" type="email" name="email" placeholder="Email" required>
 					<input class="input-création" maxlength="20" minlength="6" type="text" name="pseudo" placeholder="Ton pseudo" required>
