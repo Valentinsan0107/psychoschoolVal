@@ -603,7 +603,7 @@ input.log:hover{
 /* footer début */
 
 div.footer{
-
+	margin-top: 80px;
 	width: 100%;
 	background: #3390a5;
 
@@ -1029,16 +1029,53 @@ form.form-formulaire-contact-3{
 .pub{
 	height: 600px;
 	width: 300px;
-	background-color: #ECDFC3;
+	background-color: #E0F8F7;
 	margin: 120px 0 50px 2%;
 }
 
 .pub-2{
 	height: 90px;
 	width: 970px;
-	background-color: #ECDFC3;
-	margin-top: 30px;
+	background-color: #E0F8F7;
+	margin: 0 auto;
 }
+
+.pub-3{
+	height: 600px;
+	width: 300px;
+	background-color: #E0F8F7;
+	
+}
+
+.pub-4{
+	height: 250px;
+	width: 300px;
+	background-color: #E0F8F7;
+	margin-top: 20px;
+}
+
+.article-pub-fixe{
+	display: flex;
+	margin-top: 120px;
+}
+
+.conteneur-tout-sauf-pub{
+	margin: 0 30px 0 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .texte-bonus-about{
@@ -1141,7 +1178,6 @@ form.form-formulaire-contact-3{
 }
 
 .conteneur-design-tag-2{
-	margin-left: 22%; 
 	margin-bottom: 30px;
 }
 
@@ -1183,11 +1219,10 @@ div.photo-article{
 	cursor: pointer;
 }
 
-div.article-conteneur, .matériel-conteneur{
+div.article-conteneur{
 	margin-top: 120px;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 
 }
 
@@ -1245,23 +1280,68 @@ div#volet{
 	left: -90px;
 }
 
+.conteneur-publicité{
+	margin: 40px 75.95px 0 0;
+	background-color: white;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	border: 1px solid #ebebeb;
+}
+
+.conteneur-publicité-2{
+	background-color: white;
+	height: 130px;
+	width: 1118.2503px;
+	display: flex;
+	align-items: center;
+	border: 1px solid #ebebeb;
+	margin-bottom: 30px;
+}
+
 /* techniques fin */
 
 /* livres début */
+
+.conteneur-menu-et-technique{
+	display: flex;
+	margin-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .conteneur-menu-article-matériel{
 	margin-left: 17%;
 }
+
+.grande-liste-onglet-matériel{
+	padding: 20px 0;
+}
 .menu-matériel{
-	width: 200px;
 	background-color: white;
-	margin-left: 6%;
+	margin: 0 0 0 100px;
 	height: 222px;
-	position: fixed;
 	border: 1px solid #ebebeb;
 	display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0 40px 40px;
     opacity: 0;
 	transform: translateX(-10em);
 }
@@ -1269,33 +1349,34 @@ div#volet{
 .menu-matériel-2{
 	opacity: 1;
 	transition: 0.3s ease;
-	width: 200px;
 	background-color: white;
-	margin-left: 6%;
+	margin: 0 0 0 100px;
 	height: 222px;
-	position: fixed;
 	border: 1px solid #ebebeb;
 	display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0 40px 40px;
 }
 
-.menu-matériel-3{
-	opacity: 1;
-	transition: 0.3s ease;
-	width: 200px;
-	background-color: white;
-	margin-left: 6%;
-	height: 222px;
-	position: fixed;
-	border: 1px solid #ebebeb;
+.conteneur-pub-et-menu{
+	margin: 0 20px;
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 0px 40px 0px;
-    margin-top: -40px;
+	flex-direction: column;
+	height: 100%;
+	position: fixed;
 }
+
+.matériel-conteneur{
+	display: flex;
+	flex-direction: column;
+	margin-left: 340px;
+}
+
+
+
+
+
 
 .liste-onglet-matériel-1,.liste-onglet-matériel-2,.liste-onglet-matériel-3,.liste-onglet-matériel-4,.liste-onglet-matériel-5,.liste-onglet-matériel-6{
 	display: flex;
@@ -1303,6 +1384,8 @@ div#volet{
     cursor: pointer;
     padding: 15px 0 15px 0;
 }
+
+
 
 .liste-onglet-matériel-1{
 	width: 125.5333px;
@@ -1528,7 +1611,6 @@ a.lien-article-2{
 .conteneur-widget-youtuber-photo-article{
 	display: flex;
 	flex-direction: column;
-	margin-left: 6%;
 }
 
 .widget-youtuber{
@@ -1564,10 +1646,8 @@ a.lien-article-2{
 
 div.article-complet-conteneur{
 	background-color: #ffffff;
-    width: 60%;
-    margin: 0 auto;
+    width: 930px;
     padding: 10px;
-    margin-top: 120px;
 }
 
 
@@ -1661,6 +1741,7 @@ img.photo-auteur-page-entière{
 	border-radius: 300px; 
 }
 
+
 /* PAGE ENTIERE livre fin */
 
 /* module de commentaire début */
@@ -1668,8 +1749,8 @@ img.photo-auteur-page-entière{
 
 
 textarea.textarea-formulaire-comment{
-	width: 60%;
-    margin: 0 auto;
+	width: 930px;
+    margin-left: 0px;
     height: 150px;
     border: 1px solid #ebebeb;
     font-family: 'Montserrat', sans-serif;
@@ -1687,7 +1768,7 @@ form.form-formulaire-comment{
 
 button.button-formulaire-comment{
 	width: 10%;
-	margin: 40px 683.633px 150px 683.633px;
+	margin: 20px auto;
     height: 50px;
     border: 2px #ebebeb solid;
     color: #3390a5;
@@ -1706,7 +1787,7 @@ button.button-formulaire-comment:hover{
 
 button.input-commentaire{
 	background-color: red;
-	margin-left: 76%;
+	margin-left: 900px;
 	border: none;
 	width: 30px;
 	height: 20px;
@@ -1748,8 +1829,7 @@ p.p-commentaire{
 }
 
 div.div-commentaire{
-	width: 60%;
-	margin: 0 auto;
+	width: 930px;
 	background-color: white;
 	border: 1px solid #e2dede;
 	margin-top: 20px;
@@ -1765,8 +1845,8 @@ p.message-commentaire-connexion{
 
 .conteneur-attention-connexion{
 	display: flex;
-	justify-content: center;
-	margin-top: 40px;
+	margin: 40px 0 0 100px;
+	width: 786px;
 }
 
 .image-attention{

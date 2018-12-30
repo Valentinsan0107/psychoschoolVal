@@ -1,5 +1,11 @@
 
 
+
+
+
+
+
+
 <div class="footer">
 
 <div class="conteneur-contenu-footer-haut">

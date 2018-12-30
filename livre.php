@@ -17,8 +17,14 @@
 	}else{
 		$nbpageart = 1;
 	}
-	echo '<div class="menu-matériel">
-		<ul>
+	echo '<div class="conteneur-menu-et-technique">
+
+	<div class="conteneur-pub-et-menu">
+
+
+	<div class="menu-matériel">
+
+		<ul class="grande-liste-onglet-matériel">
 
 
 
@@ -114,6 +120,14 @@
 
 		</ul>
 	</div>
+
+
+
+		<div class="pub-4">
+
+		</div>
+
+	</div>
 <div class="conteneur-général-3">
 	<div class="matériel-conteneur">
 	
@@ -139,8 +153,8 @@
 		echo '<a class="design-tag" href="livre.php?triethec=pluschere&tagthec='.$tagSel.'">#Le plus chère</a>';
 	}
 
-echo '</div>
-<div class="conteneur-menu-article-matériel">';
+echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div></div>
+';
 	$sql = "";
 	if ($tagSel == "") {
 		if ($Trie == "") {

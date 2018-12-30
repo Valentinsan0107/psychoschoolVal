@@ -19,7 +19,11 @@ if ($resultChek == 1) {
 include_once("includes/modules/header.php");
 
 if (isset($_GET['narticle'])) {
-	echo '<div class="article-complet-conteneur">';
+		echo '<div class="article-pub-fixe">
+
+	<div class="conteneur-tout-sauf-pub">
+
+		<div class="article-complet-conteneur">';
 
 
 
@@ -134,6 +138,8 @@ if (isset($_GET['narticle'])) {
 }else{
 echo "<p>error</p>";
 }
+
+	include_once("includes/modules/pub.php");
 
 	include_once("includes/modules/footer.php");
 ?>

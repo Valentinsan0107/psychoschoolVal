@@ -42,14 +42,7 @@ session_start();
 
 
 
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('.menu-matériel-2').addClass('menu-matériel-3');
-                  }
-                  else {
-                       $('.menu-matériel-2').removeClass('menu-matériel-3') 
-                  }
-            })
+
 
 
 
@@ -211,6 +204,119 @@ $('.conteneur-phrase-présentation-matériel-2').fadeIn(600);
 });
 </script>
 
+<script type="text/javascript">
+  function fixDiv() {
+  var $cache = $('.pub-3'); 
+  var hauteur = $('.conteneur-tout-sauf-pub').height();
+  if ($(window).scrollTop() > hauteur-708.6) 
+    $cache.css({'position': 'static'}); 
+  else
+    $cache.css({'position': 'fixed'});
+}
+$(window).scroll(fixDiv);
+fixDiv();
+</script>
+
+
+
+<script type="text/javascript">
+  function fixDiv() {
+  var $cache = $('.pub-3');
+  var hauteur = $('.conteneur-tout-sauf-pub').height();
+  if ($(window).scrollTop() > hauteur-708.6) 
+    $cache.css({'margin-left': '0'}); 
+  else
+    $cache.css({'margin-left': '1181.6px'});
+}
+$(window).scroll(fixDiv);
+fixDiv();
+</script>
+
+
+
+<script type="text/javascript">
+  function fixDiv() {
+  var $cache = $('.pub-3'); 
+  var hauteur = $('.conteneur-tout-sauf-pub').height();
+  if ($(window).scrollTop() > hauteur-708.6) 
+    $cache.css({'margin-top': hauteur-708.6}); 
+  else
+    $cache.css({'margin-top': '0'});
+}
+$(window).scroll(fixDiv);
+fixDiv();
+</script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  function fixDive() {
+  var $cache = $('.matériel-conteneur');
+  var hauteur_2= $('.matériel-conteneur').height(); 
+  if ($(window).scrollTop() > hauteur_2-613.6) 
+    $cache.css({'margin-left': '0'}); 
+  else
+    $cache.css({'margin-left': '340px'});
+}
+$(window).scroll(fixDive);
+fixDive();
+</script>
+
+<script type="text/javascript">
+  function fixDive() {
+  var $cache = $('.conteneur-pub-et-menu');
+  var hauteur_2 = $('.matériel-conteneur').height(); 
+  if ($(window).scrollTop() > hauteur_2-613.6) 
+    $cache.css({'position': 'static'}); 
+  else
+    $cache.css({'position': 'fixed'});
+}
+$(window).scroll(fixDive);
+fixDive();
+</script>
+
+<script type="text/javascript">
+  function fixDive() {
+  var $cache = $('.conteneur-pub-et-menu');
+  var hauteur_2 = $('.matériel-conteneur').height(); 
+  if ($(window).scrollTop() > hauteur_2-613.6) 
+    $cache.css({'margin-top': hauteur_2-613.6}); 
+  else
+    $cache.css({'margin-top': '0'});
+}
+$(window).scroll(fixDive);
+fixDive();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div class="fleche-retour-haut-conteneur">
@@ -227,7 +333,7 @@ $('.conteneur-phrase-présentation-matériel-2').fadeIn(600);
                         <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
                         <li><a href="/psychoschoolVal/techniques.php">Les Techniques</a></li>
                         <li><a href="/psychoschoolVal/livre.php">Matériel</a></li>
-                        <li><a href="/psychoschoolVal/about.php">A propos</a></li>
+                        <li><a href="/psychoschoolVal/about.php">À propos</a></li>
                         <form class="barre-recherche-conteneur-2" method="GET" action="recherche.php">
     						<input class="champ-recherche-2" type="text" name="recherche" minlength="1" placeholder="Tu cherches quelque chose ?">
     						<button class="search-button-2" type="submit" name="submit"><img class="image-barre-recherche" src="img/loupe-barre-recherche.png"></button>
