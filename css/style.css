@@ -603,7 +603,7 @@ input.log:hover{
 /* footer début */
 
 div.footer{
-	margin-top: 80px;
+	margin-top: 40px;
 	width: 100%;
 	background: #3390a5;
 
@@ -1147,15 +1147,10 @@ form.form-formulaire-contact-3{
 	color: #3390a5;
 	text-decoration: none;
 	transition: 0.2s ease;
+	margin: 40px auto;
 }
 
-.design-nombre-page{
-	margin: 0px 644.583px 55px 644.583px;
-}
 
-.design-nombre-page-2{
-	margin: 0px 590px 55px 644.583px;
-}
 
 .design-nombre-page:hover{
 	text-decoration: underline;
@@ -1198,12 +1193,12 @@ form.form-formulaire-contact-3{
 
 div.photo-article-zone-conteneur{
 	display: flex;
+	margin-top: 40px;
 }
 
 div.zone-article{
     background-color: #ffffff;
     width: 70%;
-    margin-bottom: 40px;
     border: 1px solid #ebebeb;
     margin-left: 1%;
     margin-right: 5%; 
@@ -1296,7 +1291,6 @@ div#volet{
 	display: flex;
 	align-items: center;
 	border: 1px solid #ebebeb;
-	margin-bottom: 30px;
 }
 
 /* techniques fin */

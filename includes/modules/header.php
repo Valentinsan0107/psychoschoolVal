@@ -260,7 +260,7 @@ fixDiv();
   function fixDive() {
   var $cache = $('.matériel-conteneur');
   var hauteur_2= $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-613.6) 
+  if ($(window).scrollTop() > hauteur_2-692.8) 
     $cache.css({'margin-left': '0'}); 
   else
     $cache.css({'margin-left': '340px'});
@@ -273,7 +273,7 @@ fixDive();
   function fixDive() {
   var $cache = $('.conteneur-pub-et-menu');
   var hauteur_2 = $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-613.6) 
+  if ($(window).scrollTop() > hauteur_2-692.8) 
     $cache.css({'position': 'static'}); 
   else
     $cache.css({'position': 'fixed'});
@@ -286,8 +286,8 @@ fixDive();
   function fixDive() {
   var $cache = $('.conteneur-pub-et-menu');
   var hauteur_2 = $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-613.6) 
-    $cache.css({'margin-top': hauteur_2-613.6}); 
+  if ($(window).scrollTop() > hauteur_2-692.8) 
+    $cache.css({'margin-top': hauteur_2-692.8}); 
   else
     $cache.css({'margin-top': '0'});
 }
