@@ -137,7 +137,19 @@ session_start();
 
     <script type="text/javascript">
      document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.whoareyou-3').classList.replace("whoareyou-3", "whoareyou-4");
+}, false);
+    </script>
+
+    <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.form-formulaire-contact-2').classList.replace("form-formulaire-contact-2", "form-formulaire-contact-3");
+}, false);
+    </script>
+
+    <script type="text/javascript">
+     document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.conteneur-avis-conseils').classList.replace("conteneur-avis-conseils", "conteneur-avis-conseils-2");
 }, false);
     </script>
 
@@ -208,7 +220,7 @@ $('.conteneur-phrase-présentation-matériel-2').fadeIn(600);
   function fixDiv() {
   var $cache = $('.pub-3'); 
   var hauteur = $('.conteneur-tout-sauf-pub').height();
-  if ($(window).scrollTop() > hauteur-708.6) 
+  if ($(window).scrollTop() > hauteur-708.6)
     $cache.css({'position': 'static'}); 
   else
     $cache.css({'position': 'fixed'});
@@ -312,6 +324,142 @@ fixDive();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  function fixDivr() {
+  var $cache = $('.pub-5');
+  var hauteur_3 = $('.conteneur-avis-conseils-2').height();
+  if ($(window).scrollTop() > hauteur_3-600) 
+    $cache.css({'margin-left': '2%'}); 
+  else
+    $cache.css({'margin-left': '1192.7499px'});
+}
+$(window).scroll(fixDivr);
+fixDivr();
+</script>
+
+
+
+<script type="text/javascript">
+  function fixDivr() {
+  var $cache = $('.pub-5'); 
+  var hauteur_3 = $('.conteneur-avis-conseils-2').height();
+  if ($(window).scrollTop() > hauteur_3-600)
+    $cache.css({'position': 'static'}); 
+  else
+    $cache.css({'position': 'fixed'});
+}
+$(window).scroll(fixDivr);
+fixDivr();
+</script>
+
+
+
+<script type="text/javascript">
+  function fixDivr() {
+  var $cache = $('.pub-5'); 
+  var hauteur_3 = $('.conteneur-avis-conseils-2').height();
+  if ($(window).scrollTop() > hauteur_3-600) 
+    $cache.css({'margin-top': hauteur_3-600}); 
+  else
+    $cache.css({'margin-top': '0'});
+}
+$(window).scroll(fixDivr);
+fixDivr();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  function fixDivf() {
+  var $cache = $('.conteneur-avis-conseils-2');
+  var hauteur_4= $('.conteneur-avis-conseils-2').height(); 
+  if ($(window).scrollTop() > hauteur_4-600) 
+    $cache.css({'margin-left': '0'}); 
+  else
+    $cache.css({'margin-left': '402.7666px'});
+}
+$(window).scroll(fixDivf);
+fixDivf();
+</script>
+
+<script type="text/javascript">
+  function fixDivf() {
+  var $cache = $('.whoareyou-4');
+  var hauteur_4 = $('.conteneur-avis-conseils-2').height(); 
+  if ($(window).scrollTop() > hauteur_4-600) 
+    $cache.css({'position': 'static'}); 
+  else
+    $cache.css({'position': 'fixed'});
+}
+$(window).scroll(fixDivf);
+fixDivf();
+</script>
+
+<script type="text/javascript">
+  function fixDivf() {
+  var $cache = $('.whoareyou-4');
+  var hauteur_4 = $('.conteneur-avis-conseils-2').height(); 
+  if ($(window).scrollTop() > hauteur_4-600) 
+    $cache.css({'margin-top': hauteur_4-600}); 
+  else
+    $cache.css({'margin-top': '0'});
+}
+$(window).scroll(fixDivf);
+fixDivf();
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+  function fixDivf() {
+  var $cache = $('.whoareyou-4');
+  var hauteur_4 = $('.conteneur-avis-conseils-2').height(); 
+  if ($(window).scrollTop() > hauteur_4-600) 
+    $cache.css({'transition': 'none'}); 
+  else
+    $cache.css({'transition': '0.6s ease'});
+}
+$(window).scroll(fixDivf);
+fixDivf();
+</script>
+
+<script type="text/javascript">
+  function fixDivf() {
+  var $cache = $('.whoareyou-4');
+  var hauteur_4 = $('.conteneur-avis-conseils-2').height(); 
+  if ($(window).scrollTop() < hauteur_4-600) 
+    $cache.css({'transition': 'none'}); 
+  else
+    $cache.css({'transition': '0.6s ease'});
+}
+$(window).scroll(fixDivf);
+fixDivf();
+</script>
 
 
 

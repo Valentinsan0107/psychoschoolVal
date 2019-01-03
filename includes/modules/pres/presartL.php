@@ -63,7 +63,7 @@ if ($resultChek > 0) {
 				<img class="icon-like" src="img/like-black-heart-button.png">
 			</a>
 			<p class="nombre-like-article">'.$resultChek.'</p>
-			<a class="lien-article-2" href="'.$lien.'">En savoir plus</a>
+			<a class="lien-article-2" href="fiche_produit.php">En savoir plus</a>
 			</div>
 			<div class="amazon-lien">
 		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>

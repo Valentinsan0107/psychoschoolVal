@@ -641,8 +641,8 @@ ul.liste-puce-footer{
 
 li.bouton-footer{
 	font-family: 'Montserrat', sans-serif;
-	font-size: 0.8em;
-	color: #393a3a;
+	font-size: 0.9em;
+	color: white;
 	padding-bottom: 6px;
 	text-transform: lowercase;
 }
@@ -1029,28 +1029,28 @@ form.form-formulaire-contact-3{
 .pub{
 	height: 600px;
 	width: 300px;
-	background-color: #E0F8F7;
+	background-color: #A9F5F2;
 	margin: 120px 0 50px 2%;
 }
 
 .pub-2{
 	height: 90px;
 	width: 970px;
-	background-color: #E0F8F7;
+	background-color: #A9F5F2;
 	margin: 0 auto;
 }
 
 .pub-3{
 	height: 600px;
 	width: 300px;
-	background-color: #E0F8F7;
+	background-color: #A9F5F2;
 	
 }
 
 .pub-4{
 	height: 250px;
 	width: 300px;
-	background-color: #E0F8F7;
+	background-color: #A9F5F2;
 	margin-top: 20px;
 }
 
@@ -1147,7 +1147,7 @@ form.form-formulaire-contact-3{
 	color: #3390a5;
 	text-decoration: none;
 	transition: 0.2s ease;
-	margin: 40px auto;
+	margin: 0 auto 40px auto;
 }
 
 
@@ -1193,7 +1193,7 @@ form.form-formulaire-contact-3{
 
 div.photo-article-zone-conteneur{
 	display: flex;
-	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 div.zone-article{
@@ -1291,9 +1291,112 @@ div#volet{
 	display: flex;
 	align-items: center;
 	border: 1px solid #ebebeb;
+	margin-bottom: 40px;
 }
 
 /* techniques fin */
+
+/* techniques début entier */
+
+.conteneur-fiche-technique{
+	display: flex;
+	margin-top: 120px;
+}
+
+.conteneur-avis-conseils{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 50px;
+	margin-left: 400.7666px;
+	padding-left: 2%;
+	
+}
+
+.conteneur-avis-conseils-2{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 50px;
+	margin-left: 400.7666px;
+	
+}
+
+.avis, .conseils{
+	width: 100%;
+	height: 288.4px;;
+	background-color: white;
+	border: 1px solid #ebebeb;
+}
+
+.avis{
+	margin-bottom: 20px;
+}
+
+
+.div-commentaire-2{
+	width: 739.6px;
+	background-color: white;
+	border: 1px solid #ebebeb;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.whoareyou-3{
+	height: 600px;
+	width: 340px;
+	background-color: white;
+	margin-top: 0;
+	margin-right: 2%;
+	margin-bottom: 50px;
+	margin-left: 2%;
+	opacity: 0;
+	transform: translateX(-10em);
+	border: 1px solid #ebebeb;
+}
+
+.whoareyou-4{
+	height: 598px;
+	width: 340px;
+	background-color: white;
+	margin-top: 0;
+	margin-right: 2%;
+	margin-bottom: 50px;
+	margin-left: 2%;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	opacity: 1;
+	transition: 0.6s ease;
+	border: 1px solid #ebebeb;
+
+}
+
+.pub-5{
+	height: 600px;
+	width: 300px;
+	background-color: #A9F5F2;
+	margin-right: 0;
+	margin-bottom: 50px;
+	margin-left: 2%;
+	position: fixed;
+	margin-left: 1190.7499px;
+}
+
+.photo-produit{
+	background-image: url(../img/confiance-en-soi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 250px;
+	height: 200px;
+	margin: 45px auto 0 auto;
+}
+
+/* techniques fin entier */
 
 /* livres début */
 
@@ -1342,7 +1445,7 @@ div#volet{
 
 .menu-matériel-2{
 	opacity: 1;
-	transition: 0.3s ease;
+	transition: 0.6s ease;
 	background-color: white;
 	margin: 0 0 0 100px;
 	height: 222px;
