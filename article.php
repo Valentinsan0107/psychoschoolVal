@@ -94,11 +94,14 @@ if (isset($_GET['narticle'])) {
 		$resultChek = mysqli_num_rows($result);
 
 		if ($resultChek > 0) {
+			include_once("includes/modules/fonctionContain.php");
+
 			while ($row = mysqli_fetch_assoc($result)) {
 				$idcom = $row['coment_id'];
 				$pseudo = $row['coment_createur'];
 				$date = $row['coment_date'];
 				$date = substr($date, 0, -9);
+				$date = datetotext($date);
 				$content = $row['coment_contenue'];
 
 				echo '<div class="div-commentaire">
