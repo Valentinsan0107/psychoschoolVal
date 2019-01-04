@@ -45,9 +45,9 @@ if ($resultChek > 0) {
 
 			<h6 class="date-aperçu-article">'.$date.'</h6>
 
-			<h6 class="date-aperçu-article">Prix :   599$</h6>
+			<h6 class="date-aperçu-article">Prix :   '.$row['article_prix'].'$</h6>
 
-			<h6 class="date-aperçu-article">Note :   4/10</h6>
+			<h6 class="date-aperçu-article">Note :   '.$row['article_note'].'/10</h6>
 
 			</div>
 

@@ -31,6 +31,7 @@ CREATE TABLE article(
     article_image varchar(1000) not null,
     article_tag varchar(1000) not null,
     article_prix int(11) not null,
+    article_note int(11) not null,
     article_lien varchar(1000) not null,
     article_thechnique tinyint(1)  not null,
     article_priorite tinyint(1)  not null,
