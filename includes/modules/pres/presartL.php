@@ -22,8 +22,6 @@ if ($resultChek > 0) {
 		if (file_exists("uploads/imageyoutubeur/".$idart."-1.jpg")) {
 			echo "<div class='badge-youtuber' style='background-image: url(uploads/imageyoutubeur/".$idart."-1.jpg); background-repeat: no-repeat; background-size: cover;'>					
 					</div>";
-		}else{
-			echo "bite";
 		}	
 		if (file_exists("uploads/imageyoutubeur/".$idart."-2.jpg")) {
 			echo "<div class='badge-youtuber' style='background-image: url(uploads/imageyoutubeur/".$idart."-2.jpg); background-repeat: no-repeat; background-size: cover;'>					
