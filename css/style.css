@@ -1029,28 +1029,32 @@ form.form-formulaire-contact-3{
 .pub{
 	height: 600px;
 	width: 300px;
-	background-color: #A9F5F2;
+	background-image: url(../img/pub-2.PNG);
+	background-size: 100%;
 	margin: 120px 0 50px 2%;
 }
 
 .pub-2{
 	height: 90px;
 	width: 970px;
-	background-color: #A9F5F2;
+	background-image: url(../img/pub-1.PNG);
+	background-size: 100%;
 	margin: 0 auto;
 }
 
 .pub-3{
 	height: 600px;
 	width: 300px;
-	background-color: #A9F5F2;
+	background-image: url(../img/pub-2.PNG);
+	background-size: 100%;
 	
 }
 
 .pub-4{
 	height: 250px;
 	width: 300px;
-	background-color: #A9F5F2;
+	background-image: url(../img/pub-3.PNG);
+	background-size: 100%;
 	margin-top: 20px;
 }
 
@@ -1383,7 +1387,8 @@ div#volet{
 .pub-5{
 	height: 600px;
 	width: 300px;
-	background-color: #A9F5F2;
+	background-image: url(../img/pub-2.PNG);
+	background-size: 100%;
 	margin-right: 0;
 	margin-bottom: 50px;
 	margin-left: 2%;

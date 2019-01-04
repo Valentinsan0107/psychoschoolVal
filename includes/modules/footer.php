@@ -42,7 +42,7 @@
   </div>
   <div class="conteneur-info-footer">
 
-    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="/psychoschoolVal/livre.php">LIVRES</a></h1>
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="/psychoschoolVal/livre.php">MATÉRIEL</a></h1>
 
     <ul class="liste-puce-footer">
       <li class="bouton-footer">Livre 1 star wars</li>
