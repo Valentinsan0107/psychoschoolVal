@@ -22,7 +22,7 @@
         $pref = substr($pref, 0, $aefface);
         include_once($pref."/includes/backrownd/dph.php");
 
-        $sql = "SELECT * FROM article ORDER BY article_id DESC";
+        $sql = "SELECT * FROM article WHERE article_thechnique='1' ORDER BY article_id DESC";
         $result = mysqli_query($conn, $sql);
         $resultChek = mysqli_num_rows($result);
         $maxart = 5;
@@ -45,10 +45,21 @@
     <h1 class="titre-section-footer"><a class="lien-titre-footer" href="/psychoschoolVal/livre.php">LIVRES</a></h1>
 
     <ul class="liste-puce-footer">
-      <li class="bouton-footer">Livre 1 star wars</li>
-      <li class="bouton-footer">Livre 2 harry potter</li>
-      <li class="bouton-footer">Livre 3 avengers</li>
-      <li class="bouton-footer">Livre 4 fortnite</li>
+      <?php
+        $sql = "SELECT * FROM article WHERE article_thechnique='0' ORDER BY article_id DESC";
+        $result = mysqli_query($conn, $sql);
+        $resultChek = mysqli_num_rows($result);
+        $nbaffich = 0;
+        if ($resultChek >0) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            $nbaffich += 1;
+            if ($nbaffich > $maxart) {
+              break(1);
+            }
+            echo '<li class="bouton-footer">'.$row['article_titre'].'</li>';
+          }
+        }
+      ?>
     </ul>
     
   </div>
