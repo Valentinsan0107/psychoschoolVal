@@ -1184,6 +1184,10 @@ form.form-formulaire-contact-3{
 	font-size: 1em;
 }
 
+.conteneur-date-aperçu-article{
+	display: flex;
+}
+
 .image-article-entier{
 	padding: 2% 5% 2% 5%;
 	height: 90%;
@@ -1322,7 +1326,7 @@ div#volet{
 	margin-top: 0;
 	margin-right: 0;
 	margin-bottom: 50px;
-	margin-left: 400.7666px;
+	margin-left: 402.3666px;
 	
 }
 
@@ -1394,6 +1398,76 @@ div#volet{
 	width: 250px;
 	height: 200px;
 	margin: 45px auto 0 auto;
+}
+
+.nom-produit{
+	list-style-type: none;
+	margin: 20px 0 20px 45px;
+	font-family: 'Montserrat', sans-serif;
+    color: #3390a5;
+    font-size: 1.7em;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.critère{
+	list-style-type: none;
+	margin: 20px 0 20px 45px;
+	font-family: 'Montserrat', sans-serif;
+    color: #404040;
+    font-size: 1.2em;
+
+}
+
+.lien-critère{
+	color: #3390a5;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-left: 10px;
+}
+
+.lien-amazon-lien-2{
+	display: flex;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4em;
+	border: none;
+	color: #d26581;
+	background-color: white;
+	text-decoration: none;
+	padding: 12px 12px;
+	margin: auto;
+}
+
+.lien-amazon-lien-2:hover{
+	text-decoration: underline;
+}
+
+.widget-youtuber-2{
+	width: 340px;
+	height: 90px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+}
+
+.titre-matériel-entier{
+
+	list-style-type: none;
+	margin: 20px 0 20px 45px;
+	font-family: 'Raleway', sans-serif;
+	color: #3390a5;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+
+.paragraphe-matériel-entier{
+	line-height: 1.5em;
+	color: #404040;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 45px;
+	text-align: justify;
 }
 
 /* techniques fin entier */
@@ -2092,26 +2166,3 @@ img.fleche-retour-haut-image{
 }
 
 /* fleche retour fin */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

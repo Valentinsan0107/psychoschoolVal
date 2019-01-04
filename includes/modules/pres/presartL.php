@@ -42,7 +42,18 @@ if ($resultChek > 0) {
 		$date = datetotext($date);	
 		echo'<div class="zone-article">
 			<h1 class="titre-article">'.$row['article_titre'].'</h1>
+
+			<div class="conteneur-date-aperçu-article">
+
 			<h6 class="date-aperçu-article">'.$date.'</h6>
+
+			<h6 class="date-aperçu-article">Prix :   599$</h6>
+
+			<h6 class="date-aperçu-article">Note :   4/10</h6>
+
+			</div>
+
+
 			<p class="texte-article">'.$row['article_resumer'].'</p>
 		<div class="conteneur-module-comment">
 			<a class="lien-icon-conversation" href="'.$lien.'">

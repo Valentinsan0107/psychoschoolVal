@@ -10,12 +10,28 @@
 	</div>
 
 	<div class="details-produit">
-		<li>Prix : 599$</li>
-		<li>Notre note 4/10</li>
+	    <li class="nom-produit">Iphone XR</li>
+		<li class="critère">Prix :<a class="lien-critère">599$</a></li>
+		<li class="critère">Notre note :<a class="lien-critère">4/10</a></li>
+	<div class="amazon-lien">
+		<a class="lien-amazon-lien-2" href="">Acheter sur Amazon<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
 	</div>
 
-	<div class="widget-youtuber">
-		
+	</div>
+
+	<div class="widget-youtuber-2">
+		<h1 class="phrase-widget-youtuber">
+						Utilisé par :
+					</h1>
+
+		<div class='badge-youtuber' style='background-image: url(img/jbzz.jpg); background-repeat: no-repeat; background-size: cover;'>					
+					</div>
+
+		<div class='badge-youtuber' style='background-image: url(img/squeezie.jpg); background-repeat: no-repeat; background-size: cover;'>					
+					</div>
+
+		<div class='badge-youtuber' style='background-image: url(img/kinstaar.jpg); background-repeat: no-repeat; background-size: cover;'>					
+					</div>
 	</div>
 
 </div>
@@ -25,10 +41,26 @@
 <div class="conteneur-avis-conseils">
 
 	<div class="avis">
+
+		<h1 class="titre-matériel-entier">
+			DESCRIPTION :
+		</h1>
+
+		<p class="paragraphe-matériel-entier">
+			Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi 
+		</p>
 		
 	</div>
 
 	<div class="conseils">
+
+		<h1 class="titre-matériel-entier">
+			NOS CONSEILS :
+		</h1>
+
+		<p class="paragraphe-matériel-entier">
+			Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi 
+		</p>
 		
 	</div>
 
