@@ -30,23 +30,23 @@ $TITLEpage="Psychoschool - Homepage";
 <div class="apport-liste">
 	<div class="contenu-conteneur">
 		<div class="contenu">
-			<img class="icon-promesse" src="img/icon-increase.png">
+			<img class="icon-promesse-1" src="img/icon-increase.png">
 		</div>
-			<h3 class="titre-promesse">AUGMENTE TA MOYENNE</h1>
+			<h3 class="titre-promesse">GAGNE DES ABONNÉS</h1>
+			<p class="paragraphe-promesse">Augmente rapidement ton nombre d'abonnés de façon significative grâce à nos conseils</p>
+	</div>
+	<div class="contenu-conteneur">
+		<div class="contenu">
+			<img class="icon-promesse-2" src="img/icon-test.png">
+		</div>
+			<h3 class="titre-promesse">GAGNE DE L'ARGENT</h1>
 			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
 	</div>
 	<div class="contenu-conteneur">
 		<div class="contenu">
-			<img class="icon-promesse" src="img/icon-test.png">
+			<img class="icon-promesse-3" src="img/icon-brain.png">
 		</div>
-			<h3 class="titre-promesse">APPRENDS RAPIDEMENT</h1>
-			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
-	</div>
-	<div class="contenu-conteneur">
-		<div class="contenu">
-			<img class="icon-promesse" src="img/icon-brain.png">
-		</div>
-			<h3 class="titre-promesse">MEMORISE DURABLEMENT</h1>
+			<h3 class="titre-promesse">GAGNE EN VISIBILITÉ</h1>
 			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
 	</div>
 	

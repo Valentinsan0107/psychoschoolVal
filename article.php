@@ -75,11 +75,11 @@ if (isset($_GET['narticle'])) {
 			}elseif ($userlikechek == 1) {
 				echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
-						<button class="bouton-dislike" type="submit" name="dislike"><img class="icon-dislike" src="img/like-pink-button.png"></button>
+						<button class="bouton-dislike" type="submit" name="dislike"><img class="icon-dislike" src="img/like-black-heart-button.png"></button>
 					</form>';
 			}
 		}else{
-			echo '<img class="icon-dislike" src="img/like-pink-button.png">';
+			echo '<img class="icon-dislike" src="img/like-black-heart-button.png">';
 		}
 
 		echo '<p class="nombre-like-article-entier">'.$resultChek.'<p>';
@@ -108,7 +108,7 @@ if (isset($_GET['narticle'])) {
 
 				<div class="identité-commentaire">
 						<img class="photo-identité-commentaire" src="img/user.png">
-						<p class="pseudo-date">'.htmlspecialchars($pseudo).' - '.$date.'</p>
+						<p class="pseudo-date">'.htmlspecialchars($pseudo).'<p class="juste-date">'.$date.'</p></p>
 				</div>
 						<p class="p-commentaire">'.htmlspecialchars($content).'</p>
 					</div>';

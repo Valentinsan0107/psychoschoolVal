@@ -43,19 +43,15 @@
 	<div class="avis">
 
 		<h1 class="titre-matériel-entier">
-			DESCRIPTION :
+			Description 
 		</h1>
 
 		<p class="paragraphe-matériel-entier">
 			Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi 
 		</p>
-		
-	</div>
-
-	<div class="conseils">
 
 		<h1 class="titre-matériel-entier">
-			NOS CONSEILS :
+			Nos conseils 
 		</h1>
 
 		<p class="paragraphe-matériel-entier">
@@ -63,6 +59,8 @@
 		</p>
 		
 	</div>
+
+
 
 
 <div class="div-commentaire-2">
