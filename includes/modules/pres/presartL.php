@@ -5,7 +5,7 @@ if ($resultChek > 0) {
 		if ($nbADefiler <= $NbAParPageMax*$nbpageart && $nbADefiler >= ($NbAParPageMax*$nbpageart-$NbAParPageMax+1)) {
 		$nompageserv = $row['article_nom'];
 		$idart = $row['article_id'];
-		$lien = "article.php?narticle=".$nompageserv;
+		$lien = "fiche_produit.php?narticle=".$nompageserv;
 		echo '<div class="photo-article-zone-conteneur">';
 		echo '<div class="conteneur-widget-youtuber-photo-article">';
 		if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
@@ -72,7 +72,7 @@ if ($resultChek > 0) {
 				<img class="icon-like" src="img/like-black-heart-button.png">
 			</a>
 			<p class="nombre-like-article">'.$resultChek.'</p>
-			<a class="lien-article-2" href="fiche_produit.php">En savoir plus</a>
+			<a class="lien-article-2" href="'.$lien.'">En savoir plus</a>
 			</div>
 			<div class="amazon-lien">
 		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
