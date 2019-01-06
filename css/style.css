@@ -1398,7 +1398,7 @@ div#volet{
 	flex-direction: column;
 	position: fixed;
 	opacity: 1;
-	transition: 0.6s ease;
+	transition: 0.5s ease;
 	border: 1px solid #ebebeb;
 
 }
