@@ -246,7 +246,7 @@ p.paragraphe-promesse{
 }
 
 .en-savoir-plus-apports-lien:hover{
-	color: #eb3a34;
+	background-color: #eb3a34;
 	transition: 0.2s ease;
 }
 
@@ -1481,7 +1481,7 @@ div#volet{
 	list-style-type: none;
 	margin: 20px 0 20px 45px;
 	font-family: 'Raleway', sans-serif;
-	color: #3390a5;
+	color: #c4302b;
 	font-size: 1.7em;
 	text-transform: uppercase;
 }
