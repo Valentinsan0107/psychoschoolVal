@@ -1415,14 +1415,6 @@ div#volet{
 	margin-left: 1190.7499px;
 }
 
-.photo-produit{
-	background-image: url(../img/confiance-en-soi.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 250px;
-	height: 200px;
-	margin: 45px auto 0 auto;
-}
 
 .nom-produit{
 	list-style-type: none;
