@@ -64,33 +64,25 @@
 			echo "	</div>
 
 			</div>";
+		echo '<div class="conteneur-avis-conseils">';
+
+		$ficherHTLMArticle = "uploads/html/".$row['article_id'].".html";
+		$ficherPHPArticle = "uploads/html/".$row['article_id'].".php";
+
+		$deblien = "uploads/images/";
+		$finlien = "-".$row['article_id'];
+
+		if (file_exists($ficherHTLMArticle) == true) {
+			$content = str_replace(array('%deblien%', '%finlien%'), array($deblien, $finlien),file_get_contents($ficherHTLMArticle));
+			echo $content;
+		}elseif (file_exists($ficherPHPArticle) == true) {
+			$content = str_replace(array('%deblien%', '%finlien%'), array($deblien, $finlien),file_get_contents($ficherPHPArticle));
+			echo $content;
+		}else
+			echo "error";
 		}
-	}
 
-	?>
 
-<div class="conteneur-avis-conseils">
-
-	<div class="avis">
-
-		<h1 class="titre-matériel-entier">
-			Description 
-		</h1>
-
-		<p class="paragraphe-matériel-entier">
-			Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi 
-		</p>
-
-		<h1 class="titre-matériel-entier">
-			Nos conseils 
-		</h1>
-
-		<p class="paragraphe-matériel-entier">
-			Novo denique perniciosoque exemplo idem Gallus ausus est inire flagitium grave, quod Romae cum ultimo dedecore temptasse aliquando dicitur Gallienus, et adhibitis paucis clam ferro succinctis vesperi per tabernas palabatur et conpita quaeritando Graeco sermone, cuius erat inpendio gnarus, quid de Caesare quisque sentiret. et haec confidenter agebat in urbe ubi pernoctantium luminum claritudo dierum solet imitari fulgorem. postremo agnitus saepe iamque, si prodisset, conspicuum se fore contemplans, non nisi 
-		</p>
-		
-
-<?php  
 		$sql = "SELECT * FROM likes WHERE like_page='$nomarticle'";
 		$result = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result);
@@ -176,6 +168,9 @@
 				<button class="button-formulaire-comment" type="submit" name="submitsolo">Publier</button>
 			</form>';
 		}
+
+		}
+	
 ?>
 
 
@@ -191,22 +186,6 @@
 
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

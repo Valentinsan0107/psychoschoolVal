@@ -1,13 +1,15 @@
 <?php
-	include_once("includes/modules/header.php");
-?>
+	session_start();
+	if (isset($_SESSION['u_id']) ==  false) {
+		include_once("includes/modules/header.php");
+		echo '<div class="conteneur-général-3">
 
-<div class="conteneur-général-3">
+		<div class="conteneur-création-connexion">';
+		if (isset($_SERVER['HTTP_REFERER'])) {
+			$_SESSION['url'] = $_SERVER['HTTP_REFERER'];
+		}
 
-<div class="conteneur-création-connexion">
-			
-<?php
-	if (!isset($_SESSION['u_id'])) {
+
 		echo '<div class="connexion-compte">
 				<h1 class="phrase-formulaire">Tu as déjà un compte ? Connecte-toi !</h1>
 			<form class="form-connexion" action="/psychoschoolVal/includes/backrownd/compts/login.php" method="POST">
@@ -17,7 +19,7 @@
 			</form>
 			</div>
 			<div class="création-compte">
-				<h1 class="phrase-formulaire">Tu n\'as pas encore de compte PsychoSchool ? </h1>
+				<h1 class="phrase-formulaire">Tu n as pas encore de compte PsychoSchool ? </h1>
 				<form class="form-création" action="/psychoschoolVal/includes/backrownd/compts/signup.php" method="POST">
 					<input class="input-création" maxlength="50" type="email" name="email" placeholder="Email" required>
 					<input class="input-création" maxlength="20" minlength="6" type="text" name="pseudo" placeholder="Ton pseudo" required>
@@ -61,7 +63,8 @@
 		}		
 
 	}else{
-		echo "<p>Vous etez deja conecter</p>";
+		echo "bite";
+		header("Location: index.php");
 	}
 
 ?>

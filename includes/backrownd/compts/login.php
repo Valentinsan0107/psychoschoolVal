@@ -30,7 +30,11 @@ if(!isset($_POST['submit'])){
 					$_SESSION['u_email'] = $row['user_email'];
 					$_SESSION['u_pseudo'] = $row['user_pseudo'];
 					$_SESSION['u_password'] = $row['user_password'];
-					header("Location: ../../../index.php");
+					if (isset($_SESSION['url'])) {
+						header("Location: ".$_SESSION['url']);
+					}else{
+						header("Location: ../../../index.php");
+					}
 					exit();
 				}
 			}
