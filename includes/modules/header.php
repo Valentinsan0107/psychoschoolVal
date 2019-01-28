@@ -221,7 +221,7 @@ $('.conteneur-phrase-présentation-matériel-2').fadeIn(600);
   function fixDiv() {
   var $cache = $('.pub-3'); 
   var hauteur = $('.conteneur-tout-sauf-pub').height();
-  if ($(window).scrollTop() > hauteur-708.6)
+  if ($(window).scrollTop() > hauteur-693)
     $cache.css({'position': 'static'}); 
   else
     $cache.css({'position': 'fixed'});
@@ -236,7 +236,7 @@ fixDiv();
   function fixDiv() {
   var $cache = $('.pub-3');
   var hauteur = $('.conteneur-tout-sauf-pub').height();
-  if ($(window).scrollTop() > hauteur-708.6) 
+  if ($(window).scrollTop() > hauteur-693) 
     $cache.css({'margin-left': '0'}); 
   else
     $cache.css({'margin-left': '1181.6px'});
@@ -251,8 +251,8 @@ fixDiv();
   function fixDiv() {
   var $cache = $('.pub-3'); 
   var hauteur = $('.conteneur-tout-sauf-pub').height();
-  if ($(window).scrollTop() > hauteur-708.6) 
-    $cache.css({'margin-top': hauteur-708.6}); 
+  if ($(window).scrollTop() > hauteur-693) 
+    $cache.css({'margin-top': hauteur-693}); 
   else
     $cache.css({'margin-top': '0'});
 }
@@ -273,7 +273,7 @@ fixDiv();
   function fixDive() {
   var $cache = $('.matériel-conteneur');
   var hauteur_2= $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-692.8) 
+  if ($(window).scrollTop() > hauteur_2-614.8) 
     $cache.css({'margin-left': '0'}); 
   else
     $cache.css({'margin-left': '340px'});
@@ -286,7 +286,7 @@ fixDive();
   function fixDive() {
   var $cache = $('.conteneur-pub-et-menu');
   var hauteur_2 = $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-692.8) 
+  if ($(window).scrollTop() > hauteur_2-614.8) 
     $cache.css({'position': 'static'}); 
   else
     $cache.css({'position': 'fixed'});
@@ -299,8 +299,8 @@ fixDive();
   function fixDive() {
   var $cache = $('.conteneur-pub-et-menu');
   var hauteur_2 = $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-692.8) 
-    $cache.css({'margin-top': hauteur_2-692.8}); 
+  if ($(window).scrollTop() > hauteur_2-614.8) 
+    $cache.css({'margin-top': hauteur_2-614.8}); 
   else
     $cache.css({'margin-top': '0'});
 }
@@ -340,7 +340,7 @@ fixDive();
   function fixDivr() {
   var $cache = $('.pub-5');
   var hauteur_3 = $('.conteneur-avis-conseils-2').height();
-  if ($(window).scrollTop() > hauteur_3-600) 
+  if ($(window).scrollTop() > hauteur_3-691) 
     $cache.css({'margin-left': '2%'}); 
   else
     $cache.css({'margin-left': '1192.7499px'});
@@ -355,7 +355,7 @@ fixDivr();
   function fixDivr() {
   var $cache = $('.pub-5'); 
   var hauteur_3 = $('.conteneur-avis-conseils-2').height();
-  if ($(window).scrollTop() > hauteur_3-600)
+  if ($(window).scrollTop() > hauteur_3-691)
     $cache.css({'position': 'static'}); 
   else
     $cache.css({'position': 'fixed'});
@@ -370,8 +370,8 @@ fixDivr();
   function fixDivr() {
   var $cache = $('.pub-5'); 
   var hauteur_3 = $('.conteneur-avis-conseils-2').height();
-  if ($(window).scrollTop() > hauteur_3-600) 
-    $cache.css({'margin-top': hauteur_3-600}); 
+  if ($(window).scrollTop() > hauteur_3-691) 
+    $cache.css({'margin-top': hauteur_3-691}); 
   else
     $cache.css({'margin-top': '0'});
 }
@@ -396,7 +396,7 @@ fixDivr();
   function fixDivf() {
   var $cache = $('.conteneur-avis-conseils-2');
   var hauteur_4= $('.conteneur-avis-conseils-2').height(); 
-  if ($(window).scrollTop() > hauteur_4-600) 
+  if ($(window).scrollTop() > hauteur_4-691) 
     $cache.css({'margin-left': '0'}); 
   else
     $cache.css({'margin-left': '402.7666px'});
@@ -409,7 +409,7 @@ fixDivf();
   function fixDivf() {
   var $cache = $('.whoareyou-4');
   var hauteur_4 = $('.conteneur-avis-conseils-2').height(); 
-  if ($(window).scrollTop() > hauteur_4-600) 
+  if ($(window).scrollTop() > hauteur_4-691) 
     $cache.css({'position': 'static'}); 
   else
     $cache.css({'position': 'fixed'});
@@ -422,8 +422,8 @@ fixDivf();
   function fixDivf() {
   var $cache = $('.whoareyou-4');
   var hauteur_4 = $('.conteneur-avis-conseils-2').height(); 
-  if ($(window).scrollTop() > hauteur_4-600) 
-    $cache.css({'margin-top': hauteur_4-600}); 
+  if ($(window).scrollTop() > hauteur_4-691) 
+    $cache.css({'margin-top': hauteur_4-691}); 
   else
     $cache.css({'margin-top': '0'});
 }
@@ -496,7 +496,7 @@ fixDivf();
                         	
                         		<form action="/psychoschoolVal/includes/backrownd/compts/logout.php" method="POST">
                         			<input type="hidden" name="submit" value=" ">
-            						<input class="log" type="image" src="/psychoschoolVal/img/logo-logout-blanc.png" name="submit"></input>
+            						<input class="log" type="image" src="/psychoschoolVal/img/power-button-off.png" name="submit"></input>
             					</form>';
                         	}
                         	

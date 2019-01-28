@@ -1,3 +1,4 @@
+
 <?php
 include_once("includes/backrownd/dph.php");
 $nomarticle = "";
@@ -18,8 +19,9 @@ if ($resultChek == 1) {
 }
 include_once("includes/modules/header.php");
 
+
 if (isset($_GET['narticle'])) {
-		echo '<div class="article-pub-fixe">
+		echo '<div class="conteneur-général-3"><div class="article-pub-fixe">
 
 	<div class="conteneur-tout-sauf-pub">
 
@@ -82,7 +84,7 @@ if (isset($_GET['narticle'])) {
 			echo '<img class="icon-dislike" src="img/like-black-heart-button.png">';
 		}
 
-		echo '<p class="nombre-like-article-entier">'.$resultChek.'<p>';
+		echo '<p class="nombre-like-article-entier-2">'.$resultChek.'<p>';
 
 		echo '<a class="lien-share-1" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/facebook-share.png">Partager</a>
 		<a class="lien-share-2" href="https://twitter.com/home?status=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/twitter-share.png">Tweeter</a>
@@ -131,7 +133,7 @@ if (isset($_GET['narticle'])) {
 			</div>';
 		} else {
 			echo '<form class="form-formulaire-comment" action="/psychoschoolVal/includes/backrownd/addcoment.php" method="POST">
-				<textarea class="textarea-formulaire-comment" name="coment" placeholder="Ecris ton commentaire..." required></textarea>
+				<textarea class="textarea-formulaire-comment-2" name="coment" placeholder="Ecris ton commentaire..." required></textarea>
 				<input type="hidden" name="nomfile" value="'.$nomarticle.'">
 				<button class="button-formulaire-comment" type="submit" name="submitsolo">Publier</button>
 			</form>';
@@ -143,6 +145,8 @@ echo "<p>error</p>";
 }
 
 	include_once("includes/modules/pub.php");
+
+
 
 	include_once("includes/modules/footer.php");
 ?>

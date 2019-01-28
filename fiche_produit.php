@@ -2,6 +2,7 @@
   include_once("includes/modules/header.php");
 ?>
 
+<div class="conteneur-général-3">
 <div class="conteneur-fiche-technique">
 
 <div class="whoareyou-3">
@@ -187,6 +188,7 @@
 
 </div>
 
+</div>
 
 
 

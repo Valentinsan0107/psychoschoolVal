@@ -1,5 +1,5 @@
 
-<div class="conteneur-général-3">
+
 
 
 <h1 class="titre-article-complet">Je suis le titre de larticle en entier</h1>
@@ -49,5 +49,3 @@
 <p class="paragraphe-article-complet">Coactique aliquotiens nostri pedites ad eos persequendos scandere clivos sublimes etiam si lapsantibus plantis fruticeta prensando vel dumos ad vertices venerint summos, inter arta tamen et invia nullas acies explicare permissi nec firmare nisu valido gressus: hoste discursatore rupium abscisa volvente, ruinis ponderum inmanium consternuntur, aut ex necessitate ultima fortiter dimicante, superati periculose per prona discedunt.</p>
 
 <p class="paragraphe-article-complet">Et prima post Osdroenam quam, ut dictum est, ab hac descriptione discrevimus, Commagena, nunc Euphratensis, clementer adsurgit, Hierapoli, vetere Nino et Samosata civitatibus amplis inlustris.</p>
-
-</div>

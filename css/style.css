@@ -6,17 +6,17 @@ body{
 
 .conteneur-général-1{
 	opacity: 0;
-	transform: translateX(-6em);
+	transition: 0.8s ease;
 }
 
 .conteneur-général-2{
 	opacity: 1;
-	transition: 0.6s ease;
+	transition: 0.8s ease;
 }
 
 .conteneur-général-3{
 	opacity: 0;
-	transform: scale(0.8);
+	transition: 0.8s ease;
 }
 /* Bar navigation début */
 
@@ -594,8 +594,8 @@ button.button-formulaire-contact:hover{
 /* Log in début */
 
 input.log{
-	width: 48px;
-	height: 48px;
+	width: 44px;
+	height: 44px;
 	position: absolute;
 	left: 95%;
 	margin: 0;
@@ -606,8 +606,8 @@ input.log{
 input.log-black{
 	top: 12px;
 	transition: 0.3s;
-	width: 36px;
-	height: 36px;
+	width: 34px;
+	height: 34px;
 	left: 94%;
 }
 
@@ -920,6 +920,12 @@ button.btnClose:hover{
 
 /* About début */
 
+.test-loader{
+	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+
 .formulaire-contact-conteneur-2{
 	display: flex;
 }
@@ -1032,7 +1038,6 @@ form.form-formulaire-contact-2{
 	padding-left: 2%;
 	border-left: 3px solid #3390a5;
 	opacity: 0;
-	transform: scale(0.8);
 }
 
 form.form-formulaire-contact-3{
@@ -1043,7 +1048,7 @@ form.form-formulaire-contact-3{
 	padding-left: 2%;
 	border-left: 3px solid #c4302b;
 	opacity: 1;
-	transition: 0.6s ease;
+	transition: 0.8s ease;
 }
 
 .pub{
@@ -1362,6 +1367,7 @@ div#volet{
 
 .avis{
 	margin-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 
@@ -1412,7 +1418,7 @@ div#volet{
 	margin-bottom: 50px;
 	margin-left: 2%;
 	position: fixed;
-	margin-left: 1190.7499px;
+	margin-left: 1192.75px;
 }
 
 
@@ -1521,7 +1527,7 @@ div#volet{
 	padding: 20px 0;
 }
 .menu-matériel{
-	background-color: #242424;
+	background-color: white;
 	margin: 0 0 0 100px;
 	height: 222px;
 	border: 1px solid #ebebeb;
@@ -1536,7 +1542,7 @@ div#volet{
 .menu-matériel-2{
 	opacity: 1;
 	transition: 0.6s ease;
-	background-color: #242424;
+	background-color: white;
 	margin: 0 0 0 100px;
 	height: 222px;
 	border: 1px solid #ebebeb;
@@ -1935,16 +1941,22 @@ img.photo-auteur-page-entière{
 
 
 
-textarea.textarea-formulaire-comment{
-	width: 930px;
-    margin-left: 0px;
-    height: 150px;
+textarea.textarea-formulaire-comment, textarea.textarea-formulaire-comment-2{
+	width: 739.6px;
+	height: 150px;
     border: 1px solid #ebebeb;
     font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     resize : none;
     padding: 10px;
-    
+}
+
+textarea.textarea-formulaire-comment{
+	width: 739.6px;
+}
+
+textarea.textarea-formulaire-comment-2{
+	width: 930px;
 }
 
 form.form-formulaire-comment{
@@ -1954,11 +1966,11 @@ form.form-formulaire-comment{
 }
 
 button.button-formulaire-comment{
-	width: 10%;
+	width: 13%;
 	margin: 20px auto;
     height: 50px;
     border: 2px #ebebeb solid;
-    color: #3390a5;
+    color: #c4302b;
     background-color: white;
     font-size: 1.1em;
     font-family: 'Raleway', sans-serif;
@@ -1967,25 +1979,24 @@ button.button-formulaire-comment{
 }
 
 button.button-formulaire-comment:hover{
-	border: 2px red solid;
+	border: 2px #eb3a34 solid;
 	transition: 0.3s ease;
-	color: red;
+	color: #eb3a34;
 }
 
 button.input-commentaire{
-	background-color: red;
-	margin-left: 900px;
+	background-color: #c4302b;
+	margin-left: 700px;
 	border: none;
 	width: 30px;
 	height: 20px;
 	color: white;
-	background-color: #3390a5;
 	border-radius: 0px 0px 5px 5px;
 	transition: 0.3s ease;
 }
 
 button.input-commentaire:hover{
-	background-color: red;
+	background-color: #eb3a34;
 	transition: 0.3s ease;
 }
 
@@ -2040,8 +2051,8 @@ p.message-commentaire-connexion{
 
 .conteneur-attention-connexion{
 	display: flex;
-	margin: 40px 0 0 100px;
-	width: 786px;
+	margin: 40px 0 40px 30px;
+	width: 739.6px;
 }
 
 .image-attention{
@@ -2114,15 +2125,21 @@ p.nombre-commentaire-article, p.nombre-like-article{
 	font-weight: bold;
 }
 
-p.nombre-like-article-entier{
+p.nombre-like-article-entier, p.nombre-like-article-entier-2{
 	font-family: Arial;
 	color: #c4302b;
-	margin: 0 0 0px 12px;
 	font-size: 30px;
-	margin-right: 312px;
 	font-weight: bold;
-
 }
+
+p.nombre-like-article-entier{
+	margin: 0 166px 0px 12px;
+}
+
+p.nombre-like-article-entier-2{
+	margin: 0 310px 0px 12px;
+}
+
 
 .lien-share-1, .lien-share-2, .lien-share-3{
 	padding: 16px 12px 12px 12px;
