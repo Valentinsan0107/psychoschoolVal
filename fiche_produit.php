@@ -25,7 +25,7 @@
 		}
 		if ($row['article_thechnique'] == 0) {
 			if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
-				echo "<div class='photo-produit' style='background-image: url(uploads/imagecouverture/".$row['article_id'].".jpg); background-repeat: no-repeat; background-size: cover; width: 250px;height: 200px;margin: 45px auto 0 auto'>
+				echo "<div class='photo-produit' style='background-image: url(uploads/imagecouverture/".$row['article_id'].".jpg); background-repeat: no-repeat; background-size: cover; width: 100%;height: 245px;'>
 		
 				</div>";
 			}elseif (file_exists("uploads/imagecouverture/".$row['article_id'].".png")) {
@@ -40,7 +40,7 @@
 			echo '<div class="details-produit">
 			    <li class="nom-produit">'.$row['article_titre'].'</li>
 				<li class="critère">Prix :<a class="lien-critère">'.$row['article_prix'].'$</a></li>
-				<li class="critère">Notre note :<a class="lien-critère">'.$row['article_note'].'/10</a></li>
+				<li class="critère">Notre note :<a class="lien-critère">'.$row['article_note'].'/10</a><img class="image-note" src="img/star.png"></li>
 			<div class="amazon-lien">
 				<a class="lien-amazon-lien-2" href="'.$row['article_lien'].'">Acheter sur Amazon<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
 			</div>
