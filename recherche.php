@@ -1,6 +1,6 @@
 <?php
   include_once("includes/modules/header.php");
-  echo "<br><br><br><br><br><br>";
+
   if (isset($_GET['submit'])) {
     $NbAParPageMax = 7;
     $nbADefiler = 0;
@@ -44,7 +44,11 @@
   	echo "</div>";
   }
   if (empty($artselec)) {
-    echo "<h1>Il n y a rien qui correspond a votre recherche</h1>";
+    echo "<div class='centrage-conteneur-recherche'>
+        <div class='conteneur-attention-connexion-2'>
+        <img class='image-attention' src='/psychoschoolVal/img/attention.png'>
+        <p class='message-commentaire-connexion'>Aucun résultat ne correspond à votre recherche</p>
+      </div></div>";
   }
 
   /*if ($nbpageart != 1) {

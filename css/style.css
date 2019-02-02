@@ -2257,7 +2257,11 @@ img.fleche-retour-haut-image{
 
 /* design-recherche début */
 
-
+.conteneur-attention-connexion-2{
+	display: flex;
+	margin: auto;
+	width: 535px;
+}
 
 
 .conteneur-recherche, .conteneur-tag-titre-date, .conteneur-like-coment, .conteneur-tag-titre{
@@ -2286,6 +2290,7 @@ img.fleche-retour-haut-image{
 
 .centrage-conteneur-recherche{
 	width: 100%;
+	margin: 90px 0 280px 0;
 }
 
 .conteneur-recherche{
