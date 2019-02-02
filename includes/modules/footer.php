@@ -33,7 +33,7 @@
           	if ($nbaffich > $maxart) {
           		break(1);
           	}
-            echo '<li class="bouton-footer">'.$row['article_titre'].'</li>';
+            echo '<li class="bouton-footer"><a href="'."article.php?narticle=".$row['article_nom'].'">'.$row['article_titre'].'</a></li>';
           }
         }
       ?>
@@ -56,7 +56,7 @@
             if ($nbaffich > $maxart) {
               break(1);
             }
-            echo '<li class="bouton-footer">'.$row['article_titre'].'</li>';
+            echo '<li class="bouton-footer"><a href="'."fiche_produit.php?narticle=".$row['article_nom'].'">'.$row['article_titre'].'</a></li>';
           }
         }
       ?>
