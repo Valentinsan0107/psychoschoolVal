@@ -1,10 +1,7 @@
 <?php
 	include_once("includes/modules/header.php");
     include_once("includes/backrownd/dph.php");
-?>
-
-
-<div class="conteneur-général-1">	
+?>	
 
 <div class="article-conteneur">
 <?php
@@ -113,7 +110,7 @@
 ?>
 </div>
 
-</div>
+
 
 <?php
 	include_once("includes/modules/footer.php");

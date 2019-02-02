@@ -132,7 +132,7 @@ var firstname=["Robin","Victorien","Clara","Jean","Stanislas","Louis","Camille",
 		
 	</div>
 
-
+</div>
 
 </body>
 </html>

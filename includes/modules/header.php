@@ -124,12 +124,6 @@ session_start();
             
       </script>
 
-      <script type="text/javascript">
-     document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.conteneur-général-1').classList.replace("conteneur-général-1", "conteneur-général-2");
-}, false);
-    </script>
-
     <script type="text/javascript">
      document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.whoareyou').classList.replace("whoareyou", "whoareyou-2");
@@ -169,6 +163,8 @@ session_start();
 
 </head>
 <body>
+
+
 
 	<script type="text/javascript">
 	$(function(){
@@ -462,11 +458,20 @@ $(window).scroll(fixDivf);
 fixDivf();
 </script>
 
+<div class="test-loader">
+  <figure class="figure-loader">
+  <div></div><div></div>
+  <div></div><div></div>
+  <div></div><div></div>
+  <div></div><div></div>
+</figure class="figure-loader">
+</div> 
 
-
-
-
-
+<script type="text/javascript">
+  $(document).ready(function(){
+      $(".test-loader").fadeOut(1500);
+  })
+</script>
 
 <div class="fleche-retour-haut-conteneur">
 	<img class="fleche-retour-haut-image" src="/psychoschoolVal/img/arrow-up-.png">
