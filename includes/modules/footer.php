@@ -33,11 +33,11 @@
           	if ($nbaffich > $maxart) {
           		break(1);
           	}
-            echo '<li class="bouton-footer"><a href="'."article.php?narticle=".$row['article_nom'].'">'.$row['article_titre'].'</a></li>';
+            echo '<li class="bouton-footer"><a class="lienfooter" href="'."article.php?narticle=".$row['article_nom'].'">'.$row['article_titre'].'</a></li>';
           }
         }
       ?>
-    </ul>
+    </ul> 
     
   </div>
   <div class="conteneur-info-footer">
@@ -56,7 +56,7 @@
             if ($nbaffich > $maxart) {
               break(1);
             }
-            echo '<li class="bouton-footer"><a href="'."fiche_produit.php?narticle=".$row['article_nom'].'">'.$row['article_titre'].'</a></li>';
+            echo '<li class="bouton-footer"><a class="lienfooter" href="'."fiche_produit.php?narticle=".$row['article_nom'].'">'.$row['article_titre'].'</a></li>';
           }
         }
       ?>
@@ -68,10 +68,10 @@
     <h1 class="titre-section-footer"><a class="lien-titre-footer" href="#">À PROPOS</a></h1>
 
     <ul class="liste-puce-footer">
-      <li class="bouton-footer">Contact</li>
-      <li class="bouton-footer">Avis clients</li>
-      <li class="bouton-footer">Qui sommes-nous ?</li>
-      <li class="bouton-footer">Adresse</li>
+      <li class="bouton-footer"><a class="lienfooter" href="#"> Contact </a></li>
+      <li class="bouton-footer"><a class="lienfooter" href="#"> Avis clients </a></li>
+      <li class="bouton-footer"><a class="lienfooter" href="#"> nique la maman de victorien </a></li>
+      <li class="bouton-footer"><a class="lienfooter" href="#"> Adresse </a></li>
     </ul>
     
   </div>
