@@ -74,7 +74,7 @@ if ($resultChek > 0) {
 			<p class="nombre-like-article">'.$resultChek.'</p>
 			<a class="lien-article-2" href="'.$lien.'">En savoir plus</a>
 			</div>
-			<div class="amazon-lien">
+			<div class="amazon-lien-3">
 		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
 		<a class="lien-amazon-lien" target="_blank" href="'.$row['article_lien'].'">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
 		</div>';

@@ -20,111 +20,10 @@ if (session_status() == PHP_SESSION_NONE) {
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://www.google.com/recaptcha/api.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-      <script type="text/javascript">
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('nav').addClass('black');
-                  }
-                  else {
-                       $('nav').removeClass('black') 
-                  }
-            })
-
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('.image-barre-recherche').addClass('image-barre-recherche-black');
-                  }
-                  else {
-                       $('.image-barre-recherche').removeClass('image-barre-recherche-black') 
-                  }
-            })
-
-
-
-
-
-
-
-
-
-
-
-
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('.barre-recherche-conteneur-2').addClass('barre-recherche-conteneur-2-black');
-                  }
-                  else {
-                       $('.barre-recherche-conteneur-2').removeClass('barre-recherche-conteneur-2-black') 
-                  }
-            })
-
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('.image-barre-recherche').addClass('image-barre-recherche-black');
-                  }
-                  else {
-                       $('.image-barre-recherche').removeClass('image-barre-recherche-black') 
-                  }
-            })
-
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('.champ-recherche-2').addClass('champ-recherche-2-black');
-                  }
-                  else {
-                       $('.champ-recherche-2').removeClass('champ-recherche-2-black') 
-                  }
-            })
-
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('.search-button-2').addClass('search-button-2-black');
-                  }
-                  else {
-                       $('.search-button-2').removeClass('search-button-2-black') 
-                  }
-            })
-
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('nav ul li a.active').addClass('active-black');
-                  }
-                  else {
-                       $('nav ul li a.active').removeClass('active-black') 
-                  }
-            })
-
-            $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('nav .logo').addClass('black-logo');
-                  }
-                  else {
-                       $('nav .logo').removeClass('black-logo') 
-                  }
-            })
-
-             $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('nav ul li a').addClass('black-button');
-                  }
-                  else {
-                       $('nav ul li a').removeClass('black-button') 
-                  }
-            })
-
-             $(window).on('scroll', function() {
-                  if($(window).scrollTop()) {
-                        $('input.log').addClass('log-black');
-                  }
-                  else {
-                       $('input.log').removeClass('log-black') 
-                  }
-            })
-            
-      </script>
+     
 
     <script type="text/javascript">
      document.addEventListener('DOMContentLoaded', function() {
@@ -271,7 +170,7 @@ fixDiv();
   function fixDive() {
   var $cache = $('.matériel-conteneur');
   var hauteur_2= $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-614.8) 
+  if ($(window).scrollTop() > hauteur_2-604.8) 
     $cache.css({'margin-left': '0'}); 
   else
     $cache.css({'margin-left': '340px'});
@@ -284,7 +183,7 @@ fixDive();
   function fixDive() {
   var $cache = $('.conteneur-pub-et-menu');
   var hauteur_2 = $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-614.8) 
+  if ($(window).scrollTop() > hauteur_2-604.8) 
     $cache.css({'position': 'static'}); 
   else
     $cache.css({'position': 'fixed'});
@@ -297,8 +196,8 @@ fixDive();
   function fixDive() {
   var $cache = $('.conteneur-pub-et-menu');
   var hauteur_2 = $('.matériel-conteneur').height(); 
-  if ($(window).scrollTop() > hauteur_2-614.8) 
-    $cache.css({'margin-top': hauteur_2-614.8}); 
+  if ($(window).scrollTop() > hauteur_2-604.8) 
+    $cache.css({'margin-top': hauteur_2-604.8}); 
   else
     $cache.css({'margin-top': '0'});
 }
@@ -471,7 +370,7 @@ fixDivf();
 
 <script type="text/javascript">
   $(document).ready(function(){
-      $(".test-loader").fadeOut(1500);
+      $(".test-loader").fadeOut(1000);
   })
 </script>
 
@@ -479,35 +378,93 @@ fixDivf();
 	<img class="fleche-retour-haut-image" src="/psychoschoolVal/img/arrow-up-.png">
 </div>
 
-      <div class="wrapper">
-            <nav>
-                  <div>
-                  	<a href="index.php"><img class="logo" src="img/logo-youtube-test.png"></a>
+      <nav>
 
-                  </div>
-                  <ul>
-                        <li><a href="/psychoschoolVal/index.php">Accueil</a></li>
-                        <li><a href="/psychoschoolVal/techniques.php">Les Techniques</a></li>
-                        <li><a href="/psychoschoolVal/livre.php">Matériel</a></li>
-                        <li><a href="/psychoschoolVal/about.php">À propos</a></li>
-                        <form class="barre-recherche-conteneur-2" method="GET" action="recherche.php">
-    						<input class="champ-recherche-2" type="text" name="recherche" minlength="1" placeholder="Tu cherches quelque chose ?">
-    						<button class="search-button-2" type="submit" name="submit"><img class="image-barre-recherche" src="img/loupe-barre-recherche.png"></button>
-  						</form>
+                        <div class="menu-icon">
+                              <div>
+                              <img class="image-logo-2" src="img/logo-youtube-test.png">
+                              </div>
+                              <i class="fa fa-bars fa-2x" onclick="responsive()"></i>
+                        </div>
 
-                        <?php
-                        	if (!isset($_SESSION['u_id'])) {
-                        		echo '<li><a class="active" href="log-in.php">Se connecter</a></li>';
-                        	} else {
-                        		echo '<li><a class="active">'.htmlspecialchars($_SESSION['u_pseudo']).'</a></li>
-                        	
-                        		<form action="/psychoschoolVal/includes/backrownd/compts/logout.php" method="POST">
-                        			<input type="hidden" name="submit" value=" ">
-            						<input class="log" type="image" src="/psychoschoolVal/img/power-button-off.png" name="submit"></input>
-            					</form>';
-                        	}
-                        	
-                        ?>
+                        
 
-                  </ul>
-            </nav>	
+                        <div class="menu">
+                              <ul>
+                        <div>
+                              <img class="image-logo" src="img/logo-youtube-test.png">
+                        </div>
+                        <div id="conteneur-image-search">
+                              <img class="image-search" src="img/loupe-barre-recherche.png" onclick="searchbox()">
+                        </div>
+                        <div id="conteneur-image-cancel">
+                              <img class="image-search" src="img/cancel.png" onclick="closesearchbox()">
+                        </div>
+                              <div id="conteneur-bouton">
+                                    <div class="conteneur-barre-recherche-2">
+                              <input id="input-recherche-2" type="text" name="recherche" placeholder="Recherche">
+                              <button id="bouton-recherche-2" type="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                              </div>
+                                    <li><a href="index.php">Accueil</a></li>
+                                    <li><a href="techniques.php">Blog</a></li>
+                                    <li><a href="livre.php">Matériel</a></li>
+                                    <li><a href="about.php">Contact</a></li>
+                                    <li><a class="active" href="log-in.php">S'enregistrer</a></li>
+                                    <li><form><input class="log" type="image" src="/psychoschoolVal/img/power-button-off.png" name="submit"></input></form></li>
+                              </div>
+                        <div class="conteneur-barre-recherche">
+                              <input id="input-recherche" type="text" name="recherche" placeholder="Recherche">
+                              <button id="bouton-recherche" type="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                        </div>
+                              </ul>
+                        </div>
+                  </nav>
+
+
+      <script type="text/javascript">
+            function searchbox(){
+                  document.getElementById("conteneur-bouton").style.display = "none";
+                  document.getElementById("input-recherche").style.display = "block";
+                  document.getElementById("bouton-recherche").style.display = "block";
+                  document.getElementById("conteneur-image-search").style.display = "none";
+                  document.getElementById("conteneur-image-cancel").style.display = "block";
+            }
+      </script>
+
+      <script type="text/javascript">
+            function responsive(){
+                  document.getElementById("conteneur-bouton").style.display = "block";
+                  document.getElementById("input-recherche").style.display = "none";
+                  document.getElementById("bouton-recherche").style.display = "none";
+                  document.getElementById("conteneur-image-search").style.display = "block";
+                  document.getElementById("conteneur-image-cancel").style.display = "none";
+            }
+            
+      </script>
+
+
+
+      <script type="text/javascript">
+            function closesearchbox(){
+                  document.getElementById("conteneur-bouton").style.display = "block";
+                  document.getElementById("input-recherche").style.display = "none";
+                  document.getElementById("bouton-recherche").style.display = "none";
+                  document.getElementById("conteneur-image-search").style.display = "block";
+                  document.getElementById("conteneur-image-cancel").style.display = "none";
+            }
+      </script>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+
+
+
+      </script>
