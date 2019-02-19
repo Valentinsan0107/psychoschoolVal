@@ -119,6 +119,9 @@ nav ul li a:hover{
       transition: 0.2s ease;
 }
 
+.form-recherche{
+	display: flex;
+}
 .menu-icon {
       line-height: 20px;
       width: 100%;
@@ -202,10 +205,15 @@ nav ul li a:hover{
       padding: 0 10px 0 6px;
 }
 
+.form-recherche-2{
+	display: flex;
+	margin: auto;
+}
+
 #input-recherche-2{
       transition: 0.4s ease;
       height: 20px;
-      width: 70%;
+      width: 200px;
       margin-top: 11px;
       padding: 0;
       border:  1px solid white;
@@ -731,6 +739,9 @@ button.button-formulaire-contact{
 	padding: 10px;
 }
 
+.active-2{
+	padding: 0;
+}
 
 
 button.button-formulaire-contact:hover{
@@ -777,6 +788,10 @@ button.button-formulaire-contact:hover{
 		text-align: center;
 		margin-left: 0;
 	}
+
+	.active-2{
+	padding-bottom: 10px;
+}
 }
 
 /* homepage fin */
@@ -2403,7 +2418,8 @@ img.fleche-retour-haut-image{
 
 .centrage-conteneur-recherche{
 	width: 100%;
-	margin: 90px 0 280px 0;
+	margin: 0 0 280px 0;
+	padding-top: 70px;
 }
 
 .conteneur-recherche{
