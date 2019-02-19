@@ -402,23 +402,37 @@ fixDivf();
                         </div>
                               <div id="conteneur-bouton">
                                     <div class="conteneur-barre-recherche-2">
-                              <input id="input-recherche-2" type="text" name="recherche" placeholder="Recherche">
-                              <button id="bouton-recherche-2" type="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                                  <form method="GET" action="recherche.php">
+                                  <input id="input-recherche-2" minlength="1" type="text" name="recherche" placeholder="Recherche">
+                                  <button id="bouton-recherche-2" type="submit" name="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                                  </form>
                               </div>
                                     <li><a href="index.php">Accueil</a></li>
                                     <li><a href="techniques.php">Blog</a></li>
                                     <li><a href="livre.php">Matériel</a></li>
                                     <li><a href="about.php">Contact</a></li>
-                                    <li><a class="active" href="log-in.php">S'enregistrer</a></li>
-                                    <li><form><input class="log" type="image" src="/psychoschoolVal/img/power-button-off.png" name="submit"></input></form></li>
+                                    <?php
+
+			                        	if (!isset($_SESSION['u_id'])) {
+			                        		echo '<li><a class="active" href="log-in.php">Sʼenregistrer</a></li>';
+			                        	} else {
+			                        		echo '<li><a class="active" >'.htmlspecialchars($_SESSION['u_pseudo']).'</a></li>
+			                        		<li><form method="POST" action="/psychoschoolVal/includes/backrownd/compts/logout.php">
+			                        		<input type="hidden" name="submit" value=" ">
+			                        		<input class="log" type="image" src="/psychoschoolVal/img/power-button-off.png" name="submit"></input></form></li>';
+			                        	}
+			                        ?>
                               </div>
                         <div class="conteneur-barre-recherche">
-                              <input id="input-recherche" type="text" name="recherche" placeholder="Recherche">
-                              <button id="bouton-recherche" type="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                              <form method="GET" action="recherche.php">
+                                  <input id="input-recherche" type="text" minlength="1" name="recherche" placeholder="Recherche">
+                                  <button id="bouton-recherche" type="submit" name="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                              </form>
                         </div>
                               </ul>
                         </div>
                   </nav>
+
 
 
       <script type="text/javascript">
