@@ -27,9 +27,10 @@ if ($resultChek > 0) {
 		
 
 			<p class="texte-article">'.$row['article_resumer'].'</p>
-			<a class="lien-article" href="'.$lien.'">Lire plus...</a>
+			
 		<div class="conteneur-module-comment">
-			<a class="lien-icon-conversation" href="'.$lien.'">
+			
+			<div class="conteneur-bouton"><a class="lien-icon-conversation" href="'.$lien.'">
 				<img class="icon-conversation" src="img/conversation.png">
 			</a>';
 
@@ -46,10 +47,15 @@ if ($resultChek > 0) {
 		echo '<a class="lien-icon-conversation" href="'.$lien.'">
 				<img class="icon-like" src="img/like-black-heart-button.png">
 			</a>
-			<p class="nombre-like-article">'.$resultChek.'</p>';
+			<p class="nombre-like-article">'.$resultChek.'</p></div>';
 
-		echo '</div>
-		</div>
+		echo '<a class="lien-article" href="'.$lien.'">Lire plus...</a></div>
+		
+</div>
+		<div class="conteneur-publicité-mobile">
+				<div class="pub-mobile"></div>
+			</div>
+			
 		</div>';
 		}elseif ($nbADefiler > $NbAParPageMax*$nbpageart) {
 			break(1);

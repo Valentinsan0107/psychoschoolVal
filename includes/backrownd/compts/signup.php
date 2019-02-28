@@ -100,7 +100,7 @@ if(!isset($_POST['submit'])){
 
 
 						$hasedpwd = password_hash($pwd, PASSWORD_DEFAULT);
-						$sql = "INSERT INTO users (user_email, user_pseudo, user_password) VALUES('$email, '$pseudo', '$hasedpwd');";
+						$sql = "INSERT INTO users (user_email, user_pseudo, user_password) VALUES('$email', '$pseudo', '$hasedpwd');";
 						$result = mysqli_query($conn, $sql);
 
 

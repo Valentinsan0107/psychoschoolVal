@@ -33,6 +33,7 @@ echo '</div>
 $tags = $row['article_tag'];
 $tags = explode(",", $tags);
 
+echo "<div>";
 if (sizeof($tags)>0) {
 	echo '<a class="tag-recherche" href="#">'.$tags[0].'</a>';
 }
@@ -42,6 +43,7 @@ if (sizeof($tags)>1) {
 if (sizeof($tags)>2) {
 	echo '<a class="tag-recherche" href="#">'.$tags[2].'</a>';
 }
+echo "</div>";
 
 
 echo '<h1 class="titre-article-recherche">'.$row['article_titre'].'</h1>

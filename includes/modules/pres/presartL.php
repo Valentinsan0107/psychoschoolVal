@@ -6,21 +6,21 @@ if ($resultChek > 0) {
 		$nompageserv = $row['article_nom'];
 		$idart = $row['article_id'];
 		$lien = "fiche_produit.php?narticle=".$nompageserv;
-		echo '<div class="photo-article-zone-conteneur">';
+		echo '<div class="photo-article-zone-conteneur-2">';
 		echo '<div class="conteneur-widget-youtuber-photo-article">';
 		if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
-			echo "<div class='photo-article-2' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
+			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
 		}elseif (file_exists("uploads/imagecouverture/".$idart.".png")) {
-			echo "<div class='photo-article-2' style='background-image: url(uploads/imagecouverture/".$idart.".png); background-repeat: no-repeat; background-size: cover;'></div>";
+			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".png); background-repeat: no-repeat; background-size: cover;'></div>";
 		}else{
-			echo "<div class='photo-article-2' style='background-image: url(uploads/imagecouverture/base.png); background-repeat: no-repeat; background-size: cover;'></div>";
+			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/base.png); background-repeat: no-repeat; background-size: cover;'></div>";
 		}
 		echo "<div class='widget-youtuber'>
 					<h1 class='phrase-widget-youtuber'>
 						Utilisé par :
-					</h1>";
+					</h1><div class='conteneur-widget-youtuber'>";
 		if (file_exists("uploads/imageyoutubeur/".$idart."-1.jpg")) {
-			echo "<div class='badge-youtuber' style='background-image: url(uploads/imageyoutubeur/".$idart."-1.jpg); background-repeat: no-repeat; background-size: cover;'>					
+			echo "<div class='badge-youtuber-1' style='background-image: url(uploads/imageyoutubeur/".$idart."-1.jpg); background-repeat: no-repeat; background-size: cover;'>					
 					</div>";
 		}	
 		if (file_exists("uploads/imageyoutubeur/".$idart."-2.jpg")) {
@@ -31,7 +31,7 @@ if ($resultChek > 0) {
 			echo "<div class='badge-youtuber' style='background-image: url(uploads/imageyoutubeur/".$idart."-3.jpg); background-repeat: no-repeat; background-size: cover;'>					
 					</div>";
 		}			
-		echo "</div>
+		echo "</div></div>
 		</div>";
 		$date = $row['article_date'];
 		$date = substr($date, 0, -9);
@@ -52,8 +52,10 @@ if ($resultChek > 0) {
 			</div>
 
 
-			<p class="texte-article">'.$row['article_resumer'].'</p>
-		<div class="conteneur-module-comment">
+			<p class="texte-article-2">'.$row['article_resumer'].'</p>
+		<div class="conteneur-module-comment-4">
+
+		<div class="conteneur-bouton-2">
 			<a class="lien-icon-conversation" href="'.$lien.'">
 				<img class="icon-conversation" src="img/conversation.png">
 			</a>';
@@ -71,7 +73,7 @@ if ($resultChek > 0) {
 		echo '<a class="lien-icon-conversation" href="'.$lien.'">
 				<img class="icon-like" src="img/like-black-heart-button.png">
 			</a>
-			<p class="nombre-like-article">'.$resultChek.'</p>
+			<p class="nombre-like-article">'.$resultChek.'</p></div>
 			<a class="lien-article-2" href="'.$lien.'">En savoir plus</a>
 			</div>
 			<div class="amazon-lien-3">
@@ -79,7 +81,9 @@ if ($resultChek > 0) {
 		<a class="lien-amazon-lien" target="_blank" href="'.$row['article_lien'].'">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
 		</div>';
 
-		echo '</div>
+		echo '</div><div class="conteneur-publicité-mobile">
+				<div class="pub-mobile"></div>
+			</div>
 		</div>';
 		}elseif ($nbADefiler > $NbAParPageMax*$nbpageart) {
 			break(1);

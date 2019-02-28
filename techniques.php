@@ -21,7 +21,7 @@
 		$nbpageart = 1;
 	}
 
-	echo '<div class="conteneur-design-tag">';
+	echo '<div class="conteneur-design-tag"><div class="conteneur-tag">';
 	if ($Trie == "") {
 
 		echo'<a class="design-tag-2" href="techniques.php?tagthec='.$tagSel.'&nbpageart='.$nbpageart.'">#Nouveautés</a>';
@@ -50,9 +50,10 @@
 	}else{
 		echo '<a class="design-tag" href="techniques.php?triethec='.$Trie.'&nbpageart='.$nbpageart.'">Pas de Tag</a>';
 	}
-	echo '	<div class="conteneur-publicité">
+	echo '	</div><div class="conteneur-publicité">
 				<div class="pub-2"></div>
 			</div>
+
 	</div>';
 
 	if ($tagSel == "") {

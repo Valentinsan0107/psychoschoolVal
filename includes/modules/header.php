@@ -14,6 +14,7 @@ if (session_status() == PHP_SESSION_NONE) {
 		}
 	?>
 	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/icon-brain.png">
 	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
@@ -89,15 +90,12 @@ if (session_status() == PHP_SESSION_NONE) {
 <script type="text/javascript">
   $(function(){
 
-    $(".contenu-conteneur").hide();
     $(".conteneur-phrase-présentation-matériel").hide();
     $(".conteneur-phrase-présentation-matériel-2").hide();
 
     $(function () {
 $(window).scroll(function () {
 if ($(this).scrollTop() > 100 ) {
-$('.contenu-conteneur').fadeIn(600);
-} 
 
 if ($(this).scrollTop() > 700 ) {
 $('.conteneur-phrase-présentation-matériel').fadeIn(600);
@@ -113,59 +111,7 @@ $('.conteneur-phrase-présentation-matériel-2').fadeIn(600);
 
 });
 </script>
-
-<script type="text/javascript">
-  function fixDiv() {
-  var $cache = $('.pub-3'); 
-  var hauteur = $('.conteneur-tout-sauf-pub').height();
-  if ($(window).scrollTop() > hauteur-693)
-    $cache.css({'position': 'static'}); 
-  else
-    $cache.css({'position': 'fixed'});
-}
-$(window).scroll(fixDiv);
-fixDiv();
-</script>
-
-
-
-<script type="text/javascript">
-  function fixDiv() {
-  var $cache = $('.pub-3');
-  var hauteur = $('.conteneur-tout-sauf-pub').height();
-  if ($(window).scrollTop() > hauteur-693) 
-    $cache.css({'margin-left': '0'}); 
-  else
-    $cache.css({'margin-left': '1181.6px'});
-}
-$(window).scroll(fixDiv);
-fixDiv();
-</script>
-
-
-
-<script type="text/javascript">
-  function fixDiv() {
-  var $cache = $('.pub-3'); 
-  var hauteur = $('.conteneur-tout-sauf-pub').height();
-  if ($(window).scrollTop() > hauteur-693) 
-    $cache.css({'margin-top': hauteur-693}); 
-  else
-    $cache.css({'margin-top': '0'});
-}
-$(window).scroll(fixDiv);
-fixDiv();
-</script>
-
-
-
-
-
-
-
-
-
-
+<!--
 <script type="text/javascript">
   function fixDive() {
   var $cache = $('.matériel-conteneur');
@@ -205,6 +151,48 @@ $(window).scroll(fixDive);
 fixDive();
 </script>
 
+<script type="text/javascript">
+  function fixDiv() {
+  var $cache = $('.pub-3'); 
+  var hauteur = $('.conteneur-tout-sauf-pub').height();
+  if ($(window).scrollTop() > hauteur-650)
+    $cache.css({'position': 'static'}); 
+  else
+    $cache.css({'position': 'fixed'});
+}
+$(window).scroll(fixDiv);
+fixDiv();
+</script>
+
+
+
+<script type="text/javascript">
+  function fixDiv() {
+  var $cache = $('.pub-3');
+  var hauteur = $('.conteneur-tout-sauf-pub').height();
+  if ($(window).scrollTop() > hauteur-650) 
+    $cache.css({'margin-left': '0'}); 
+  else
+    $cache.css({'margin-left': '1181.6px'});
+}
+$(window).scroll(fixDiv);
+fixDiv();
+</script>
+
+
+
+<script type="text/javascript">
+  function fixDiv() {
+  var $cache = $('.pub-3'); 
+  var hauteur = $('.conteneur-tout-sauf-pub').height();
+  if ($(window).scrollTop() > hauteur-650) 
+    $cache.css({'margin-top': hauteur-650}); 
+  else
+    $cache.css({'margin-top': '0'});
+}
+$(window).scroll(fixDiv);
+fixDiv();
+</script>
 
 
 
@@ -358,6 +346,7 @@ fixDivf();
 $(window).scroll(fixDivf);
 fixDivf();
 </script>
+-->
 
 <div class="test-loader">
   <figure class="figure-loader">
@@ -373,6 +362,8 @@ fixDivf();
       $(".test-loader").fadeOut(1000);
   })
 </script>
+
+
 
 <div class="fleche-retour-haut-conteneur">
 	<img class="fleche-retour-haut-image" src="/psychoschoolVal/img/arrow-up-.png">

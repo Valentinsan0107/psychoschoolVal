@@ -46,9 +46,10 @@
   if (empty($artselec)) {
     echo "<div class='centrage-conteneur-recherche'>
         <div class='conteneur-attention-connexion-2'>
+        <div class='centrage-conteneur-attention-connexion-2'>
         <img class='image-attention' src='/psychoschoolVal/img/attention.png'>
         <p class='message-commentaire-connexion'>Aucun résultat ne correspond à votre recherche</p>
-      </div></div>";
+      </div></div></div>";
   }
 
   /*if ($nbpageart != 1) {

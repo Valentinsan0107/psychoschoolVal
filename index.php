@@ -34,7 +34,7 @@ $TITLEpage="Psychoschool - Homepage";
 			<h3 class="titre-promesse">GAGNE DES ABONNÉS</h1>
 			<p class="paragraphe-promesse">Augmente rapidement ton nombre d'abonnés de façon significative grâce à nos conseils</p>
 	</div>
-	<div class="contenu-conteneur">
+	<div class="contenu-conteneur-2">
 		<div class="contenu">
 			<img class="icon-promesse-2" src="img/icon-test.png">
 		</div>
