@@ -78,7 +78,7 @@ if ($resultChek > 0) {
 			</div>
 			<div class="amazon-lien-3">
 		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
-		<a class="lien-amazon-lien" target="_blank" href="'.$row['article_lien'].'">Clique ici<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
+		<a class="lien-amazon-lien" target="_blank" href="'.$row['article_lien'].'">Acheter maintenant sur Amazon<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
 		</div>';
 
 		echo '</div><div class="conteneur-publicité-mobile">

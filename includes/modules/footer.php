@@ -99,7 +99,7 @@
   
     <script>
 $(document).ready(function() {
-    $("body").append('<div id="customwidget" style="width:320px;display:none; border-radius:10px; position:fixed; left:30px; bottom:30px; padding:10px 20px;padding-left:10px;  box-shadow: 0 0 30px rgba(0, 0, 0, .2);background:#fff;"><div class="desc desc_live_preview"><div style="float:left;padding:2px 10px;"><img class="live_preview_image" src="" alt="" style="background: rgb(255, 255, 255);border-radius:5px;" height="48" width="48"></div> <span class="desc-heading" style=" font-family: Montserrat, sans-serif;"> <div class="desc-heading-name" style="color: #000000; font-weight:600; font-size:14px;padding-top:3px;font-family: Poppins, sans-serif;"> <span id="name"></span> de <span id="city"></span> </div> <div class="desc-heading_foot" style="color: #636363"><small>a acheté <span class="product">XXX</span></div><div style="color: #636363;font-family: Montserrat, sans-serif;padding-top:3px;"> il y a <span id="time"></span> minutes</small></div>  </span> </div></div>')
+    $("body").append('<div id="customwidget" style="width:270px;display:none; border-radius:10px; position:fixed; left:30px; bottom:30px; padding:10px 20px;padding-left:10px;  box-shadow: 0 0 30px rgba(0, 0, 0, .2);background:#fff;"><div class="desc desc_live_preview"><div style="float:left;padding:2px 10px;"><img class="live_preview_image" src="" alt="" style="background: rgb(255, 255, 255);border-radius:5px;" height="48" width="48"></div> <span class="desc-heading" style=" font-family: Montserrat, sans-serif;"> <div class="desc-heading-name" style="color: #000000; font-weight:600; font-size:14px;padding-top:3px;font-family: Poppins, sans-serif;"> <span id="name"></span> de <span id="city"></span> </div> <div class="desc-heading_foot" style="color: #636363"><small>a acheté <span class="product">XXX</span></div><div style="color: #636363;font-family: Montserrat, sans-serif;padding-top:3px;"> il y a <span id="time"></span> minutes</small></div>  </span> </div></div>')
 
 var firstname=["Robin","Victorien","Clara","Jean","Stanislas","Louis","Camille","Hugo","Léo","Mathilde","Valentin","Jules","Martin","Samy","Alex","Matteo","Maxime","Arthur","David","Sandra","Emilie","Emma","Chloé","Lisa","Alicia","Julie"];
     var lastname=["R.","N.","A.","B.","C.","L.","D.","S.","J.","G.","M."];
@@ -114,8 +114,8 @@ var firstname=["Robin","Victorien","Clara","Jean","Stanislas","Louis","Camille",
       $(".live_preview_image").attr("src","/psychoschoolVal/img/shopping-cart.png");
       $("#customwidget").fadeIn();
       $(".product").html(getRandomProduct(products));
-      setTimeout(function(){ $("#customwidget").fadeOut(function(){ $("#name").html('');$("#city").html('');$(".live_preview_image").attr("src",""); });},20000);
-    }, 30000);
+      setTimeout(function(){ $("#customwidget").fadeOut(function(){ $("#name").html('');$("#city").html('');$(".live_preview_image").attr("src",""); });},5000);
+    }, 7000);
 
     function getRandomEle(names) {
       return names[Math.floor(Math.random() * (names.length -1))];
