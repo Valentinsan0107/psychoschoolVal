@@ -6,7 +6,9 @@
 
 		<div class="conteneur-création-connexion">';
 		if (isset($_SERVER['HTTP_REFERER'])) {
-			$_SESSION['url'] = $_SERVER['HTTP_REFERER'];
+			if (strpos($_SERVER['HTTP_REFERER'], "log-in.php") === false) {
+				$_SESSION['url'] = $_SERVER['HTTP_REFERER'];
+			}
 		}
 
 
