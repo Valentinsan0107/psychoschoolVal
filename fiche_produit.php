@@ -112,14 +112,14 @@
 					</form>';
 			}
 		}else{
-			echo '<img class="icon-dislike" src="img/like-black-heart-button.png">';
+			echo '<div class="conteneur-like-article-complet"><img class="icon-dislike" src="img/like-black-heart-button.png">';
 		}
 
-		echo '<p class="nombre-like-article-entier">'.$resultChek.'<p>';
+		echo '<p class="nombre-like-article-entier-2">'.$resultChek.'<p></div>';
 
-		echo '<a class="lien-share-1" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/facebook-share.png">Partager</a>
-		<a class="lien-share-2" href="https://twitter.com/home?status=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/twitter-share.png">Tweeter</a>
-		<a class="lien-share-3" href="https://plus.google.com/share?url=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share-2" src="img/google-share.png">Partager</a></div>';
+		echo '<div class="conteneur-reseaux"><a class="lien-share-1" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/facebook-share.png"></a>
+		<a class="lien-share-2" href="https://twitter.com/home?status=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/twitter-share.png"></a>
+		<a class="lien-share-3" href="https://plus.google.com/share?url=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share-2" src="img/google-share.png"></a></div></div>';
 
 	echo "</div>";
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nomarticle'";
@@ -137,11 +137,11 @@
 				$date = datetotext($date);
 				$content = $row['coment_contenue'];
 
-				echo '<div class="div-commentaire-2">
+				echo '<div class="div-commentaire">
 
 				<div class="identité-commentaire">
 						<img class="photo-identité-commentaire" src="img/user.png">
-						<p class="pseudo-date">'.htmlspecialchars($pseudo).'<p class="juste-date">'.$date.'</p></p>
+						<div class="conteneur-pseudo-date"><p class="pseudo-date">'.htmlspecialchars($pseudo).'<p class="juste-date">'.$date.'</p></p></div>
 				</div>
 						<p class="p-commentaire">'.htmlspecialchars($content).'</p>
 					</div>';
@@ -175,12 +175,6 @@
 ?>
 
 
-	
-</div>
-
-
-
-<div class="pub-5">
 	
 </div>
 

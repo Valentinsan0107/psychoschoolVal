@@ -21,6 +21,7 @@ if (session_status() == PHP_SESSION_NONE) {
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://www.google.com/recaptcha/api.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
