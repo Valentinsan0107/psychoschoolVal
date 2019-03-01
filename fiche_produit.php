@@ -150,7 +150,7 @@
 				if (isset($_SESSION['u_pseudo']) && $pseudo == $_SESSION['u_pseudo']) {
 					echo '<form class="input-commentaire" action="/psychoschoolVal/includes/backrownd/addcoment.php" method="POST">
 							<input type="hidden" name="idcoment" value="'.$idcom.'">
-							<button class="input-commentaire" type="submit" name="submitsupp">&times;</button>
+							<button class="input-commentaire-2" type="submit" name="submitsupp">&times;</button>
 						</form>';
 				}
 			}

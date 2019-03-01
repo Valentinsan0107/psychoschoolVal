@@ -1643,9 +1643,9 @@ flex-wrap: wrap;
 }
 
 .image-article-entier{
-	padding: 2% 5% 2% 5%;
-	height: 90%;
-	width: 90%;
+	padding: 2% 0;
+	height: 100%;
+	width: 100%;
 
 }
 
@@ -1888,7 +1888,7 @@ div#volet{
 }
 
 .avis, .conseils{
-	width: 90%;
+	width: 92%;
 	background-color: white;
 	border: 1px solid #ebebeb;
 }
@@ -2408,7 +2408,7 @@ div.conteneur-module-comment, div.conteneur-module-comment-4{
 
 div.conteneur-module-comment-2{
 	display: flex;
-	margin: 30px 0;
+	margin: 30px 0 0 0;
 	padding-top: 20px;
 	border-top: 2px #ebebeb solid;
 	justify-content: space-between;
@@ -2604,13 +2604,13 @@ p.nombre-like-article-entier-2{
 
 div.article-complet-conteneur{
 	background-color: #ffffff;
-    width: 100%;
-    padding-bottom: 10px;
+    width: 92%;
+    padding: 0 5% 40px 5%;
 }
 
 
 p.paragraphe-article-complet{
-	padding: 0 5%;
+	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 1.5em;
 	color: #404040;
@@ -2632,6 +2632,10 @@ div.conteneur-pseudo-date{
 	div.conteneur-attention-connexion{
 		width: auto;
 		flex-direction: column;
+	}
+
+	img.image-attention{
+		margin: auto;
 	}
 }
 
@@ -2657,7 +2661,7 @@ div.conteneur-pseudo-date{
 
 	h1.titre-article-complet{
 		font-size: 1.8em;
-		padding: 20px 4%;
+		padding: 20px 0;
 	}
 
 }
@@ -2745,6 +2749,23 @@ img.photo-auteur-page-entière{
 	border-radius: 300px; 
 }
 
+@media (max-width: 870px){
+
+	div.conteneur-fiche-technique{
+		flex-direction: column;
+		width: 60%;
+		margin: auto;
+		min-width: 347px;
+	}
+
+	div.whoareyou-4{
+		width: 100%;
+		margin: 0 0 30px 0;
+	}
+
+
+}
+
 /* PAGE ENTIERE livre fin */
 
 /* module de commentaire début */
@@ -2752,7 +2773,7 @@ img.photo-auteur-page-entière{
 
 
 textarea.textarea-formulaire-comment, textarea.textarea-formulaire-comment-2{
-	width: 95%;
+	width: 97%;
 	height: 150px;
     border: 1px solid #ebebeb;
     font-family: 'Montserrat', sans-serif;
@@ -2856,7 +2877,7 @@ p.p-commentaire{
 }
 
 div.div-commentaire{
-	width: 90%;
+	width: 92%;
 	background-color: white;
 	border: 1px solid #e2dede;
 	margin-top: 20px;
