@@ -105,7 +105,30 @@ var firstname=["Robin","Victorien","Clara","Jean","Stanislas","Louis","Camille",
     var lastname=["R.","N.","A.","B.","C.","L.","D.","S.","J.","G.","M."];
     var cities=["Paris","Marseille","Lyon","Grenoble","Brest","Nantes","Perpignan","Strasbourg","Toulouse","Nice","Montpellier","Bordeaux","Lille","Rennes","Saint-Étienne","Angers","Poudlard"];
     var minutes=["2","3","4","5","6","7","8","9","10","11","12","13","14","15"];
-    var products=['<a class="lien-product" href="livre.php">Livre 1</a> via notre lien','<a class="lien-product" href="livre.php">Livre 2</a> via notre lien','<a class="lien-product" href="livre.php">Livre 3</a> via notre lien','<a class="lien-product" href="livre.php">Livre 4</a> via notre lien','<a class="lien-product" href="livre.php">Livre 5</a> via notre lien','<a class="lien-product" href="livre.php">Livre 6</a> via notre lien',];
+    <?php
+        $sql = "SELECT * FROM article WHERE article_thechnique='0'";
+        $result = mysqli_query($conn, $sql);
+        $resultChek = mysqli_num_rows($result);
+
+        if ($resultChek != 0) {
+          $var_prod ="var products=[";
+          while ($row = mysqli_fetch_assoc($result)) {
+              $partie =<<<EOT
+                '<a class="lien-product" href="http://localhost:8080/psychoschoolVal/fiche_produit.php?narticle={$row['article_nom']}">{$row['article_titre']}</a> via notre lien',
+EOT;
+
+              $var_prod .= $partie;
+          }
+          $var_prod .= "];";
+          echo $var_prod;
+
+        }else{
+          echo<<<EOT
+        var products=['<a class="lien-product" href="livre.php">Livre 1</a> via notre lien','<a class="lien-product" href="livre.php">Livre 2</a> via notre lien','<a class="lien-product" href="livre.php">Livre 3</a> via notre lien','<a class="lien-product" href="livre.php">Livre 4</a> via notre lien','<a class="lien-product" href="livre.php">Livre 5</a> via notre lien','<a class="lien-product" href="livre.php">Livre 6</a> via notre lien',];
+EOT;
+
+        }
+    ?>
     setInterval(function(){
       $("#name").html(getRandomEle(firstname)+" "+getRandomEle(lastname));
       var idx=getRandomIndex(cities);
@@ -114,7 +137,7 @@ var firstname=["Robin","Victorien","Clara","Jean","Stanislas","Louis","Camille",
       $(".live_preview_image").attr("src","/psychoschoolVal/img/shopping-cart.png");
       $("#customwidget").fadeIn();
       $(".product").html(getRandomProduct(products));
-      setTimeout(function(){ $("#customwidget").fadeOut(function(){ $("#name").html('');$("#city").html('');$(".live_preview_image").attr("src",""); });},5000);
+      setTimeout(function(){ $("#customwidget").fadeOut(function(){ $("#name").html('');$("#city").html('');$(".live_preview_image").attr("src",""); });},5000);  
     }, 7000);
 
     function getRandomEle(names) {
