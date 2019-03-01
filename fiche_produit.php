@@ -100,6 +100,7 @@
 			}
 		}
 		if (isset($_SESSION['u_id'])) {
+			echo '<div class="conteneur-like-article-complet">';
 			if ($userlikechek == 0) {
 				echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
