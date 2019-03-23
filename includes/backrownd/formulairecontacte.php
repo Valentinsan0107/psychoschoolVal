@@ -36,11 +36,11 @@ if(isset($_POST['submit'])){
 		$mail->Port = 587;
 		$mail->SMTPSecure = 'tls';
 		$mail->SMTPAuth = true;
-		$mail->Username = "testphpvalvic@gmail.com";
-		$mail->Password = "lolmdrptdr";
+		$mail->Username = "youtubtips.fr@gmail.com";
+		$mail->Password = "NeS9vh74G";
 		$mail->setFrom($email, $nom);
 		$mail->addReplyTo($email, $nom);
-		$mail->addAddress('testphpvalvic@gmail.com', 'First Last');
+		$mail->addAddress('youtubtips.fr@gmail.com', 'youtubtips');
 		$mail->Subject = $sujet;
 		$mail->msgHTML($message, __DIR__);
 		

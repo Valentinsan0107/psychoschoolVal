@@ -86,10 +86,10 @@ if(!isset($_POST['submit'])){
 						$mail->Port = 587;
 						$mail->SMTPSecure = 'tls';
 						$mail->SMTPAuth = true;
-						$mail->Username = "testphpvalvic@gmail.com";
-						$mail->Password = "lolmdrptdr";
-						$mail->setFrom('testphpvalvic@gmail.com', 'First Last');
-						$mail->addReplyTo('testphpvalvic@gmail.com', 'First Last');
+						$mail->Username = "youtubtips.fr@gmail.com";
+						$mail->Password = "NeS9vh74G";
+						$mail->setFrom('youtubtips.fr@gmail.com', 'youtubtips');
+						$mail->addReplyTo('youtubtips.fr@gmail.com', 'youtubtips');
 						$mail->addAddress($email, $pseudo);
 						$mail->Subject = 'confirmation inscription';
 						$mail->msgHTML($content, __DIR__);
