@@ -2,7 +2,12 @@
   include_once("includes/modules/header.php");
 ?>
 
+	
 <div class="conteneur-général-3">
+
+<div class="test-widget-amazon"> 
+		<a class="texte-test-widget-amazon" href="#">Acheter cet article sur Amazon<img class="image-amazon-lien-2" src="img/amazon-white.png"></a>
+</div>
 <div class="conteneur-fiche-technique">
 
 <div class="whoareyou-3">
@@ -25,7 +30,7 @@
 		}
 		if ($row['article_thechnique'] == 0) {
 			if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
-				echo "<div class='photo-produit' style='background-image: url(uploads/imagecouverture/".$row['article_id'].".jpg); background-repeat: no-repeat; background-size: cover; width: 100%;height: 245px;'>
+				echo "<div class='photo-produit' style='background-image: url(uploads/imagecouverture/".$row['article_id'].".jpg); background-repeat: no-repeat; background-size: cover; width: 100%;height: 345px;'>
 		
 				</div>";
 			}elseif (file_exists("uploads/imagecouverture/".$row['article_id'].".png")) {
@@ -37,13 +42,10 @@
 		
 				</div>";
 			}
-			echo '<div class="details-produit">
+			echo '<div class="conteneur-details-produit-widget-youtuber-2"><div class="details-produit">
 			    <li class="nom-produit">'.$row['article_titre'].'</li>
 				<li class="critère">Prix :<a class="lien-critère">'.$row['article_prix'].'$</a></li>
 				<li class="critère">Notre note :<a class="lien-critère">'.$row['article_note'].'/10</a><img class="image-note" src="img/star.png"></li>
-			<div class="amazon-lien">
-				<a class="lien-amazon-lien-2" href="'.$row['article_lien'].'">Acheter sur Amazon<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
-			</div>
 
 			</div>
 				<div class="widget-youtuber-2">
@@ -64,7 +66,7 @@
 			}
 			echo "	</div>
 
-			</div>";
+			</div></div>";
 		echo '<div class="conteneur-avis-conseils">';
 
 		$ficherHTLMArticle = "uploads/html/".$row['article_id'].".html";

@@ -62,34 +62,6 @@ body{
 	transition: 0.8s ease;
 }
 
-/* fleche retour début */
-
-img.fleche-retour-haut-image{
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
-	z-index: 20;
-	margin-right: 20px;
-}
-
-div.fleche-retour-haut-conteneur{
-	position: fixed;
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-	top: 90%;
-}
-
-
-
-@media(max-width: 490px){
-
-	div.fleche-retour-haut-conteneur{
-		display: none;
-	}
-}
-
-/* fleche retour fin */
 
 /* Bar navigation début */
 
@@ -136,10 +108,10 @@ nav ul li a:hover{
 }
 
 .active{
-      padding: 6px 8px;
+      padding: 6px 10px;
       color: #c4302b;
       background-color: white;
-      border-radius: 15px;
+      border-radius: 5px;
       transition: 0.2s ease;
 }
 
@@ -544,7 +516,7 @@ div.contenu-conteneur{
 	margin: 40px 40px 0 40px;
 	background-color: white;
 	padding-top: 50px;
-	border: 1px solid #ebebeb;
+	box-shadow: 0px 10px 35px 0px #d7d7d7;
 	min-width: 293px;
 	width: 33.3%;
 }
@@ -553,7 +525,7 @@ div.contenu-conteneur-2{
 	margin: 40px 0 0 0;
 	background-color: white;
 	padding-top: 50px;
-	border: 1px solid #ebebeb;
+	box-shadow: 0px 10px 35px 0px #d7d7d7;
 	min-width: 293px;
 	width: 33.3%;
 }
@@ -674,15 +646,17 @@ p.paragraphe-promesse{
 
 .conteneur-derniers-articles{
 	width: 20%;
-	margin: 0 40px;
+	margin: 0 40px 0 0;
 	display: flex;
 	flex-direction: column;
-	border-top: 1px solid #dedddd;
+	box-shadow: 0px 10px 35px 0px #d7d7d7;
+	background-color: white;
 }
 
 .zone-derniers-articles{
 	height: 120px;
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 	border-bottom: 1px solid #dedddd;
 	display: flex;
 }
@@ -1268,22 +1242,24 @@ button.btnClose:hover{
 .whoareyou{
 	height: 600px;
 	width: 300px;
-	background-color: #c4302b;
+	background-color: white;
 	margin: 0 2% 50px 2%;
 	opacity: 0;
 	transform: translateX(-10em);
+	box-shadow: 0px 10px 35px 0px #d7d7d7;
 }
 
 .whoareyou-2{
 	height: 600px;
 	width: 300px;
 	min-width: 300px;
-	background-color: #c4302b;
+	background-color: white;
 	margin: 0 2% 50px 2%;
 	opacity: 1;
 	transition: 0.6s ease;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0px 10px 35px 0px #d7d7d7;
 }
 
 .about-you{
@@ -1299,7 +1275,7 @@ button.btnClose:hover{
 	margin: 15px 23px 15px 23px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.65em;
-	color: white;
+	color: #c4302b;
 	text-transform: uppercase;
 }
 
@@ -1341,7 +1317,7 @@ button.btnClose:hover{
 	padding-left: 15px;
 	width: 206px;
 	border: 2px solid white;
-	margin: auto;
+	margin: 0 0 0 23px;
 	border-radius: 5px;
 	cursor: pointer;
 }
@@ -1359,7 +1335,6 @@ button.btnClose:hover{
 	margin: 23px 23px 23px 23px;
 	font-family: 'Montserrat', sans-serif;
 	line-height: 140%;
-	color: white;
 }
 
 form.form-formulaire-contact-2{
@@ -1447,7 +1422,6 @@ form.form-formulaire-contact-3{
 
 .texte-bonus-about{
 	font-family: 'Montserrat', sans-serif;
-	color: white;
 }
 
 
@@ -1483,28 +1457,28 @@ form.form-formulaire-contact-3{
 	font-family:'Raleway', sans-serif;
 }
 
+.whoareyou-2{
+		background-color: white;
+	}
+
+.whoareyou{
+		background-color: white;
+	}
+
+.bonus-about:before{
+		border: 2px solid #c4302b;
+	}
+
+div.image-donation-conteneur{
+		border: 2px solid #c4302b;
+	}
 
 @media (max-width: 1173px){
 
-	.whoareyou-2{
-		background-color: white;
-	}
+	
 
-	.whoareyou{
-		background-color: white;
-	}
 
-	h1.titre-donation, h1.texte-about-you, p.texte-donation, a.texte-bonus-about{
-		color: #c4302b;
-	}
-
-	div.image-donation-conteneur{
-		border: 2px solid #c4302b;
-	}
-
-	.bonus-about:before{
-		border: 2px solid #c4302b;
-	}
+	
 
 	form.form-formulaire-contact-3{
 		border: none;
@@ -1659,7 +1633,7 @@ div.zone-article{
     background-color: #ffffff;
     width: 947px;
     height: 354px;
-    border: 1px solid #ebebeb;
+    box-shadow: 0px 10px 35px 0px #d7d7d7;
     margin-left: 15px;
     min-width: 947px;
 }
@@ -1874,9 +1848,44 @@ div#volet{
 
 /* techniques début entier */
 
+.test-widget-amazon{
+	width: 100%;
+	height: 50px;
+	background: rgba(36,36,36,0.8);
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-amazon-lien-2{
+	width: 30px;
+	height: 25px;
+	margin-left: 14px;
+}
+
+.texte-test-widget-amazon{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.texte-test-widget-amazon:hover{
+	text-decoration: underline;
+}
+
 .conteneur-fiche-technique{
 	display: flex;
+	flex-direction: column;
 	padding-top: 90px;
+	width: 60%;
+	margin: auto;
 
 }
 
@@ -1920,18 +1929,23 @@ div#volet{
 }
 
 .whoareyou-4{
-	height: 598px;
-	width: 340px;
+
+	width: 100%;
 	background-color: white;
 	margin-top: 0;
-	margin-right: 2%;
-	margin-bottom: 50px;
-	margin-left: 2%;
+	margin-bottom: 40px;
 	display: flex;
-	flex-direction: column;
 	opacity: 1;
 	border: 1px solid #ebebeb;
 
+}
+
+.conteneur-details-produit-widget-youtuber-2{
+	margin-left: 3%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .pub-5{
@@ -1947,16 +1961,16 @@ div#volet{
 
 .nom-produit{
 	list-style-type: none;
-	margin: 20px 0 20px 45px;
+	margin: 0 0 20px 0;
 	font-family: 'Arial', sans-serif;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
 }
 
 .critère{
 	list-style-type: none;
-	margin: 20px 0 20px 45px;
+	margin: 20px 0 20px 0;
 	font-family: 'Montserrat', sans-serif;
     color: #404040;
     font-size: 1.2em;
@@ -1972,27 +1986,8 @@ div#volet{
 	margin-left: 10px;
 }
 
-.lien-amazon-lien-2{
-	display: flex;
-	align-items: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1.4em;
-	border: none;
-	color: white;
-	background-color: #c4302b;
-	text-decoration: none;
-	padding: 12px 12px;
-	margin: auto;
-	box-shadow: 2px 2px 10px #b3b2b2;
-	border-radius:5px; 
-}
-
-.lien-amazon-lien-2:hover{
-	text-decoration: underline;
-}
-
 .widget-youtuber-2{
-	width: 340px;
+	width: 330px;
 	height: 90px;
 	background-color: #ffffff;
 	display: flex;
@@ -2075,12 +2070,12 @@ div#volet{
 	opacity: 1;
 	transition: 0.6s ease;
 	background-color: white;
-	border: 1px solid #ebebeb;
 	display: flex;
     flex-direction: column;
     justify-content: center;
     width: 1317.2px;
     margin: 20px auto;
+    box-shadow: 0px 10px 35px 0px #e6e4e4;
 }
 
 .conteneur-pub-et-menu{
@@ -2281,12 +2276,7 @@ a.onglet-matériel-6{
 	flex-direction: column;
 }
 
-.amazon-lien{
-	height: 90px;
-	background-color: white;
-	display: flex;
-	align-items: center;
-}
+
 
 .amazon-lien-3{
 	height: 90px;
@@ -2294,6 +2284,7 @@ a.onglet-matériel-6{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-shadow: 0px 10px 35px 0px #d7d7d7;
 }
 
 .texte-amazon-lien{
@@ -2347,21 +2338,21 @@ a.onglet-matériel-6{
 	font-family: 'Raleway', sans-serif;
 	color: #c4302b;
 	font-size: 1.1em;
-	margin: 0 0 0 4%;
+	margin: 0;
 	line-height: 90px;
 }
 
 .badge-youtuber{
-	height: 55px;
-	width: 55px;
+	height: 50px;
+	width: 50px;
 	border-radius: 55px;
 	margin-left: 15px;
 	border: 2px solid #c4302b;
 }
 
 .badge-youtuber-1{
-	height: 55px;
-	width: 55px;
+	height: 50px;
+	width: 50px;
 	border-radius: 55px;
 	border: 2px solid #c4302b;
 }
@@ -2565,12 +2556,7 @@ p.nombre-like-article-entier-2{
 
 @media (max-width: 489px){
 	p.texte-amazon-lien{
-		font-size: 1.1em;
-	}
-
-	div.badge-youtuber,div.badge-youtuber-1{
-		height: 45px;
-		width: 45px;
+		font-size: 1.2em;
 	}
 
 	h1.phrase-widget-youtuber{
@@ -2637,22 +2623,28 @@ div.conteneur-pseudo-date{
 	img.image-attention{
 		margin: auto;
 	}
-}
 
-@media (max-width: 440px){
 	div.conteneur-pseudo-date{
 		flex-direction: column;
 		align-items: normal;
+	}
+
+	p.pseudo-date{
+		margin: 0;
 	}
 
 	div.identité-commentaire{
 		align-items: normal;
 
 	}
+}
 
-	p.pseudo-date{
-		margin: 0;
-	}
+@media (max-width: 440px){
+	
+
+	
+
+	
 
 	p.paragraphe-article-complet, p.p-commentaire{
 		font-size: 0.9em;
@@ -2749,6 +2741,17 @@ img.photo-auteur-page-entière{
 	border-radius: 300px; 
 }
 
+@media (max-width: 1150px){
+
+	div.whoareyou-4{
+		flex-direction: column;
+	}
+
+	li.nom-produit{
+		margin-top: 20px;
+	}
+}
+
 @media (max-width: 870px){
 
 	div.conteneur-fiche-technique{
@@ -2823,7 +2826,7 @@ button.input-commentaire{
 
 button.input-commentaire-2{
 	background-color: #c4302b;
-	margin-left: 90%;
+	margin-left: 96%;
 	border: none;
 	width: 30px;
 	height: 20px;
@@ -2831,6 +2834,19 @@ button.input-commentaire-2{
 	border-radius: 0px 0px 5px 5px;
 	transition: 0.3s ease;
 }
+
+@media (max-width: 1150px){
+	button.input-commentaire-2{
+		margin-left: 94%;
+	}
+}
+
+@media (max-width: 773px){
+	button.input-commentaire-2{
+		margin-left: 92%;
+	}
+}
+
 
 button.input-commentaire:hover{
 	background-color: #eb3a34;
@@ -2881,7 +2897,7 @@ div.div-commentaire{
 	background-color: white;
 	border: 1px solid #e2dede;
 	margin-top: 20px;
-	padding: 5%;
+	padding: 20px 5% 5% 5%;
 }
 
 p.message-commentaire-connexion{
@@ -2893,7 +2909,7 @@ p.message-commentaire-connexion{
 
 .conteneur-attention-connexion{
 	display: flex;
-	margin: 0 auto;
+	margin: 20px auto 0 auto;
 	padding: 10px;
 }
 
