@@ -16,7 +16,7 @@ if ($resultChek > 0) {
 			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/base.png); background-repeat: no-repeat; background-size: cover;'></div>";
 		}
 		echo "<div class='widget-youtuber'>
-					<h1 class='phrase-widget-youtuber'>
+					<h1 class='phrase-widget-youtuber-2'>
 						Utilisé par :
 					</h1><div class='conteneur-widget-youtuber'>";
 		if (file_exists("uploads/imageyoutubeur/".$idart."-1.jpg")) {
