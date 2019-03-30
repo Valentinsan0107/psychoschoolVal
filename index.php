@@ -117,32 +117,70 @@ $TITLEpage="Psychoschool - Homepage";
 </div>
 
 	<div class="zone-coté">
-		<figure class="figure-slide">
-	<div class="slide">
-		<p class="paragraphe-slide"> Micro </p>
-		<img class="image-slide" src="img/slide-1.jpg">
-	</div>
+		<h1 class="titre-zone-coté">Les meilleurs ventes</h1>
+		<div class="aperçu-matériel">
 
-	<div class="slide">
-		<p class="paragraphe-slide"> Ecran </p>
-		<img class="image-slide" src="img/slide-2.jpg">
-	</div>
+			<div class="photo-aperçu-matériel">
+				
+			</div>
 
-	<div class="slide">
-		<p class="paragraphe-slide"> Ordinateur </p>
-		<img class="image-slide" src="img/slide-3.jpg">
-	</div>
+			<div class="description-aperçu-matériel">
+				<h1 class="titre-aperçu-matériel">Iphone XR</h1>
 
-	<div class="slide">
-		<p class="paragraphe-slide"> Caméra </p>
-		<img class="image-slide" src="img/slide-4.jpg">
-	</div>
+			<div class="conteneur-date-calendrier">
+				<img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+				<h6 class="date-aperçu-matériel">28 Janvier 2019</h6>
+			</div>
+				<p class="paragraphe-aperçu-matériel">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat.</p>
 
-	<div class="slide">
-		<p class="paragraphe-slide"> Gadget </p>
-		<img class="image-slide" src="img/slide-5.jpg">
-	</div>
-</figure>
+				<a class="lien-article-3" href="#">En savoir plus</a>
+
+			</div>
+
+		</div>
+
+		<div class="aperçu-matériel">
+
+			<div class="photo-aperçu-matériel">
+				
+			</div>
+
+			<div class="description-aperçu-matériel">
+				<h1 class="titre-aperçu-matériel">Iphone XR</h1>
+
+			<div class="conteneur-date-calendrier">
+				<img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+				<h6 class="date-aperçu-matériel">28 Janvier 2019</h6>
+			</div>
+				<p class="paragraphe-aperçu-matériel">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat.</p>
+
+				<a class="lien-article-3" href="#">En savoir plus</a>
+
+			</div>
+
+		</div>
+
+		<div class="aperçu-matériel-2">
+
+			<div class="photo-aperçu-matériel">
+				
+			</div>
+
+			<div class="description-aperçu-matériel">
+				<h1 class="titre-aperçu-matériel">Iphone XR</h1>
+
+			<div class="conteneur-date-calendrier">
+				<img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+				<h6 class="date-aperçu-matériel">28 Janvier 2019</h6>
+			</div>
+				<p class="paragraphe-aperçu-matériel">Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat.</p>
+
+				<a class="lien-article-3" href="#">En savoir plus</a>
+
+			</div>
+
+		</div>
+
 	</div>
 
 </div>

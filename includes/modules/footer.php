@@ -137,8 +137,8 @@ EOT;
       $(".live_preview_image").attr("src","/psychoschoolVal/img/shopping-cart.png");
       $("#customwidget").fadeIn();
       $(".product").html(getRandomProduct(products));
-      setTimeout(function(){ $("#customwidget").fadeOut(function(){ $("#name").html('');$("#city").html('');$(".live_preview_image").attr("src",""); });},7000);  
-    }, 10000);
+      setTimeout(function(){ $("#customwidget").fadeOut(function(){ $("#name").html('');$("#city").html('');$(".live_preview_image").attr("src",""); });},70000);  
+    }, 100000);
 
     function getRandomEle(names) {
       return names[Math.floor(Math.random() * (names.length -1))];
