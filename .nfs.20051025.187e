@@ -117,56 +117,32 @@ $TITLEpage="Psychoschool - Homepage";
 </div>
 
 	<div class="zone-coté">
-		<h1 class="titre-zone-coté">Les meilleurs ventes</h1>
-		<?php
-			    $sql = "SELECT * FROM article WHERE article_thechnique='0' ORDER BY article_id DESC";
-				$result = mysqli_query($conn, $sql);
-				$resultChek = mysqli_num_rows($result);
+		<figure class="figure-slide">
+	<div class="slide">
+		<p class="paragraphe-slide"> Micro </p>
+		<img class="image-slide" src="img/slide-1.jpg">
+	</div>
 
-				if ($resultChek > 0) {
-					$compt = 0;
-					while ($row = mysqli_fetch_assoc($result)) {
-						if ($compt<3) {
-							$compt += 1;
-							$lien = "fiche_produit.php?narticle=".$row['article_nom'];
-							$date = $row['article_date'];
-							$date = substr($date, 0, -9);
-			  				$date = datetotext($date);
-							echo '<div class="aperçu-matériel">';
+	<div class="slide">
+		<p class="paragraphe-slide"> Ecran </p>
+		<img class="image-slide" src="img/slide-2.jpg">
+	</div>
 
-									if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
-										echo '<div class="photo-aperçu-matériel" style="background-image: url(uploads/imagecouverture/'.$row['article_id'].'.jpg);">
-										
-									</div>';
-									}elseif (file_exists("uploads/imagecouverture/".$row['article_id'].".png")) {
-										echo '<div class="photo-aperçu-matériel" style="background-image: url(uploads/imagecouverture/'.$row['article_id'].'.png);">
-										
-									</div>';
-									}else{
-										echo '<div class="photo-aperçu-matériel" style="background-image: url(img/iphone.jpg);">
-										
-									</div>';
-									}
-									echo'
-									<div class="description-aperçu-matériel">
-										<h1 class="titre-aperçu-matériel">'.$row['article_titre'].'</h1>
+	<div class="slide">
+		<p class="paragraphe-slide"> Ordinateur </p>
+		<img class="image-slide" src="img/slide-3.jpg">
+	</div>
 
-									<div class="conteneur-date-calendrier">
-									
-									<h6 class="date-aperçu-matériel">'.$date.'</h6>
-									</div>
-										<p class="paragraphe-aperçu-matériel">'.$row['article_resumer'].'</p>
+	<div class="slide">
+		<p class="paragraphe-slide"> Caméra </p>
+		<img class="image-slide" src="img/slide-4.jpg">
+	</div>
 
-										<a class="lien-article-3" href="'.$lien.'">En savoir plus</a>
-
-									</div>
-
-								</div>';
-						}
-					}
-				}
-		?>
-
+	<div class="slide">
+		<p class="paragraphe-slide"> Gadget </p>
+		<img class="image-slide" src="img/slide-5.jpg">
+	</div>
+</figure>
 	</div>
 
 </div>
@@ -191,7 +167,7 @@ $TITLEpage="Psychoschool - Homepage";
 	</div>
 
 	</div>
-<div class="formulaire-contact-conteneur" style=''>
+<div class="formulaire-contact-conteneur">
 	<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="POST">
 		<h1 class="titre-formulaire-contact">NOUS CONTACTER :</h1>
 		<div class="conteneur-email-nom">
