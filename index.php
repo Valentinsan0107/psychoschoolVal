@@ -131,6 +131,7 @@ $TITLEpage="Psychoschool - Homepage";
 							$lien = "fiche_produit.php?narticle=".$row['article_nom'];
 							$date = $row['article_date'];
 							$date = substr($date, 0, -9);
+							include_once("includes/modules/fonctionContain.php");
 			  				$date = datetotext($date);
 							echo '<div class="aperçu-matériel">';
 
