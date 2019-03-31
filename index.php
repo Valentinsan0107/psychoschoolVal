@@ -133,6 +133,13 @@ $TITLEpage="Psychoschool - Homepage";
 							$date = $row['article_date'];
 							$date = substr($date, 0, -9);
 			  				$date = datetotext($date);
+
+			  				$contenu = $row['article_resumer'];
+			  				if (strlen($contenu) > 152) {
+			  					$contenu = substr($contenu, 0, 152);
+			  					$contenu = $contenu." .....";
+			  				}
+
 							echo '<div class="aperçu-matériel">';
 
 									if (file_exists("uploads/imagecouverture/".$row['article_id'].".jpg")) {
@@ -156,7 +163,7 @@ $TITLEpage="Psychoschool - Homepage";
 									
 									<h6 class="date-aperçu-matériel">'.$date.'</h6>
 									</div>
-										<p class="paragraphe-aperçu-matériel">'.$row['article_resumer'].'</p>
+										<p class="paragraphe-aperçu-matériel">'.$contenu.'</p>
 
 										<a class="lien-article-3" href="'.$lien.'">En savoir plus</a>
 
