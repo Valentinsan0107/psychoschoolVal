@@ -79,6 +79,7 @@ $TITLEpage="Psychoschool - Homepage";
 <div class="conteneur-derniers-articles">
 	<?php
 	include_once("includes/backrownd/dph.php");
+	include_once("includes/modules/fonctionContain.php");
     $sql = "SELECT * FROM article WHERE article_thechnique='1' ORDER BY article_id DESC";
 	$result = mysqli_query($conn, $sql);
 	$resultChek = mysqli_num_rows($result);
@@ -131,7 +132,6 @@ $TITLEpage="Psychoschool - Homepage";
 							$lien = "fiche_produit.php?narticle=".$row['article_nom'];
 							$date = $row['article_date'];
 							$date = substr($date, 0, -9);
-							include_once("includes/modules/fonctionContain.php");
 			  				$date = datetotext($date);
 							echo '<div class="aperçu-matériel">';
 
