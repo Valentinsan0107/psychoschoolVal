@@ -23,7 +23,7 @@ if ($resultChek > 0) {
 			<h1 class="titre-article">'.$row['article_titre'].'</h1>
 
 			
-			<h6 class="date-aperçu-article">'.$date.'</h6>
+			<h6 class="date-aperçu-article-2">'.$date.'</h6>
 		
 
 			<p class="texte-article">'.$row['article_resumer'].'</p>

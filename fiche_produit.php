@@ -53,7 +53,7 @@
 						Utilisé par :
 					</h1>';
 			if (file_exists("uploads/imageyoutubeur/".$row['article_id']."-1.jpg")) {
-			echo "<div class='badge-youtuber' style='background-image: url(uploads/imageyoutubeur/".$row['article_id']."-1.jpg); background-repeat: no-repeat; background-size: cover;'>					
+			echo "<div class='conteneur-badge-place'><div class='badge-youtuber-1' style='background-image: url(uploads/imageyoutubeur/".$row['article_id']."-1.jpg); background-repeat: no-repeat; background-size: cover;'>					
 					</div>";
 			}	
 			if (file_exists("uploads/imageyoutubeur/".$row['article_id']."-2.jpg")) {
@@ -64,7 +64,7 @@
 				echo "<div class='badge-youtuber' style='background-image: url(uploads/imageyoutubeur/".$row['article_id']."-3.jpg); background-repeat: no-repeat; background-size: cover;'>					
 						</div>";
 			}
-			echo "	</div>
+			echo "	</div></div>
 
 			</div></div>";
 		echo '<div class="conteneur-avis-conseils">';
