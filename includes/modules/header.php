@@ -434,6 +434,14 @@ fixDivf();
       </script>
 
       <script type="text/javascript">
+            function closelog(){
+                  document.getElementById("conteneur-message-erreur-log").style.display = "none";
+            }
+      </script>
+
+
+
+      <script type="text/javascript">
 
       // Menu-toggle button
 

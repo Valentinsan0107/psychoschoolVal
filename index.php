@@ -137,7 +137,7 @@ $TITLEpage="Psychoschool - Homepage";
 			  				$contenu = $row['article_resumer'];
 			  				if (strlen($contenu) > 152) {
 			  					$contenu = substr($contenu, 0, 152);
-			  					$contenu = $contenu." .....";
+			  					$contenu = $contenu."...";
 			  				}
 
 							echo '<div class="aperçu-matériel">';

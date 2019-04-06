@@ -33,35 +33,35 @@
 			</div>
 		';
 		if (isset($_GET['loginsignup'])) {
-			echo "<div>";
+			echo "<div class='centrage-conteneur-message-erreur-log'><div id='conteneur-message-erreur-log'><h1 class='titre-message-erreur-log'>Il y a un soucis</h1>";
 			if ($_GET['loginsignup'] == "nomatch") {
-				echo "<p>Les mots de pass ne sont pas les mème</p>";
+				echo "<p class='message-erreur-log'>Les mots de passe ne correspondent pas</p>";
 			}
 			if ($_GET['loginsignup'] == "admin") {
-				echo "<p>Vous ne pouver pas vous appeller admin</p>";
+				echo "<p class='message-erreur-log'>Ce nom d'utilisateur n'est pas disponible</p>";
 			}
 			if ($_GET['loginsignup'] == "usertaken") {
-				echo "<p>Pseudo deja existant</p>";
+				echo "<p class='message-erreur-log'>Ce nom d'utilisateur n'est pas disponible</p>";
 			}
 			if ($_GET['loginsignup'] == "emailtaken") {
-				echo "<p>Email deja existant</p>";
+				echo "<p class='message-erreur-log'>Cet adresse-email est déja associée à un compte</p>";
 			}
 			if ($_GET['loginsignup'] == "errorsignup") {
-				echo "<p>Il y a eu une erreur</p>";
+				echo "<p class='message-erreur-log'>Il y a eu une erreur</p>";
 			}
 			if ($_GET['loginsignup'] == "mailprobleme") {
-				echo "<p>Il y a eu un probleme avec l envoie de mail</p>";
+				echo "<p class='message-erreur-log'>Il y a eu un problème avec l'envoie du mail de confirmation</p>";
 			}
 			if ($_GET['loginsignup'] == "signuperror") {
-				echo "<p>Mot de pass ou identifian incorect</p>";
+				echo "<p class='message-erreur-log'>Le mot de passe ou l'adresse-email est incorrect</p>";
 			}
 			if ($_GET['loginsignup'] == "notconfirmed") {
-				echo "<p>Votre email n a pas ete confirmer</p>";
+				echo "<p class='message-erreur-log'>Votre adresse-email n'est pas encore confirmée</p>";
 			}
 			if ($_GET['loginsignup'] == "capcha") {
-			  echo "<p>Veuiller confirmer le capcha</p>";
+			  echo "<p class='message-erreur-log'>Veuillez confirmer le capcha</p>";
 			    }
-			echo "</div>";
+			echo "<a class='close-message-erreur-log' onclick='closelog()''>Fermer</a></div></div>";
 		}		
 
 	}else{
