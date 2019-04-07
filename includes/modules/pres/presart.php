@@ -8,7 +8,7 @@ if ($resultChek > 0) {
 		$lien = "article.php?narticle=".$nompageserv;
 		echo '<div class="photo-article-zone-conteneur">';
 		if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
-			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
+			echo "<div class='photo-article-2' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
 		}elseif (file_exists("uploads/imagecouverture/".$idart.".png")) {
 			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".png); background-repeat: no-repeat; background-size: cover;'></div>";
 		}else{
@@ -23,7 +23,8 @@ if ($resultChek > 0) {
 			<h1 class="titre-article">'.$row['article_titre'].'</h1>
 
 			
-			<h6 class="date-aperçu-article-2">'.$date.'</h6>
+			<div class="conteneur-date-calendrier-2"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+						<h6 class="date-aperçu-article">'.$date.'</h6></div>
 		
 
 			<p class="texte-article">'.$row['article_resumer'].'</p>

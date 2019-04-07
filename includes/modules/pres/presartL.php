@@ -43,7 +43,8 @@ if ($resultChek > 0) {
 
 			<div class="conteneur-date-aperçu-article">
 
-			<h6 class="date-aperçu-article">'.$date.'</h6>
+			<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+						<h6 class="date-aperçu-article">'.$date.'</h6></div>
 
 			<h6 class="date-aperçu-article">Prix :   '.$row['article_prix'].'$</h6>
 
