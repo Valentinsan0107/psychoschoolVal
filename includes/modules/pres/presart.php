@@ -20,11 +20,11 @@ if ($resultChek > 0) {
 
 		$date = datetotext($date);	
 		echo'<div class="zone-article">
-			<h1 class="titre-article">'.$row['article_titre'].'</h1>
+			<h2 class="titre-article">'.$row['article_titre'].'</h2>
 
 			
 			<div class="conteneur-date-calendrier-2"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
-						<h6 class="date-aperçu-article">'.$date.'</h6></div>
+						<h3 class="date-aperçu-article">'.$date.'</h3></div>
 		
 
 			<p class="texte-article">'.$row['article_resumer'].'</p>

@@ -7,7 +7,7 @@ $TITLEpage="Psychoschool - Homepage";
 <div id="background-test-1">
 
 	<div class="conteneur-phrase-présentation-matériel-3">
-		<h1 class="phrase-présentation-matériel">PROGRESSE RAPIDEMENT</h1>
+		<h2 class="phrase-présentation-matériel">PROGRESSE RAPIDEMENT</h2>
 		
 	
 	<div class="sous-titre"></div>
@@ -31,21 +31,21 @@ $TITLEpage="Psychoschool - Homepage";
 		<div class="contenu">
 			<img class="icon-promesse-1" src="img/icon-increase.png">
 		</div>
-			<h3 class="titre-promesse">GAGNE DES ABONNÉS</h1>
+			<h2 class="titre-promesse">GAGNE DES ABONNÉS</h2>
 			<p class="paragraphe-promesse">Augmente rapidement ton nombre d'abonnés de façon significative grâce à nos conseils</p>
 	</div>
 	<div class="contenu-conteneur-2">
 		<div class="contenu">
 			<img class="icon-promesse-2" src="img/icon-test.png">
 		</div>
-			<h3 class="titre-promesse">GAGNE DE L'ARGENT</h1>
+			<h2 class="titre-promesse">GAGNE DE L'ARGENT</h2>
 			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
 	</div>
 	<div class="contenu-conteneur">
 		<div class="contenu">
 			<img class="icon-promesse-3" src="img/icon-brain.png">
 		</div>
-			<h3 class="titre-promesse">GAGNE EN VISIBILITÉ</h1>
+			<h2 class="titre-promesse">GAGNE EN VISIBILITÉ</h2>
 			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
 	</div>
 	
@@ -56,7 +56,7 @@ $TITLEpage="Psychoschool - Homepage";
 
 <div id="background-test-2">
 	<div class="conteneur-phrase-présentation-matériel">
-		<h1 class="phrase-présentation-matériel">LE MATÉRIEL LE PLUS ADAPTÉ</h1>
+		<h2 class="phrase-présentation-matériel">LE MATÉRIEL LE PLUS ADAPTÉ</h2>
 		
 	
 	<div class="sous-titre"></div>
@@ -104,10 +104,10 @@ $TITLEpage="Psychoschool - Homepage";
 					echo '<img class="photo-derniers-articles" src="uploads/imagecouverture/base.png">';
 				}
 				echo '<div class="conteneur-titre-date-derniers-articles">
-						<a class="lien-titre-derniers-articles" href="'.$lien.'"><h6 class="titre-derniers-articles">'.$row['article_titre'].'</h6></a>
+						<a class="lien-titre-derniers-articles" href="'.$lien.'"><h2 class="titre-derniers-articles">'.$row['article_titre'].'</h2></a>
 
 						<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
-						<h6 class="date-derniers-articles">'.$date.'</h6></div>
+						<h3 class="date-derniers-articles">'.$date.'</h3></div>
 
 					</div>
 				</div>';
@@ -118,7 +118,7 @@ $TITLEpage="Psychoschool - Homepage";
 </div>
 
 	<div class="zone-coté">
-		<h1 class="titre-zone-coté">Les meilleurs ventes</h1>
+		<h2 class="titre-zone-coté">Les meilleurs ventes</h2>
 		<?php
 			    $sql = "SELECT * FROM article WHERE article_thechnique='0' ORDER BY article_id DESC";
 				$result = mysqli_query($conn, $sql);
@@ -157,11 +157,11 @@ $TITLEpage="Psychoschool - Homepage";
 									}
 									echo'
 									<div class="description-aperçu-matériel">
-										<h1 class="titre-aperçu-matériel">'.$row['article_titre'].'</h1>
+										<h2 class="titre-aperçu-matériel">'.$row['article_titre'].'</h2>
 
 									<div class="conteneur-date-calendrier">
 									
-									<h6 class="date-aperçu-matériel">'.$date.'</h6>
+									<h3 class="date-aperçu-matériel">'.$date.'</h3>
 									</div>
 										<p class="paragraphe-aperçu-matériel">'.$contenu.'</p>
 
@@ -181,7 +181,7 @@ $TITLEpage="Psychoschool - Homepage";
 
 <div id="background-test-3">
 	<div class="conteneur-phrase-présentation-matériel-2">
-		<h1 class="phrase-présentation-matériel">BESOIN D'AIDE ? DE CONSEILS ?</h1>
+		<h2 class="phrase-présentation-matériel">BESOIN D'AIDE ? DE CONSEILS ?</h2>
 		
 	
 	<div class="sous-titre"></div>
@@ -201,7 +201,7 @@ $TITLEpage="Psychoschool - Homepage";
 	</div>
 <div class="formulaire-contact-conteneur" style=''>
 	<form class="form-formulaire-contact" action="includes/backrownd/formulairecontacte.php" method="POST">
-		<h1 class="titre-formulaire-contact">NOUS CONTACTER :</h1>
+		<h2 class="titre-formulaire-contact">NOUS CONTACTER :</h2>
 		<div class="conteneur-email-nom">
 			<input class="input-formulaire-contact-3" type="text" name="nom" minlength="5" maxlength="80" placeholder="Prénom et Nom" required>
 			<input class="input-formulaire-contact-2" type="email" name="email" minlength="5" maxlength="80" placeholder="Email" required>

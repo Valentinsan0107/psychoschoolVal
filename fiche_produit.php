@@ -49,9 +49,9 @@
 
 			</div>
 				<div class="widget-youtuber-2">
-			<h1 class="phrase-widget-youtuber">
+			<h3 class="phrase-widget-youtuber">
 						Utilisé par :
-					</h1>';
+					</h3>';
 			if (file_exists("uploads/imageyoutubeur/".$row['article_id']."-1.jpg")) {
 			echo "<div class='conteneur-badge-place'><div class='badge-youtuber-1' style='background-image: url(uploads/imageyoutubeur/".$row['article_id']."-1.jpg); background-repeat: no-repeat; background-size: cover;'>					
 					</div>";

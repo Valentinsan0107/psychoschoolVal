@@ -13,7 +13,7 @@
 
 
 		echo '<div class="connexion-compte">
-				<h1 class="phrase-formulaire">Tu as déjà un compte ? Connecte-toi !</h1>
+				<h2 class="phrase-formulaire">Tu as déjà un compte ? Connecte-toi !</h2>
 			<form class="form-connexion" action="/psychoschoolVal/includes/backrownd/compts/login.php" method="POST">
 				<input class="input-connexion" minlength="6" maxlength="50"  type="text" name="uid" placeholder="Pseudo ou email" required>
 				<input class="input-connexion" minlength="6" maxlength="20" type="password" name="password" placeholder="Mot de passe" required>
@@ -21,7 +21,7 @@
 			</form>
 			</div>
 			<div class="création-compte">
-				<h1 class="phrase-formulaire">Tu n\'as pas encore de compte PsychoSchool ? </h1>
+				<h2 class="phrase-formulaire">Tu n\'as pas encore de compte PsychoSchool ? </h2>
 				<form class="form-création" action="/psychoschoolVal/includes/backrownd/compts/signup.php" method="POST">
 					<input class="input-création" maxlength="50" type="email" name="email" placeholder="Email" required>
 					<input class="input-création" maxlength="20" minlength="6" type="text" name="pseudo" placeholder="Ton pseudo" required>

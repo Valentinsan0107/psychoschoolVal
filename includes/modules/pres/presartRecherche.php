@@ -46,11 +46,11 @@ if (sizeof($tags)>2) {
 echo "</div>";
 
 
-echo '<h1 class="titre-article-recherche">'.$row['article_titre'].'</h1>
+echo '<h2 class="titre-article-recherche">'.$row['article_titre'].'</h2>
         </div>
 
         <div class="conteneur-date-recherche">
-            <h6 class="date-article-recherche">'.$date.'</h6>
+            <img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png"><h3 class="date-article-recherche">'.$date.'</h3>
         </div>
     </div>';
 

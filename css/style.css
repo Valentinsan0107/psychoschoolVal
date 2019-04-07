@@ -641,7 +641,7 @@ img.icon-promesse-3 {
 	margin-top: 23px;
 	margin-left: 23px
 }
-h3.titre-promesse {
+h2.titre-promesse {
 	margin-top: 20px;
 	font-family: Raleway, sans-serif;
 	font-size: 1.5em;
@@ -652,7 +652,7 @@ p.paragraphe-promesse {
 	font-size: 1.4em;
 	font-family: Montserrat, sans-serif;
 	color: #8e8c8c;
-	padding: 10px
+	padding: 10px 20px
 }
 .en-savoir-plus-apports-conteneur {
 	text-align: center;
@@ -907,10 +907,10 @@ p.paragraphe-promesse {
 	padding-bottom: 15px
 }
 @media (max-width:813px) {
-	h1.titre-aperçu-matériel {
+	h2.titre-aperçu-matériel {
 		font-size: 1.5em
 	}
-	h1.titre-zone-coté {
+	h2.titre-zone-coté {
 		display: block
 	}
 	div.conteneur-derniers-articles-zone-dessus-zone-coté {
@@ -1033,6 +1033,7 @@ button.button-formulaire-contact {
 	margin: 40px 0;
 	font-family: Raleway, sans-serif;
 	color: #c4302b;
+	font-size: 2em;
 	padding: 10px
 }
 .active-2 {
@@ -1161,6 +1162,24 @@ button.button-formulaire-contact:hover {
 	width: 20px;
 	height: 20px
 }
+.close-message-erreur-log {
+	padding: 8px 20px;
+	background-color: #c4302b;
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
+	margin-bottom: 20px
+}
+.close-message-erreur-log:hover {
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
+	background-color: #eb3a34
+}
 a.lien-product {
 	color: red
 }
@@ -1191,7 +1210,7 @@ div.connexion-compte, div.création-compte {
 div.création-compte {
 	border-left: 3px #c4302b solid
 }
-h1.phrase-formulaire {
+h2.phrase-formulaire {
 	font-size: 1.4em;
 	font-family: Raleway, sans-serif;
 	padding: 0;
@@ -1314,7 +1333,7 @@ button.button-création:hover {
 	div.connexion-compte {
 		border-bottom: 4px #c4302b solid
 	}
-	h1.phrase-formulaire {
+	h2.phrase-formulaire {
 		font-size: 1.1em
 	}
 	div.création-compte {
@@ -1728,17 +1747,7 @@ div.zone-article-2 {
 	margin-left: 15px;
 	min-width: 760px
 }
-div.photo-article {
-	height: 347px;
-	width: 352px;
-	min-width: 352px;
-	background-color: #fff;
-	border: 1px solid #ebebeb;
-	-webkit-transition: .6s ease;
-	-o-transition: .6s ease;
-	transition: .6s ease;
-	cursor: pointer
-}
+
 div.photo-article-2 {
 	height: 353px;
 	width: 352px;
@@ -1799,7 +1808,7 @@ p.texte-article, p.texte-article-2 {
 	line-height: 1.5em;
 	color: #404040
 }
-h1.titre-article {
+h2.titre-article {
 	font-family: Raleway, sans-serif;
 	padding: 10px 30px;
 	font-size: 2em;
@@ -1875,7 +1884,7 @@ h1.titre-article-complet {
 		font-size: 1.2em;
 		margin-bottom: 10px
 	}
-	div.photo-article, div.photo-article-2 {
+	div.photo-article-2 {
 		width: auto
 	}
 }
@@ -1891,6 +1900,15 @@ h1.titre-article-complet {
 		align-items: center;
 		min-width: 300px
 	}
+	div.photo-article-zone-conteneur, div.photo-article-zone-conteneur-2 {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		margin: auto;
+		padding-bottom: 30px;
+		border-bottom: 4px solid #c4302b;
+		margin-bottom: 30px
+	}
 	div.zone-article {
 		margin: 10px 0 0;
 		width: auto;
@@ -1901,10 +1919,10 @@ h1.titre-article-complet {
 		display: none
 	}
 	div.conteneur-tag {
-		width: 80%;
+		width: 90%;
 		margin: auto
 	}
-	div.photo-article, div.photo-article-2 {
+	div.photo-article-2 {
 		width: 100%;
 		min-width: 0;
 		background-size: cover;
@@ -2362,13 +2380,7 @@ a.onglet-matériel-6 {
 	-o-transition: .6s ease;
 	transition: .6s ease
 }
-.photo-article:hover {
-	-webkit-filter: brightness(.8);
-	filter: brightness(.8);
-	-webkit-transition: .6s ease;
-	-o-transition: .6s ease;
-	transition: .6s ease
-}
+
 .conteneur-photo-share {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2584,7 +2596,10 @@ p.nombre-like-article-entier-2 {
 		font-size: 1.1em
 	}
 	a.lien-article-2 {
-		font-size: 1.2em
+		font-size: .9em
+	}
+	div.conteneur-module-comment-4{
+		margin-bottom: 0;
 	}
 }
 @media (max-width:985px) {
@@ -3076,6 +3091,10 @@ p.message-commentaire-connexion {
 	background-color: #00f;
 	margin: auto 15px
 }
+.conteneur-date-recherche{
+	display: flex;
+	align-items: center;
+}
 .image-photo-recherche {
 	width: 100%;
 	height: 100%;
@@ -3130,7 +3149,7 @@ p.message-commentaire-connexion {
 	div.conteneur-tag-titre-date {
 		width: 100%
 	}
-	h1.titre-article-recherche {
+	h2.titre-article-recherche {
 		font-size: 1.3em;
 		margin-top: 10px
 	}

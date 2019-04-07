@@ -9,7 +9,7 @@
 
 
 		<div class="donation">
-			<h1 class="titre-donation">Faire un don</h1>
+			<h2 class="titre-donation">Faire un don</h2>
 			<p class="texte-donation">
 				Vous voulez soutenir le site ? Vous pouvez nous faire un don via <b>Paypal</b> afin de continuer à faire vivre le site.
 			</p>
@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="about-you">
-			<h1 class="texte-about-you">À propos</h1>
+			<h2 class="texte-about-you">À propos</h2>
 			<p class="texte-donation">Tu retrouveras sur notre site des <b>conseils</b> et des <b>ressources</b> pour :</p>
 			<ol class="liste-bonus-about">
 				<li class="bonus-about"><a class="texte-bonus-about">Gagner en visibilité</a></li>

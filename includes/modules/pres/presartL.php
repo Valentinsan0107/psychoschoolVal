@@ -9,16 +9,16 @@ if ($resultChek > 0) {
 		echo '<div class="photo-article-zone-conteneur-2">';
 		echo '<div class="conteneur-widget-youtuber-photo-article">';
 		if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
-			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
+			echo "<div class='photo-article-2' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
 		}elseif (file_exists("uploads/imagecouverture/".$idart.".png")) {
 			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".png); background-repeat: no-repeat; background-size: cover;'></div>";
 		}else{
 			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/base.png); background-repeat: no-repeat; background-size: cover;'></div>";
 		}
 		echo "<div class='widget-youtuber'>
-					<h1 class='phrase-widget-youtuber-2'>
+					<h3 class='phrase-widget-youtuber-2'>
 						Utilisé par :
-					</h1><div class='conteneur-widget-youtuber'>";
+					</h3><div class='conteneur-widget-youtuber'>";
 		if (file_exists("uploads/imageyoutubeur/".$idart."-1.jpg")) {
 			echo "<div class='badge-youtuber-1' style='background-image: url(uploads/imageyoutubeur/".$idart."-1.jpg); background-repeat: no-repeat; background-size: cover;'>					
 					</div>";
@@ -39,16 +39,16 @@ if ($resultChek > 0) {
 
 		$date = datetotext($date);	
 		echo'<div class="zone-article">
-			<h1 class="titre-article">'.$row['article_titre'].'</h1>
+			<h2 class="titre-article">'.$row['article_titre'].'</h2>
 
 			<div class="conteneur-date-aperçu-article">
 
 			<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
-						<h6 class="date-aperçu-article">'.$date.'</h6></div>
+						<h3 class="date-aperçu-article">'.$date.'</h3></div>
 
-			<h6 class="date-aperçu-article">Prix :   '.$row['article_prix'].'$</h6>
+			<h3 class="date-aperçu-article">Prix :   '.$row['article_prix'].'$</h3>
 
-			<h6 class="date-aperçu-article">Note :   '.$row['article_note'].'/10</h6>
+			<h3 class="date-aperçu-article">Note :   '.$row['article_note'].'/10</h3>
 
 			</div>
 
