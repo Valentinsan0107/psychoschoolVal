@@ -13,6 +13,8 @@ if (session_status() == PHP_SESSION_NONE) {
 			echo "<title>PsychoSchool</title>";
 		}
 	?>
+  <meta name="description" content="Je parle du contenu de la page">
+  <meta name="keywords" content="parle,contenu,page">
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/icon-brain.png">
