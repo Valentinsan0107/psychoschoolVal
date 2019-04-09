@@ -12,9 +12,17 @@ if (session_status() == PHP_SESSION_NONE) {
 		}else{
 			echo "<title>PsychoSchool</title>";
 		}
+		if (isset($descriptionpage)) {
+			echo '<meta name="description" content="'.$descriptionpage.'">';
+		}else{
+			echo '<meta name="description" content="Je parle du contenu de la page">';
+		}
+		if (isset($motclefspage)) {
+			echo '<meta name="keywords" content="'.$motclefspage.'">';
+		}else{
+			echo '<meta name="keywords" content="parle,contenu,page">';
+		}
 	?>
-  <meta name="description" content="Je parle du contenu de la page">
-  <meta name="keywords" content="parle,contenu,page">
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/icon-brain.png">
