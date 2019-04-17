@@ -1,5 +1,28 @@
 <?php
-  include_once("includes/modules/header.php");
+  include_once("includes/backrownd/dph.php");
+$nomarticle = "";
+if (isset($_GET['narticle'])) {
+	$nomarticle = $_GET['narticle'];
+}
+
+
+$sql = "SELECT * FROM article WHERE article_nom='$nomarticle'";
+$result = mysqli_query($conn, $sql);
+$resultChek = mysqli_num_rows($result);
+
+if ($resultChek == 1) {
+	$row = mysqli_fetch_assoc($result);
+	if (!empty($row['article_titrehaut'])) {
+		$TITLEpage = "PsychoSchool - ".$row['article_titrehaut'];
+	}
+	if (!empty($row['article_motclef'])) {
+		$motclefspage = $row['article_motclef'];
+	}
+	if (!empty($row['article_description'])) {
+		$descriptionpage = $row['article_description'];
+	}
+}
+include_once("includes/modules/header.php");
 ?>
 
 	
@@ -12,11 +35,6 @@
 
 <div class="whoareyou-3">
 	<?php
-	include_once("includes/backrownd/dph.php");
-	$nomarticle = "";
-	if (isset($_GET['narticle'])) {
-		$nomarticle = $_GET['narticle'];
-	}
 
 
 	$sql = "SELECT * FROM article WHERE article_nom='$nomarticle'";
