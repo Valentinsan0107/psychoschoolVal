@@ -30,6 +30,8 @@ CREATE TABLE article(
     article_titrehaut varchar(1000) not null,
     article_image varchar(1000) not null,
     article_tag varchar(1000) not null,
+    article_motclef varchar(1000) not null,
+    article_description varchar(1000) not null,
     article_prix int(11) not null,
     article_note int(11) not null,
     article_lien varchar(1000) not null,

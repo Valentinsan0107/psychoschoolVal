@@ -13,14 +13,18 @@ if (session_status() == PHP_SESSION_NONE) {
 			echo "<title>PsychoSchool</title>";
 		}
 		if (isset($descriptionpage)) {
-			echo '<meta name="description" content="'.$descriptionpage.'">';
+			echo '
+      <meta name="description" content="'.$descriptionpage.'">';
 		}else{
-			echo '<meta name="description" content="Je parle du contenu de la page">';
+			echo '
+      <meta name="description" content="Je parle du contenu de la page">';
 		}
 		if (isset($motclefspage)) {
-			echo '<meta name="keywords" content="'.$motclefspage.'">';
+			echo '
+      <meta name="keywords" content="'.$motclefspage.'">';
 		}else{
-			echo '<meta name="keywords" content="parle,contenu,page">';
+			echo '
+      <meta name="keywords" content="parle,contenu,page">';
 		}
 	?>
 	<meta charset="utf-8">

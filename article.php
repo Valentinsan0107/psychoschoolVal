@@ -16,6 +16,12 @@ if ($resultChek == 1) {
 	if (!empty($row['article_titrehaut'])) {
 		$TITLEpage = "PsychoSchool - ".$row['article_titrehaut'];
 	}
+	if (!empty($row['article_motclef'])) {
+		$motclefspage = $row['article_motclef'];
+	}
+	if (!empty($row['article_description'])) {
+		$descriptionpage = $row['article_description'];
+	}
 }
 include_once("includes/modules/header.php");
 
