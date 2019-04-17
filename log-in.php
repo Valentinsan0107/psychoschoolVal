@@ -1,4 +1,7 @@
 <?php
+$TITLEpage="S'enregistrer";
+$descriptionpage="Page accueil site Psychoschool";
+$motclefspage="page,accueil,site";
 	session_start();
 	if (isset($_SESSION['u_id']) ==  false) {
 		include_once("includes/modules/header.php");

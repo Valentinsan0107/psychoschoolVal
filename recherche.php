@@ -1,4 +1,7 @@
 <?php
+$TITLEpage="Résultat recherche";
+$descriptionpage="Page accueil site Psychoschool";
+$motclefspage="page,accueil,site";
   include_once("includes/modules/header.php");
 
   if (isset($_GET['submit'])) {

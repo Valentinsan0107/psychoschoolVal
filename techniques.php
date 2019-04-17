@@ -1,4 +1,7 @@
 <?php
+$TITLEpage="Blog";
+$descriptionpage="Page accueil site Psychoschool";
+$motclefspage="page,accueil,site";
 	include_once("includes/modules/header.php");
     include_once("includes/backrownd/dph.php");
 ?>	
