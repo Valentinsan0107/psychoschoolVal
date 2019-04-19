@@ -82,7 +82,7 @@
 
     <ul class="liste-puce-footer">
       <li>
-        <a class="lien-social" href="#"><img class="image-réseaux-footer" src="img/facebook-logo-white.png"></a>
+        <a class="lien-social" href="#"><img class="image-réseaux-footer" src="img/facebook-logo-white.png" alt=""></a>
       </li>
       <li></li>
       <li></li>

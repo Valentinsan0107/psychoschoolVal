@@ -31,21 +31,21 @@ $motclefspage="page,accueil,site";
 <div class="apport-liste">
 	<div class="contenu-conteneur">
 		<div class="contenu">
-			<img class="icon-promesse-1" src="img/icon-increase.png">
+			<img class="icon-promesse-1" src="img/icon-increase.png" alt="">
 		</div>
 			<h2 class="titre-promesse">GAGNE DES ABONNÉS</h2>
 			<p class="paragraphe-promesse">Augmente rapidement ton nombre d'abonnés de façon significative grâce à nos conseils</p>
 	</div>
 	<div class="contenu-conteneur-2">
 		<div class="contenu">
-			<img class="icon-promesse-2" src="img/icon-test.png">
+			<img class="icon-promesse-2" src="img/icon-test.png" alt="">
 		</div>
 			<h2 class="titre-promesse">GAGNE DE L'ARGENT</h2>
 			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
 	</div>
 	<div class="contenu-conteneur">
 		<div class="contenu">
-			<img class="icon-promesse-3" src="img/icon-brain.png">
+			<img class="icon-promesse-3" src="img/icon-brain.png" alt="">
 		</div>
 			<h2 class="titre-promesse">GAGNE EN VISIBILITÉ</h2>
 			<p class="paragraphe-promesse">Obtient des meilleurs notes sans augmenter ton temps de travail quotidien...</p>
@@ -108,7 +108,7 @@ $motclefspage="page,accueil,site";
 				echo '<div class="conteneur-titre-date-derniers-articles">
 						<a class="lien-titre-derniers-articles" href="'.$lien.'"><h2 class="titre-derniers-articles">'.$row['article_titre'].'</h2></a>
 
-						<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+						<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png" alt="">
 						<h3 class="date-derniers-articles">'.$date.'</h3></div>
 
 					</div>

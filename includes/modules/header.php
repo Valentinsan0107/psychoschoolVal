@@ -101,7 +101,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
                         <div class="menu-icon">
                               <div>
-                              <img class="image-logo-2" src="img/logo-youtube-test.png">
+                              <img class="image-logo-2" src="img/logo-youtube-test.png" alt="logo">
                               </div>
                               <i class="fa fa-bars fa-2x" onclick="responsive()"></i>
                         </div>
@@ -111,19 +111,19 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="menu">
                               <ul>
                         <div>
-                              <a href="index.php"><img class="image-logo" src="img/logo-youtube-test.png"></a>
+                              <a href="index.php"><img class="image-logo" src="img/logo-youtube-test.png" alt="logo"></a>
                         </div>
                         <div id="conteneur-image-search">
-                              <img class="image-search" src="img/loupe-barre-recherche.png" onclick="searchbox()">
+                              <img class="image-search" src="img/loupe-barre-recherche.png" onclick="searchbox()" alt="">
                         </div>
                         <div id="conteneur-image-cancel">
-                              <img class="image-search" src="img/cancel.png" onclick="closesearchbox()">
+                              <img class="image-search" src="img/cancel.png" onclick="closesearchbox()" alt="">
                         </div>
                               <div id="conteneur-bouton">
                                     <div class="conteneur-barre-recherche-2">
                                   <form class="form-recherche" method="GET" action="recherche.php">
                                   <input id="input-recherche-2" minlength="1" type="text" name="recherche" placeholder="Recherche">
-                                  <button id="bouton-recherche-2" type="submit" name="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                                  <button id="bouton-recherche-2" type="submit" name="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png" alt=""></button>
                                   </form>
                               </div>
                                     <li><a href="index.php">Accueil</a></li>
@@ -145,7 +145,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="conteneur-barre-recherche">
                               <form class="form-recherche-2" method="GET" action="recherche.php">
                                   <input id="input-recherche" type="text" minlength="1" name="recherche" placeholder="Recherche">
-                                  <button id="bouton-recherche" type="submit" name="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png"></button>
+                                  <button id="bouton-recherche" type="submit" name="submit"><img class="image-search-2" src="img/loupe-barre-recherche.png" alt=""></button>
                               </form>
                         </div>
                               </ul>

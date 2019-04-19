@@ -29,7 +29,7 @@ include_once("includes/modules/header.php");
 <div class="conteneur-général-3">
 
 <div class="test-widget-amazon"> 
-		<a class="texte-test-widget-amazon" href="#">Acheter cet article sur Amazon<img class="image-amazon-lien-2" src="img/amazon-white.png"></a>
+		<a class="texte-test-widget-amazon" href="#">Acheter cet article sur Amazon<img class="image-amazon-lien-2" src="img/amazon-white.png" alt=""></a>
 </div>
 <div class="conteneur-fiche-technique">
 
@@ -63,7 +63,7 @@ include_once("includes/modules/header.php");
 			echo '<div class="conteneur-details-produit-widget-youtuber-2"><div class="details-produit">
 			    <li class="nom-produit">'.$row['article_titre'].'</li>
 				<li class="critère">Prix :<a class="lien-critère">'.$row['article_prix'].'$</a></li>
-				<li class="critère">Notre note :<a class="lien-critère">'.$row['article_note'].'/10</a><img class="image-note" src="img/star.png"></li>
+				<li class="critère">Notre note :<a class="lien-critère">'.$row['article_note'].'/10</a><img class="image-note" src="img/star.png" alt=""></li>
 
 			</div>
 				<div class="widget-youtuber-2">
@@ -124,23 +124,23 @@ include_once("includes/modules/header.php");
 			if ($userlikechek == 0) {
 				echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
-						<button class="bouton-like" type="submit" name="like"><img class="icon-like" src="img/like-black-heart-button.png"></button>
+						<button class="bouton-like" type="submit" name="like"><img class="icon-like" src="img/like-black-heart-button.png" alt=""></button>
 					</form>';
 			}elseif ($userlikechek == 1) {
 				echo '<form method="POST" action="/psychoschoolVal/includes/backrownd/addlike.php">
 						<input type="hidden" name="nomfile" value="'.$nomarticle.'">
-						<button class="bouton-dislike" type="submit" name="dislike"><img class="icon-dislike" src="img/like-black-heart-button.png"></button>
+						<button class="bouton-dislike" type="submit" name="dislike"><img class="icon-dislike" src="img/like-black-heart-button.png" alt=""></button>
 					</form>';
 			}
 		}else{
-			echo '<div class="conteneur-like-article-complet"><img class="icon-dislike" src="img/like-black-heart-button.png">';
+			echo '<div class="conteneur-like-article-complet"><img class="icon-dislike" src="img/like-black-heart-button.png" alt="">';
 		}
 
 		echo '<p class="nombre-like-article-entier-2">'.$resultChek.'<p></div>';
 
-		echo '<div class="conteneur-reseaux"><a class="lien-share-1" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/facebook-share.png"></a>
-		<a class="lien-share-2" href="https://twitter.com/home?status=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/twitter-share.png"></a>
-		<a class="lien-share-3" href="https://plus.google.com/share?url=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share-2" src="img/google-share.png"></a></div></div>';
+		echo '<div class="conteneur-reseaux"><a class="lien-share-1" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/facebook-share.png" alt=""></a>
+		<a class="lien-share-2" href="https://twitter.com/home?status=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share" src="img/twitter-share.png" alt=""></a>
+		<a class="lien-share-3" href="https://plus.google.com/share?url=http%3A//localhost/psychoschoolVal/article.php?narticle=pastore"><img class="icon-share-2" src="img/google-share.png" alt=""></a></div></div>';
 
 	echo "</div>";
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nomarticle'";
@@ -161,7 +161,7 @@ include_once("includes/modules/header.php");
 				echo '<div class="div-commentaire">
 
 				<div class="identité-commentaire">
-						<img class="photo-identité-commentaire" src="img/user.png">
+						<img class="photo-identité-commentaire" src="img/user.png" alt="">
 						<div class="conteneur-pseudo-date"><p class="pseudo-date">'.htmlspecialchars($pseudo).'<p class="juste-date">'.$date.'</p></p></div>
 				</div>
 						<p class="p-commentaire">'.htmlspecialchars($content).'</p>
@@ -180,7 +180,7 @@ include_once("includes/modules/header.php");
 		if (!isset($_SESSION['u_id'])) {
 			echo '
 			<div class="conteneur-attention-connexion">
-				<img class="image-attention" src="/psychoschoolVal/img/attention.png">
+				<img class="image-attention" src="/psychoschoolVal/img/attention.png" alt="">
 				<p class="message-commentaire-connexion">Connectez vous pour poster un commentaire ou aimer la page</p>
 			</div>';
 		} else {

@@ -63,7 +63,7 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<a class="onglet-matériel-1" href="livre.php?triethec='.$Trie.'">
 
-			<img class="image-onglet-matériel" src="img/new.png">
+			<img class="image-onglet-matériel" src="img/new.png" alt="">
 
 			</a>
 
@@ -78,7 +78,7 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<a class="onglet-matériel-2" href="livre.php?triethec='.$Trie.'&tagthec=Micro">
 
-			<img class="image-onglet-matériel" src="img/microphone.png">
+			<img class="image-onglet-matériel" src="img/microphone.png" alt="">
 
 			</a>
 
@@ -93,7 +93,7 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<a class="onglet-matériel-3" href="livre.php?triethec='.$Trie.'&tagthec=Ordinateur">
 
-			<img class="image-onglet-matériel" src="img/laptop.png">
+			<img class="image-onglet-matériel" src="img/laptop.png" alt="">
 
 			</a>
 
@@ -108,7 +108,7 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<a class="onglet-matériel-4" href="livre.php?triethec='.$Trie.'&tagthec=Cam">
 
-			<img class="image-onglet-matériel" src="img/camera.png">
+			<img class="image-onglet-matériel" src="img/camera.png" alt="">
 
 			</a>
 
@@ -123,7 +123,7 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<a class="onglet-matériel-5" href="livre.php?triethec='.$Trie.'&tagthec=Ecran">
 
-			<img class="image-onglet-matériel" src="img/computer-screen.png">
+			<img class="image-onglet-matériel" src="img/computer-screen.png" alt="">
 
 			</a>
 
@@ -138,7 +138,7 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<a class="onglet-matériel-6" href="livre.php?triethec='.$Trie.'&tagthec=Gadget">
 
-			<img class="image-onglet-matériel" src="img/outil.png">
+			<img class="image-onglet-matériel" src="img/outil.png" alt="">
 
 			</a>
 

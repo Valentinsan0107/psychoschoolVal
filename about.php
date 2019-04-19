@@ -17,7 +17,7 @@ $motclefspage="page,accueil,site";
 				Vous voulez soutenir le site ? Vous pouvez nous faire un don via <b>Paypal</b> afin de continuer à faire vivre le site.
 			</p>
 			<div class="image-donation-conteneur" style="cursor: pointer;" onclick="window.location='http://google.com';">
-				<a class="lien-image-donation" href="#"><img src="img/paypal.png"></a>
+				<a class="lien-image-donation" href="#"><img src="img/paypal.png" alt=""></a>
 				<p class="phrase-donation">Faire un don via paypal</p>
 			</div>
 		</div>
