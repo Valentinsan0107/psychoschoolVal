@@ -29,7 +29,7 @@ include_once("includes/modules/header.php");
 <div class="conteneur-général-3">
 
 <div class="test-widget-amazon"> 
-		<a class="texte-test-widget-amazon" href="#">Acheter cet article sur Amazon<img class="image-amazon-lien-2" src="img/amazon-white.png" alt=""></a>
+		<a class="texte-test-widget-amazon" href="#">Acheter cet article sur Amazon<img class="image-amazon-lien-2" src="img/amazon-white.png" alt="lien vers Amazon"></a>
 </div>
 <div class="conteneur-fiche-technique">
 
