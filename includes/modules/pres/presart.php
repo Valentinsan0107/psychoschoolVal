@@ -23,7 +23,7 @@ if ($resultChek > 0) {
 			<h2 class="titre-article">'.$row['article_titre'].'</h2>
 
 			
-			<div class="conteneur-date-calendrier-2"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+			<div class="conteneur-date-calendrier-2"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png" alt="">
 						<h3 class="date-aperçu-article">'.$date.'</h3></div>
 		
 
@@ -32,7 +32,7 @@ if ($resultChek > 0) {
 		<div class="conteneur-module-comment">
 			
 			<div class="conteneur-bouton"><a class="lien-icon-conversation" href="'.$lien.'">
-				<img class="icon-conversation" src="img/conversation.png">
+				<img class="icon-conversation" src="img/conversation.png" alt="">
 			</a>';
 
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nompageserv'";
@@ -46,7 +46,7 @@ if ($resultChek > 0) {
 		$resultChek = mysqli_num_rows($result3);
 
 		echo '<a class="lien-icon-conversation" href="'.$lien.'">
-				<img class="icon-like" src="img/like-black-heart-button.png">
+				<img class="icon-like" src="img/like-black-heart-button.png" alt="">
 			</a>
 			<p class="nombre-like-article">'.$resultChek.'</p></div>';
 

@@ -43,7 +43,7 @@ if ($resultChek > 0) {
 
 			<div class="conteneur-date-aperçu-article">
 
-			<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png">
+			<div class="conteneur-date-calendrier"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png" alt="">
 						<h3 class="date-aperçu-article">'.$date.'</h3></div>
 
 			<h3 class="date-aperçu-article">Prix :   '.$row['article_prix'].'$</h3>
@@ -58,7 +58,7 @@ if ($resultChek > 0) {
 
 		<div class="conteneur-bouton-2">
 			<a class="lien-icon-conversation" href="'.$lien.'">
-				<img class="icon-conversation" src="img/conversation.png">
+				<img class="icon-conversation" src="img/conversation.png" alt="">
 			</a>';
 
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nompageserv'";
@@ -72,14 +72,14 @@ if ($resultChek > 0) {
 		$resultChek = mysqli_num_rows($result3);
 
 		echo '<a class="lien-icon-conversation" href="'.$lien.'">
-				<img class="icon-like" src="img/like-black-heart-button.png">
+				<img class="icon-like" src="img/like-black-heart-button.png" alt="">
 			</a>
 			<p class="nombre-like-article">'.$resultChek.'</p></div>
 			<a class="lien-article-2" href="'.$lien.'">En savoir plus</a>
 			</div>
 			<div class="amazon-lien-3">
 		<p class="texte-amazon-lien" href="#">Tu souhaites acheter cet article ?</p>
-		<a class="lien-amazon-lien" target="_blank" href="'.$row['article_lien'].'">Acheter maintenant sur Amazon<img class="image-amazon-lien" src="img/logo-amazon.png"></a>
+		<a class="lien-amazon-lien" target="_blank" href="'.$row['article_lien'].'">Acheter maintenant sur Amazon<img class="image-amazon-lien" src="img/logo-amazon.png" alt="lien-vers-amazon"></a>
 		</div>';
 
 		echo '</div><div class="conteneur-publicité-mobile">
