@@ -8,7 +8,7 @@ if ($resultChek > 0) {
 		$lien = "article.php?narticle=".$nompageserv;
 		echo '<div class="photo-article-zone-conteneur">';
 		if (file_exists("uploads/imagecouverture/".$idart.".jpg")) {
-			echo "<div class='photo-article-2' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
+			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".jpg); background-repeat: no-repeat; background-size: cover;'></div>";
 		}elseif (file_exists("uploads/imagecouverture/".$idart.".png")) {
 			echo "<div class='photo-article' style='background-image: url(uploads/imagecouverture/".$idart.".png); background-repeat: no-repeat; background-size: cover;'></div>";
 		}else{
