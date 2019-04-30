@@ -18,22 +18,28 @@ if ($resultChek > 0) {
 		$date = substr($date, 0, -9);
 		include_once("includes/modules/fonctionContain.php");
 
-		$date = datetotext($date);	
-		echo'<div class="zone-article">
-			<h2 class="titre-article">'.$row['article_titre'].'</h2>
+		$date = datetotext($date);
+		$resumer = $row['article_resumer'];
+		$titre = $row['article_titre'];
 
-			
-			<div class="conteneur-date-calendrier-2"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png" alt="">
-						<h3 class="date-aperçu-article">'.$date.'</h3></div>
-		
+		$contenue = <<<EBT
+			<div class="zone-article">
+				<h2 class="titre-article">$titre</h2>
 
-			<p class="texte-article">'.$row['article_resumer'].'</p>
+				
+				<div class="conteneur-date-calendrier-2"><img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png" alt="">
+							<h3 class="date-aperçu-article">$date</h3></div>
 			
-		<div class="conteneur-module-comment">
-			
-			<div class="conteneur-bouton"><div class="new-design-like" onclick="window.location='.$lien.';"><a class="lien-icon-conversation" href="'.$lien.'">
-				<img class="icon-conversation" src="img/conversation.png" alt="">
-			</a>';
+
+				<p class="texte-article">$resumer</p>
+				
+			<div class="conteneur-module-comment">
+				
+				<div class="conteneur-bouton"><div class="new-design-like" onclick="window.location='$lien';"><a class="lien-icon-conversation" href="$lien">
+					<img class="icon-conversation" src="img/conversation.png" alt="">
+				</a>
+EBT;
+		echo $contenue;
 
 		$sql = "SELECT * FROM comentaires WHERE coment_page='$nompageserv'";
 		$result3 = mysqli_query($conn, $sql);
