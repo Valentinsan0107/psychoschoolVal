@@ -31,7 +31,7 @@ if ($resultChek > 0) {
 			
 		<div class="conteneur-module-comment">
 			
-			<div class="conteneur-bouton"><a class="lien-icon-conversation" href="'.$lien.'">
+			<div class="conteneur-bouton"><div class="new-design-like" onclick="window.location='.$lien.';"><a class="lien-icon-conversation" href="'.$lien.'">
 				<img class="icon-conversation" src="img/conversation.png" alt="">
 			</a>';
 
@@ -39,16 +39,16 @@ if ($resultChek > 0) {
 		$result3 = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result3);
 
-		echo '<p class="nombre-commentaire-article">'.$resultChek.'</p>';
+		echo '<p class="nombre-commentaire-article">'.$resultChek.'</p></div>';
 
 		$sql = "SELECT * FROM likes WHERE like_page='$nompageserv'";
 		$result3 = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result3);
 
-		echo '<a class="lien-icon-conversation" href="'.$lien.'">
+		echo '<div class="new-design-like"><a class="lien-icon-conversation" href="'.$lien.'">
 				<img class="icon-like" src="img/like-black-heart-button.png" alt="">
 			</a>
-			<p class="nombre-like-article">'.$resultChek.'</p></div>';
+			<p class="nombre-like-article">'.$resultChek.'</p></div></div>';
 
 		echo '<a class="lien-article" href="'.$lien.'">Lire plus...</a></div>
 		

@@ -63,11 +63,11 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<a class="onglet-matériel-1" href="livre.php?triethec='.$Trie.'">
 
-			<img class="image-onglet-matériel" src="img/new.png" alt="">
+			<img class="image-onglet-matériel" src="img/video-editing.png" alt="">
 
 			</a>
 
-			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.'"><p class="titre-onglet-matériel">Nouveautés</p></a>
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.'"><p class="titre-onglet-matériel">Logiciels</p></a>
 
 			</li>
 

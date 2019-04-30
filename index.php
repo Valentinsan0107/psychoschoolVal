@@ -229,7 +229,9 @@ $motclefspage="page,accueil,site";
 			}
 		}
 		?>
-</div>	
+</div>
+
+
 
 <?php
 	include_once("includes/modules/footer.php");
