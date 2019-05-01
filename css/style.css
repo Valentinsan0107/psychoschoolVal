@@ -174,6 +174,7 @@ nav ul {
 	margin: 0;
 	padding-right: 30px;
 	-webkit-transition: .4s ease;
+	border-bottom: 2px solid black;
 	-o-transition: .4s ease;
 	transition: .4s ease
 }
@@ -200,16 +201,17 @@ nav ul li a:hover {
 }
 .active {
 	padding: 6px 10px;
-	color: #c4302b;
-	background-color: #fff;
+	color: #fff;
+	background-color: #c4302b;
 	border-radius: 5px;
 	-webkit-transition: .2s ease;
 	-o-transition: .2s ease;
+	cursor: pointer;
 	transition: .2s ease
 }
 .active:hover {
+	background-color: #eb3a34;
 	color: #fff;
-	background-color: #c4302b;
 	-webkit-transition: .2s ease;
 	-o-transition: .2s ease;
 	transition: .2s ease
@@ -650,6 +652,7 @@ h2.titre-promesse {
 p.paragraphe-promesse {
 	text-align: center;
 	font-size: 1.4em;
+	line-height: 1.8em;
 	font-family: Montserrat, sans-serif;
 	color: #8e8c8c;
 	padding: 10px 20px
@@ -707,7 +710,7 @@ p.paragraphe-promesse {
 .paragraphe-présentation-matériel {
 	color: #fff;
 	font-family: Montserrat, sans-serif;
-	line-height: 1.2;
+	line-height: 1.5em;
 	font-size: 1.4em;
 	text-align: justify;
 	margin: 20px 0 20px 60px
@@ -715,7 +718,7 @@ p.paragraphe-promesse {
 .paragraphe-présentation-matériel-deux {
 	padding-left: 60px;
 	font-family: Montserrat, sans-serif;
-	line-height: 1.2;
+	line-height: 1.5em;
 	font-size: 1.4em;
 	color: #fff;
 	text-align: justify;
@@ -885,7 +888,8 @@ p.paragraphe-promesse {
 .paragraphe-aperçu-matériel {
 	font-family: Montserrat, sans-serif;
 	color: #404040;
-	margin: 10px 0 36px
+	line-height: 1.8em;
+	margin: 10px 0 26px
 }
 .lien-article-3 {
 	background-color: #c4302b;
@@ -1129,7 +1133,7 @@ button.button-formulaire-contact:hover {
 		height: 550px
 	}
 }
-@media (max-width:575px) {
+@media (max-width:675px) {
 	.paragraphe-présentation-matériel-deux {
 		display: none
 	}
@@ -1388,7 +1392,7 @@ button.button-création:hover {
 	height: 250px
 }
 .texte-about-you, .titre-donation {
-	margin: 15px 23px;
+	margin: 15px 23px 0 23px;
 	font-family: Raleway, sans-serif;
 	font-size: 1.65em;
 	color: #c4302b;
@@ -1455,9 +1459,9 @@ button.button-création:hover {
 	font-size: .9em
 }
 .texte-donation {
-	margin: 23px;
+	margin: 10px 23px;
 	font-family: Montserrat, sans-serif;
-	line-height: 140%;
+	line-height: 1.8em;
 	color: #404040
 }
 form.form-formulaire-contact-2 {
@@ -1750,7 +1754,7 @@ div.zone-article-2 {
 }
 
 div.photo-article-2 {
-	height: 353px;
+	height: 361px;
 	width: 352px;
 	min-width: 352px;
 	background-color: #fff;
@@ -1816,7 +1820,7 @@ p.texte-article, p.texte-article-2 {
 	padding-left: 30px;
 	padding-right: 30px;
 	font-family: Montserrat, sans-serif;
-	line-height: 1.5em;
+	line-height: 1.8em;
 	color: #404040
 }
 h2.titre-article {
@@ -1882,12 +1886,8 @@ h1.titre-article-complet {
 @media (max-width:1350px) {
 	div.zone-article {
 		width: 600px;
-		min-width: 600px
-	}
-	p.paragraphe-article-complet, p.paragraphe-matériel-entier, p.texte-article {
-		font-size: .84em;
-		line-height: 1.3em;
-		padding-bottom: 15px
+		min-width: 600px;
+		height: 480px;
 	}
 	div.conteneur-publicité, div.conteneur-tag {
 		width: 970.2px
@@ -1897,6 +1897,15 @@ h1.titre-article-complet {
 	}
 	div.photo-article-2, div.photo-article {
 		width: auto
+	}
+	div.photo-article{
+		height: 480px;
+	}
+	div.photo-article-2{
+		height: 453px;
+	}
+	div.conteneur-module-comment{
+		margin-top: 10px;
 	}
 }
 @media (max-width:985px) {
@@ -2144,7 +2153,7 @@ h1.titre-article-complet {
 	text-transform: uppercase
 }
 .paragraphe-matériel-entier {
-	line-height: 1.5em;
+	line-height: 1.8em;
 	color: #404040;
 	font-family: Montserrat, sans-serif;
 	margin: 0
@@ -2350,7 +2359,7 @@ a.onglet-matériel-4 {
 	background-image: url(../img/camera-hover.png)
 }
 a.onglet-matériel-5 {
-	background-image: url(../img/computer-screen-hover.png)
+	background-image: url(../img/headphone-symbol-hover.png)
 }
 a.onglet-matériel-6 {
 	background-image: url(../img/outil-hover.png)
@@ -2496,7 +2505,7 @@ a.onglet-matériel-6 {
 	border: 2px solid #c4302b
 }
 div.conteneur-module-comment-4 {
-	margin-bottom: 9px
+	margin-bottom: 12px
 }
 div.conteneur-widget-youtuber {
 	display: -webkit-box;
@@ -2529,7 +2538,24 @@ button.bouton-like:hover{
 	-webkit-transition: .3s ease;
 	-o-transition: .3s ease;
 	transition: .3s ease;
-
+}
+.nombre-like-article-entier-2:hover button.bouton-dislike{
+	background-color: #eb3a34;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
+}
+.conteneur-like-article-complet:hover button.bouton-like{
+	background-color: #eb3a34;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
+}
+.nombre-like-article-entier-2:hover button.bouton-like{
+	background-color: #eb3a34;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
 }
 img.icon-conversation, img.icon-dislike, img.icon-like {
 	height: 20px;
@@ -2628,9 +2654,6 @@ p.nombre-like-article-entier-2 {
 	}
 	p.titre-onglet-matériel {
 		font-size: 1em
-	}
-	p.texte-article-2 {
-		font-size: .84em
 	}
 	a.lien-amazon-lien {
 		font-size: 1.1em
@@ -2760,7 +2783,7 @@ div.article-complet-conteneur {
 p.paragraphe-article-complet {
 	padding: 0;
 	font-family: Montserrat, sans-serif;
-	line-height: 1.5em;
+	line-height: 1.8em;
 	color: #404040;
 	text-align: justify
 }
@@ -2808,7 +2831,6 @@ div.conteneur-pseudo-date {
 }
 @media (max-width:440px) {
 	p.p-commentaire, p.paragraphe-article-complet {
-		font-size: .9em;
 		text-align: left
 	}
 	h1.titre-article-complet {
@@ -2868,6 +2890,7 @@ textarea.textarea-formulaire-comment, textarea.textarea-formulaire-comment-2 {
 	font-family: Montserrat, sans-serif;
 	margin-top: 20px;
 	resize: none;
+	border: none;
 	padding: 2.5%
 }
 form.form-formulaire-comment {
@@ -2977,7 +3000,7 @@ p.juste-date {
 }
 p.p-commentaire {
 	margin: 0;
-	line-height: 1.5em;
+	line-height: 1.8em;
 	color: #404040;
 	font-family: Montserrat, sans-serif
 }
@@ -3003,10 +3026,11 @@ p.message-commentaire-connexion {
 .image-attention {
 	width: 25px;
 	height: 25px;
-	margin-right: 25px
+	margin: auto;
 }
 .lien-share-1, .lien-share-2, .lien-share-3 {
 	padding: 12px;
+	border-radius: 3px;
 	color: #fff;
 	font-size: .9em;
 	font-family: Montserrat, sans-serif;
@@ -3058,8 +3082,8 @@ p.message-commentaire-connexion {
 	transition: .3s ease
 }
 .icon-share {
-	width: 15px;
-	height: 15px
+	width: 20px;
+	height: 20px
 }
 .icon-share-2 {
 	width: 20px;

@@ -61,13 +61,13 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<li class="liste-onglet-matériel-1">
 
-			<a class="onglet-matériel-1" href="livre.php?triethec='.$Trie.'">
+			<a class="onglet-matériel-1" href="livre.php?triethec='.$Trie.'&tagthec=Logiciel">
 
 			<img class="image-onglet-matériel" src="img/video-editing.png" alt="">
 
 			</a>
 
-			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.'"><p class="titre-onglet-matériel">Logiciels</p></a>
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=Logiciel"><p class="titre-onglet-matériel">Logiciel</p></a>
 
 			</li>
 
@@ -121,13 +121,13 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 
 			<li class="liste-onglet-matériel-5">
 
-			<a class="onglet-matériel-5" href="livre.php?triethec='.$Trie.'&tagthec=Ecran">
+			<a class="onglet-matériel-5" href="livre.php?triethec='.$Trie.'&tagthec=Casque">
 
-			<img class="image-onglet-matériel" src="img/computer-screen.png" alt="">
+			<img class="image-onglet-matériel" src="img/headphone-symbol.png" alt="">
 
 			</a>
 
-			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=Ecran"><p class="titre-onglet-matériel">Ecran</p></a>
+			<a class="lien-titre-onglet-matériel" href="livre.php?triethec='.$Trie.'&tagthec=Casque"><p class="titre-onglet-matériel">Casque</p></a>
 
 			</li>
 

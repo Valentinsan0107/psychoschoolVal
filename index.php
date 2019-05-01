@@ -64,7 +64,7 @@ $motclefspage="page,accueil,site";
 	<div class="sous-titre"></div>
 
 		<p class="paragraphe-présentation-matériel">
-			Grâce à notre descriptif détaillé, retrouve les caméras, micros ou encore écrans les plus adaptés à tes besoins et à ton budget pour réaliser des vidéos de meilleure qualité et augmenter rapidement ton audience.
+			Grâce à notre descriptif détaillé, retrouve le matériel le plus adapté à tes besoins et à ton budget pour réaliser des vidéos de meilleure qualité et augmenter rapidement ton audience.
 		</p>
 
 		<p class="paragraphe-présentation-matériel-deux">
@@ -120,7 +120,7 @@ $motclefspage="page,accueil,site";
 </div>
 
 	<div class="zone-coté">
-		<h2 class="titre-zone-coté">Les meilleurs ventes</h2>
+		<h2 class="titre-zone-coté">Le matériel le plus populaire</h2>
 		<?php
 			    $sql = "SELECT * FROM article WHERE article_thechnique='0' ORDER BY article_id DESC";
 				$result = mysqli_query($conn, $sql);
@@ -138,7 +138,7 @@ $motclefspage="page,accueil,site";
 
 			  				$contenu = $row['article_resumer'];
 			  				if (strlen($contenu) > 152) {
-			  					$contenu = substr($contenu, 0, 152);
+			  					$contenu = substr($contenu, 0, 120);
 			  					$contenu = $contenu."...";
 			  				}
 
@@ -162,7 +162,7 @@ $motclefspage="page,accueil,site";
 										<h2 class="titre-aperçu-matériel">'.$row['article_titre'].'</h2>
 
 									<div class="conteneur-date-calendrier">
-									
+									<img class="image-calendrier" class="photo-derniers-articles" src="img/calendrier.png" alt="">
 									<h3 class="date-aperçu-matériel">'.$date.'</h3>
 									</div>
 										<p class="paragraphe-aperçu-matériel">'.$contenu.'</p>
