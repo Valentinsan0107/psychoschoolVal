@@ -38,6 +38,12 @@ if ($resultChek > 0) {
 		include_once("includes/modules/fonctionContain.php");
 
 		$date = datetotext($date);	
+
+		$resumer = $row['article_resumer'];
+		if (strlen($resumer) > 573) {
+			$resumer = substr($resumer, 0, 573);
+			$resumer = $resumer."...";
+		}
 		echo'<div class="zone-article">
 			<h2 class="titre-article">'.$row['article_titre'].'</h2>
 
@@ -53,7 +59,7 @@ if ($resultChek > 0) {
 			</div>
 
 
-			<p class="texte-article-2">'.$row['article_resumer'].'</p>
+			<p class="texte-article-2">'.$resumer.'</p>
 		<div class="conteneur-module-comment-4">
 
 		<div class="conteneur-bouton-2">
