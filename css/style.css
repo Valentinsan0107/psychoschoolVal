@@ -174,7 +174,6 @@ nav ul {
 	margin: 0;
 	padding-right: 30px;
 	-webkit-transition: .4s ease;
-	border-bottom: 2px solid black;
 	-o-transition: .4s ease;
 	transition: .4s ease
 }
@@ -685,7 +684,7 @@ p.paragraphe-promesse {
 .conteneur-phrase-présentation-matériel {
 	margin-left: auto;
 	margin-top: 20px;
-	margin-right: 40px;
+	margin-right: 60px;
 	width: 686px
 }
 .conteneur-phrase-présentation-matériel-3 {
@@ -1999,6 +1998,56 @@ h1.titre-article-complet {
 	-ms-flex-pack: center;
 	justify-content: center
 }
+#test-widget-cookie {
+	width: 100%;
+	min-height: 50px;
+	height: auto;
+	background-color: white;
+	position: fixed;
+	box-shadow: 0 1px 4px hsla(0,0%,73%,.5);
+	-webkit-box-shadow: 0 1px 4px hsla(0,0%,73%,.5);
+	bottom: 0;
+	z-index: 20;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+.texte-test-widget-cookie {
+	color: #404040;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	padding: 0 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-decoration: none
+}
+.input-widget-cookie{
+	background-color: #c4302b;
+	border: none;
+	color: white;
+	margin: 0 20px;
+	height: 20px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+@media (max-width:750px){
+	.texte-test-widget-cookie{
+		padding: 20px;
+	}
+}
 .image-amazon-lien-2 {
 	width: 30px;
 	height: 25px;
@@ -2080,7 +2129,7 @@ h1.titre-article-complet {
 }
 .conteneur-details-produit-widget-youtuber-2 {
 	margin-left: 3%;
-	width: 50%;
+	width: 70%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2933,7 +2982,7 @@ button.input-commentaire {
 	width: 30px;
 	height: 20px;
 	color: #fff;
-	border-radius: 0 0 5px 5px;
+	border-radius: 0 0 3px 3px;
 	-webkit-transition: .3s ease;
 	-o-transition: .3s ease;
 	transition: .3s ease
@@ -2945,7 +2994,7 @@ button.input-commentaire-2 {
 	width: 30px;
 	height: 20px;
 	color: #fff;
-	border-radius: 0 0 5px 5px;
+	border-radius: 0 0 3px 3px;
 	-webkit-transition: .3s ease;
 	-o-transition: .3s ease;
 	transition: .3s ease

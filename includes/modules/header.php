@@ -29,7 +29,7 @@ if (session_status() == PHP_SESSION_NONE) {
 	?>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/icon-brain.png">
+	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/lightbulb.png">
 	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 	
@@ -82,6 +82,10 @@ if (session_status() == PHP_SESSION_NONE) {
 </head>
 <body>
   
+<div id="test-widget-cookie"> 
+    <p class="texte-test-widget-cookie" href="#">En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour vous proposer des publicités adaptées à vos centres d'intêrets.</p>
+    <button class="input-widget-cookie" onclick='closecookie()'>&times;</button>
+</div>
 
 <div class="test-loader">
   <figure class="figure-loader">
@@ -191,6 +195,12 @@ if (session_status() == PHP_SESSION_NONE) {
       <script type="text/javascript">
             function closelog(){
                   document.getElementById("conteneur-message-erreur-log").style.display = "none";
+            }
+      </script>
+
+      <script type="text/javascript">
+            function closecookie(){
+                  document.getElementById("test-widget-cookie").style.display = "none";
             }
       </script>
 
