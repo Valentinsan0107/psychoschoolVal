@@ -20,6 +20,11 @@ if ($resultChek > 0) {
 
 		$date = datetotext($date);
 		$resumer = $row['article_resumer'];
+		if (strlen($resumer) > 573) {
+			$resumer = substr($resumer, 0, 573);
+			$resumer = $resumer."...";
+		}
+
 		$titre = $row['article_titre'];
 
 		$contenue = <<<EBT
@@ -51,10 +56,12 @@ EBT;
 		$result3 = mysqli_query($conn, $sql);
 		$resultChek = mysqli_num_rows($result3);
 
-		echo '<div class="new-design-like"><a class="lien-icon-conversation" href="'.$lien.'">
+		echo <<<EBT
+		<div class="new-design-like"  onclick="window.location='$lien';"><a class="lien-icon-conversation" href="$lien">
 				<img class="icon-like" src="img/like-black-heart-button.png" alt="">
 			</a>
-			<p class="nombre-like-article">'.$resultChek.'</p></div></div>';
+			<p class="nombre-like-article">$resultChek</p></div></div>';
+EBT;
 
 		echo '<a class="lien-article" href="'.$lien.'">Lire plus...</a></div>
 		
