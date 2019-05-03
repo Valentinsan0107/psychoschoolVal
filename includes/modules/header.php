@@ -29,8 +29,8 @@ if (session_status() == PHP_SESSION_NONE) {
 	?>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/psychoschoolVal/img/lightbulb.png">
-	<link rel="stylesheet" type="text/css" href="/psychoschoolVal/css/style.css">
+	<link rel="icon" type="image/x-icon" href="img/lightbulb.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:800" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 	
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
@@ -141,9 +141,9 @@ if (session_status() == PHP_SESSION_NONE) {
 			                        		echo '<li><a class="active" href="log-in.php">Sʼenregistrer</a></li>';
 			                        	} else {
 			                        		echo '<li><a class="active" >'.htmlspecialchars($_SESSION['u_pseudo']).'</a></li>
-			                        		<li class="active-2"><form class="form-close" method="POST" action="/psychoschoolVal/includes/backrownd/compts/logout.php">
+			                        		<li class="active-2"><form class="form-close" method="POST" action="includes/backrownd/compts/logout.php">
 			                        		<input type="hidden" name="submit" value=" ">
-			                        		<input class="log" type="image" src="/psychoschoolVal/img/power-button-off.png" name="submit"></input></form></li>';
+			                        		<input class="log" type="image" src="img/power-button-off.png" name="submit"></input></form></li>';
 			                        	}
 			                        ?>
                               </div>
