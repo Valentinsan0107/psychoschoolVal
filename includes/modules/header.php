@@ -79,6 +79,14 @@ if (session_status() == PHP_SESSION_NONE) {
 }, false);
     </script>
 
+<script type="text/javascript">
+ 
+jQuery(document).ready(function(){
+
+$('.test-loader-2').show(0).delay(1000).fadeOut(200);
+});
+</script>
+
 </head>
 <body>
   
@@ -87,20 +95,13 @@ if (session_status() == PHP_SESSION_NONE) {
     <button class="input-widget-cookie" onclick='closecookie()'>&times;</button>
 </div>
 
-<div class="test-loader">
-  <figure class="figure-loader">
-  <div></div><div></div>
-  <div></div><div></div>
-  <div></div><div></div>
-  <div></div><div></div>
-</figure class="figure-loader">
-</div> 
 
-<script type="text/javascript">
-  $(document).ready(function(){
-      $(".test-loader").fadeOut(1000);
-  })
-</script>
+<div class="test-loader-2"><div class="contener_general"> <div class="contener_mixte"><div class="ballcolor ball_1">&nbsp;</div></div> <div class="contener_mixte"><div class="ballcolor ball_2">&nbsp;</div></div> <div class="contener_mixte"><div class="ballcolor ball_3">&nbsp;</div></div> <div class="contener_mixte"><div class="ballcolor ball_4">&nbsp;</div></div> </div></div>
+
+
+<style type="text/css">.contener_general{-webkit-animation:animball_two 1s infinite;-moz-animation:animball_two 1s infinite;-ms-animation:animball_two 1s infinite;animation:animball_two 1s infinite;width:44px;height:44px} .contener_mixte{width:44px;height:44px;} .ballcolor{width:20px;height:20px;border-radius:50%} .ball_1, .ball_2, .ball_3, .ball_4{position:absolute;-webkit-animation:animball_one 1s infinite ease;-moz-animation:animball_one 1s infinite ease;-ms-animation:animball_one 1s infinite ease;animation:animball_one 1s infinite ease} .ball_1{background-color:#C4302B;top:0;left:0} .ball_2{background-color:#363636;top:0;left:24px} .ball_3{background-color:#363636;top:24px;left:0} .ball_4{background-color:#EB3A34;top:24px;left:24px} @-webkit-keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @-moz-keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @-ms-keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @keyframes animball_one{0%{position:absolute} 50%{top:12px;left:12px;position:absolute;opacity:0.5} 100%{position:absolute}} @-webkit-keyframes animball_two{0%{-webkit-transform:rotate(0deg) scale(1)} 50%{-webkit-transform:rotate(360deg) scale(1.2)} 100%{-webkit-transform:rotate(720deg) scale(1)}} @-moz-keyframes animball_two{0%{-moz-transform:rotate(0deg) scale(1)} 50%{-moz-transform:rotate(360deg) scale(1.3)} 100%{-moz-transform:rotate(720deg) scale(1)}} @-ms-keyframes animball_two{0%{-ms-transform:rotate(0deg) scale(1)} 50%{-ms-transform:rotate(360deg) scale(1.3)} 100%{-ms-transform:rotate(720deg) scale(1)}}</style>
+
+
 
       <nav>
 

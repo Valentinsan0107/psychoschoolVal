@@ -24,7 +24,6 @@ $motclefspage="page,accueil,site";
 
 
 	</div>
-<div class="conteneur-général-3">
 	<div class="matériel-conteneur">
 	
 	<div class="conteneur-design-tag-2">';
@@ -191,7 +190,6 @@ echo '</div><div class="conteneur-publicité-2"><div class="pub-2"></div>
 	}
 ?>
 
-</div>
 </div>
 </div>
 

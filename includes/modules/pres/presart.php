@@ -60,7 +60,7 @@ EBT;
 		<div class="new-design-like"  onclick="window.location='$lien';"><a class="lien-icon-conversation" href="$lien">
 				<img class="icon-like" src="img/like-black-heart-button.png" alt="">
 			</a>
-			<p class="nombre-like-article">$resultChek</p></div></div>';
+			<p class="nombre-like-article">$resultChek</p></div></div>
 EBT;
 
 		echo '<a class="lien-article" href="'.$lien.'">Lire plus...</a></div>
