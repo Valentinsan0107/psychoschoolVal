@@ -13,6 +13,12 @@ body {
 	margin: 0;
 	background-color: #f1f1f1
 }
+i.fa-times{
+	display: none;
+}
+i.fa-times, i.fa-bars{
+	cursor: pointer;
+}
 .conteneur-général-1 {
 	opacity: 0;
 	-webkit-transition: .8s ease;
@@ -30,6 +36,18 @@ body {
 	-webkit-transition: .8s ease;
 	-o-transition: .8s ease;
 	transition: .8s ease
+}
+.conteneur-image-titre-site{
+	display: flex;
+	align-items: center;
+}
+.conteneur-test-couleur{
+	display: flex;
+}
+.titre-site{
+	font-family: Montserrat, sans-serif;
+	font-weight: bold;
+	margin: 10px;
 }
 nav {
 	position: fixed;
@@ -103,10 +121,13 @@ nav ul li a:hover {
 	background: rgba(36, 36, 36, 1);
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	cursor: pointer;
 	color: #fff;
 	display: none;
 	padding-right: 20px
+}
+.lien-titre-site{
+	text-decoration: none;
+	color: white;
 }
 .image-logo {
 	float: left;
@@ -194,7 +215,7 @@ nav ul li a:hover {
 	transition: .4s ease;
 	height: 20px;
 	width: 500px;
-	margin-top: 11px;
+	margin-top: 30px;
 	padding: 0;
 	border: 1px solid #fff;
 	color: #fff;
@@ -206,7 +227,7 @@ nav ul li a:hover {
 #bouton-recherche-2 {
 	border: 0;
 	height: 31.6px;
-	margin-top: 11px;
+	margin-top: 30px;
 	border-radius: 0 20px 20px 0;
 	cursor: pointer;
 	padding: 0 10px 0 6px
@@ -1069,7 +1090,7 @@ div.conteneur-création-connexion {
 	display: -ms-flexbox;
 	display: flex;
 	margin: 0 0 190px;
-	padding-top: 85px
+	padding-top: 70px
 }
 .g-recaptcha {
 	margin: auto
@@ -1225,7 +1246,7 @@ button.button-création:hover {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding-top: 90px
+	padding-top: 70px
 }
 .formulaire-contact-conteneur {
 	height: 600px
@@ -1649,7 +1670,7 @@ div.photo-article {
 	cursor: pointer
 }
 div.article-conteneur {
-	padding-top: 50px;
+	padding-top: 30px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2086,7 +2107,7 @@ h1.titre-article-complet {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding-top: 90px
+	padding-top: 70px
 }
 .image-note {
 	width: 20px;
@@ -3051,7 +3072,7 @@ p.message-commentaire-connexion {
 }
 .conteneur-like-coment {
 	padding-top: 35px;
-	line-height: 22px
+	line-height: 22px;
 }
 .conteneur-tag-titre-date {
 	width: 70%
@@ -3064,9 +3085,10 @@ p.message-commentaire-connexion {
 .conteneur-recherche {
 	width: 60%;
 	height: 150px;
-	margin: auto;
-	min-width: 776px;
-	border-bottom: #c4302b 2px solid
+	margin: 20px auto;
+	background-color: white;
+	-webkit-box-shadow: 0 1px 4px hsla(0,0%,73%,.5);
+	box-shadow: 0 1px 4px hsla(0,0%,73%,.5);
 }
 .conteneur-photo-recherche {
 	width: 70px;

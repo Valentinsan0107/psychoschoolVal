@@ -106,10 +106,12 @@ $('.test-loader-2').show(0).delay(1000).fadeOut(200);
       <nav>
 
                         <div class="menu-icon">
-                              <div>
-                              <img class="image-logo-2" src="img/logo-youtube-test.png" alt="logo">
+                              <div class="conteneur-image-titre-site">
+                              <a href="index.php"><img class="image-logo-2" src="img/logo-youtube-test.png" alt="logo"></a>
+                              <a class="lien-titre-site" href="index.php"><h1 class="titre-site">TonTuyau<span style="color: #c4302b;">.fr</span></h1></a>
                               </div>
                               <i class="fa fa-bars fa-2x" onclick="responsive()"></i>
+                              <i class="fa fa-times fa-2x"></i>
                         </div>
 
                         
@@ -206,18 +208,41 @@ $('.test-loader-2').show(0).delay(1000).fadeOut(200);
       </script>
 
 
-
       <script type="text/javascript">
 
       // Menu-toggle button
 
       $(document).ready(function() {
-            $(".menu-icon").on("click", function() {
+            $(".fa-bars").on("click", function() {
                   $("nav ul").toggleClass("showing");
             });
       });
 
+      </script>
 
+           <script type="text/javascript">
 
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".fa-times").on("click", function() {
+                  $("nav ul").removeClass("showing");
+                  $(".fa-bars").fadeIn(200);
+                  $(".fa-times").hide(0);
+            });
+      });
 
       </script>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fa-bars").on("click", function() {
+                  $(".fa-bars").hide(0);
+                  $(".fa-times").fadeIn(200);
+
+            });
+      });
+      </script>
+
+
+
