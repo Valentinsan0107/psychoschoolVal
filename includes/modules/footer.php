@@ -11,16 +11,11 @@
 <div class="conteneur-contenu-footer-haut">
   <div class="conteneur-info-footer">
 
-    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="/psychoschoolVal/techniques.php">TECHNIQUES</a></h1>
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="techniques.php">TECHNIQUES</a></h1>
 
     <ul class="liste-puce-footer">
       <?php
-        $pref = __FILE__;
-        $pos = strpos($pref, "psychoschoolVal");
-        $longeur = strlen($pref);
-        $aefface = $pos+15-$longeur;
-        $pref = substr($pref, 0, $aefface);
-        include_once($pref."/includes/backrownd/dph.php");
+        include_once("includes/backrownd/dph.php");
 
         $sql = "SELECT * FROM article WHERE article_thechnique='1' ORDER BY article_id DESC";
         $result = mysqli_query($conn, $sql);
@@ -42,7 +37,7 @@
   </div>
   <div class="conteneur-info-footer">
 
-    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="/psychoschoolVal/livre.php">MATÉRIEL</a></h1>
+    <h1 class="titre-section-footer"><a class="lien-titre-footer" href="livre.php">MATÉRIEL</a></h1>
 
     <ul class="liste-puce-footer">
       <?php
@@ -114,7 +109,7 @@ var firstname=["Robin","Victorien","Clara","Jean","Stanislas","Louis","Camille",
           $var_prod ="var products=[";
           while ($row = mysqli_fetch_assoc($result)) {
               $partie =<<<EOT
-                '<a class="lien-product" href="http://localhost:8080/psychoschoolVal/fiche_produit.php?narticle={$row['article_nom']}">{$row['article_titre']}</a> via notre lien',
+                '<a class="lien-product" href="fiche_produit.php?narticle={$row['article_nom']}">{$row['article_titre']}</a> via notre lien',
 EOT;
 
               $var_prod .= $partie;
@@ -134,7 +129,7 @@ EOT;
       var idx=getRandomIndex(cities);
       $("#city").html(cities[idx]);
       $("#time").html(getRandomEle(minutes));
-      $(".live_preview_image").attr("src","/psychoschoolVal/img/shopping-cart.png");
+      $(".live_preview_image").attr("src","img/shopping-cart.png");
       $("#customwidget").fadeIn();
       $(".product").html(getRandomProduct(products));
       setTimeout(function(){ $("#customwidget").fadeOut(function(){ $("#name").html('');$("#city").html('');$(".live_preview_image").attr("src",""); });},7000);  

@@ -66,12 +66,9 @@ if(!isset($_POST['submit'])){
 					}else{
 						$hasedmail = password_hash($email, PASSWORD_DEFAULT);
 							
-						$pos = strpos($nompage, "psychoschoolVal");
-						$longeur = strlen($nompage);
-						$pref = substr($nompage, 0, $pos+15-$longeur);
 
 
-						$lien = $pref."/emailsent.php"."?confirmed&mail=".$hasedmail;
+						$lien = "www.tontuyau.fr/emailsent.php"."?confirmed&mail=".$hasedmail;
 
 						$content = str_replace(
 						    array('%pseudo%', '%lienconf%'),
@@ -105,7 +102,7 @@ if(!isset($_POST['submit'])){
 
 
 						header_remove();	
-						header("Location: /psychoschoolVal/emailsent.php?envoyer");
+						header("Location: ../../../emailsent.php?envoyer");
 						exit();
 					}
 				}
